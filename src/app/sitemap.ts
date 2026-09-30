@@ -6,7 +6,7 @@ import { getPosts } from "@/lib/posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  const statics = ["", "/services", "/pricing", "/service-areas", "/gallery", "/about", "/faq", "/guides", "/contact"];
+  const statics = ["", "/services", "/pricing", "/service-areas", "/gallery", "/about", "/faq", "/guides", "/contact", "/privacy-policy"];
   return [
     ...statics.map((p) => ({
       url: `${site.url}${p}`,
