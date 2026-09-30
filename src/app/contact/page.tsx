@@ -6,7 +6,7 @@ import { QuoteForm } from "./QuoteForm";
 export const metadata: Metadata = {
   title: "Book a Mattress Cleaning Appointment | Lincoln, NE",
   description:
-    "Book mattress cleaning in Lincoln, Nebraska. Call (402) 672-6272 or send the short form — tell us how many mattresses and what you are seeing, and we will confirm pricing before we schedule.",
+    "Book mattress cleaning in Lincoln, Nebraska. Call (402) 512-5658 or send the short form — tell us how many mattresses and what you are seeing, and we will confirm pricing before we schedule.",
 };
 
 export default function ContactPage() {
