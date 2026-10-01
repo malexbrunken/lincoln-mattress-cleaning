@@ -28,7 +28,10 @@ export const site = {
     "Ashland",
     "Gretna",
   ],
-  hours: "7 days a week, 8am–6pm",
+  hours: "Monday–Friday, 9am–6pm",
+  hoursNote: "Missed a call? We return calls and texts on Saturday and Sunday too.",
+  /** schema.org openingHours */
+  openingHours: "Mo-Fr 09:00-18:00",
   serviceRadius:
     "Lincoln and the surrounding 40 miles — including Waverly, Hickman, Seward, Crete, Wahoo, Ashland, and the Omaha metro on request.",
 } as const;

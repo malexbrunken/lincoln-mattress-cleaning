@@ -105,6 +105,7 @@ export default function AboutPage() {
           Call {site.phone}
         </a>
         <p className="text-mist mt-4">{site.hours} · {site.email}</p>
+        <p className="text-mist text-sm mt-1">{site.hoursNote}</p>
       </div>
     </div>
   );

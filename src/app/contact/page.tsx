@@ -22,11 +22,12 @@ export default function ContactPage() {
       </p>
 
       <div className="bg-navy text-white rounded-2xl p-8 mb-10 text-center texture-grain">
-        <p className="text-lg mb-3">Call or text, 7 days a week:</p>
+        <p className="text-lg mb-3">Call or text:</p>
         <a href={site.phoneHref} className="inline-flex bg-teal hover:bg-teal-bright text-white font-bold text-2xl px-8 py-4 rounded-lg items-center transition-colors">
           {site.phone}
         </a>
         <p className="text-white/70 mt-3">{site.hours}</p>
+        <p className="text-white/60 text-sm mt-1">{site.hoursNote}</p>
         <a href={`mailto:${site.email}`} className="inline-block text-teal-bright hover:text-white mt-2 transition-colors">
           {site.email}
         </a>
@@ -35,7 +36,7 @@ export default function ContactPage() {
       <h2 className="text-2xl font-semibold text-navy mb-4">Or send us the details</h2>
       <QuoteForm />
       <p className="text-mist mt-4">
-        We reply the same day — usually within a couple of hours. No deposit required.
+        We reply during business hours, {site.hours}, and return weekend messages on Saturday and Sunday too. No deposit required.
       </p>
 
       <div className="mt-10 bg-ice border border-line rounded-2xl p-6">

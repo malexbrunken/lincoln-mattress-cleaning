@@ -28,7 +28,15 @@ export function LocalBusinessJsonLd() {
       "@type": "City",
       name: `${a}, NE`,
     })),
-    openingHours: "Mo-Su 08:00-18:00",
+    openingHours: site.openingHours,
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "09:00",
+        closes: "18:00",
+      },
+    ],
     knowsAbout: [
       "mattress cleaning",
       "mattress sanitization",
