@@ -52,7 +52,7 @@ Syringing money out of those three cases would be easy and it would be wrong, so
 
 ## Get an exact number
 
-Call **(402) 672-6272** with the number of mattresses and what you are seeing. Most quotes take under a minute, and the price we quote is the price you pay.
+Call **(402) 512-5658** with the number of mattresses and what you are seeing. Most quotes take under a minute, and the price we quote is the price you pay.
 
 ## Related
 

@@ -132,6 +132,7 @@ export default async function GuidePage({ params }: PageProps<"/guides/[slug]">)
           {site.hours} · $299 first mattress, any size ·{" "}
           <Link href="/pricing" className="text-teal-deep underline font-semibold">all pricing</Link>
         </p>
+        <p className="text-mist text-sm mt-1">{site.hoursNote}</p>
       </div>
 
       <h2 className="text-2xl font-semibold text-navy mb-4">More guides</h2>

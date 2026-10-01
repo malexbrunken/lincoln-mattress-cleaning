@@ -80,4 +80,4 @@ Lincoln and the surrounding 40 miles. Start with the [Lincoln service page](/ser
 - [What mattress cleaning costs in Lincoln](/guides/mattress-cleaning-cost-lincoln)
 - [Pet urine odor: why it comes back](/guides/pet-urine-mattress-odor-comes-back)
 
-Call **(402) 672-6272** and describe what you are seeing. Most quotes take under a minute, and we will tell you when the answer is not to book us.
+Call **(402) 512-5658** and describe what you are seeing. Most quotes take under a minute, and we will tell you when the answer is not to book us.

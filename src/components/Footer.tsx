@@ -18,6 +18,7 @@ export function Footer() {
           <a href={site.phoneHref} className="text-teal-bright font-bold text-lg">{site.phone}</a>
           <a href={`mailto:${site.email}`} className="block mt-1 text-white/80 hover:text-teal-bright transition-colors">{site.email}</a>
           <p className="mt-2 text-white/70">{site.hours}</p>
+          <p className="mt-1 text-sm text-white/55">{site.hoursNote}</p>
         </div>
         <div>
           <p className="font-display font-semibold text-white mb-3">Services</p>

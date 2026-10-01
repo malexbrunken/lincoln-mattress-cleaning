@@ -107,7 +107,7 @@ export default function HomePage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-white/65 tracking-wide">
-              FIRST MATTRESS $299 · ANY SIZE · UV-C POST-TREATMENT INCLUDED · 7 DAYS A WEEK
+              FIRST MATTRESS $299 · ANY SIZE · UV-C POST-TREATMENT INCLUDED · MON–FRI 9AM–6PM
             </p>
           </div>
         </div>
