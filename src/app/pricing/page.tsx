@@ -2,22 +2,23 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { packages, addonDetails, site } from "@/lib/site";
 import { QuoteCalc } from "@/components/QuoteCalc";
+import { PromoBanner, IncludedTable } from "@/components/Pricing";
 import { FaqJsonLd } from "@/components/JsonLd";
 import { IconMattress } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Mattress Cleaning Prices Lincoln NE | $299 First Mattress",
+  title: "Mattress Cleaning Prices Lincoln NE | $249 First Mattress",
   description:
-    "Published mattress cleaning prices for Lincoln, Nebraska: $299 first mattress any size, $179–$199 each additional, plus underside, urine/blood, pet odor, and CO₂ testing add-ons.",
+    "Lincoln, NE mattress cleaning prices: $249 first mattress ($199 Fall 2026 promotion), $149–$199 each additional. Stains, pet odor and ordinary urine included.",
 };
 
 const faq = [
   {
     q: "How much does mattress cleaning cost in Lincoln?",
-    a: "The first mattress is $299, any size from twin through king, including the top surface, side edges, dry vapor steam, UV-C post-treatment, and allergen reservoir reduction. Each additional mattress in the same visit is $179 for twin or smaller and $199 for full, queen, or king.",
+    a: "The first mattress is $249, any size from twin through king, including dry-vapor sanitation, the UV-C / HEPA protocol, normal stain treatment, pet odor treatment and ordinary urine accident treatment. Each additional full, queen or king mattress is $199, and each additional kids bed (twin/full) is $149. During our Fall 2026 promotion the first mattress is $199, and any additional cleaning scheduled within 7 days of the first service is also $199.",
   },
   {
-    q: "Why is the first mattress $299 regardless of size?",
+    q: "Why is the first mattress $249 regardless of size?",
     a: "Because size-based pricing on a mattress service mostly penalizes people who own a king. The work involved in sanitizing a twin and a king is close enough that we prefer one honest rate, and you will not get a surprise upsell on the mattress you called about.",
   },
   {
@@ -30,7 +31,7 @@ const faq = [
   },
   {
     q: "Do you charge more for a heavily stained mattress?",
-    a: "Not for ordinary soil — that is what the base service handles. If your mattress has urine, blood, or pet odor history, those are specific add-ons with published prices, and we will tell you before we arrive which ones your situation actually needs.",
+    a: "No. Normal stains, pet odor and ordinary urine accidents are included in the base price. Only severe, biohazard or extensive contamination carries a custom surcharge, and we quote it after we see the mattress, before any work starts.",
   },
 ];
 
@@ -45,6 +46,7 @@ export default function PricingPage() {
           <h1 className="text-5xl md:text-6xl font-semibold leading-tight max-w-4xl mb-5">
             One clinical-standard rate.
           </h1>
+          <PromoBanner className="max-w-2xl mb-6" />
           <p className="text-xl text-white/70 max-w-2xl">
             No hidden fees. No size-based upsells on your first mattress. The same published numbers apply on
             every {site.parentBrand} property, so what you read here is what you pay in Lincoln.
@@ -55,6 +57,8 @@ export default function PricingPage() {
       <section className="max-w-6xl mx-auto px-4 py-16 md:py-24">
         <div className="grid gap-10 lg:grid-cols-[1.35fr_.8fr] items-start">
           <div className="space-y-6">
+            <h2 className="text-3xl font-semibold">What&apos;s included</h2>
+            <IncludedTable />
             {packages.map((p) => (
               <article
                 key={p.name}
@@ -107,11 +111,11 @@ export default function PricingPage() {
 
       <section className="bg-ice-2 border-y border-line py-16">
         <div className="max-w-6xl mx-auto px-4">
-          <p className="kicker text-teal-deep mb-3">Focused add-ons</p>
-          <h2 className="text-3xl font-semibold mb-3">Priced per mattress, added only when you need them</h2>
+          <p className="kicker text-teal-deep mb-3">Beyond the base price</p>
+          <h2 className="text-3xl font-semibold mb-3">Only when the mattress needs it</h2>
           <p className="text-mist max-w-3xl mb-8">
-            We will tell you which of these your mattress actually needs after we see it — and we will tell you
-            when none of them apply.
+            Stains, pet odor and ordinary urine accidents are included. These two are the only extras, and we
+            will tell you after we see the mattress whether either applies.
           </p>
           <div className="grid gap-5 md:grid-cols-2">
             {addonDetails.map((a) => (

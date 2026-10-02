@@ -30,7 +30,7 @@ We also run the full dry vapor steam pass across the sleep surface afterwards an
 
 ## What it costs
 
-The urine and blood treatment is **+$105 per mattress**, on top of the base mattress price. Pet odor treatment — which targets dander oils and odor compounds rather than the accident itself — is **+$50 per mattress**. Underside sanitation is **+$70** where the wicking reached the bottom panel, and we will tell you when we see that.
+Ordinary urine accident treatment is **included** in the base mattress price of **$249** for the first mattress ($199 during our Fall 2026 promotion). Pet odor treatment — which targets dander oils and odor compounds rather than the accident itself — is included too. Underside/full-surface treatment is **+$50–$75** where the wicking reached the bottom panel, and we will tell you when we see that. Severe, biohazard or extensive contamination carries a custom surcharge, quoted before any work starts.
 
 Full numbers are on the [pricing page](/pricing).
 

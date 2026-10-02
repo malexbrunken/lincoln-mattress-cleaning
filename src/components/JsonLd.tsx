@@ -13,6 +13,13 @@ export function LocalBusinessJsonLd() {
     telephone: site.phone,
     email: site.email,
     priceRange: "$$",
+    makesOffer: {
+      "@type": "Offer",
+      price: "249",
+      priceCurrency: "USD",
+      description:
+        "Mattress sanitation, first mattress, any size. Normal stains, pet odor and ordinary urine accidents included. Fall 2026 promotion: first mattress $199, and any additional cleaning scheduled within 7 days of the first service is also $199.",
+    },
     parentOrganization: {
       "@type": "Organization",
       name: site.parentBrand,

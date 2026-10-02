@@ -18,7 +18,7 @@ export default function ServicesPage() {
       <h1 className="text-4xl md:text-5xl font-semibold text-navy mb-4">Mattress Services in Lincoln</h1>
       <p className="text-lg text-mist max-w-3xl mb-10">
         Every service below is performed in your home, on your mattress, by the same crew. Nothing here is an
-        add-on to another business — mattresses are the whole business. First mattress $299, any size.
+        add-on to another business — mattresses are the whole business. First mattress $249, any size.
       </p>
       <div className="grid gap-7 md:grid-cols-2">
         {services.map((s) => (

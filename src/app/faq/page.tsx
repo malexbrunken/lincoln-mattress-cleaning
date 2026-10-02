@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "How much does mattress cleaning cost in Lincoln?",
-    a: "The first mattress is $299 (any size). Each additional mattress in the same visit is $179 for twin or smaller and $199 for full, queen, or king. Add-ons are published on our pricing page: underside sanitation +$70, urine or blood treatment +$105, pet odor treatment +$50, and 72-hour bedroom CO₂ testing $199.",
+    a: "The first mattress is $249 (any size), with normal stains, pet odor and ordinary urine accidents included. Each additional full, queen or king mattress is $199, and each additional kids bed (twin/full) is $149. Underside/full-surface treatment is +$50–$75; severe, biohazard or extensive contamination carries a custom surcharge. During our Fall 2026 promotion the first mattress is $199, and any additional cleaning scheduled within 7 days of the first service is also $199.",
   },
   {
     q: "What is dry vapor steam, exactly?",
@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: "My dog peed on the mattress. Is it salvageable?",
-    a: "Often yes. Urine wicks into the quilting and seam channels, and the odor returns later because uric acid salts crystallize and reactivate with humidity. Our enzymatic urine treatment (+$105) breaks those compounds down, and we verify with ATP testing rather than trusting our noses. Where a mattress has years of repeated saturation deep into the core, we will tell you honestly if it is beyond what surface treatment can reach.",
+    a: "Often yes. Urine wicks into the quilting and seam channels, and the odor returns later because uric acid salts crystallize and reactivate with humidity. Our enzymatic urine treatment, included for ordinary accidents, breaks those compounds down, and we verify with ATP testing rather than trusting our noses. Where a mattress has years of repeated saturation deep into the core, we will tell you honestly if it is beyond what surface treatment can reach.",
   },
   {
     q: "Do you kill bed bugs?",
