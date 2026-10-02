@@ -3,40 +3,48 @@ title: "What Mattress Cleaning Costs in Lincoln, NE"
 date: "2026-09-08"
 category: "Pricing"
 author: "Matthew Brunken"
-excerpt: "Published mattress cleaning prices for Lincoln: $299 for the first mattress any size, $179–$199 for each additional, and what the underside, urine, pet odor, and CO₂ add-ons actually cover."
+excerpt: "Published mattress cleaning prices for Lincoln: $249 for the first mattress any size ($199 during our Fall 2026 promotion), $149–$199 for each additional, with stains, pet odor and ordinary urine accidents included."
 ---
 
 Most cleaners in this market will not publish a mattress price, and the reason is usually that the answer depends on who is asking. We publish ours, on this page and on our [pricing page](/pricing), because a fair price should not require a phone call to find out.
 
 ## Base pricing
 
-**The first mattress is $299, any size.** Twin through king, same rate. The rate covers the top surface deep sanitation, side edge treatment, low-moisture dry vapor steam, allergen reservoir reduction, and UV-C post-treatment.
+**Fall 2026 promotion:** your first mattress is $199 (regular $249). Any additional cleaning scheduled within 7 days of your first service is also $199, so you can see our work first.
 
-**Each additional mattress in the same visit is $179 for twin or smaller, $199 for full, queen, or king.** Same inclusions. Booking two, three, or four mattresses in one appointment is meaningfully cheaper than booking them separately, because we are already in the house with the equipment set up.
+**The first mattress is $249, any size.** Twin through king, same rate. The rate covers dry-vapor sanitation, the UV-C / HEPA protocol, normal stain treatment, pet odor treatment and ordinary urine accident treatment.
+
+**Each additional mattress in the same visit is $199 for full, queen or king, and $149 for a kids bed (twin/full).** Same inclusions. Booking two, three, or four mattresses in one appointment is meaningfully cheaper than booking them separately, because we are already in the house with the equipment set up.
 
 We charge one rate for any size on the first mattress on purpose. Size-based pricing on a mattress service mostly penalizes people who own a king, and we would rather not structure our prices around that.
 
-## Add-ons, priced per mattress
+## What's included
 
-| Add-on | Price | What it is for |
-| --- | --- | --- |
-| Underside sanitation | +$70 | Complete six-surface coverage. Recommended for severe allergy cases or visible bottom-panel contamination |
-| Urine or blood treatment | +$105 | Enzymatic protein degradation with ATP verification |
-| Pet odor treatment | +$50 | Targeted neutralization of dander oils and odor compounds |
-| 72-hour bedroom CO₂ testing | $199 | Standalone monitor service — not per mattress |
+| Service | Price |
+| --- | --- |
+| **Mattress Sanitation** | **$249 first mattress** |
+| Dry-vapor sanitation | Included |
+| UV-C / HEPA protocol | Included |
+| Normal stain treatment | Included |
+| Pet odor treatment | Included |
+| **Ordinary urine accident treatment** | **Included** |
+| Additional full/queen/king mattress | $199 |
+| Additional kids bed (twin/full) | $149 |
+| Underside/full-surface treatment | +$50–$75 |
+| Severe/biohazard/extensive contamination | Custom surcharge |
 
-We will tell you after we see the mattress which of these actually apply — and when none of them do. If a mattress has no fluid history, there is no reason to sell you a urine treatment.
+Underside/full-surface treatment is the only routine extra, and we will tell you after we see the mattress whether it applies. Severe, biohazard or extensive contamination is quoted before any work starts.
 
 ## What is not on the invoice
 
 - **No travel fee.** Anywhere in Lincoln and the surrounding 40 miles.
 - **No deposit.** Pricing is confirmed at the time of service.
 - **No charge for the underside inspection.** If we look and it does not need treating, we say so.
-- **UV-C post-treatment is not a line item.** It is included in the base rate for every customer.
+- **UV-C, stains, pet odor and ordinary urine accidents are not line items.** They are included in the base rate for every customer.
 
 ## A realistic comparison
 
-Replacing a queen mattress with a comparable new one is typically several hundred dollars or more, plus the logistics of getting rid of the old one, plus a new mattress that has its own off-gassing period. Sanitizing the one you own is $299. That is the comparison most customers are actually making.
+Replacing a queen mattress with a comparable new one is typically several hundred dollars or more, plus the logistics of getting rid of the old one, plus a new mattress that has its own off-gassing period. Sanitizing the one you own is $249. That is the comparison most customers are actually making.
 
 The other comparison: a professional annual mattress service works out to less than a couple of dollars a day over the life of the appointment-to-appointment interval, for the surface you spend roughly a third of your life on.
 

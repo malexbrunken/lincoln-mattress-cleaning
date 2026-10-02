@@ -40,7 +40,7 @@ export const towns: Town[] = [
       "Waverly is a short drive east of Lincoln and well inside our normal radius. Newer builds, family homes, and plenty of bedrooms that have never had a professional mattress appointment.",
     local: [
       "Waverly's newer subdivisions mean newer mattresses — often still under manufacturer warranty. That matters, because improper heat or moisture is one of the few ways a homeowner can void a mattress warranty. Our low-moisture process is specifically designed to be warranty-safe, and we read the law tag on every mattress before we treat it.",
-      "Households here tend to run larger: multiple kids, a guest room, sometimes an inherited mattress from grandparents. Multi-mattress visits are the norm for us in Waverly, and the second and subsequent mattresses are priced at $179–$199 rather than the full first-mattress rate.",
+      "Households here tend to run larger: multiple kids, a guest room, sometimes an inherited mattress from grandparents. Multi-mattress visits are the norm for us in Waverly, and the second and subsequent mattresses are priced at $149–$199 rather than the full first-mattress rate.",
     ],
     anchors: ["Waverly schools corridor", "Newer subdivisions on the east side", "Close to I-80 at the Waverly interchange"],
     nearby: ["lincoln", "eagle", "palmyra", "bennet"],
@@ -82,7 +82,7 @@ export const towns: Town[] = [
       "Eagle is a growing bedroom community east of Lincoln on the way to the Omaha metro. We cover it on regular Lincoln routes.",
     local: [
       "Eagle households frequently include pets, which is the single most common reason a mattress gets treated here — not tears or wear, but dander and odor compounds that have migrated from the bedding or the bedding-adjacent room into the mattress surface over years.",
-      "Our pet odor treatment is +$50 per mattress, and it targets dander oils rather than covering them with fragrance. Where there has been an actual accident rather than wear, the urine and blood treatment at +$105 with ATP verification is the one that addresses the source.",
+      "Pet odor treatment is included in every appointment, and it targets dander oils rather than covering them with fragrance. Ordinary urine accidents are included too, treated enzymatically with ATP verification; only severe or extensive contamination carries a custom surcharge.",
     ],
     anchors: ["Eagle city center", "Properties toward Palmyra and Elmwood"],
     nearby: ["lincoln", "palmyra", "bennet", "waverly"],
@@ -207,7 +207,7 @@ export const towns: Town[] = [
     intro:
       "Gretna straddles the Lincoln–Omaha corridor on I-80. It sits on the overlap of both our routes, so scheduling is flexible.",
     local: [
-      "Gretna's growth means a lot of new construction and a lot of new mattresses, often several purchased in one transaction for a whole house. That is the case where multi-mattress pricing works hardest in your favor — the second, third, and fourth mattresses in one visit run $179–$199 instead of the full $299.",
+      "Gretna's growth means a lot of new construction and a lot of new mattresses, often several purchased in one transaction for a whole house. That is the case where multi-mattress pricing works hardest in your favor — the second, third, and fourth mattresses in one visit run $149–$199 instead of the full $249.",
       "New builds and sealed bedrooms are also where our CO₂ testing gets most useful. If you have just moved into a new Gretna home and are waking up congested, testing the bedroom before blaming the mattress is the more informative first step — and the two services pair naturally in one appointment.",
     ],
     anchors: ["Gretna town center", "New subdivisions along Highway 370", "I-80 corridor between Lincoln and Omaha"],

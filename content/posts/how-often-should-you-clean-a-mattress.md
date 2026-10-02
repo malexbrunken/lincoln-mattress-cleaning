@@ -20,13 +20,13 @@ Households with both get the most benefit from the tighter interval.
 
 ## Multi-mattress households
 
-Every mattress in the house is on the same clock. Guest-room mattresses that get used four times a year still accumulate — often more, because a closed-up guest room with no airflow is an ideal environment. Booking the whole house in one visit is both faster and cheaper: $299 for the first mattress and $179–$199 for each additional.
+Every mattress in the house is on the same clock. Guest-room mattresses that get used four times a year still accumulate — often more, because a closed-up guest room with no airflow is an ideal environment. Booking the whole house in one visit is both faster and cheaper: $249 for the first mattress and $149–$199 for each additional.
 
 ## Triggers that override the calendar
 
 Book regardless of when you last had it done if any of these apply:
 
-- **A pet or child accident.** This is the [urine or blood treatment](/services/pet-urine-odor-treatment), not the base service. Waiting makes it worse — uric acid salts crystallize and set deeper with time.
+- **A pet or child accident.** [Urine treatment](/services/pet-urine-odor-treatment) is included for ordinary accidents. Waiting makes it worse — uric acid salts crystallize and set deeper with time.
 - **A musty smell you cannot locate.** It is usually the mattress, and it usually means moisture has been sitting.
 - **A mattress that is new to you.** Inherited, handed down, bought used, or a rental. Reset it before the first night rather than after six months of sleeping on someone else's history. See [resetting a used mattress](/guides/used-mattress-first-night-reset).
 - **After an illness in the household**, particularly anything with a long recovery.

@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: PageProps<"/service-areas/[sl
   if (!t) return {};
   return {
     title: `Mattress Cleaning ${t.name}, NE | Dry Vapor Steam Sanitation`,
-    description: `Mattress cleaning and sanitization in ${t.name}, Nebraska. Low-moisture dry vapor steam instead of wet extraction, UV-C post-treatment, $299 first mattress. In-home service.`,
+    description: `Mattress cleaning and sanitization in ${t.name}, Nebraska. Low-moisture dry vapor steam instead of wet extraction, UV-C post-treatment, $249 first mattress. In-home service.`,
   };
 }
 
@@ -68,7 +68,7 @@ export default async function TownPage({ params }: PageProps<"/service-areas/[sl
           <Link href="/services/mattress-sanitization" className="text-teal-deep underline font-semibold">
             Mattress sanitization
           </Link>{" "}
-          — $299 first mattress, any size
+          — $249 first mattress, any size
         </li>
         <li>
           💧{" "}
@@ -88,7 +88,7 @@ export default async function TownPage({ params }: PageProps<"/service-areas/[sl
           <Link href="/services/pet-urine-odor-treatment" className="text-teal-deep underline font-semibold">
             Pet urine &amp; odor treatment
           </Link>{" "}
-          — enzymatic, ATP verified
+          — ordinary accidents included, ATP verified
         </li>
         <li>
           🔆{" "}
@@ -102,7 +102,7 @@ export default async function TownPage({ params }: PageProps<"/service-areas/[sl
           <Link href="/services/co2-bedroom-testing" className="text-teal-deep underline font-semibold">
             72-hour bedroom CO₂ testing
           </Link>{" "}
-          — $199
+          — ask for current pricing
         </li>
       </ul>
 

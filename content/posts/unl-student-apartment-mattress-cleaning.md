@@ -10,7 +10,7 @@ The mattress in an off-campus Lincoln apartment is usually the one surface that 
 
 ## The problem, stated plainly
 
-A rental mattress arrives with a history nobody documented: previous occupants, previous pets, previous accidents, previous illness. Parents furnishing a student apartment generally discover this at move-in, and the choice looks like $299 or a few hundred more for a new mattress plus disposal logistics plus an off-gassing period.
+A rental mattress arrives with a history nobody documented: previous occupants, previous pets, previous accidents, previous illness. Parents furnishing a student apartment generally discover this at move-in, and the choice looks like $249 or a few hundred more for a new mattress plus disposal logistics plus an off-gassing period.
 
 Sanitizing the mattress is usually the answer — and it is the answer for a reason beyond cost. The accumulation that matters (skin cells, dander, dust-mite reservoirs, odor compounds) is exactly what a heat-based low-moisture process addresses. A brand new mattress is nice, but a sanitized one solves the actual problem in an hour.
 
@@ -19,9 +19,9 @@ Sanitizing the mattress is usually the answer — and it is the answer for a rea
 Our [rental and turnover service](/services/rental-property-mattress-turnover) is built around the timetable that matters:
 
 - **Block scheduling between lease periods**, including same-day unit turns.
-- **Multi-mattress pricing** — $299 first mattress, $179–$199 each additional in the same visit, so a whole unit or a whole block of units costs less than separate appointments.
+- **Multi-mattress pricing** — $249 first mattress, $149–$199 each additional in the same visit, so a whole unit or a whole block of units costs less than separate appointments.
 - **Per-mattress documentation** of what was treated, which property managers need for their records.
-- **Underside and urine treatment available** where the history requires it, priced openly at +$70 and +$105 per mattress.
+- **Ordinary urine accidents included**, and underside/full-surface treatment available where the history requires it, priced openly at +$50–$75 per mattress.
 
 For a parent setting up one apartment, it is usually a single visit. For a manager turning over a building, we build the visit around the window you have.
 
@@ -44,7 +44,7 @@ We flag those per unit instead of treating everything and sending one invoice. I
 ## For parents, specifically
 
 - Book it before the first night, not after midterms.
-- Ask about the underside if the mattress has history — it is +$70 and it is where wicking ends up.
+- Ask about the underside if the mattress has history — it is +$50–$75 and it is where wicking ends up.
 - Mention any pet or urine history at booking, because that determines the treatment applied.
 - Buy a waterproof protector. It is the cheapest insurance available.
 

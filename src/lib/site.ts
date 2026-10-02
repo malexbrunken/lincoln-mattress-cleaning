@@ -49,68 +49,77 @@ type Package = {
  * Canonical Sleep Sanitation pricing — keep these numbers identical to
  * sleepsanitation.com/pricing so every property quotes the same rate.
  */
+export const pricing = {
+  first: { label: "Mattress Sanitation, first mattress", price: 249, note: "Any size, twin through California king" },
+  additional: [
+    { label: "Additional full/queen/king mattress", price: 199 },
+    { label: "Additional kids bed (twin/full)", price: 149 },
+  ],
+  underside: "+$50–$75",
+  promo: {
+    label: "Fall 2026 promotion",
+    first: 199,
+    followUp: "Any additional cleaning scheduled within 7 days of your first service is also $199, so you can see our work first.",
+  },
+  included: [
+    { service: "Mattress Sanitation", price: "$249 first mattress", bold: true },
+    { service: "Dry-vapor sanitation", price: "Included", bold: false },
+    { service: "UV-C / HEPA protocol", price: "Included", bold: false },
+    { service: "Normal stain treatment", price: "Included", bold: false },
+    { service: "Pet odor treatment", price: "Included", bold: false },
+    { service: "Ordinary urine accident treatment", price: "Included", bold: true },
+    { service: "Additional full/queen/king mattress", price: "$199", bold: false },
+    { service: "Additional kids bed (twin/full)", price: "$149", bold: false },
+    { service: "Underside/full-surface treatment", price: "+$50–$75", bold: false },
+    { service: "Severe/biohazard/extensive contamination", price: "Custom surcharge", bold: false },
+  ],
+} as const;
+
 export const packages: Package[] = [
   {
     name: "First Mattress",
     popular: true,
-    price: "$299",
-    priceNote: "Any size — Twin through King",
+    price: "$249",
+    priceNote: "Any size — Twin through King · $199 during our Fall 2026 promotion",
     blurb:
-      "One clinical-standard appointment on your first mattress. Top surface and side edges, dry vapor steam, and UV-C post-treatment.",
+      "One clinical-standard appointment on your first mattress. Top surface and side edges, dry vapor steam, UV-C post-treatment, and normal stains, pet odor and ordinary urine accidents included.",
     features: [
       "Top surface deep sanitation",
       "Side edge treatment",
       "Low-moisture dry vapor steam",
-      "Allergen reservoir reduction",
-      "UV-C post-treatment",
-      "Inspection & containment before treatment",
+      "UV-C / HEPA protocol",
+      "Normal stain treatment",
+      "Pet odor and ordinary urine accident treatment",
       "Clean-entry protocol (boot covers, staged tools)",
     ],
   },
   {
     name: "Each Additional Mattress",
-    price: "$179–$199",
-    priceNote: "Twin or smaller $179 · Full, Queen or King $199",
+    price: "$149–$199",
+    priceNote: "Kids bed (twin/full) $149 · Full, Queen or King $199",
     blurb:
       "Booked in the same visit as your first mattress. Same protocol, same inclusions — priced by size so a whole house costs less than separate appointments.",
     features: [
       "Top surface deep sanitation",
       "Side edge treatment",
       "Low-moisture dry vapor steam",
-      "Allergen reservoir reduction",
-      "UV-C post-treatment",
+      "UV-C / HEPA protocol",
+      "Stains, pet odor and ordinary urine accidents included",
       "Best value on 2–4 mattress households",
     ],
   },
 ] as const;
 
-export const addons: { name: string; price: string; note?: string }[] = [
-  { name: "Underside Sanitation", price: "+$70", note: "per mattress" },
-  { name: "Urine or Blood Treatment", price: "+$105", note: "per mattress" },
-  { name: "Pet Odor Treatment", price: "+$50", note: "per mattress" },
-  { name: "72-Hour Bedroom CO₂ Testing", price: "$199", note: "standalone service" },
-];
-
 export const addonDetails = [
   {
-    name: "Underside Sanitation",
-    price: "+$70",
+    name: "Underside/full-surface treatment",
+    price: "+$50–$75",
     text: "Complete six-surface coverage. Recommended for severe allergy households or any mattress with visible underside contamination — dust, staining, or debris on the bottom panel and box-spring interface.",
   },
   {
-    name: "Urine or Blood Treatment",
-    price: "+$105",
-    text: "Enzymatic protein degradation with ATP verification, following CDC-aligned bodily-fluid decontamination practice. This is the add-on for pet accidents, child accidents, and mattress history you did not create.",
-  },
-  {
-    name: "Pet Odor Treatment",
-    price: "+$50",
-    text: "Targeted neutralization of pet dander oils and odor compounds. Safe for memory foam, latex, hybrid, and traditional innerspring constructions.",
-  },
-  {
-    name: "72-Hour Bedroom CO₂ Testing",
-    price: "$199",
-    text: "A monitor placed in the bedroom for three days to measure overnight air quality. Ventilation problems show up here first, and they disrupt sleep before they show up anywhere else.",
+    name: "Severe/biohazard/extensive contamination",
+    price: "Custom surcharge",
+    text: "Heavy, repeated or biohazard contamination beyond an ordinary accident is quoted after we see the mattress, before any work starts. Normal stains, pet odor and ordinary urine accidents are already included.",
   },
 ] as const;
 

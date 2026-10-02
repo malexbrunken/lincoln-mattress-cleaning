@@ -129,7 +129,7 @@ export default async function GuidePage({ params }: PageProps<"/guides/[slug]">)
           Call {site.phone}
         </a>
         <p className="text-mist mt-3">
-          {site.hours} · $299 first mattress, any size ·{" "}
+          {site.hours} · $249 first mattress, any size ·{" "}
           <Link href="/pricing" className="text-teal-deep underline font-semibold">all pricing</Link>
         </p>
         <p className="text-mist text-sm mt-1">{site.hoursNote}</p>

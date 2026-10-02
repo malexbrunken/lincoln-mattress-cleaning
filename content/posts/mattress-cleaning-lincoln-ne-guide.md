@@ -12,7 +12,7 @@ This is the guide we would give a Lincoln neighbor who asked what we actually do
 
 Most mattress cleaning in Lincoln is a carpet cleaner with an upholstery wand. It injects hot water into a surface that stays warm and humid for eight hours a night, leaves detergent residue in the foam, and needs a day or two to dry. Our process runs the other direction: **dry vapor steam at roughly 5% moisture content**, applied at temperatures high enough to do the sanitation work, leaving the foam core essentially dry and nothing behind for you to sleep against.
 
-The first mattress is $299, any size. Each additional mattress in the same visit is $179–$199. Everything is published on our [pricing page](/pricing).
+The first mattress is $249, any size, with normal stains, pet odor and ordinary urine accidents included ($199 during our Fall 2026 promotion). Each additional mattress in the same visit is $149–$199. Everything is published on our [pricing page](/pricing).
 
 ## Why Nebraska bedrooms make this an annual job
 
@@ -38,15 +38,20 @@ The [full service page](/services/mattress-sanitization) covers what is included
 
 | Service | Price |
 | --- | --- |
-| First mattress, any size | $299 |
-| Each additional mattress, twin or smaller | $179 |
-| Each additional mattress, full/queen/king | $199 |
-| Underside sanitation (per mattress) | +$70 |
-| Urine or blood treatment (per mattress) | +$105 |
-| Pet odor treatment (per mattress) | +$50 |
-| 72-hour bedroom CO₂ testing | $199 |
+| **Mattress Sanitation** | **$249 first mattress** |
+| Dry-vapor sanitation | Included |
+| UV-C / HEPA protocol | Included |
+| Normal stain treatment | Included |
+| Pet odor treatment | Included |
+| **Ordinary urine accident treatment** | **Included** |
+| Additional full/queen/king mattress | $199 |
+| Additional kids bed (twin/full) | $149 |
+| Underside/full-surface treatment | +$50–$75 |
+| Severe/biohazard/extensive contamination | Custom surcharge |
 
-There is no travel fee inside our service radius and no deposit required. We added a full breakdown of what each add-on is for on the [pricing page](/pricing), and there is an estimate calculator there if you want to price a two- or three-mattress visit before calling.
+**Fall 2026 promotion:** your first mattress is $199 (regular $249). Any additional cleaning scheduled within 7 days of your first service is also $199, so you can see our work first.
+
+There is no travel fee inside our service radius and no deposit required. We added a full breakdown of what is included on the [pricing page](/pricing), and there is an estimate calculator there if you want to price a two- or three-mattress visit before calling.
 
 A useful way to think about it: maintained as part of an annual standard, a thoroughly sanitized sleep surface costs less than a couple of dollars a day. That is the comparison we would make if we were the customer.
 
@@ -65,7 +70,7 @@ We also do not clean carpets, upholstery, or vehicles. Mattresses are the whole 
 - **Annually as maintenance**, if the mattress is in good condition and you want to stay ahead of accumulation.
 - **Semi-annually**, if anyone in the house has significant allergy sensitivity or you have pets.
 - **Before the first night on a used mattress** — including inherited, handed-down, and rental mattresses. See [resetting a used mattress before the first night](/guides/used-mattress-first-night-reset).
-- **After a pet or child accident**, which is the [urine and odor treatment](/services/pet-urine-odor-treatment) rather than the base service.
+- **After a pet or child accident**, which gets the [urine and odor treatment](/services/pet-urine-odor-treatment), included for ordinary accidents.
 - **At rental turnover**, between lease periods, with documentation per unit.
 - **When a specific room smells musty** and you cannot find the source. It is usually the mattress.
 

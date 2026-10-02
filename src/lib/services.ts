@@ -16,10 +16,10 @@ export const services: Service[] = [
     name: "Mattress Sanitization",
     title: "Mattress Cleaning Lincoln NE | Dry Vapor Steam Sanitation",
     description:
-      "Mattress cleaning in Lincoln, Nebraska using low-moisture dry vapor steam instead of wet extraction. $299 first mattress, UV-C post-treatment, dry in about an hour.",
+      "Mattress cleaning in Lincoln, Nebraska using low-moisture dry vapor steam instead of wet extraction. $249 first mattress, UV-C post-treatment, dry in about an hour.",
     h1: "Mattress Sanitization in Lincoln",
     intro:
-      "A structured, low-moisture sanitation appointment for the surface you sleep on every night — built for mattresses, not adapted from carpet-cleaning equipment. First mattress $299, any size.",
+      "A structured, low-moisture sanitation appointment for the surface you sleep on every night — built for mattresses, not adapted from carpet-cleaning equipment. First mattress $249, any size, with normal stains, pet odor and ordinary urine accidents included.",
     includes: [
       "Assessment of fabric, construction, and bedroom environment",
       "Clean-entry containment — boot covers, staged tools, protected floor",
@@ -104,7 +104,7 @@ export const services: Service[] = [
       "Top surface, seam, and edge treatment with dry vapor steam",
       "Heat-based reduction of existing mite populations and their waste",
       "UV-C post-treatment over the sleep surface",
-      "Underside sanitation available as an add-on (+$70)",
+      "Underside/full-surface treatment available (+$50–$75)",
       "Practical guidance on encasements, humidity, and timing",
     ],
     detail: [
@@ -133,28 +133,28 @@ export const services: Service[] = [
     name: "Pet Urine & Odor Treatment",
     title: "Pet Urine & Odor Removal From Mattresses | Lincoln, NE",
     description:
-      "Pet urine, child accidents, and odor treatment for Lincoln mattresses: enzymatic protein breakdown with ATP verification, plus +$50 pet odor neutralization.",
+      "Pet urine, child accidents, and odor treatment for Lincoln mattresses: enzymatic protein breakdown with ATP verification. Pet odor and ordinary urine accidents are included.",
     h1: "Pet Urine & Odor Treatment",
     intro:
       "Urine does not sit on a mattress. It wicks into the quilting, through the seam channels, and into the foam. Surface treatment does not fix it — the source has to be broken down where it actually is.",
     includes: [
-      "Enzymatic protein degradation on affected zones (+$105 per mattress)",
+      "Enzymatic protein degradation on affected zones (ordinary urine accidents included)",
       "ATP verification to confirm the source is genuinely reduced",
-      "Targeted pet odor neutralization of dander oils (+$50 per mattress)",
+      "Targeted pet odor neutralization of dander oils (included)",
       "Dry vapor steam across the full sleep surface",
       "UV-C post-treatment",
-      "Underside sanitation available (+$70) for wicking that reached the bottom panel",
+      "Underside/full-surface treatment available (+$50–$75) for wicking that reached the bottom panel",
     ],
     detail: [
       "We show up to a lot of mattresses with a pet-accident history, and the story is almost always the same: it was cleaned when it happened, it smelled fine for a while, and then it came back. Odor comes back because urine contains urea and uric acid salts that crystallize in the fiber. Those crystals reactivate with humidity — a warm body, a humid Lincoln summer, a closed-up bedroom. Fragrance covers them until the next humid night.",
       "The fix is enzymatic: the proteins and uric salts that carry the odor have to be broken down, not masked. We apply an enzymatic treatment to the affected zones, allow the dwell time it needs, then verify with ATP testing rather than trusting our noses. ATP measurement reads actual biological residue on the surface, so we can tell you whether the source is genuinely down instead of guessing.",
-      "Where the wicking has reached the bottom panel, the underside add-on matters, and we will tell you when we see it. A mattress that has been repeatedly soaked over years — the classic case of a puppy mattress — is sometimes past what any cleaning process can fully resolve. We would rather tell you that on the phone than after you have paid.",
+      "Where the wicking has reached the bottom panel, underside/full-surface treatment matters, and we will tell you when we see it. A mattress that has been repeatedly soaked over years — the classic case of a puppy mattress — is extensive contamination: it carries a custom surcharge, and it is sometimes past what any cleaning process can fully resolve. We would rather tell you that on the phone than after you have paid.",
       "This service also covers child accidents and other bodily-fluid situations, which is where the CDC-aligned decontamination practice and the ATP verification matter most. We treat those without commentary and without leaving you wondering whether it worked.",
     ],
     faq: [
       {
         q: "How much does pet urine treatment cost?",
-        a: "The urine and blood treatment is +$105 per mattress, and the pet odor treatment is +$50 per mattress. Both are added to your base mattress price and confirmed before we arrive.",
+        a: "Pet odor and ordinary urine accident treatment are included in the base mattress price: $249 for the first mattress ($199 during our Fall 2026 promotion). Severe, biohazard or extensive contamination carries a custom surcharge, confirmed before any work starts.",
       },
       {
         q: "Can the smell really be permanently removed?",
@@ -226,7 +226,7 @@ export const services: Service[] = [
     faq: [
       {
         q: "Is UV-C post-treatment an extra charge?",
-        a: "No. It is included in the base mattress price — $299 for the first mattress and $179–$199 for each additional mattress.",
+        a: "No. It is included in the base mattress price — $249 for the first mattress and $149–$199 for each additional mattress.",
       },
       {
         q: "Can you show me the readings?",
@@ -239,10 +239,10 @@ export const services: Service[] = [
     name: "72-Hour Bedroom CO₂ Testing",
     title: "72-Hour Bedroom CO₂ Testing | Lincoln, NE Sleep Environment",
     description:
-      "A 72-hour bedroom CO₂ monitor in Lincoln, NE. $199. Measures overnight ventilation and air quality — the factor that disrupts sleep before anything else shows up.",
+      "A 72-hour bedroom CO₂ monitor in Lincoln, NE. Measures overnight ventilation and air quality — the factor that disrupts sleep before anything else shows up.",
     h1: "72-Hour Bedroom CO₂ Testing",
     intro:
-      "A monitor runs in your bedroom for three days and measures what your sleep environment does overnight. $199, standalone or alongside a mattress appointment.",
+      "A monitor runs in your bedroom for three days and measures what your sleep environment does overnight. Standalone or alongside a mattress appointment; ask us for current pricing.",
     includes: [
       "Monitor placed in the bedroom for 72 hours",
       "Overnight CO₂ readings across three full nights",
@@ -252,7 +252,7 @@ export const services: Service[] = [
     detail: [
       "A bedroom is a closed box that two adults exhale into for eight hours. If fresh air is not moving through it, CO₂ climbs overnight — and elevated overnight CO₂ is associated with unrefreshing sleep and grogginess that people usually blame on everything except the room. It is also one of the most common causes of morning congestion that we see in Lincoln homes.",
       "Testing is the only way to know. When a room is sealed, when the door is shut and nothing exchanges air, three nights of data will show it plainly. When a room ventilates well, the readings say that too, and you can stop wondering.",
-      "We place the monitor, you live normally, and we collect it after 72 hours with a report on the patterns. Where the data points at something fixable — a return vent that is blocked, a door that never opens, a fan that is not running — you get the recommendation in plain language. This pairs naturally with a mattress appointment, but it stands alone fine, and it is $199 either way.",
+      "We place the monitor, you live normally, and we collect it after 72 hours with a report on the patterns. Where the data points at something fixable — a return vent that is blocked, a door that never opens, a fan that is not running — you get the recommendation in plain language. This pairs naturally with a mattress appointment, but it stands alone fine. Ask us for current pricing.",
     ],
     faq: [
       {
@@ -279,10 +279,10 @@ export const services: Service[] = [
     intro:
       "For Lincoln landlords, property managers, and the families furnishing a student apartment: mattress sanitation scheduled between lease periods, documented per unit.",
     includes: [
-      "Multi-mattress pricing: $299 first, $179–$199 each additional",
+      "Multi-mattress pricing: $249 first, $149–$199 each additional",
       "Scheduling between lease periods, including same-day unit turns",
       "Per-mattress documentation of what was treated",
-      "Underside and urine treatment available where history requires it",
+      "Ordinary urine accidents included; underside treatment available where history requires it",
       "Volume scheduling for multi-unit properties and student housing",
     ],
     detail: [
@@ -293,7 +293,7 @@ export const services: Service[] = [
     faq: [
       {
         q: "Can you service multiple units in one visit?",
-        a: "Yes, and that is the most efficient way to book. The first mattress is $299 and each additional is $179–$199 depending on size, so a block of units costs meaningfully less than separate appointments.",
+        a: "Yes, and that is the most efficient way to book. The first mattress is $249 and each additional is $149–$199 depending on size, so a block of units costs meaningfully less than separate appointments.",
       },
       {
         q: "Can you work between lease periods on a tight turnaround?",

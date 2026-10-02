@@ -52,7 +52,7 @@ export default function AboutPage() {
           vacuum. We photograph the readings and show them to you.
         </li>
         <li>
-          <strong>Published pricing.</strong> $299 for the first mattress, any size, with add-ons listed openly
+          <strong>Published pricing.</strong> $249 for the first mattress, any size, with every extra listed openly
           on our <Link href="/pricing" className="text-teal-deep underline font-semibold">pricing page</Link>.
         </li>
         <li>

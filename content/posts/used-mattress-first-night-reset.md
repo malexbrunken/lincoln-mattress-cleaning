@@ -30,7 +30,7 @@ Where the mattress is salvageable, our protocol runs inspect, isolate, sanitize,
 - Target work on higher-accumulation zones.
 - UV-C post-treatment with a surface reading, photographed before and after.
 
-The [mattress sanitization service page](/services/mattress-sanitization) lists inclusions in full. If the law tag or inspection turns up fluid history, the [urine and odor treatment](/services/pet-urine-odor-treatment) at +$105 is the add-on that addresses the source rather than the surface.
+The [mattress sanitization service page](/services/mattress-sanitization) lists inclusions in full. If the law tag or inspection turns up fluid history, the [urine and odor treatment](/services/pet-urine-odor-treatment), included for ordinary accidents, addresses the source rather than the surface.
 
 ## Why low moisture matters more on a used mattress
 
@@ -40,12 +40,20 @@ That is the specific case where dry vapor steam is not just a preference. It is 
 
 ## What it costs
 
-| | Price |
+**Fall 2026 promotion:** your first mattress is $199 (regular $249). Any additional cleaning scheduled within 7 days of your first service is also $199, so you can see our work first.
+
+| Service | Price |
 | --- | --- |
-| First mattress, any size | $299 |
-| Underside sanitation | +$70 |
-| Urine or blood treatment | +$105 |
-| Pet odor treatment | +$50 |
+| **Mattress Sanitation** | **$249 first mattress** |
+| Dry-vapor sanitation | Included |
+| UV-C / HEPA protocol | Included |
+| Normal stain treatment | Included |
+| Pet odor treatment | Included |
+| **Ordinary urine accident treatment** | **Included** |
+| Additional full/queen/king mattress | $199 |
+| Additional kids bed (twin/full) | $149 |
+| Underside/full-surface treatment | +$50–$75 |
+| Severe/biohazard/extensive contamination | Custom surcharge |
 
 Compare that to a comparable new mattress plus disposal plus the off-gassing period. For most inherited mattresses, the reset is the better use of the money — and for the ones where it is not, we will say so before you pay.
 

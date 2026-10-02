@@ -46,14 +46,19 @@ src/components/                Header, Footer, Icons, JsonLd, QuoteCalc
 ## Canonical pricing (keep identical to sleepsanitation.com)
 
 | Service | Price |
-| --- | --- |
-| First mattress, any size | $299 |
-| Each additional, twin or smaller | $179 |
-| Each additional, full/queen/king | $199 |
-| Underside sanitation | +$70 per mattress |
-| Urine or blood treatment | +$105 per mattress |
-| Pet odor treatment | +$50 per mattress |
-| 72-hour bedroom CO₂ testing | $199 |
+|---|---|
+| **Mattress Sanitation** | **$249 first mattress** |
+| Dry-vapor sanitation | Included |
+| UV-C / HEPA protocol | Included |
+| Normal stain treatment | Included |
+| Pet odor treatment | Included |
+| **Ordinary urine accident treatment** | **Included** |
+| Additional full/queen/king mattress | $199 |
+| Additional kids bed (twin/full) | $149 |
+| Underside/full-surface treatment | +$50–$75 |
+| Severe/biohazard/extensive contamination | Custom surcharge |
+
+Fall 2026 promotion: first mattress $199 (regular $249); any additional cleaning scheduled within 7 days of the first service is also $199.
 
 If the national price list changes, update `src/lib/site.ts` and the pricing page copy together so every property stays in sync.
 

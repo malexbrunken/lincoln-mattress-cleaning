@@ -30,7 +30,7 @@ Both readings come from the same device within the same appointment, so there is
 
 ## Why we photograph it
 
-Because "we cleaned it thoroughly" is a claim, and a reading is evidence. If a service is worth $299, it is worth showing you the change rather than describing it.
+Because "we cleaned it thoroughly" is a claim, and a reading is evidence. If a service is worth $249, it is worth showing you the change rather than describing it.
 
 You get both readings on request, on every appointment. We do not charge for it, and it is not an upsell — UV-C post-treatment is included in the base mattress price for every customer, at every property.
 

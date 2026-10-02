@@ -43,7 +43,7 @@ export default function ContactPage() {
         <h2 className="font-sans font-bold text-lg text-navy mb-2">Before you call, it helps to know</h2>
         <ul className="space-y-2 text-mist text-[15px]">
           <li>• How many mattresses, and the size of each one.</li>
-          <li>• Whether there is pet, urine, or blood history — that determines which add-on applies.</li>
+          <li>• Whether there is pet, urine, or blood history — ordinary accidents are included; severe contamination is quoted separately.</li>
           <li>• Your town, so we can confirm the service radius.</li>
           <li>• If you have an active bed bug infestation, mention it — we will refer you to pest control rather than book you.</li>
         </ul>

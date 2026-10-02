@@ -3,37 +3,27 @@
 import { useState } from "react";
 
 /**
- * Estimate calculator wired to the canonical Sleep Sanitation price list:
- * first mattress $299 any size; additional $179 (twin or smaller) / $199 (full, queen, king);
- * add-ons per mattress: underside +$70, urine/blood +$105, pet odor +$50;
- * 72-hour bedroom CO2 testing $199 standalone.
+ * Estimate calculator wired to the canonical price list:
+ * first mattress $249 (Fall 2026 promotion: $199); additional full/queen/king $199;
+ * additional kids bed (twin/full) $149; underside/full-surface treatment +$50–$75 per mattress.
+ * Dry-vapor sanitation, UV-C / HEPA protocol, normal stains, pet odor and ordinary urine
+ * accidents are included. Severe, biohazard or extensive contamination is a custom surcharge.
  */
+const FIRST = 249;
+const PROMO_FIRST = 199;
+
 export function QuoteCalc() {
   const [mattresses, setMattresses] = useState(2);
-  const [smallAdditional, setSmallAdditional] = useState(false);
+  const [kidsAdditional, setKidsAdditional] = useState(false);
   const [underside, setUnderside] = useState(false);
-  const [urine, setUrine] = useState(false);
-  const [pet, setPet] = useState(false);
-  const [co2, setCo2] = useState(false);
 
-  const perAdditional = smallAdditional ? 179 : 199;
+  const perAdditional = kidsAdditional ? 149 : 199;
   const additionalCount = Math.max(0, mattresses - 1);
-  const base = 299 + additionalCount * perAdditional;
-  const perMattressAddons = (underside ? 70 : 0) + (urine ? 105 : 0) + (pet ? 50 : 0);
-  const addons = perMattressAddons * mattresses;
-  const total = base + addons + (co2 ? 199 : 0);
-
-  const toggle = (label: string, checked: boolean, onChange: (v: boolean) => void) => (
-    <label className="flex items-center gap-3 rounded-xl border-2 border-line bg-white px-4 py-3 cursor-pointer hover:border-teal/60 transition-colors">
-      <input
-        type="checkbox"
-        checked={checked}
-        onChange={(e) => onChange(e.target.checked)}
-        className="w-5 h-5 accent-teal-deep"
-      />
-      <span className="font-semibold text-[15px] leading-snug">{label}</span>
-    </label>
-  );
+  const regularBase = FIRST + additionalCount * perAdditional;
+  const promoBase = PROMO_FIRST + additionalCount * perAdditional;
+  const undersideLow = underside ? 50 * mattresses : 0;
+  const undersideHigh = underside ? 75 * mattresses : 0;
+  const fmt = (lo: number, hi: number) => (lo === hi ? `$${lo.toLocaleString()}` : `$${lo.toLocaleString()}–$${hi.toLocaleString()}`);
 
   return (
     <div className="bg-ice border border-line rounded-2xl p-6 text-navy shadow-lg">
@@ -70,10 +60,10 @@ export function QuoteCalc() {
             <button
               type="button"
               role="radio"
-              aria-checked={!smallAdditional}
-              onClick={() => setSmallAdditional(false)}
+              aria-checked={!kidsAdditional}
+              onClick={() => setKidsAdditional(false)}
               className={`w-full flex justify-between items-center rounded-xl border-2 px-4 py-3 text-left font-semibold min-h-11 transition-colors ${
-                !smallAdditional ? "border-teal bg-white shadow-sm" : "border-line bg-white/50 hover:border-teal/60"
+                !kidsAdditional ? "border-teal bg-white shadow-sm" : "border-line bg-white/50 hover:border-teal/60"
               }`}
             >
               <span>Full, Queen or King</span>
@@ -82,31 +72,39 @@ export function QuoteCalc() {
             <button
               type="button"
               role="radio"
-              aria-checked={smallAdditional}
-              onClick={() => setSmallAdditional(true)}
+              aria-checked={kidsAdditional}
+              onClick={() => setKidsAdditional(true)}
               className={`w-full flex justify-between items-center rounded-xl border-2 px-4 py-3 text-left font-semibold min-h-11 transition-colors ${
-                smallAdditional ? "border-teal bg-white shadow-sm" : "border-line bg-white/50 hover:border-teal/60"
+                kidsAdditional ? "border-teal bg-white shadow-sm" : "border-line bg-white/50 hover:border-teal/60"
               }`}
             >
-              <span>Twin or smaller</span>
-              <span className="text-sm text-mist font-normal">$179 each</span>
+              <span>Kids bed (twin or full)</span>
+              <span className="text-sm text-mist font-normal">$149 each</span>
             </button>
           </div>
         </div>
       )}
 
-      <p className="block text-sm font-semibold mb-2">Add-ons (applied to each mattress)</p>
-      <div className="space-y-2 mb-3">
-        {toggle("Underside sanitation  +$70", underside, setUnderside)}
-        {toggle("Urine / blood treatment  +$105", urine, setUrine)}
-        {toggle("Pet odor treatment  +$50", pet, setPet)}
-      </div>
-      {toggle("Add 72-hour bedroom CO₂ testing  +$199", co2, setCo2)}
+      <label className="flex items-center gap-3 rounded-xl border-2 border-line bg-white px-4 py-3 cursor-pointer hover:border-teal/60 transition-colors">
+        <input
+          type="checkbox"
+          checked={underside}
+          onChange={(e) => setUnderside(e.target.checked)}
+          className="w-5 h-5 accent-teal-deep"
+        />
+        <span className="font-semibold text-[15px] leading-snug">Underside / full-surface treatment  +$50–$75 each</span>
+      </label>
+      <p className="text-xs text-mist mt-2">
+        Included at no charge: dry-vapor sanitation, UV-C / HEPA protocol, normal stains, pet odor and ordinary urine accidents.
+      </p>
 
       <div className="border-t border-line mt-5 pt-4">
         <ul className="text-sm text-mist space-y-1 mb-3">
           <li className="flex justify-between gap-3">
-            <span>First mattress</span><span className="tabular-nums">$299</span>
+            <span>First mattress</span><span className="tabular-nums">${FIRST}</span>
+          </li>
+          <li className="flex justify-between gap-3 font-semibold text-teal-deep">
+            <span>Fall 2026 promotion</span><span className="tabular-nums">−${FIRST - PROMO_FIRST}</span>
           </li>
           {additionalCount > 0 && (
             <li className="flex justify-between gap-3">
@@ -116,28 +114,25 @@ export function QuoteCalc() {
               <span className="tabular-nums">${additionalCount * perAdditional}</span>
             </li>
           )}
-          {perMattressAddons > 0 && (
+          {underside && (
             <li className="flex justify-between gap-3">
-              <span>
-                Add-ons × {mattresses}{" "}
-                <span className="text-mist/80">(${perMattressAddons}/mattress)</span>
-              </span>
-              <span className="tabular-nums">${addons}</span>
+              <span>Underside × {mattresses}</span>
+              <span className="tabular-nums">{fmt(undersideLow, undersideHigh)}</span>
             </li>
-          )}
-          {co2 && (
-            <li className="flex justify-between gap-3"><span>CO₂ testing</span><span className="tabular-nums">$199</span></li>
           )}
         </ul>
         <div className="flex items-baseline justify-between gap-3">
           <p className="text-sm text-mist font-medium leading-snug">Estimated total:</p>
-          <p className="font-display text-4xl font-semibold text-teal-deep tabular-nums" suppressHydrationWarning>
-            ${total.toLocaleString()}
+          <p className="font-display text-4xl font-extrabold text-teal-deep tabular-nums" suppressHydrationWarning>
+            {fmt(promoBase + undersideLow, promoBase + undersideHigh)}
           </p>
         </div>
+        <p className="text-xs text-mist text-right mt-1" suppressHydrationWarning>
+          Regular price {fmt(regularBase + undersideLow, regularBase + undersideHigh)}
+        </p>
       </div>
       <p className="text-xs text-mist mt-3">
-        Final pricing is confirmed at the time of service. Estimate only — no deposit required.
+        Estimate only. We confirm your final price when you book. Severe, biohazard or extensive contamination is quoted as a custom surcharge.
       </p>
     </div>
   );
