@@ -25,7 +25,7 @@ Then it needs an honest read on the result. Noses adapt within minutes to a room
 
 ## What we check before we leave
 
-We run a moisture test after the job to check that the treated zones aren't left wet. We don't swab or lab-test for residue.
+We run a moisture test after the job to check that the treated zones aren't left wet.
 
 We also run the full dry vapor steam pass across the sleep surface afterwards and finish with UV-C light treatment, because a mattress with a fluid history can have an ordinary accumulation problem on top of the specific one.
 
