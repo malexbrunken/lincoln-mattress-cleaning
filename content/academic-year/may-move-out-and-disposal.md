@@ -1,8 +1,8 @@
 ---
-title: "May Move-Out in Lincoln: Keep, Store or Get Rid of a Mattress"
-h1: "May move-out: keep, store or get rid of a mattress"
+title: "May Move-Out in Lincoln: Keep, Move or Get Rid of a Mattress"
+h1: "May move-out: keep, move or get rid of a mattress"
 description: "UNL halls closed at 1 PM on May 9, 2026. Lincoln's North 48th Street transfer station, what to do with a bed you're keeping, and why not the curb."
-answer: "Decide what happens to the mattress before move-out week. Lancaster County residents can take one to the City of Lincoln's North 48th Street transfer station with a covered, secured load. If you are keeping it, clean it and let it dry fully before it goes into storage."
+answer: "Decide what happens to the mattress before move-out week. Lancaster County residents can take one to the City of Lincoln's North 48th Street transfer station with a covered, secured load. If you are keeping it, have it cleaned before you move it."
 order: 4
 published: "2026-10-03"
 updated: "2026-10-03"
@@ -16,7 +16,7 @@ timeline:
     source: "UNL Move Out"
     url: "https://moveout.unl.edu/"
   - when: "May 9 to August 23, 2026"
-    what: "UNL summer break. A bed you are keeping can be cleaned before it goes into storage, and empty apartments can be cleaned between leases."
+    what: "UNL summer break. Empty apartments can be cleaned between leases."
     source: "UNL Housing"
     url: "https://housing.unl.edu/break-information/"
 faq:
@@ -39,9 +39,6 @@ sources:
   - name: "City of Lincoln: Solid Waste Management"
     url: "https://www.lincoln.ne.gov/City/Departments/LTU/Utilities/Solid-Waste-Management"
     checked: "2026-10-03"
-  - name: "Nebraska Extension: Bed Bugs"
-    url: "https://hles.unl.edu/insects/urban-entomology/bed-bugs/"
-    checked: "2026-10-03"
   - name: "UNL Student Legal Services: What about Bed Bugs?"
     url: "https://studentlegalservices.unl.edu/what-about-bed-bugs/"
     checked: "2026-10-03"
@@ -50,6 +47,8 @@ changelog:
     note: "First published, using the May 2026 move-out schedule."
   - date: "2026-10-03"
     note: "Hooded-meter row now cites the UNL Parking and Transit announcement."
+  - date: "2026-10-03"
+    note: "Narrowed the keeping-it guidance to cleaning before move-out."
 ---
 
 ## Getting rid of it
@@ -67,16 +66,15 @@ All from the City of Lincoln's Solid Waste Management page. Lincoln's hazardous 
 
 ## Move-out week checklist
 
-1. **Decide by May 1.** In 2026 UNL's halls closed at 1 pm on May 9, so May 1 leaves a week to book a haul or a cleaning: keep, store, give to someone you know, or get rid of it.
+1. **Decide by May 1.** In 2026 UNL's halls closed at 1 pm on May 9, so May 1 leaves a week to book a haul or a cleaning: keep, move, give to someone you know, or get rid of it.
 2. **Strap and cover the load.** The city requires covered and secured loads.
 3. **Plan around campus.** In 2026 UNL hooded meters near the halls for one-hour loading and held commencement at Pinnacle Bank Arena on May 8 and 9.
 4. **Keep cardboard out of the landfill load,** because UNL's move-out page notes corrugated cardboard isn't allowed in city landfills.
 
 ## Keeping it for next year
 
-- **Clean it before storage, not after.** UNL's 2026 summer break ran from Saturday, May 9 through Sunday, August 23. That is fifteen weeks in a closed unit for a stained or damp bed.
-- **Let it dry completely** before it is wrapped or stacked; Sleep Sanitation covers drying in [how quickly a treated mattress should dry](https://sleepsanitation.com/knowledge-center/mattress-moisture-heat-drying-construction/how-quickly-should-a-treated-mattress-dry).
-- **Don't use storage to starve bugs.** Nebraska Extension says bed bugs can survive up to a year without a blood meal, and putting items in storage to starve them out is not recommended.
+- **Have it cleaned at the apartment before move-out.**
+- **Let it dry completely** before it is moved; Sleep Sanitation covers drying in [how quickly a treated mattress should dry](https://sleepsanitation.com/knowledge-center/mattress-moisture-heat-drying-construction/how-quickly-should-a-treated-mattress-dry).
 - **Check your care label and warranty terms** before any cleaning.
 
 ## What we don't know
