@@ -1,6 +1,7 @@
 ---
 title: "Lincoln Short-Term Rental Rules: License, Guest Cap and Taxes"
 h1: "Lincoln's short-term rental rules: the license, the guest cap and the taxes"
+label: "City license and taxes"
 description: "Lincoln requires a $250 annual license per short-term rental unit, caps guests at two per sleeping area, and charges a 4% occupation tax Airbnb doesn't collect."
 answer: "A Lincoln short-term rental needs a $250 license from Building and Safety for each unit, renewed every year, before it's advertised. Guests are capped at two per sleeping area, up to 12. On top of the state sales and lodging taxes Airbnb collects, the city's 4% short-term rental occupation tax is yours to file by the 25th of each month through Host Compliance; the city's FAQ says Airbnb and VRBO don't collect it."
 order: 2
@@ -74,7 +75,7 @@ The city points to Lincoln Municipal Code chapter 5.39 and sections 27.02.200, 2
 
 Lincoln's cap is two people per sleeping area, up to 12 per rental. A sleeping area is habitable space with at least one working emergency escape and rescue opening, an egress window. Bedrooms count, other rooms can count if they meet egress standards, and hallways, kitchens and bathrooms never do. A three-bedroom house with egress windows in each bedroom tops out at six guests, however many beds you put in it, unless another room also meets the egress standard.
 
-We quote a multi-bed Lincoln turnover per mattress: the first at $249, or $199 under the Fall 2026 first-mattress offer, then $199 for each additional full, queen or king and $149 for a kids bed.
+Prices for several mattresses in one visit are on our [pricing page](/pricing).
 
 ## The taxes, stacked
 
@@ -92,7 +93,7 @@ Sales and lodging taxes are figured on $520, the rent plus the city tax. Lancast
 
 Airbnb's Nebraska tax page says it collects state and local sales tax and state and county lodging tax on stays of 29 nights and shorter, including cleaning and guest fees. It has a separate entry for Omaha's city tax and none for Lincoln, which matches the city FAQ's statement that Airbnb doesn't collect Lincoln's 4%. City filings are due by the 25th for the previous month. Interest runs at 1% per month on late payments, and the Finance Director may add a 10% penalty. The tax took effect November 1, 2021.
 
-One change is coming. The Treasurer's Occupation Taxes page says information on new short-term rental software is "coming soon," so the Host Compliance filing step may change. This page isn't legal or tax advice; the City Treasurer's line is (402) 441-7457.
+One change is coming. The Treasurer's Occupation Taxes page says information on new short-term rental software is "coming soon," so the Host Compliance filing step may change. This page isn't legal or tax advice; the City Treasurer's line is (402) 441-7457. This page is general information, not medical advice; before any cleaning, check each mattress's care label and warranty terms.
 
 ## What we don't know
 

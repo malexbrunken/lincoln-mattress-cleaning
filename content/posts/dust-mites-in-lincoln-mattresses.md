@@ -19,7 +19,7 @@ From October through April, a Lincoln bedroom is a closed room with the heat run
 
 ## What actually helps
 
-**Heat.** Steam heat killed bed mites in published tests: Glass and Needham (2004) reported 100 percent mortality of D. farinae in carpet and mattress samples treated with a 96°C steam cleaner, and Colloff (1995) found no live mites in steam-treated, laboratory-seeded carpet squares over four months. Those were study conditions with those machines, not a measurement in your bedroom. Sleep Sanitation's Knowledge Center covers both studies in detail in [Does steam kill dust mites in mattresses?](https://sleepsanitation.com/knowledge-center/mattress-dust-mites-allergens/does-steam-kill-dust-mites-in-mattresses)
+**Heat.** Steam heat killed bed mites in published tests: Glass and Needham (2004) reported 100 percent mortality of D. farinae in carpet and mattress samples treated with a 96°C steam cleaner, and Colloff (1995) found no live mites in steam-treated, mite-seeded carpet squares over four months. Those were study conditions with those machines, not a measurement in your bedroom. Sleep Sanitation's Knowledge Center covers both studies in detail in [Does steam kill dust mites in mattresses?](https://sleepsanitation.com/knowledge-center/mattress-dust-mites-allergens/does-steam-kill-dust-mites-in-mattresses)
 
 **HEPA vacuuming.** Dead mites and droppings stay in the fabric until something lifts them, which is why every visit includes it.
 

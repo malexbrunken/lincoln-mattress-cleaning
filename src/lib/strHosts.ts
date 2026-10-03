@@ -12,6 +12,7 @@ export type HostPage = {
   slug: string;
   title: string;
   h1: string;
+  label: string;
   description: string;
   answer: string;
   order: number;

@@ -28,11 +28,11 @@ const faqs = [
   },
   {
     q: "Can you clean an organic or natural mattress, like an Avocado?",
-    a: "Yes — and those are among the builds where dry vapor steam matters most, because natural and organic constructions are the least tolerant of a soaked foam core. One of the jobs in our gallery is an Avocado mattress with its foam topper.",
+    a: "Yes — and those are among the builds where dry vapor steam matters most, because natural and organic constructions are the least tolerant of a soaked foam core.",
   },
   {
     q: "Does your steam kill bed mites?",
-    a: "Yes. Bed mites (house dust mites) die from heat, and published steam tests measured it: Glass and Needham (2004) reported 100 percent mortality of D. farinae in carpet and mattress samples treated with a 96°C steam cleaner, and Colloff (1995) found no live mites in steam-treated, laboratory-seeded carpet squares over four months. Those were study conditions, not a measurement in your bedroom. Mites can return from the room around the bed, so an encasement and lower bedroom humidity help afterwards. This is general information, not medical advice.",
+    a: "Yes. Bed mites (house dust mites) die from heat, and published steam tests measured it: Glass and Needham (2004) reported 100 percent mortality of D. farinae in carpet and mattress samples treated with a 96°C steam cleaner, and Colloff (1995) found no live mites in steam-treated, mite-seeded carpet squares over four months. Those were study conditions, not a measurement in your bedroom. Mites can return from the room around the bed, so an encasement and lower bedroom humidity help afterwards. This is general information, not medical advice.",
   },
   {
     q: "My dog peed on the mattress. Is it salvageable?",

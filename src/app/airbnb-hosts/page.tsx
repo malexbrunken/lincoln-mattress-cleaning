@@ -49,7 +49,7 @@ export default function AirbnbHostsHub() {
       <p className="text-xl text-navy mb-10 max-w-4xl">
         A Lincoln listing answers to two rulebooks: the city&apos;s license and tax rules, and Airbnb&apos;s ground rules for hosts.
         Add seven Husker home weekends in 2026 and a weekday-only cleaning schedule, and the mattress becomes a timing problem.
-        These five guides quote Lincoln&apos;s and Airbnb&apos;s rules, cite where each came from, and say where our cleaning fits.
+        These five guides quote the city&apos;s and Airbnb&apos;s rules, cite where each came from, and say where our cleaning fits.
       </p>
 
       <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_360px]">
@@ -57,7 +57,7 @@ export default function AirbnbHostsHub() {
           <ul className="grid gap-4 sm:grid-cols-2">
             {pages.map((p) => (
               <li key={p.slug} className="bg-white border border-line rounded-2xl p-5 shadow-sm">
-                <Link href={`/airbnb-hosts/${p.slug}`} className="text-navy font-semibold text-lg underline decoration-teal">{p.h1}</Link>
+                <Link href={`/airbnb-hosts/${p.slug}`} className="text-navy font-semibold text-lg underline decoration-teal">{p.label}</Link>
                 <p className="text-mist mt-2 text-base">{p.description}</p>
               </li>
             ))}
@@ -76,18 +76,17 @@ export default function AirbnbHostsHub() {
               </table>
             </div>
             <p>
-              Today, October 3, is Homecoming against Maryland at 3:00 PM CDT. The schedule is from huskers.com as of today; check it again
-              before you price a weekend. Our <Link href="/airbnb-hosts/husker-game-weekends">game weekend guide</Link> shows where the
-              three-week gaps after October 10 and October 31.
+              Homecoming against Maryland was October 3, 2026, at 3:00 PM CDT. The schedule is from huskers.com as checked October 3, 2026;
+              check it again before you price a weekend. Our <Link href="/airbnb-hosts/husker-game-weekends">game weekend guide</Link> shows
+              how to use the three-week gaps after October 10 and October 31.
             </p>
             <h2>What stays the same at every Lincoln listing</h2>
             <p>
-              A game weekend, a tax question or a guest accident doesn&apos;t change the visit. A Lincoln host pays $249 for the first
+              A game weekend, a tax question or a guest accident doesn&apos;t change the visit. A host pays $249 for the first
               mattress, or $199 while the Fall 2026 first-mattress offer runs; each added full, queen or king is $199 and a kids bed $149,
-              with a surcharge only for a severe or biohazard case. We record every mattress on an inspection form (material, special care
-              notes, urine or odor observations) and take three readings: moisture after the job, CO2 in the bedroom, and the dust mite
-              sensor on our UV-C vacuum. Crews wear gloves and shoe booties and disinfect equipment between Lincoln jobs. We work Monday to
-              Friday, 9am to 6pm, and answer Lincoln hosts&apos; calls and texts on weekends.
+              with a surcharge only for a severe or biohazard case, and we work Monday to Friday, 9am to 6pm, answering calls and texts on weekends. We record every mattress on an inspection form (material, special care
+              notes, urine or odor observations) and run three checks: moisture after the job, CO2 in the bedroom, and the dust mite
+              sensor on our UV-C vacuum. Crews wear gloves and shoe booties and disinfect equipment between jobs. Check each mattress&apos;s care label and warranty terms before booking. This page is general information, not medical advice.
             </p>
             <p>
               Hosts who want the science behind a turnover, from steam temperature to bed mites (house dust mites), can read the{" "}
@@ -98,7 +97,6 @@ export default function AirbnbHostsHub() {
             <ul>
               <li>What will replace Host Compliance. The City Treasurer says new short-term rental software is coming soon.</li>
               <li>Kickoff times for October 31 and November 21.</li>
-              <li>How Airbnb will rule on a given Lincoln complaint or reimbursement request.</li>
             </ul>
             <h2>Sources</h2>
             <ul>

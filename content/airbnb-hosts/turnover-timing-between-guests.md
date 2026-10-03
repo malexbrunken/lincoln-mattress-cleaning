@@ -1,16 +1,16 @@
 ---
 title: "Mattress Cleaning Between Guests: Lincoln Turnover Timing"
 h1: "Fitting a mattress cleaning into a Lincoln guest turnover"
-description: "Our Lincoln hours are weekdays, so a Sunday checkout pairs with a Monday cleaning. How Lincoln hosts can use preparation time and plan drying by season."
-answer: "In Lincoln, book the cleaning for the first weekday after a checkout and keep the bed unmade until it's dry to the touch. Our Lincoln hours are Monday to Friday, 9am to 6pm, so a Sunday checkout pairs with a Monday appointment and, with two nights of Airbnb preparation time, a Tuesday check-in. In our field experience, not a published measurement, a dry vapor treatment is dry to the touch the same day in a ventilated room, and Lincoln's fall air is far drier than its July air."
+label: "Turnover timing"
+description: "A weekday cleaning after a Sunday checkout, Airbnb preparation time, NOAA's Lincoln dew points by month and the city's guest cap, for hosts planning turnovers."
+answer: "Book the cleaning for the first weekday after checkout and leave the bed unmade until it's dry to the touch; we run a moisture test after the job. NOAA's normals for Lincoln put July's average dew point near 65°F and October's near 40°F, so summer turnovers need more margin."
 order: 4
 published: "2026-10-03"
 updated: "2026-10-03"
 checklist:
-  - "Pick a weekday Lincoln slot; we don't work turnovers on Saturday or Sunday."
-  - "After a Sunday checkout in Lincoln, two nights of Airbnb preparation time leaves Monday for us and Tuesday for the next guest."
-  - "In a humid Lincoln July, plan a longer drying gap than in October or November."
-  - "Book a second Lincoln listing within 7 days of the first cleaning to get it at $199."
+  - "Have your emergency contact, who must be able to reach the property within 45 minutes, strip the bed at checkout."
+  - "From June through August, when Lincoln's average dew point sits in the 60s, plan extra drying margin."
+  - "Count sleeping areas against the city's cap of two guests each, up to 12."
 rules:
   - quote: "The options are none, 1 night before and after each reservation, or 2 nights before and after each reservation."
     source: "Airbnb Resource Center"
@@ -19,12 +19,12 @@ rules:
     source: "City of Lincoln Planning"
     url: "https://www.lincoln.ne.gov/City/Departments/PDS/Planning/Development-Review/Short-Term-Rentals"
 faq:
-  - q: "How long does a Lincoln mattress need before the next guest?"
-    a: "Until it's dry to the touch. In our field experience that's the same day in a ventilated room, but it isn't a published measurement, and a humid Lincoln summer week slows it down. We run a moisture test after the job."
-  - q: "Can you come the same day as a Lincoln checkout?"
-    a: "On a weekday between 9am and 6pm, if we have an opening. If the next Lincoln guest arrives that evening, the bed may not be dry yet, so preparation time is the cushion."
-  - q: "What does a multi-bed Lincoln turnover cost?"
-    a: "$249 for the first mattress, or $199 under the Fall 2026 first-mattress offer. Each additional full, queen or king is $199, a kids bed is $149, and cleaning the underside adds $50 to $75."
+  - q: "How long does the mattress need before the next guest?"
+    a: "Until it's dry to the touch, confirmed by a moisture test after the job; we don't publish a drying time. It depends on the mattress, the room and the air, and NOAA's normals show Lincoln's July air holding far more moisture than its October air."
+  - q: "Is the cleaning fee I charge guests taxed in Lincoln?"
+    a: "The city's tax FAQ says the 4% occupation tax applies to the rental rate and any charges subject to Nebraska's lodging tax, and Airbnb's Nebraska tax page says the lodging tax it collects is figured on the listing price including cleaning fees. The FAQ also says Airbnb and VRBO don't collect the city tax; the Treasurer's line is (402) 441-7457."
+  - q: "Who strips the bed if I live out of town?"
+    a: "Lincoln's license application already asks for an emergency contact who can reach the property within 45 minutes, the natural person to strip the bed and open the bedroom at checkout."
 sources:
   - name: "NOAA NCEI: U.S. Hourly Climate Normals 1991 to 2020, Lincoln Municipal Airport (USW00014939)"
     url: "https://www.ncei.noaa.gov/data/normals-hourly/1991-2020/access/USW00014939.csv"
@@ -41,6 +41,12 @@ sources:
   - name: "City of Lincoln Building and Safety: Short Term Rentals"
     url: "https://www.lincoln.ne.gov/City/Departments/PDS/Building-Safety/Residential-Rental-and-Property-Maintenance/Short-Term-Rentals"
     checked: "2026-10-03"
+  - name: "City of Lincoln: Short-Term Rental Occupation Tax FAQ (rev. 05/2023, PDF)"
+    url: "https://www.lincoln.ne.gov/files/sharedassets/public/v/2/finance/city-clerk/faqs-short-term-rental-occupation-tax-rev-05.23.pdf"
+    checked: "2026-10-03"
+  - name: "Airbnb: Occupancy tax collection and remittance in Nebraska"
+    url: "https://www.airbnb.com/help/article/2625"
+    checked: "2026-10-03"
   - name: "Nebraska Huskers: 2026 Football Schedule"
     url: "https://huskers.com/sports/football/schedule"
     checked: "2026-10-03"
@@ -49,34 +55,23 @@ changelog:
     note: "First published with Airbnb's preparation time options and NOAA's Lincoln dew point normals."
 ---
 
-## A Lincoln turnover, day by day
+## Checkout to check-in
 
-Lincoln's ordinance defines a short-term rental as a stay of no more than 30 consecutive days, so a busy Lincoln listing can turn over several times a week. Here is how our weekday schedule fits a Sunday checkout in Lincoln:
+Lincoln's license application asks every host for an emergency contact who can reach the property within 45 minutes, which makes that person the obvious one to strip the bed and open the bedroom when a guest leaves. We clean on weekdays, so after a Sunday checkout the visit is Monday, with a moisture test after the job, and the bed is made for a Tuesday check-in.
 
-| Day | What happens in a Lincoln turnover | Who |
-| --- | --- | --- |
-| Sunday | Lincoln guest checks out; strip the bed and open the bedroom | Host |
-| Monday, 9am to 6pm | Our Lincoln appointment, then a moisture test after the job | Us |
-| Monday night | Bed stays bare until dry to the touch; Airbnb blocks the night | Host |
-| Tuesday | Make the bed for the next Lincoln check-in | Host |
-
-Airbnb's preparation time setting offers none, one or two nights before and after each reservation. By our reading, one night after a Sunday checkout blocks only Sunday night, and two nights also blocks Monday night, the night a Monday cleaning in Lincoln needs. Airbnb's help text gives a 48-hour window between guests as an example. Check your Lincoln listing's calendar after changing the setting.
+Airbnb's preparation time setting offers none, one or two nights before and after each reservation, and its help text gives a 48-hour window between guests as an example. By our reading, two nights after a Sunday checkout blocks Monday night, the night the bed needs to stay bare.
 
 ## Lincoln's air, month by month
 
-Drying depends on the room's air, and Lincoln's air swings hard by season. NOAA's 1991 to 2020 hourly normals for Lincoln Municipal Airport put the average dew point near 65°F in July and 64°F in August, down to about 54°F in September, 40°F in October and 29°F in November. A Husker-season turnover in Lincoln happens in much drier air than a July one.
+NOAA's 1991 to 2020 hourly normals for Lincoln Municipal Airport put the average dew point near 65°F in July and 64°F in August, down to about 54°F in September, 40°F in October and 29°F in November. A July turnover deserves the two-night setting and a fan in the room; an October or November one has more margin. Sleep Sanitation's guide to [how long a mattress should take to dry after cleaning](https://sleepsanitation.com/knowledge-center/mattress-cleaning-methods/how-long-should-a-mattress-take-to-dry-after-cleaning) covers the materials side.
 
-So a July turnover in Lincoln deserves the two-night setting and a fan in the room, while an October one has more margin. We still leave every Lincoln bed to reach dry to the touch, with no cool, damp feel when pressed, before it's made. Sleep Sanitation's guide to [how long a mattress should take to dry after cleaning](https://sleepsanitation.com/knowledge-center/mattress-cleaning-methods/how-long-should-a-mattress-take-to-dry-after-cleaning) covers the materials side, which doesn't change by city.
+## Beds, guests and the cleaning fee
 
-## Why weekdays in Lincoln
+The city caps a short-term rental at two guests per sleeping area, up to 12, and counts only rooms with an egress window as sleeping areas. A listing at the cap has six sleeping areas to turn over. Lincoln's tax FAQ says the 4% occupation tax covers the rental rate plus any charges subject to Nebraska's lodging tax, and Airbnb's Nebraska tax page says it figures lodging tax on the listing price including cleaning fees; the City Treasurer, (402) 441-7457, can confirm how that applies to your listing, and our [pricing page](/pricing) lists what several beds cost in one visit.
 
-Our Lincoln hours are Monday to Friday, 9am to 6pm, and we return calls and texts on Saturday and Sunday. On a Husker home weekend, the cleaning goes on the Thursday before or the Monday after; our [game weekend guide](/airbnb-hosts/husker-game-weekends) lists the October 10, October 31 and November 21 dates.
-
-## What a Lincoln host gets at the visit
-
-Between two Lincoln stays you get a written record: one inspection form per mattress, noting the material, special care notes and any urine or odor observations, which helps if the next guest raises a question. Three readings go with it, and only three: the moisture test after the job, the bedroom CO2 test, and the dust mite sensor built into our UV-C vacuum. The crew wears gloves and shoe booties, and the gear has been disinfected since its last stop. Before booking, look at each mattress's care label and warranty terms.
+On a Memorial Stadium weekend, the cleaning goes on the Thursday before or the Monday after; our [game weekend guide](/airbnb-hosts/husker-game-weekends) has the October 10, October 31 and November 21 dates. Check each mattress's care label and warranty terms before booking. This page is general information, not medical advice.
 
 ## What we don't know
 
-- **Your exact drying time in Lincoln.** It depends on the mattress, the room and that day's weather; ours is field guidance, not a measurement.
-- **How Airbnb's other Lincoln calendar settings interact with preparation time.** Check the Lincoln listing's calendar after any change.
+- **How the airport's air compares with your bedroom's.** NOAA's normals come from Lincoln Municipal Airport, and a closed room can differ.
+- **The city's new tax software.** The Treasurer says it's coming soon; Host Compliance is the filing system until then.

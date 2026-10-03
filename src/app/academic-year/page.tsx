@@ -40,7 +40,7 @@ const faq = [
   },
   {
     q: "When should an off-campus mattress be cleaned?",
-    a: "When the apartment is empty, before furniture moves in, so the mattress can dry with the room clear. If your lease turns over in May or August, book for the gap between tenants, and check the care label and warranty terms first.",
+    a: "When the apartment is empty, before furniture moves in, so the mattress can dry with the room clear. If you move in during May or August, book before your furniture arrives, and check the care label and warranty terms first.",
   },
 ];
 

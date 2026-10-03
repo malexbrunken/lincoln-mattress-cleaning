@@ -3,10 +3,10 @@ title: "Mattress Cleaning for UNL Student Apartments and Rentals"
 date: "2026-09-01"
 category: "Rentals"
 author: "Matthew Brunken"
-excerpt: "A used rental mattress around UNL arrives with a history no one documented. Here is what parents and property managers should know about sanitizing between tenants rather than replacing, what it costs, and how to schedule it between lease periods."
+excerpt: "A furnished mattress in an off-campus apartment near UNL arrives with a history no one documented. What parents and students should know about sanitizing it rather than replacing it, what it costs, and when to book."
 ---
 
-The mattress in an off-campus Lincoln apartment is usually the one surface that never gets replaced between leases. Everything else turns over — paint, carpet, appliances, sometimes the whole kitchen — and the mattress stays, absorbing each occupant's eight hours a night for years.
+In a furnished off-campus Lincoln apartment, the mattress can be the oldest thing in the unit, with years of earlier occupants' nights in it.
 
 ## The problem, stated plainly
 
@@ -16,30 +16,29 @@ Sanitizing the mattress is the answer in many cases — and it is the answer for
 
 ## What we do for student housing
 
-Our [rental and turnover service](/services/rental-property-mattress-turnover) is built around the timetable that matters:
+For a student apartment, the visit is built around move-in:
 
-- **Block scheduling between lease periods**, including same-day unit turns.
-- **Multi-mattress pricing** — $249 first mattress, $149–$199 each additional in the same visit, so a whole unit or a whole block of units costs less than separate appointments.
-- **Per-mattress documentation** of what was treated, which property managers need for their records.
+- **Multi-mattress pricing** — $249 first mattress, $149–$199 each additional in the same visit, so an apartment with several beds costs less than separate appointments.
+- **Per-mattress documentation** on our inspection form: material, special care notes, and urine or odor observations.
 - **Ordinary urine accidents included**, and underside/full-surface treatment available where the history requires it, priced openly at +$50–$75 per mattress.
 
-For a parent setting up one apartment, it is usually a single visit. For a manager turning over a building, we build the visit around the window you have.
+For a parent setting up one apartment, it is a single visit.
 
 ## Timing
 
-The best window is after the old tenant is out and before the new one moves in — the mattress is accessible, the unit is empty, and there is no furniture to work around. If that window is tight, call with the dates and the number of units and we will tell you honestly whether we can hit it.
+The best window is before your student's furniture arrives: the mattress is accessible and there is nothing to work around. If the move-in dates are tight, call with them and we will tell you honestly whether we can make it.
 
 For parents, doing it at move-in weekend is normal. We can work around boxes, and we do not need much space — the equipment is contained.
 
-## What we will tell you about the units that should not be treated
+## What we will tell you about mattresses that should not be treated
 
-At turnover, some mattresses should be replaced rather than treated, and for a property manager that is genuinely useful information:
+Some mattresses should be replaced rather than treated, and we will say so:
 
 - A core that has been saturated repeatedly for years.
 - Structural failure — collapsed edges, torn covers, springs through the surface.
 - An active bed bug infestation, which is a pest-control problem and not a cleaning one. We will refer you rather than book you.
 
-We flag those per unit instead of treating everything and sending one invoice. If your goal is a defensible standard at turnover, knowing which units fail that standard is the more valuable output.
+We flag those per mattress instead of treating everything and sending one invoice.
 
 ## For parents, specifically
 
@@ -50,7 +49,6 @@ We flag those per unit instead of treating everything and sending one invoice. I
 
 ## Related
 
-- [Rental and turnover mattress service](/services/rental-property-mattress-turnover)
 - [Mattress cleaning in Lincoln: the complete guide](/guides/mattress-cleaning-lincoln-ne-guide)
 - [Resetting a used mattress before the first night](/guides/used-mattress-first-night-reset)
 - [Published pricing](/guides/mattress-cleaning-cost-lincoln)

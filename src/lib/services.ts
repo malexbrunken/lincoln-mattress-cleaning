@@ -107,7 +107,7 @@ export const services: Service[] = [
     ],
     detail: [
       "Bed mites are the animals scientists call house dust mites. They feed on shed skin flakes and do well in warm, humid bedding, so a mattress that is slept on every night suits them.",
-      "Heat is what kills them. In published steam tests, Glass and Needham (2004) reported 100 percent mortality of D. farinae after treating carpet and mattress samples with a 96°C steam cleaner, and Colloff and colleagues (1995) found no live mites in steam-treated, laboratory-seeded carpet squares over four months. Those were study conditions with those machines, not a measurement taken in your bedroom.",
+      "Heat is what kills them. In published steam tests, Glass and Needham (2004) reported 100 percent mortality of D. farinae after treating carpet and mattress samples with a 96°C steam cleaner, and Colloff and colleagues (1995) found no live mites in steam-treated, mite-seeded carpet squares over four months. Those were study conditions with those machines, not a measurement taken in your bedroom.",
       "Killing mites and removing what they leave behind are two separate jobs. Dead mites and droppings stay in the fabric until they are lifted, which is why every visit includes HEPA vacuuming. Sleep Sanitation’s Knowledge Center reviews both studies in its article on whether steam kills dust mites in mattresses.",
       "Mites come back from the room around the bed, so what happens after the visit matters too. An encasement fitted afterwards and lower bedroom humidity both help, and we will talk through both. We make no allergy, asthma or medical claim. This is general information, not medical advice.",
     ],
@@ -237,7 +237,6 @@ export const services: Service[] = [
       "For Lincoln landlords, property managers, and the families furnishing a student apartment: mattress sanitation scheduled between lease periods, documented per unit.",
     includes: [
       "Multi-mattress pricing: $249 first, $149–$199 each additional",
-      "Scheduling between lease periods, including same-day unit turns",
       "Per-mattress documentation of what was treated",
       "Ordinary urine accidents included; underside treatment available where history requires it",
       "Volume scheduling for multi-unit properties and student housing",

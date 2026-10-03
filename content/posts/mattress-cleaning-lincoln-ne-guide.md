@@ -72,7 +72,6 @@ We also do not clean carpets, upholstery, or vehicles. Mattresses are the whole 
 - **Semi-annually**, if anyone in the house has significant allergy sensitivity or you have pets.
 - **Before the first night on a used mattress** — including inherited, handed-down, and rental mattresses. See [resetting a used mattress before the first night](/guides/used-mattress-first-night-reset).
 - **After a pet or child accident**, which gets the [urine and odor treatment](/services/pet-urine-odor-treatment), included for ordinary accidents.
-- **At rental turnover**, between lease periods, with documentation per unit.
 - **When a specific room smells musty** and you cannot find the source. It is usually the mattress.
 
 ## Where we work

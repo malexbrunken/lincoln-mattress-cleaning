@@ -1,17 +1,17 @@
 ---
 title: "Guest Accidents and Odor on a Lincoln Airbnb Mattress"
 h1: "Guest accidents and odor on a Lincoln rental mattress"
-description: "A Lincoln host's timeline after a guest accident: Airbnb's host damage protection lists guest stains, pet accidents and smoke odor, filed within 14 days."
-answer: "Strip the bed, blot without soaking, and book the next weekday Lincoln appointment before the next guest. If you want Airbnb to cover a Lincoln cleaning bill, its host damage protection lists extra cleaning for guest stains, pet accidents and smoke odor, filed within 14 days of that guest's checkout, and pays only costs above the cleaning fee you charged. Our Lincoln invoice and inspection form, which records urine or odor observations, are records you can keep; Airbnb decides what evidence it accepts."
+label: "Guest accidents and odor"
+description: "After a guest accident in Lincoln: who strips the bed, a dated Husker weekend example, Airbnb's 14-day damage claim window, and where a ruined mattress goes."
+answer: "Have your emergency contact strip the bed and blot without soaking, then book the next weekday cleaning before the next guest. Airbnb's host damage protection lists extra cleaning for guest stains, pet accidents and smoke odor, filed within 14 days of checkout, and pays only costs above the cleaning fee you charged."
 order: 5
 published: "2026-10-03"
 updated: "2026-10-03"
 checklist:
-  - "Note the Lincoln guest's checkout date; Airbnb's 14-day clock starts there."
-  - "Have your Lincoln emergency contact strip and bag the bedding the same day."
-  - "Book the next weekday Lincoln appointment and tell us it's a guest accident."
-  - "Keep our Lincoln invoice and inspection form with your Resolution Center request."
-  - "If the mattress can't be saved, take it to Lincoln's North 48th Street facility."
+  - "Note the checkout date; Airbnb's 14-day clock starts there."
+  - "Ask your emergency contact, who the city requires to be within 45 minutes, to strip and bag the bedding that day."
+  - "Book the next weekday cleaning and tell us it's a guest accident."
+  - "If the mattress can't be saved, Lancaster County residents can take it to the North 48th Street facility."
 rules:
   - quote: "Extra cleaning costs required to remove stains left by guests (or their invitees) or pet accidents, smoke odor removal, or when required due to additional unapproved guests"
     source: "Airbnb host damage protection"
@@ -20,12 +20,12 @@ rules:
     source: "City of Lincoln, North 48th Street"
     url: "https://www.lincoln.ne.gov/City/Departments/LTU/Utilities/Solid-Waste-Management"
 faq:
-  - q: "Is a Lincoln guest's urine accident included in your price?"
-    a: "Yes, for an ordinary one. A single guest urine accident, a pet odor or a normal stain is part of the first-mattress price ($249, or $199 on the Fall 2026 offer). If what we find at the Lincoln listing is a severe or biohazard case, a surcharge applies, and you hear the number before any work starts."
-  - q: "Will Airbnb reimburse my Lincoln cleaning bill?"
+  - q: "Is an ordinary guest accident included in your price?"
+    a: "Yes. Normal stains, pet odor and ordinary urine accidents are part of the regular price on our pricing page, and a severe or biohazard case carries a surcharge that you hear before any work starts."
+  - q: "Will Airbnb reimburse my cleaning bill?"
     a: "We can't promise that. Airbnb says host damage protection isn't insurance, reviews each request, and pays only cleaning costs above the cleaning fee you charged."
-  - q: "Who handles a guest accident on a Lincoln game weekend?"
-    a: "Lincoln's license application asks for an emergency contact who can reach the property within 45 minutes. That person can strip the bed the same day, and our Lincoln crew takes it from the next weekday."
+  - q: "Who handles a guest accident on a game weekend?"
+    a: "Lincoln's license application asks for an emergency contact who can reach the property within 45 minutes; that person can strip the bed on Sunday, and we take it from Monday."
 sources:
   - name: "Airbnb: Host damage protection"
     url: "https://www.airbnb.com/help/article/279"
@@ -47,31 +47,27 @@ changelog:
     note: "First published from Airbnb's host damage protection page and 2026 terms as they read on October 3, 2026."
 ---
 
-## A Lincoln accident, on the calendar
+## An accident after a Husker weekend, dated
 
-Take a real 2026 date. Nebraska hosts Indiana at Memorial Stadium on Saturday, October 10, at 11:00 AM CDT. Say the guest checks out Sunday, October 11, and you find a urine stain:
+Nebraska hosts Indiana at Memorial Stadium on Saturday, October 10, 2026, at 11:00 AM CDT. Say the guest checks out Sunday, October 11, and you find a urine stain:
 
 | When | Step | Who |
 | --- | --- | --- |
-| Sunday, October 11 | Strip and bag the bedding; blot, don't soak; leave the Lincoln bedroom open | Your Lincoln emergency contact |
-| Monday, October 12 | Our Lincoln appointment, 9am to 6pm, with a moisture test after the job | Us |
-| By Sunday, October 25 | File in Airbnb's Resolution Center, 14 days after the October 11 checkout | You |
+| Sunday, October 11 | Strip, bag and blot | Your emergency contact |
+| Monday, October 12 | Cleaning and moisture test | Us |
+| By Sunday, October 25 | File in Airbnb's Resolution Center, within 14 days of the October 11 checkout | You |
 
-Lincoln's license application already asks for an emergency contact who can reach the property within 45 minutes, which makes that person the natural first responder. Ask your Lincoln contact not to pour water, vinegar or cleaner into the mattress before we arrive; liquid pushed deeper is harder to get back out. Sleep Sanitation explains [why urine odor can come back after a mattress dries](https://sleepsanitation.com/knowledge-center/mattress-accidents/why-urine-odor-comes-back-after-a-mattress-dries).
+Lincoln's license application already asks for an emergency contact who can reach the property within 45 minutes, which makes that person the first responder on a game weekend. Sleep Sanitation explains [why urine odor can come back after a mattress dries](https://sleepsanitation.com/knowledge-center/mattress-accidents/why-urine-odor-comes-back-after-a-mattress-dries).
 
 ## What Airbnb says it covers
 
-For that Lincoln stain, Airbnb's host damage protection page lists extra cleaning to remove stains left by guests or pet accidents, and smoke odor removal, as covered, while normal checkout cleaning such as laundry, dishes or trash removal is not. Once a Lincoln host files, the guest has 24 hours to respond, and if they don't pay, Airbnb Support reviews the request. The 2026 terms say only cleaning costs above the cleaning fees you charged are paid, and they list receipts, bills or invoices among the documents Airbnb wants. For a Lincoln listing, our invoice is one of those documents; Airbnb makes the decision.
+Airbnb's host damage protection page, which sets the 14-day filing window, lists extra cleaning to remove stains left by guests or pet accidents, and smoke odor removal, as covered; normal checkout cleaning, such as laundry, dishes or trash removal, is not. After you file, the guest has 24 hours to respond. The 2026 terms pay only cleaning costs above the cleaning fees you charged and list receipts, bills or invoices among the documents Airbnb wants, so keep our invoice and inspection form with the request. Check the care label and warranty terms before booking. This page is general information, not medical advice.
 
-## What our Lincoln visit records
+## When the mattress can't be saved
 
-Each Lincoln job is documented on an inspection form covering the mattress material, special care notes and urine or odor observations. After each Lincoln job we run a moisture test; our other checks are a bedroom CO2 test and the built-in dust mite sensor on our UV-C vacuum, and we run no other test. Technicians wear gloves and shoe booties, and our equipment is disinfected between Lincoln jobs. Normal stains, pet odor and ordinary urine accidents are in the $249 Lincoln price, or $199 under the Fall 2026 offer; a severe or biohazard case carries a surcharge, quoted before we start. Read the care label and warranty terms before booking. This page is general information, not medical advice.
-
-## When a Lincoln mattress can't be saved
-
-Lancaster County residents take household loads to the North 48th Street Solid Waste Management Facility, 5101 North 48th Street, phone 402-441-8104, with the load covered and secured; the Bluff Road site at 6001 Bluff Road serves Lancaster County refuse haulers. Our [May move-out guide](/academic-year/may-move-out-and-disposal) has the rest of the Lincoln disposal steps.
+Lancaster County residents take household loads to the North 48th Street Solid Waste Management Facility, 5101 North 48th Street, phone 402-441-8104, with the load covered and secured; the Bluff Road site at 6001 Bluff Road serves refuse haulers. Our [May move-out guide](/academic-year/may-move-out-and-disposal) has the rest of the city's disposal steps.
 
 ## What we don't know
 
-- **Whether Airbnb will approve a Lincoln host's request.** Airbnb reviews each one, and some are decided automatically with an option for human review.
-- **Evidence rules beyond the 2026 terms.** Read the current terms before you file a Lincoln claim.
+- **Airbnb's decision on your request**, which it reviews case by case.
+- **Kickoff times for October 31 and November 21**, which Nebraska still lists as TBA, for planning the next game weekends.

@@ -31,7 +31,6 @@ Book regardless of when you last had it done if any of these apply:
 - **A mattress that is new to you.** Inherited, handed down, bought used, or a rental. Reset it before the first night rather than after six months of sleeping on someone else's history. See [resetting a used mattress](/guides/used-mattress-first-night-reset).
 - **After an illness in the household**, particularly anything with a long recovery.
 - **After a bed bug infestation has been professionally treated.** The live insects are the pest controller's job; cleaning the mattress afterwards is ours.
-- **Rental turnover.** Book between lease periods, before the next occupant moves in.
 - **Persistent morning congestion** that eases when you sleep elsewhere. That pattern points at the bedroom, and the mattress is the highest-contact surface in it.
 
 ## What you can do between appointments

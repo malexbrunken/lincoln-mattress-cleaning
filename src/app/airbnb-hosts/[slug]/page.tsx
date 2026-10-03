@@ -52,7 +52,7 @@ export default async function HostPageRoute({ params }: PageProps<"/airbnb-hosts
         <Link href="/" className="text-teal hover:underline">Home</Link> ›{" "}
         <Link href="/airbnb-hosts" className="text-teal hover:underline">Lincoln Airbnb hosts</Link>
       </nav>
-      <p className="kicker text-teal-deep mb-2">For Lincoln Airbnb and short-term rental hosts</p>
+      <p className="kicker text-teal-deep mb-2">Lincoln host guides</p>
       <h1 className="text-4xl font-semibold text-navy mb-4 leading-tight max-w-4xl">{p.h1}</h1>
       <p className="text-xl text-navy mb-8 max-w-4xl">{p.answer}</p>
       <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_340px]">
