@@ -1,6 +1,7 @@
 ---
 title: "Mattress Cleaning in Lincoln, NE: The Complete Guide"
 date: "2026-09-15"
+updated: "2026-10-03"
 category: "Lincoln Guide"
 author: "Matthew Brunken"
 excerpt: "How mattress cleaning actually works in Lincoln, Nebraska — why wet extraction struggles with foam, what dry vapor steam does differently, what it costs, when to replace instead of clean, and why Nebraska bedrooms make this an annual job."

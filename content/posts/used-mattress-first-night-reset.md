@@ -1,6 +1,7 @@
 ---
 title: "Resetting a Used Mattress Before Your First Night on It"
 date: "2026-08-28"
+updated: "2026-10-03"
 category: "Mattress Care"
 author: "Matthew Brunken"
 excerpt: "Inherited, handed down, bought used, or a rental — a used mattress comes with a history nobody documented. Here is what to look at, what a professional reset covers, and when replacement is the smarter call."

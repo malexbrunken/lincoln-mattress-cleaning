@@ -1,6 +1,7 @@
 ---
 title: "What Mattress Cleaning Costs in Lincoln, NE"
 date: "2026-09-08"
+updated: "2026-10-03"
 category: "Pricing"
 author: "Matthew Brunken"
 excerpt: "Published mattress cleaning prices for Lincoln: $249 for the first mattress any size ($199 during our Fall 2026 promotion), $149–$199 for each additional, with stains, pet odor and ordinary urine accidents included."

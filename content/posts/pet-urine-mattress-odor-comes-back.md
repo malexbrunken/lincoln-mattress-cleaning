@@ -1,6 +1,7 @@
 ---
 title: "Pet Urine Mattress Odor: Why It Comes Back"
 date: "2026-09-03"
+updated: "2026-10-03"
 category: "Odor & Stains"
 author: "Matthew Brunken"
 excerpt: "Urine odor returns because uric acid salts crystallize in the fiber and reactivate with humidity. Here is why masking fails, what enzymatic breakdown does, and how ATP testing verifies the result instead of guessing."

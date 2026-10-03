@@ -1,6 +1,7 @@
 ---
 title: "Steam vs. Wet Extraction: What Actually Differs in Mattress Cleaning"
 date: "2026-09-12"
+updated: "2026-10-03"
 category: "Method"
 author: "Matthew Brunken"
 excerpt: "Dry vapor steam and hot-water extraction are both called mattress cleaning. They differ in moisture, drying time, what reaches the foam core, and what gets left behind. Here is the comparison, including when extraction is genuinely the right call."
