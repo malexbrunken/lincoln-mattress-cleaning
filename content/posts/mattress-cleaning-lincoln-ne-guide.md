@@ -1,6 +1,7 @@
 ---
 title: "Mattress Cleaning in Lincoln, NE: The Complete Guide"
 date: "2026-09-15"
+updated: "2026-10-03"
 category: "Lincoln Guide"
 author: "Matthew Brunken"
 excerpt: "How mattress cleaning actually works in Lincoln, Nebraska — why wet extraction struggles with foam, what dry vapor steam does differently, what it costs, when to replace instead of clean, and why Nebraska bedrooms make this an annual job."
@@ -10,13 +11,13 @@ This is the guide we would give a Lincoln neighbor who asked what we actually do
 
 ## The short version
 
-Most mattress cleaning in Lincoln is a carpet cleaner with an upholstery wand. It injects hot water into a surface that stays warm and humid for eight hours a night, leaves detergent residue in the foam, and needs a day or two to dry. Our process runs the other direction: **dry vapor steam at roughly 5% moisture content**, applied at temperatures high enough to do the sanitation work, leaving the foam core essentially dry and nothing behind for you to sleep against.
+Ask any mattress cleaner what equipment touches the mattress and how much water goes in. Our answer: **dry vapor steam**, and our Vapor Clean machines are rated by their maker at 5 to 6% moisture content, applied at temperatures high enough to do the sanitation work, leaving the foam core essentially dry and nothing behind for you to sleep against.
 
 The first mattress is $249, any size, with normal stains, pet odor and ordinary urine accidents included ($199 during our Fall 2026 promotion). Each additional mattress in the same visit is $149–$199. Everything is published on our [pricing page](/pricing).
 
 ## Why Nebraska bedrooms make this an annual job
 
-A bedroom sealed against a Nebraska January is a warm, humid box that two adults exhale into for eight hours a night. That is precisely the environment dust-mite populations and odor compounds favor. From October through April, most Lincoln bedrooms are closed rooms with the heat on and the windows shut, and the mattress absorbs that pattern every single night.
+A bedroom sealed against a Nebraska January is a warm, humid box that two adults exhale into for eight hours a night. That is precisely the environment bed mites (house dust mites) and odor compounds favor. From October through April, most Lincoln bedrooms are closed rooms with the heat on and the windows shut, and the mattress absorbs that pattern every single night.
 
 By spring, the accumulation is real — and the symptoms get blamed on the season. Morning congestion, a musty note in the bedding, an unexplained stuffiness in one specific room. If it is worst in the bedroom and best after a night away from home, the room is a more useful suspect than the calendar.
 
@@ -29,8 +30,8 @@ Our protocol runs five phases in order: inspect, isolate, sanitize, detail, rese
 - **Inspect.** We read the law tag first. Memory foam, latex, hybrid, innerspring, and organic builds react differently to heat and pass speed. A technician who does not check the tag is guessing about your $2,000 mattress.
 - **Isolate.** Boot covers, staged tools, protected floor. The room is contained before anything is applied.
 - **Sanitize.** Dry vapor steam in overlapping passes across the sleep surface at calibrated temperature.
-- **Detail.** Seams, quilting channels, piping, and side edges — the zones a wet upholstery wand slides over rather than treats.
-- **Reset.** UV-C post-treatment, a surface reading, tools broken down in order, and the room left as we found it.
+- **Detail.** Seams, quilting channels, piping, and side edges, each with its own passes.
+- **Reset.** UV-C light treatment, tools broken down in order, and the room left as we found it.
 
 The [full service page](/services/mattress-sanitization) covers what is included at each phase. If you want the method comparison specifically, read [dry vapor steam vs. wet extraction](/services/dry-vapor-steam-vs-extraction).
 
@@ -40,14 +41,14 @@ The [full service page](/services/mattress-sanitization) covers what is included
 | --- | --- |
 | **Mattress Sanitation** | **$249 first mattress** |
 | Dry-vapor sanitation | Included |
-| UV-C / HEPA protocol | Included |
+| UV-C light treatment and HEPA vacuuming | Included |
 | Normal stain treatment | Included |
 | Pet odor treatment | Included |
 | **Ordinary urine accident treatment** | **Included** |
 | Additional full/queen/king mattress | $199 |
 | Additional kids bed (twin/full) | $149 |
 | Underside/full-surface treatment | +$50–$75 |
-| Severe/biohazard/extensive contamination | Custom surcharge |
+| Severe or biohazard contamination | Custom surcharge |
 
 **Fall 2026 promotion:** your first mattress is $199 (regular $249). Any additional cleaning scheduled within 7 days of your first service is also $199, so you can see our work first.
 
@@ -59,8 +60,8 @@ A useful way to think about it: maintained as part of an annual standard, a thor
 
 Three things we will tell you plainly, including on the phone before you book:
 
-- **We do not treat allergies or asthma.** We reduce a concentrated allergen reservoir in the room where you spend a third of your life. That is a real benefit and it is not medical treatment. Anyone claiming otherwise is overselling.
-- **We are not pest control.** If you have an active bed bug infestation, you need a licensed pest professional. We handle the mattress afterwards — the cast debris and allergen reservoirs that make it unpleasant to sleep on — which is a different job. More on that in [bed bug debris and allergen reduction](/services/bed-bug-allergen-reduction).
+- **We do not treat allergies or asthma.** Our steam kills bed mites and HEPA vacuuming lifts the debris. That is cleaning, not medical treatment, and this is general information, not medical advice. Anyone claiming otherwise is overselling.
+- **We are not pest control.** If you have an active bed bug infestation, you need a licensed pest professional. We clean the mattress afterwards, once the infestation has been professionally resolved.
 - **Some mattresses should be replaced.** A core that has been saturated repeatedly for years, a failing cover, structural damage — surface treatment cannot fix those, and we would rather tell you before you pay than after. Where the honest answer is replacement, we say so.
 
 We also do not clean carpets, upholstery, or vehicles. Mattresses are the whole business, which is the only reason the protocol is this specific.
@@ -76,12 +77,12 @@ We also do not clean carpets, upholstery, or vehicles. Mattresses are the whole 
 
 ## Where we work
 
-Lincoln and the surrounding 40 miles. Start with the [Lincoln service page](/service-areas/lincoln) for neighborhood detail, or see [Waverly](/service-areas/waverly), [Hickman](/service-areas/hickman), [Seward](/service-areas/seward), [Crete](/service-areas/crete), [Wahoo](/service-areas/wahoo), [Ashland](/service-areas/ashland), and [Gretna](/service-areas/gretna).
+Lincoln, Lancaster County and nearby towns. Start with the [Lincoln service page](/service-areas/lincoln), or see [Lancaster County](/service-areas/lancaster-county), [Seward and Crete](/service-areas/seward-and-crete) and [Wahoo and Ashland](/service-areas/wahoo-and-ashland).
 
 ## Related reading
 
 - [How often should you clean a mattress?](/guides/how-often-should-you-clean-a-mattress)
-- [Dust mites in Lincoln mattresses: what actually helps](/guides/dust-mites-in-lincoln-mattresses)
+- [Bed mites in Lincoln mattresses: what actually helps](/guides/dust-mites-in-lincoln-mattresses)
 - [What mattress cleaning costs in Lincoln](/guides/mattress-cleaning-cost-lincoln)
 - [Pet urine odor: why it comes back](/guides/pet-urine-mattress-odor-comes-back)
 

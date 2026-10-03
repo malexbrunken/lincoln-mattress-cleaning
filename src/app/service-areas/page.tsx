@@ -7,7 +7,7 @@ import { ServiceAreaJsonLd } from "@/components/JsonLd";
 export const metadata: Metadata = {
   title: "Service Areas | Mattress Cleaning Around Lincoln, NE",
   description:
-    "Mattress cleaning and sanitization across Lincoln and the surrounding 40 miles: Waverly, Hickman, Bennet, Eagle, Palmyra, Firth, Malcolm, Raymond, Seward, Crete, Wahoo, Ashland, and Gretna.",
+    "Mattress cleaning and sanitization across Lincoln and Lancaster County (Waverly, Hickman, Bennet, Firth, Malcolm, Raymond), plus Eagle, Palmyra, Seward, Crete, Wahoo and Ashland.",
 };
 
 export default function ServiceAreasPage() {
@@ -19,7 +19,7 @@ export default function ServiceAreasPage() {
       </nav>
       <h1 className="text-4xl md:text-5xl font-semibold text-navy mb-4">Where We Work</h1>
       <p className="text-lg text-mist mb-4 max-w-3xl">
-        We are a mobile service — we bring the steam system, the UV-C vacuum, and the containment setup to your
+        We are a mobile service — we bring the steam system, the HEPA and UV-C vacuum, and the containment setup to your
         bedroom. {site.serviceRadius}
       </p>
       <p className="text-lg text-mist mb-10 max-w-3xl">

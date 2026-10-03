@@ -1,12 +1,18 @@
+/**
+ * Service-area pages. Fourteen thin town pages were merged into these four on 2026-10-03;
+ * the old /service-areas/<town> URLs 301 here (see next.config.ts).
+ */
 export type Town = {
   slug: string;
   name: string;
   county: string;
   headline: string;
   intro: string;
-  local: string[]; // genuinely local paragraphs
-  anchors: string[]; // neighborhoods / landmarks we actually work around
-  nearby: string[]; // slugs of adjacent towns for internal links
+  local: string[];
+  /** Towns covered on this page, with their county and a short note. */
+  places?: { name: string; county: string; note: string }[];
+  anchors: string[];
+  nearby: string[];
 };
 
 export const towns: Town[] = [
@@ -16,203 +22,97 @@ export const towns: Town[] = [
     county: "Lancaster County",
     headline: "Mattress Cleaning in Lincoln, NE",
     intro:
-      "Lincoln is our home market. We treat mattresses across the city — from historic Near South and Everett homes to new builds in the Highlands and student apartments around UNL.",
+      "Lincoln is our home market. We treat mattresses across the city, from older homes in Near South and Everett to newer builds in the Highlands and student apartments around UNL.",
     local: [
-      "Lincoln mattresses carry two things house-cleaners never address: winter. A bedroom closed up against a Nebraska January sits humid and warm every night, which is exactly the condition dust mites and odors favor. By March, most people are sleeping on a reservoir that has been quietly building since fall, and morning congestion gets blamed on the season rather than the mattress.",
-      "The other is history. Lincoln has a large student rental stock, and around UNL a mattress often has years of back-to-back occupants behind it — previous tenants whose habits nobody documented. Parents furnishing an off-campus apartment are usually the ones who call, and sanitizing the inherited mattress is a fraction of the cost of replacing it.",
-      "We work in the historic districts too. Near South and Everett homes hold antique beds and delicate constructions where a low-moisture process matters more than a fast one; we read the law tag before touching anything and adjust for older materials. In the Highlands and south Lincoln new builds, it is usually the opposite problem — brand new mattresses that have never been professionally treated, often in bedrooms with ventilation nobody has measured.",
+      "Two things shape a Lincoln mattress appointment. The first is winter: a bedroom closed up against a Nebraska January holds warmth and the moisture a sleeper gives off every night, and bed mites (house dust mites) do well in warm, humid bedding. Low-moisture dry vapor steam is the right tool there, because it treats with heat without adding a soaking.",
+      "The second is turnover. Lincoln has a large student rental market, and around UNL a mattress can pass through several tenants with no record of its history. Our Lincoln academic-year guide covers the timing.",
+      "Older homes can hold older beds with constructions that need care, so we read the law tag and care label before anything touches the mattress and set steam temperature and pass speed for what it is made of.",
     ],
     anchors: [
-      "Near South & Everett historic districts",
+      "Near South & Everett",
       "University Place, Bethany, College View",
       "Havelock & northeast Lincoln",
       "The Highlands & southwest Lincoln",
-      "Downtown & Haymarket condos",
+      "Downtown & Haymarket",
     ],
-    nearby: ["waverly", "hickman", "bennet", "eagle", "malcolm"],
+    nearby: ["lancaster-county", "seward-and-crete", "wahoo-and-ashland"],
   },
   {
-    slug: "waverly",
-    name: "Waverly",
-    county: "Lancaster County",
-    headline: "Mattress Cleaning in Waverly, NE",
+    slug: "lancaster-county",
+    name: "Lancaster County",
+    county: "Lancaster County, plus Eagle (Cass) and Palmyra (Otoe)",
+    headline: "Mattress Cleaning Across Lancaster County, NE",
     intro:
-      "Waverly is a short drive east of Lincoln and well inside our normal radius. Newer builds, family homes, and plenty of bedrooms that have never had a professional mattress appointment.",
+      "Outside the city limits we cover the Lancaster County towns on regular Lincoln routes, plus Eagle and Palmyra just over the county line.",
     local: [
-      "Waverly's newer subdivisions mean newer mattresses — often still under manufacturer warranty. That matters, because improper heat or moisture is one of the few ways a homeowner can void a mattress warranty. Our low-moisture process is specifically designed to be warranty-safe, and we read the law tag on every mattress before we treat it.",
-      "Households here tend to run larger: multiple kids, a guest room, sometimes an inherited mattress from grandparents. Multi-mattress visits are the norm for us in Waverly, and the second and subsequent mattresses are priced at $149–$199 rather than the full first-mattress rate.",
+      "Small-town and acreage appointments run on the same schedule as Lincoln, at the same published price. Travel inside this area is included. If you are on an acreage, tell us the road when you book so we can plan the route.",
+      "A guest-room mattress, a hand-me-down for a grandchild or a bed moved between houses can be decades old. We inspect first and say so if a mattress is past the point where cleaning makes sense, before you pay for anything.",
     ],
-    anchors: ["Waverly schools corridor", "Newer subdivisions on the east side", "Close to I-80 at the Waverly interchange"],
-    nearby: ["lincoln", "eagle", "palmyra", "bennet"],
+    places: [
+      { name: "Waverly", county: "Lancaster", note: "East of Lincoln near the I-80 interchange." },
+      { name: "Hickman", county: "Lancaster", note: "South of Lincoln, plus acreages toward Roca and Panama." },
+      { name: "Bennet", county: "Lancaster", note: "Southeast of Lincoln, in the Palmyra school district." },
+      { name: "Firth", county: "Lancaster", note: "South of Lincoln, in the Norris school district." },
+      { name: "Malcolm", county: "Lancaster", note: "Northwest of Lincoln, toward the Branched Oak corridor." },
+      { name: "Raymond", county: "Lancaster", note: "North of Lincoln near Branched Oak Lake." },
+      { name: "Eagle", county: "Cass", note: "East of Lincoln on Highway 34." },
+      { name: "Palmyra", county: "Otoe", note: "Southeast of Lincoln along Highway 2." },
+    ],
+    anchors: ["Lancaster County towns and acreages", "Eagle and Palmyra, just outside the county line"],
+    nearby: ["lincoln", "seward-and-crete", "wahoo-and-ashland"],
   },
   {
-    slug: "hickman",
-    name: "Hickman",
-    county: "Lancaster County",
-    headline: "Mattress Cleaning in Hickman, NE",
+    slug: "seward-and-crete",
+    name: "Seward & Crete",
+    county: "Seward County and Saline County",
+    headline: "Mattress Cleaning in Seward and Crete, NE",
     intro:
-      "Hickman is one of the fastest-growing towns south of Lincoln. We service family homes here, including multi-bedroom houses where every mattress has been in nightly use for years.",
+      "Seward, northwest of Lincoln, and Crete, south of Lincoln on Highway 103, are both college towns inside our regular radius.",
     local: [
-      "Hickman homes tend to be newer and tight — well-insulated, which is good for heating bills and less good for bedroom air exchange. A sealed bedroom is where overnight humidity and CO₂ accumulate, and where dust-mite populations get comfortable. Mattress sanitation plus our 72-hour CO₂ testing is a natural pairing for newer Hickman builds.",
-      "Well water is common on the acreages around Hickman. Hard water affects linen and bedding more than the mattress itself, but it is worth knowing that we use no water-based chemistry in the mattress process at all — dry vapor steam and nothing left behind.",
+      "Both towns have student housing around a campus: Concordia University in Seward and Doane University in Crete. That brings the same turnover pattern we see around UNL, with mattresses that pass between tenants and arrive with no history. For a used or rental mattress, inspect for bed bugs first; if you see signs, call a licensed pest professional before booking any cleaning.",
+      "Family homes in both counties range from new builds at the edge of town to old farmhouses. Every bed gets the same inspection first, with steam temperature and pass speed set for the materials on its label.",
     ],
-    anchors: ["Hickman city center & school corridor", "Acreage properties toward Roca and Panama"],
-    nearby: ["lincoln", "bennet", "firth", "crete"],
+    places: [
+      { name: "Seward", county: "Seward", note: "Concordia University area, the courthouse square and rural Seward County." },
+      { name: "Crete", county: "Saline", note: "Doane University area and the Highway 103 corridor." },
+    ],
+    anchors: ["Concordia University area, Seward", "Doane University area, Crete"],
+    nearby: ["lincoln", "lancaster-county", "wahoo-and-ashland"],
   },
   {
-    slug: "bennet",
-    name: "Bennet",
-    county: "Lancaster County",
-    headline: "Mattress Cleaning in Bennet, NE",
-    intro:
-      "Bennet sits southeast of Lincoln in the Palmyra school district. Family homes, acreages, and a fair number of mattresses that have been handed down rather than replaced.",
-    local: [
-      "Handed-down mattresses are common in the Bennet area — from a kid who moved out, from a parent who downsized, from a guest room that became a nursery. A used mattress arrives with a full history and no documentation, which is exactly the case where a sanitary reset before the first night makes sense.",
-      "We treat organic and natural-material mattresses here too, including Avocado builds. Those constructions are among the most sensitive to moisture, and dry vapor steam is the safer method for them — one of our documented jobs in the gallery is an Avocado mattress with its foam topper.",
-    ],
-    anchors: ["Bennet city center", "Acreages along the Palmyra corridor"],
-    nearby: ["lincoln", "palmyra", "hickman", "eagle"],
-  },
-  {
-    slug: "eagle",
-    name: "Eagle",
-    county: "Cass County",
-    headline: "Mattress Cleaning in Eagle, NE",
-    intro:
-      "Eagle is a growing bedroom community east of Lincoln on the way to the Omaha metro. We cover it on regular Lincoln routes.",
-    local: [
-      "Eagle households frequently include pets, which is the single most common reason a mattress gets treated here — not tears or wear, but dander and odor compounds that have migrated from the bedding or the bedding-adjacent room into the mattress surface over years.",
-      "Pet odor treatment is included in every appointment, and it targets dander oils rather than covering them with fragrance. Ordinary urine accidents are included too, treated enzymatically with ATP verification; only severe or extensive contamination carries a custom surcharge.",
-    ],
-    anchors: ["Eagle city center", "Properties toward Palmyra and Elmwood"],
-    nearby: ["lincoln", "palmyra", "bennet", "waverly"],
-  },
-  {
-    slug: "palmyra",
-    name: "Palmyra",
-    county: "Otoe County",
-    headline: "Mattress Cleaning in Palmyra, NE",
-    intro:
-      "Palmyra sits southeast of Lincoln along Highway 2. Rural properties, older homes, and mattresses that have served a long time.",
-    local: [
-      "In rural Palmyra, mattresses often stay in the house much longer than they would in the city — a mattress becomes a spare-room mattress, then a grandkid mattress, and quietly accumulates a decade of use along the way. That is precisely the accumulation our process is built to address.",
-      "Older mattresses deserve an honest assessment before treatment. If the construction is failing or the core is saturated, we will tell you it should be replaced rather than take your money for a surface treatment that cannot help.",
-    ],
-    anchors: ["Palmyra town center", "Rural properties along Highway 2"],
-    nearby: ["bennet", "eagle", "lincoln", "hickman"],
-  },
-  {
-    slug: "firth",
-    name: "Firth",
-    county: "Lancaster County",
-    headline: "Mattress Cleaning in Firth, NE",
-    intro:
-      "Firth is just south of Lincoln in the Norris school district. We cover it on our southern Lancaster County routes.",
-    local: [
-      "Firth is farm country, and farm households run dustier than most. Agricultural dust settles into everything and mattresses are no exception, particularly in bedrooms with windows that get opened to working fields. A once-a-year mattress sanitation appointment is the practical way to handle that here.",
-      "Families in the Firth area also tend to keep more beds in service — kids, guests, grandkids. Multi-mattress pricing makes treating the whole house in one visit the sensible option.",
-    ],
-    anchors: ["Firth town center", "Norris district properties"],
-    nearby: ["hickman", "crete", "lincoln", "bennet"],
-  },
-  {
-    slug: "malcolm",
-    name: "Malcolm",
-    county: "Lancaster County",
-    headline: "Mattress Cleaning in Malcolm, NE",
-    intro:
-      "Malcolm is northwest of Lincoln. We service the town and the surrounding acreages on the same schedule we run through Lincoln's northwest side.",
-    local: [
-      "Northwest Lancaster County is acreage and farmstead territory, and the housing stock mixes newer builds with homes that have been in a family for generations. Both show up in our schedule — new mattresses under warranty and old mattresses that need an honest verdict on whether they are worth treating.",
-      "Humidity is the recurring issue in this part of the county. Older farmhouses and their bedrooms often run damp and closed up through the winter, which is the ideal environment for dust-mite populations and musty odor. Heat without added moisture is the right tool.",
-    ],
-    anchors: ["Malcolm town center", "Acreages along Highway 34 and the Branched Oak corridor"],
-    nearby: ["lincoln", "raymond", "seward", "waverly"],
-  },
-  {
-    slug: "raymond",
-    name: "Raymond",
-    county: "Lancaster County",
-    headline: "Mattress Cleaning in Raymond, NE",
-    intro:
-      "Raymond sits just north of Lincoln near Branched Oak Lake. We cover the town and the surrounding rural properties.",
-    local: [
-      "Around Branched Oak, a lot of mattresses serve both a main house and a weekend place — cabins and lake properties that sit unused for stretches of the year. Closed-up mattresses in unheated buildings are a genuine mold-and-odor problem, and the honest answer for a badly compromised cabin mattress is often replacement.",
-      "Where the mattress is salvageable, heat-based treatment without added moisture is the correct process — added water in an unheated building will not dry and will make the problem worse.",
-    ],
-    anchors: ["Raymond town center", "Branched Oak Lake area", "Rural properties along Highway 79"],
-    nearby: ["malcolm", "lincoln", "seward", "waverly"],
-  },
-  {
-    slug: "seward",
-    name: "Seward",
-    county: "Seward County",
-    headline: "Mattress Cleaning in Seward, NE",
-    intro:
-      "Seward is about 25 minutes northwest of Lincoln and inside our regular radius. Concordia student housing and family homes across the county seat.",
-    local: [
-      "Seward has its own student-housing pattern around Concordia, and the same dynamic applies as around UNL: mattresses that pass between tenants with no service history. It is the case where a sanitary reset before move-in is both cheaper and faster than sourcing a replacement.",
-      "Seward County homes run the full range — new builds on the edge of town and century-old farmhouses with bedrooms that have never had a mattress service. Both get the same protocol, with the temperature and pass speed matched to what the law tag says the mattress is made of.",
-    ],
-    anchors: ["Seward town center & courthouse square", "Concordia University area", "Rural Seward County properties"],
-    nearby: ["malcolm", "lincoln", "crete", "raymond"],
-  },
-  {
-    slug: "crete",
-    name: "Crete",
-    county: "Saline County",
-    headline: "Mattress Cleaning in Crete, NE",
-    intro:
-      "Crete is south of Lincoln on Highway 103 and within our normal service radius. We service family homes and Doane-area student housing.",
-    local: [
-      "Doane's presence means Crete has a steady supply of rental mattresses with anonymous histories, and the turnover pattern that comes with them. Treating a mattress between tenants costs a fraction of replacement and solves the actual problem — the accumulated biological load of people the new occupant never met.",
-      "In Saline County generally, we see a lot of multi-generation mattresses: a bed that has moved from one house to another within a family three times. Those are the appointments where we most often have to give a candid verdict, because a mattress three moves and fifteen years in is sometimes genuinely at the end of its service life.",
-    ],
-    anchors: ["Crete town center", "Doane University area", "Highway 103 corridor"],
-    nearby: ["firth", "hickman", "lincoln", "seward"],
-  },
-  {
-    slug: "wahoo",
-    name: "Wahoo",
+    slug: "wahoo-and-ashland",
+    name: "Wahoo & Ashland",
     county: "Saunders County",
-    headline: "Mattress Cleaning in Wahoo, NE",
+    headline: "Mattress Cleaning in Wahoo and Ashland, NE",
     intro:
-      "Wahoo is north of Lincoln on Highway 77 and inside our radius. Family homes, acreages, and Saunders County farms.",
+      "Wahoo, north of Lincoln on Highway 77, and Ashland, on the Platte River northeast of Lincoln, are the Saunders County towns we cover.",
     local: [
-      "Saunders County is farm and ranch country, and the bedrooms here deal with agricultural dust, open-window seasons, and often wood heat. Wood heat dries a house aggressively in winter and leaves the bedroom humidity swinging, which is hard on mattress fibers and bedding alike.",
-      "Our low-moisture process fits this well: no added water into a house that already struggles to hold consistent humidity, and no chemical residue in a room that gets closed up tight against the cold.",
+      "Saunders County mixes town homes, acreages and farms. Ashland sits in the Platte River valley near Eugene T. Mahoney State Park.",
+      "A bed in a cabin or second home that sits closed up for a season can pick up a musty smell. A musty smell can mean moisture or mold, so we look at it first and tell you plainly if the mattress should be replaced rather than cleaned.",
     ],
-    anchors: ["Wahoo town center", "Saunders County acreages", "Highway 77 corridor"],
-    nearby: ["lincoln", "malcolm", "raymond", "ashland"],
-  },
-  {
-    slug: "ashland",
-    name: "Ashland",
-    county: "Saunders County",
-    headline: "Mattress Cleaning in Ashland, NE",
-    intro:
-      "Ashland sits between Lincoln and Omaha on the Platte River corridor — inside the overlap where our Lincoln and Omaha routes meet.",
-    local: [
-      "Ashland is a river-town mattress market: humid valley air, a fair number of second homes, and Mahoney State Park visitors passing through all season. River humidity is the recurring theme, and it is the reason mattresses here more often develop a musty note than an obviously stained one.",
-      "We also service short-term rental properties in and around Ashland. Between guests, a mattress sanitation appointment is a defensible standard to hold — it is documented, it is quick, and it is the kind of thing guests notice and comment on.",
+    places: [
+      { name: "Wahoo", county: "Saunders", note: "Town and Saunders County acreages along Highway 77." },
+      { name: "Ashland", county: "Saunders", note: "Platte River valley and the Mahoney State Park area." },
     ],
-    anchors: ["Ashland town center", "Platte River valley", "Eugene T. Mahoney State Park area", "I-80 corridor"],
-    nearby: ["wahoo", "gretna", "lincoln", "seward"],
-  },
-  {
-    slug: "gretna",
-    name: "Gretna",
-    county: "Sarpy County",
-    headline: "Mattress Cleaning in Gretna, NE",
-    intro:
-      "Gretna straddles the Lincoln–Omaha corridor on I-80. It sits on the overlap of both our routes, so scheduling is flexible.",
-    local: [
-      "Gretna's growth means a lot of new construction and a lot of new mattresses, often several purchased in one transaction for a whole house. That is the case where multi-mattress pricing works hardest in your favor — the second, third, and fourth mattresses in one visit run $149–$199 instead of the full $249.",
-      "New builds and sealed bedrooms are also where our CO₂ testing gets most useful. If you have just moved into a new Gretna home and are waking up congested, testing the bedroom before blaming the mattress is the more informative first step — and the two services pair naturally in one appointment.",
-    ],
-    anchors: ["Gretna town center", "New subdivisions along Highway 370", "I-80 corridor between Lincoln and Omaha"],
-    nearby: ["ashland", "lincoln", "waverly", "palmyra"],
+    anchors: ["Wahoo and the Highway 77 corridor", "Ashland and the Platte River valley"],
+    nearby: ["lincoln", "lancaster-county", "seward-and-crete"],
   },
 ];
 
 export const townBySlug = (slug: string) => towns.find((t) => t.slug === slug);
+
+/** Old town slugs and the merged page each now redirects to. */
+export const townRedirects: Record<string, string> = {
+  waverly: "lancaster-county",
+  hickman: "lancaster-county",
+  bennet: "lancaster-county",
+  firth: "lancaster-county",
+  malcolm: "lancaster-county",
+  raymond: "lancaster-county",
+  eagle: "lancaster-county",
+  palmyra: "lancaster-county",
+  seward: "seward-and-crete",
+  crete: "seward-and-crete",
+  wahoo: "wahoo-and-ashland",
+  ashland: "wahoo-and-ashland",
+};

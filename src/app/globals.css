@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  /* Sleep Sanitation clinical palette: deep navy, teal, muted brass */
+  /* Sleep Sanitation palette: deep navy, teal, muted brass */
   --navy: #0b1f2a;
   --navy-2: #102a38;
   --navy-3: #173849;
@@ -50,7 +50,7 @@ h1, h2, h3, .font-display {
   letter-spacing: -0.01em;
 }
 
-/* fine clinical grid texture for dark panels */
+/* fine grid texture for dark panels */
 .texture-grain {
   position: relative;
 }

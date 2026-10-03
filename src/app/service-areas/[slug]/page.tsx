@@ -13,8 +13,8 @@ export async function generateMetadata({ params }: PageProps<"/service-areas/[sl
   const t = townBySlug((await params).slug);
   if (!t) return {};
   return {
-    title: `Mattress Cleaning ${t.name}, NE | Dry Vapor Steam Sanitation`,
-    description: `Mattress cleaning and sanitization in ${t.name}, Nebraska. Low-moisture dry vapor steam instead of wet extraction, UV-C post-treatment, $249 first mattress. In-home service.`,
+    title: `${t.headline} | Dry Vapor Steam Sanitation`,
+    description: `Mattress cleaning and sanitization in ${t.name}, Nebraska. Low-moisture dry vapor steam, UV-C light treatment and HEPA vacuuming, $249 first mattress. In-home service.`,
   };
 }
 
@@ -54,6 +54,19 @@ export default async function TownPage({ params }: PageProps<"/service-areas/[sl
         <p key={i} className="mb-5 text-lg leading-relaxed">{p}</p>
       ))}
 
+      {t.places && (
+        <>
+          <h2 className="text-2xl font-semibold text-navy mb-4">Towns on this page</h2>
+          <ul className="space-y-3 mb-10">
+            {t.places.map((pl) => (
+              <li key={pl.name} className="text-lg">
+                <strong>{pl.name}</strong> <span className="text-mist">({pl.county} County)</span>: {pl.note}
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+
       <h2 className="text-2xl font-semibold text-navy mb-4">Where we work around {t.name}</h2>
       <ul className="space-y-2 mb-10 rounded-2xl bg-ice border border-line p-6">
         {t.anchors.map((a) => (
@@ -79,8 +92,8 @@ export default async function TownPage({ params }: PageProps<"/service-areas/[sl
         </li>
         <li>
           🌬️{" "}
-          <Link href="/services/dust-mite-treatment" className="text-teal-deep underline font-semibold">
-            Dust mite &amp; allergen reservoir reduction
+          <Link href="/services/bed-mite-treatment" className="text-teal-deep underline font-semibold">
+            Bed mite treatment
           </Link>
         </li>
         <li>
@@ -88,12 +101,12 @@ export default async function TownPage({ params }: PageProps<"/service-areas/[sl
           <Link href="/services/pet-urine-odor-treatment" className="text-teal-deep underline font-semibold">
             Pet urine &amp; odor treatment
           </Link>{" "}
-          — ordinary accidents included, ATP verified
+          — ordinary accidents included
         </li>
         <li>
           🔆{" "}
           <Link href="/services/uv-c-post-treatment" className="text-teal-deep underline font-semibold">
-            UV-C post-treatment
+            UV-C light treatment
           </Link>{" "}
           — included in every visit
         </li>
@@ -111,7 +124,7 @@ export default async function TownPage({ params }: PageProps<"/service-areas/[sl
         {nearby.map((n, i) => (
           <span key={n.slug}>
             <Link href={`/service-areas/${n.slug}`} className="text-teal-deep underline font-semibold">
-              Mattress cleaning in {n.name}
+              {n.name}
             </Link>
             {i < nearby.length - 1 ? " · " : ""}
           </span>

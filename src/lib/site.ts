@@ -4,14 +4,14 @@ export const site = {
   parentBrand: "Sleep Sanitation",
   domain: "lincolnmattresscleaning.com",
   url: "https://lincolnmattresscleaning.com",
-  tagline: "Clinical-standard mattress sanitation for Lincoln, Nebraska.",
+  tagline: "Mattress sanitation for Lincoln, Nebraska, with gloves, shoe booties and disinfected equipment on every job.",
   phone: "(402) 512-5658",
   phoneHref: "tel:+14025125658",
   email: "info@sleepsanitation.com",
   city: "Lincoln",
   state: "NE",
   description:
-    "Mattress cleaning and clinical mattress sanitation in Lincoln, Nebraska. Low-moisture dry vapor steam instead of wet extraction, UV-C post-treatment, and a mattress-specific protocol. Serving Lincoln, Waverly, Hickman, Seward, Crete, and the surrounding communities.",
+    "Mattress cleaning and mattress sanitation in Lincoln, Nebraska. Low-moisture dry vapor steam instead of wet extraction, UV-C light treatment, and a mattress-specific protocol. Serving Lincoln, Waverly, Hickman, Seward, Crete, and the surrounding communities.",
   areas: [
     "Lincoln",
     "Waverly",
@@ -26,14 +26,13 @@ export const site = {
     "Crete",
     "Wahoo",
     "Ashland",
-    "Gretna",
   ],
   hours: "Monday–Friday, 9am–6pm",
   hoursNote: "Missed a call? We return calls and texts on Saturday and Sunday too.",
   /** schema.org openingHours */
   openingHours: "Mo-Fr 09:00-18:00",
   serviceRadius:
-    "Lincoln and the surrounding 40 miles — including Waverly, Hickman, Seward, Crete, Wahoo, Ashland, and the Omaha metro on request.",
+    "Lincoln, Lancaster County and nearby towns, including Waverly, Hickman, Seward, Crete, Wahoo and Ashland.",
 } as const;
 
 type Package = {
@@ -67,9 +66,8 @@ export const pricing = {
     { service: "Professional inspection: we identify the mattress materials and choose the steam setting and pass speed", price: "Included", bold: false },
     { service: "Clean-entry setup (boot covers, staged tools, protected floor)", price: "Included", bold: false },
     { service: "Dry-vapor sanitation", price: "Included", bold: false },
-    { service: "Dry-vapor steaming of seams, tufts, ridges and edges, where dust mites hide", price: "Included", bold: false },
-    { service: "UV-C / HEPA protocol", price: "Included", bold: false },
-    { service: "Before-and-after UV-C surface reading", price: "Included", bold: false },
+    { service: "Dry-vapor steaming of seams, tufts, ridges and edges, where dust and shed skin flakes collect", price: "Included", bold: false },
+    { service: "UV-C light treatment and HEPA vacuuming", price: "Included", bold: false },
     { service: "What we found, reported to you after the visit", price: "Included", bold: false },
     { service: "Normal stain treatment", price: "Included", bold: false },
     { service: "Pet odor treatment", price: "Included", bold: false },
@@ -79,7 +77,7 @@ export const pricing = {
     { service: "Additional full/queen/king mattress", price: "$199", bold: false },
     { service: "Additional kids bed (twin/full)", price: "$149", bold: false },
     { service: "Underside/full-surface treatment", price: "+$50–$75", bold: false },
-    { service: "Severe/biohazard/extensive contamination", price: "Custom surcharge", bold: false },
+    { service: "Severe or biohazard contamination", price: "Custom surcharge", bold: false },
   ],
 } as const;
 
@@ -88,14 +86,14 @@ export const packages: Package[] = [
     name: "First Mattress",
     popular: true,
     price: "$249",
-    priceNote: "Any size — Twin through King · $199 during our Fall 2026 promotion",
+    priceNote: "Any size, twin through California king · $199 during our Fall 2026 promotion",
     blurb:
-      "One clinical-standard appointment on your first mattress. Top surface and side edges, dry vapor steam, UV-C post-treatment, and normal stains, pet odor and ordinary urine accidents included.",
+      "One appointment on your first mattress, with gloves, shoe booties and disinfected equipment. Top surface and side edges, dry vapor steam, UV-C light treatment, and normal stains, pet odor and ordinary urine accidents included.",
     features: [
       "Top surface deep sanitation",
       "Side edge treatment",
       "Low-moisture dry vapor steam",
-      "UV-C / HEPA protocol",
+      "UV-C light treatment and HEPA vacuuming",
       "Normal stain treatment",
       "Pet odor and ordinary urine accident treatment",
       "Clean-entry protocol (boot covers, staged tools)",
@@ -111,7 +109,7 @@ export const packages: Package[] = [
       "Top surface deep sanitation",
       "Side edge treatment",
       "Low-moisture dry vapor steam",
-      "UV-C / HEPA protocol",
+      "UV-C light treatment and HEPA vacuuming",
       "Stains, pet odor and ordinary urine accidents included",
       "Best value on 2–4 mattress households",
     ],
@@ -125,7 +123,7 @@ export const addonDetails = [
     text: "Complete six-surface coverage. Recommended for severe allergy households or any mattress with visible underside contamination — dust, staining, or debris on the bottom panel and box-spring interface.",
   },
   {
-    name: "Severe/biohazard/extensive contamination",
+    name: "Severe or biohazard contamination",
     price: "Custom surcharge",
     text: "Heavy, repeated or biohazard contamination beyond an ordinary accident is quoted after we see the mattress, before any work starts. Normal stains, pet odor and ordinary urine accidents are already included.",
   },
@@ -133,12 +131,11 @@ export const addonDetails = [
 
 /** The steam-vs-extraction comparison used on the home page and the comparison guide. */
 export const comparison = [
-  ["Method", "Standard provider (wet extraction)", "Sleep Sanitation (dry vapor steam)"],
-  ["Moisture pushed into the mattress", "High — hot water injection, then vacuum extraction", "Very low — dry vapor, roughly 5% moisture content"],
-  ["Drying time", "Often 24–48 hours before the mattress is usable", "Typically dry within about 30–60 minutes in a ventilated room"],
-  ["What it reaches", "Surface soil and visible spots", "Surface plus upper layers, seams, quilting, and edges"],
+  ["Method", "Wet extraction", "Our dry vapor steam"],
+  ["Moisture into the mattress", "Hot water injected, then vacuumed back out", "Dry vapor; our Vapor Clean machines are rated by their maker at 5 to 6% moisture content"],
+  ["What it reaches", "Depends on the equipment and the operator", "Surface plus upper layers, seams, quilting, and edges"],
   ["Heat at the surface", "Water-temperature limited", "Superheated vapor at the nozzle, applied with calibrated passes"],
-  ["Chemistry", "Detergents and fragrance left in the foam", "No chemical residue — nothing left behind in the foam"],
-  ["Verification", "Visual result", "Pre/post surface reading on our UV-C vacuum, plus ATP verification on fluid treatments"],
+  ["Chemistry", "A cleaning solution, chosen by the provider", "Organic cleaning methods by default"],
+  ["Hygiene", "Varies", "Gloves and shoe booties on every job; equipment disinfected between jobs"],
   ["Equipment built for", "Floors and upholstery", "Mattresses and sleep surfaces"],
 ] as const;

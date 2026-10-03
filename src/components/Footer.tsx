@@ -46,16 +46,11 @@ export function Footer() {
             <li><Link href="/faq" className="hover:text-teal-bright transition-colors">FAQ</Link></li>
             <li><Link href="/contact" className="hover:text-teal-bright transition-colors">Book an Appointment</Link></li>
             <li><Link href="/privacy-policy" className="hover:text-teal-bright transition-colors">Privacy Policy</Link></li>
-            <li>
-              <a href="https://sleepsanitation.com" className="hover:text-teal-bright transition-colors" rel="noopener">
-                {site.parentBrand}.com →
-              </a>
-            </li>
           </ul>
         </div>
       </div>
       <div className="border-t border-white/10 py-5 text-center text-sm text-white/60 px-4">
-        © {new Date().getFullYear()} {site.parentBrand} · Mattress sanitation throughout Lincoln &amp; Lancaster County, NE ·{" "}
+        © {new Date().getFullYear()} {site.name} · <Link href="/about" className="underline hover:text-teal-bright">Operated by Sleep Sanitation LLC</Link> · Lincoln &amp; Lancaster County, NE ·{" "}
         <Link href="/sitemap.xml" className="underline hover:text-teal-bright">Sitemap</Link>
       </div>
     </footer>

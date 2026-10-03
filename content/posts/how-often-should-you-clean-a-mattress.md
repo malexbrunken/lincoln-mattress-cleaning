@@ -30,7 +30,7 @@ Book regardless of when you last had it done if any of these apply:
 - **A musty smell you cannot locate.** It is usually the mattress, and it usually means moisture has been sitting.
 - **A mattress that is new to you.** Inherited, handed down, bought used, or a rental. Reset it before the first night rather than after six months of sleeping on someone else's history. See [resetting a used mattress](/guides/used-mattress-first-night-reset).
 - **After an illness in the household**, particularly anything with a long recovery.
-- **After a bed bug infestation has been professionally treated.** The live insects are the pest controller's job; the cast debris and allergen reservoirs are ours, and they are what make the mattress unpleasant afterwards.
+- **After a bed bug infestation has been professionally treated.** The live insects are the pest controller's job; cleaning the mattress afterwards is ours.
 - **Rental turnover.** Book between lease periods, before the next occupant moves in.
 - **Persistent morning congestion** that eases when you sleep elsewhere. That pattern points at the bedroom, and the mattress is the highest-contact surface in it.
 
@@ -39,12 +39,12 @@ Book regardless of when you last had it done if any of these apply:
 - Wash sheets, pillowcases, and washable covers on a hot cycle — more effective than anything done on site.
 - Keep bedroom humidity under roughly 50%. A cheap hygrometer is genuinely informative.
 - Air the bedroom when the season allows it. Ventilation is the cheapest intervention available.
-- Fit an allergen-proof encasement, but fit it *after* a treatment, not before.
+- Fit an encasement, but fit it *after* a treatment, not before.
 - Rotate the mattress if the manufacturer recommends it.
 
 ## Related
 
 - [Mattress cleaning in Lincoln: the complete guide](/guides/mattress-cleaning-lincoln-ne-guide)
-- [Dust mites in Lincoln mattresses](/guides/dust-mites-in-lincoln-mattresses)
+- [Bed mites in Lincoln mattresses](/guides/dust-mites-in-lincoln-mattresses)
 - [The full service page](/services/mattress-sanitization)
 - [Published pricing](/guides/mattress-cleaning-cost-lincoln)

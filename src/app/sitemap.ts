@@ -5,7 +5,8 @@ import { towns } from "@/lib/towns";
 import { getPosts } from "@/lib/posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+  // Fixed dates so IndexNow's 48-hour lastmod window only picks up real changes.
+  const now = new Date("2026-10-03");
   const statics = ["", "/services", "/pricing", "/service-areas", "/gallery", "/about", "/faq", "/guides", "/contact", "/privacy-policy"];
   return [
     ...statics.map((p) => ({
@@ -28,7 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...getPosts().map((p) => ({
       url: `${site.url}/guides/${p.slug}`,
-      lastModified: new Date(p.date),
+      lastModified: new Date(p.updated ?? p.date),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),

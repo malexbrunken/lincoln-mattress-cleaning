@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "mattress cleaning Lincoln Nebraska",
     "mattress sanitization Lincoln",
     "steam mattress cleaning Lincoln",
-    "dust mite removal mattress Lincoln",
+    "bed mite treatment mattress Lincoln",
     "pet urine mattress cleaning Lincoln",
     "mattress cleaning service near me Lincoln",
     "Waverly NE mattress cleaning",

@@ -22,6 +22,7 @@ export function LocalBusinessJsonLd() {
     },
     parentOrganization: {
       "@type": "Organization",
+      "@id": "https://sleepsanitation.com/#organization",
       name: site.parentBrand,
       url: "https://sleepsanitation.com",
     },
@@ -48,8 +49,8 @@ export function LocalBusinessJsonLd() {
       "mattress cleaning",
       "mattress sanitization",
       "dry vapor steam cleaning",
-      "dust mite allergen reduction",
-      "UV-C surface treatment",
+      "bed mite (house dust mite) treatment",
+      "UV-C light treatment",
     ],
   };
   return (

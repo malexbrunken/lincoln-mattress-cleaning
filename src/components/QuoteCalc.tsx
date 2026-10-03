@@ -6,8 +6,8 @@ import { useState } from "react";
  * Estimate calculator wired to the canonical price list:
  * first mattress $249 (Fall 2026 promotion: $199); additional full/queen/king $199;
  * additional kids bed (twin/full) $149; underside/full-surface treatment +$50–$75 per mattress.
- * Dry-vapor sanitation, UV-C / HEPA protocol, normal stains, pet odor and ordinary urine
- * accidents are included. Severe, biohazard or extensive contamination is a custom surcharge.
+ * Dry-vapor sanitation, UV-C light treatment and HEPA vacuuming, normal stains, pet odor and ordinary urine
+ * accidents are included. Severe or biohazard contamination is a custom surcharge.
  */
 const FIRST = 249;
 const PROMO_FIRST = 199;
@@ -95,7 +95,7 @@ export function QuoteCalc() {
         <span className="font-semibold text-[15px] leading-snug">Underside / full-surface treatment  +$50–$75 each</span>
       </label>
       <p className="text-xs text-mist mt-2">
-        Included at no charge: dry-vapor sanitation, UV-C / HEPA protocol, normal stains, pet odor and ordinary urine accidents.
+        Included at no charge: dry-vapor sanitation, UV-C light treatment and HEPA vacuuming, normal stains, pet odor and ordinary urine accidents.
       </p>
 
       <div className="border-t border-line mt-5 pt-4">
@@ -132,7 +132,7 @@ export function QuoteCalc() {
         </p>
       </div>
       <p className="text-xs text-mist mt-3">
-        Estimate only. We confirm your final price when you book. Severe, biohazard or extensive contamination is quoted as a custom surcharge.
+        Estimate only. We confirm your final price when you book. Severe or biohazard contamination is quoted as a custom surcharge.
       </p>
     </div>
   );
