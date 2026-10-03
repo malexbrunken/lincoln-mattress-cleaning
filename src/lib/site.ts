@@ -77,7 +77,7 @@ export const pricing = {
     { service: "Additional full/queen/king mattress", price: "$199", bold: false },
     { service: "Additional kids bed (twin/full)", price: "$149", bold: false },
     { service: "Underside/full-surface treatment", price: "+$50–$75", bold: false },
-    { service: "Severe/biohazard/extensive contamination", price: "Custom surcharge", bold: false },
+    { service: "Severe or biohazard contamination", price: "Custom surcharge", bold: false },
   ],
 } as const;
 
@@ -86,7 +86,7 @@ export const packages: Package[] = [
     name: "First Mattress",
     popular: true,
     price: "$249",
-    priceNote: "Any size — Twin through King · $199 during our Fall 2026 promotion",
+    priceNote: "Any size, twin through California king · $199 during our Fall 2026 promotion",
     blurb:
       "One appointment on your first mattress, with gloves, shoe booties and disinfected equipment. Top surface and side edges, dry vapor steam, UV-C light treatment, and normal stains, pet odor and ordinary urine accidents included.",
     features: [
@@ -123,7 +123,7 @@ export const addonDetails = [
     text: "Complete six-surface coverage. Recommended for severe allergy households or any mattress with visible underside contamination — dust, staining, or debris on the bottom panel and box-spring interface.",
   },
   {
-    name: "Severe/biohazard/extensive contamination",
+    name: "Severe or biohazard contamination",
     price: "Custom surcharge",
     text: "Heavy, repeated or biohazard contamination beyond an ordinary accident is quoted after we see the mattress, before any work starts. Normal stains, pet odor and ordinary urine accidents are already included.",
   },
@@ -131,12 +131,11 @@ export const addonDetails = [
 
 /** The steam-vs-extraction comparison used on the home page and the comparison guide. */
 export const comparison = [
-  ["Method", "Standard provider (wet extraction)", "Sleep Sanitation (dry vapor steam)"],
-  ["Moisture pushed into the mattress", "High — hot water injection, then vacuum extraction", "Very low — dry vapor, roughly 5% moisture content"],
-  ["Drying time", "Often 24–48 hours before the mattress is usable", "Typically dry within about 30–60 minutes in a ventilated room"],
-  ["What it reaches", "Surface soil and visible spots", "Surface plus upper layers, seams, quilting, and edges"],
+  ["Method", "Wet extraction", "Our dry vapor steam"],
+  ["Moisture into the mattress", "Hot water injected, then vacuumed back out", "Dry vapor; our Vapor Clean machines are rated by their maker at 5 to 6% moisture content"],
+  ["What it reaches", "Depends on the equipment and the operator", "Surface plus upper layers, seams, quilting, and edges"],
   ["Heat at the surface", "Water-temperature limited", "Superheated vapor at the nozzle, applied with calibrated passes"],
-  ["Chemistry", "Detergents and fragrance left in the foam", "No chemical residue — nothing left behind in the foam"],
+  ["Chemistry", "A cleaning solution, chosen by the provider", "Organic cleaning methods by default"],
   ["Hygiene", "Varies", "Gloves and shoe booties on every job; equipment disinfected between jobs"],
   ["Equipment built for", "Floors and upholstery", "Mattresses and sleep surfaces"],
 ] as const;

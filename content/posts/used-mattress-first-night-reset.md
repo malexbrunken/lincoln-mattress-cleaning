@@ -53,7 +53,7 @@ That is the specific case where dry vapor steam is not just a preference. It is 
 | Additional full/queen/king mattress | $199 |
 | Additional kids bed (twin/full) | $149 |
 | Underside/full-surface treatment | +$50–$75 |
-| Severe/biohazard/extensive contamination | Custom surcharge |
+| Severe or biohazard contamination | Custom surcharge |
 
 Compare that to a comparable new mattress plus disposal plus the off-gassing period. For most inherited mattresses, the reset is the better use of the money — and for the ones where it is not, we will say so before you pay.
 

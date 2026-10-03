@@ -22,6 +22,7 @@ export function LocalBusinessJsonLd() {
     },
     parentOrganization: {
       "@type": "Organization",
+      "@id": "https://sleepsanitation.com/#organization",
       name: site.parentBrand,
       url: "https://sleepsanitation.com",
     },

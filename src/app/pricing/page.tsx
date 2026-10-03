@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const faq = [
   {
     q: "How much does mattress cleaning cost in Lincoln?",
-    a: "The first mattress is $249, any size from twin through king, including dry-vapor sanitation, UV-C light treatment and HEPA vacuuming, normal stain treatment, pet odor treatment and ordinary urine accident treatment. Each additional full, queen or king mattress is $199, and each additional kids bed (twin/full) is $149. During our Fall 2026 promotion the first mattress is $199, and any additional cleaning scheduled within 7 days of the first service is also $199.",
+    a: "The first mattress is $249, any size from twin through California king, including dry-vapor sanitation, UV-C light treatment and HEPA vacuuming, normal stain treatment, pet odor treatment and ordinary urine accident treatment. Each additional full, queen or king mattress is $199, and each additional kids bed (twin/full) is $149. During our Fall 2026 promotion the first mattress is $199, and any additional cleaning scheduled within 7 days of the first service is also $199.",
   },
   {
     q: "Why is the first mattress $249 regardless of size?",
@@ -31,7 +31,7 @@ const faq = [
   },
   {
     q: "Do you charge more for a heavily stained mattress?",
-    a: "No. Normal stains, pet odor and ordinary urine accidents are included in the base price. Only severe, biohazard or extensive contamination carries a custom surcharge, and we quote it after we see the mattress, before any work starts.",
+    a: "No. Normal stains, pet odor and ordinary urine accidents are included in the base price. Only severe or biohazard contamination carries a custom surcharge, and we quote it after we see the mattress, before any work starts.",
   },
 ];
 
