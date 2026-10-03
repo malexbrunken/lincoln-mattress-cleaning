@@ -1,6 +1,7 @@
 ---
 title: "Steam vs. Wet Extraction: What Actually Differs in Mattress Cleaning"
 date: "2026-09-12"
+updated: "2026-10-03"
 category: "Method"
 author: "Matthew Brunken"
 excerpt: "Dry vapor steam and hot-water extraction are both called mattress cleaning. They differ in moisture, drying time, what reaches the foam core, and what gets left behind. Here is the comparison, including when extraction is genuinely the right call."
@@ -14,15 +15,14 @@ Hot-water extraction uses water as a carrier. You inject a heated detergent solu
 
 A mattress core is foam, latex, or fiber batting. Once it takes on water inside a closed bedroom, it does not dry in a day. The moisture you cannot see is the part that matters, because damp foam is the condition that favors the microbial growth and odor you were trying to get rid of in the first place.
 
-Dry vapor steam carries heat with very little water — around 5% moisture content against the 40–60% typical of extraction. At the nozzle the vapor is superheated, so it lifts and neutralizes what has accumulated in the quilting and seam channels while leaving the core essentially dry.
+Dry vapor steam carries heat with very little water; our Vapor Clean machines are rated by their maker at 5 to 6% moisture content. At the nozzle the vapor is superheated, so it lifts and neutralizes what has accumulated in the quilting and seam channels while leaving the core essentially dry.
 
 ## Field-by-field
 
 | | Wet extraction | Dry vapor steam |
 | --- | --- | --- |
-| Moisture into the mattress | High | Very low, roughly 5% |
-| Drying time | Often 24–48 hours | Typically 30–60 minutes |
-| What it reaches | Surface soil and visible spots | Surface plus upper layers, seams, quilting, edges |
+| Moisture into the mattress | Water injected, then vacuumed back out | Very low; maker rating 5 to 6% moisture content |
+| What it reaches | Depends on the equipment and the operator | Surface plus upper layers, seams, quilting, edges |
 | Heat at the surface | Limited by water temperature | Superheated vapor, calibrated per mattress |
 | Chemistry | Detergent and fragrance left in the foam | No chemical residue |
 | Hygiene | Varies | Gloves and shoe booties on every job; equipment disinfected between jobs |

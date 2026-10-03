@@ -7,7 +7,7 @@ import { useState } from "react";
  * first mattress $249 (Fall 2026 promotion: $199); additional full/queen/king $199;
  * additional kids bed (twin/full) $149; underside/full-surface treatment +$50–$75 per mattress.
  * Dry-vapor sanitation, UV-C light treatment and HEPA vacuuming, normal stains, pet odor and ordinary urine
- * accidents are included. Severe, biohazard or extensive contamination is a custom surcharge.
+ * accidents are included. Severe or biohazard contamination is a custom surcharge.
  */
 const FIRST = 249;
 const PROMO_FIRST = 199;
@@ -132,7 +132,7 @@ export function QuoteCalc() {
         </p>
       </div>
       <p className="text-xs text-mist mt-3">
-        Estimate only. We confirm your final price when you book. Severe, biohazard or extensive contamination is quoted as a custom surcharge.
+        Estimate only. We confirm your final price when you book. Severe or biohazard contamination is quoted as a custom surcharge.
       </p>
     </div>
   );

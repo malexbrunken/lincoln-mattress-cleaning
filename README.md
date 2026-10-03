@@ -11,7 +11,7 @@ The Lincoln, Nebraska local-search property for **Sleep Sanitation** — a mattr
 
 `sleepsanitation.com` is the right long-term national name, but a city domain ranks faster at the start. This repo is the Lincoln half of a two-domain local strategy: rank for "mattress cleaning Lincoln NE" and its neighborhoods while the national brand builds authority.
 
-The differentiation running through every page: **dry vapor steam (low moisture, ~5%) vs. standard hot-water extraction (40–60% moisture)** — plus UV-C post-treatment and pre/post surface readings as verification.
+The differentiation running through every page: **low-moisture dry vapor steam** (maker rating 5 to 6% moisture content), UV-C light treatment and HEPA vacuuming. We do not take UV-C readings.
 
 ## Stack
 
@@ -56,7 +56,7 @@ src/components/                Header, Footer, Icons, JsonLd, QuoteCalc
 | Additional full/queen/king mattress | $199 |
 | Additional kids bed (twin/full) | $149 |
 | Underside/full-surface treatment | +$50–$75 |
-| Severe/biohazard/extensive contamination | Custom surcharge |
+| Severe or biohazard contamination | Custom surcharge |
 
 Fall 2026 promotion: first mattress $199 (regular $249); any additional cleaning scheduled within 7 days of the first service is also $199.
 

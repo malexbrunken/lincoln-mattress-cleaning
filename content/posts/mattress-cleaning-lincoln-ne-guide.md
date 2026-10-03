@@ -1,6 +1,7 @@
 ---
 title: "Mattress Cleaning in Lincoln, NE: The Complete Guide"
 date: "2026-09-15"
+updated: "2026-10-03"
 category: "Lincoln Guide"
 author: "Matthew Brunken"
 excerpt: "How mattress cleaning actually works in Lincoln, Nebraska — why wet extraction struggles with foam, what dry vapor steam does differently, what it costs, when to replace instead of clean, and why Nebraska bedrooms make this an annual job."
@@ -10,7 +11,7 @@ This is the guide we would give a Lincoln neighbor who asked what we actually do
 
 ## The short version
 
-Most mattress cleaning in Lincoln is a carpet cleaner with an upholstery wand. It injects hot water into a surface that stays warm and humid for eight hours a night, leaves detergent residue in the foam, and needs a day or two to dry. Our process runs the other direction: **dry vapor steam at roughly 5% moisture content**, applied at temperatures high enough to do the sanitation work, leaving the foam core essentially dry and nothing behind for you to sleep against.
+Ask any mattress cleaner what equipment touches the mattress and how much water goes in. Our answer: **dry vapor steam**, and our Vapor Clean machines are rated by their maker at 5 to 6% moisture content, applied at temperatures high enough to do the sanitation work, leaving the foam core essentially dry and nothing behind for you to sleep against.
 
 The first mattress is $249, any size, with normal stains, pet odor and ordinary urine accidents included ($199 during our Fall 2026 promotion). Each additional mattress in the same visit is $149–$199. Everything is published on our [pricing page](/pricing).
 
@@ -29,7 +30,7 @@ Our protocol runs five phases in order: inspect, isolate, sanitize, detail, rese
 - **Inspect.** We read the law tag first. Memory foam, latex, hybrid, innerspring, and organic builds react differently to heat and pass speed. A technician who does not check the tag is guessing about your $2,000 mattress.
 - **Isolate.** Boot covers, staged tools, protected floor. The room is contained before anything is applied.
 - **Sanitize.** Dry vapor steam in overlapping passes across the sleep surface at calibrated temperature.
-- **Detail.** Seams, quilting channels, piping, and side edges — the zones a wet upholstery wand slides over rather than treats.
+- **Detail.** Seams, quilting channels, piping, and side edges, each with its own passes.
 - **Reset.** UV-C light treatment, tools broken down in order, and the room left as we found it.
 
 The [full service page](/services/mattress-sanitization) covers what is included at each phase. If you want the method comparison specifically, read [dry vapor steam vs. wet extraction](/services/dry-vapor-steam-vs-extraction).
@@ -47,7 +48,7 @@ The [full service page](/services/mattress-sanitization) covers what is included
 | Additional full/queen/king mattress | $199 |
 | Additional kids bed (twin/full) | $149 |
 | Underside/full-surface treatment | +$50–$75 |
-| Severe/biohazard/extensive contamination | Custom surcharge |
+| Severe or biohazard contamination | Custom surcharge |
 
 **Fall 2026 promotion:** your first mattress is $199 (regular $249). Any additional cleaning scheduled within 7 days of your first service is also $199, so you can see our work first.
 

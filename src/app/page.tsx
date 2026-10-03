@@ -22,12 +22,12 @@ const standards = [
   {
     icon: IconDropletSlash,
     title: "Low-moisture by design",
-    text: "Dry vapor steam at roughly 5% moisture, against 40–60% for wet extraction. No soaked foam core, no 48-hour wait.",
+    text: "Dry vapor steam, and our Vapor Clean machines are rated by their maker at 5 to 6% moisture content. No soaked foam core.",
   },
   {
     icon: IconMattress,
     title: "Built for beds, not floors",
-    text: "Mattresses are our only business. Not an add-on line item on a carpet-cleaning invoice.",
+    text: "Mattresses are our only business, and every visit is a dedicated mattress appointment.",
   },
   {
     icon: IconUVC,
@@ -40,7 +40,7 @@ const process = [
   ["01", "Inspect", "We read the law tag, assess fabric condition and construction, and look at the bedroom environment before anything is applied."],
   ["02", "Isolate", "Gloves and shoe booties on, disinfected tools staged cleanly, your floor and bedding protected. The room is contained before treatment begins."],
   ["03", "Sanitize", "Dry vapor steam in overlapping passes across the sleep surface, with calibrated temperature for your mattress type."],
-  ["04", "Detail", "Seams, quilting channels, piping, and the side edges — the zones an upholstery wand never actually reaches."],
+  ["04", "Detail", "Seams, quilting channels, piping, and the side edges, each with its own passes."],
   ["05", "Reset", "UV-C light treatment, tools broken down in order, and the room left as we found it."],
 ];
 
@@ -90,8 +90,8 @@ export default function HomePage() {
               Mattress cleaning,<br />with gloves, booties and clean gear.
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-2xl leading-relaxed mb-9">
-              Lincoln&apos;s mattress-only service. Low-moisture dry vapor steam instead of carpet-cleaning
-              extraction — so your mattress is sanitized, not soaked.
+              Lincoln&apos;s mattress-only service. Low-moisture dry vapor steam, so your mattress is sanitized,
+              not soaked.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
@@ -135,12 +135,11 @@ export default function HomePage() {
         <div>
           <p className="kicker text-teal-deep mb-4">The upgrade</p>
           <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-6">
-            Most mattress cleaning was built by carpet cleaners.
+            Questions worth asking any mattress cleaner.
           </h2>
           <p className="text-xl text-mist leading-relaxed mb-6">
-            In Lincoln, &ldquo;mattress cleaning&rdquo; can mean a carpet extractor with an upholstery
-            wand — hot water injected into a surface that stays warm and humid for eight hours a night. The
-            foam holds that moisture long after the truck pulls away.
+            Ask what equipment touches the mattress, how much water goes into it, and what is left in the foam
+            afterwards. Those answers decide how a mattress comes through a cleaning.
           </p>
           <p className="text-xl text-mist leading-relaxed mb-8">
             We treat your bed as the recovery surface it is: heat without the water, a process built around
@@ -179,11 +178,11 @@ export default function HomePage() {
           <div className="max-w-3xl mb-10">
             <p className="kicker text-teal-bright mb-4">Side by side</p>
             <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-5">
-              Standard mattress cleaning vs. our protocol
+              Wet extraction vs. dry vapor steam
             </h2>
             <p className="text-xl text-white/70">
-              We are not the cheapest mattress service in Lincoln. We are the one that treats the surface you
-              sleep on differently — and can show you why.
+              We are not the cheapest mattress service in Lincoln. Here is how the two methods differ, so you can
+              ask the right questions of any provider.
             </p>
           </div>
           <div className="overflow-x-auto rounded-2xl border border-white/15">
@@ -192,10 +191,10 @@ export default function HomePage() {
                 <tr>
                   <th className="p-4 font-semibold text-white/60 text-xs uppercase tracking-[0.14em]"> </th>
                   <th className="p-4 font-semibold text-white/70 text-xs uppercase tracking-[0.14em]">
-                    Standard provider
+                    Wet extraction
                   </th>
                   <th className="p-4 font-semibold text-teal-bright text-xs uppercase tracking-[0.14em]">
-                    {site.parentBrand}
+                    Our dry vapor steam
                   </th>
                 </tr>
               </thead>
@@ -281,7 +280,7 @@ export default function HomePage() {
               Five phases, in this order, every time.
             </h2>
             <p className="text-xl text-mist">
-              The appointment is shorter than a carpet-cleaning route because it is precise, not rushed.
+              The appointment is precise, not rushed.
             </p>
           </div>
           <ol className="grid gap-6 md:grid-cols-5">

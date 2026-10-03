@@ -12,19 +12,19 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "How much does mattress cleaning cost in Lincoln?",
-    a: "The first mattress is $249 (any size), with normal stains, pet odor and ordinary urine accidents included. Each additional full, queen or king mattress is $199, and each additional kids bed (twin/full) is $149. Underside/full-surface treatment is +$50–$75; severe, biohazard or extensive contamination carries a custom surcharge. During our Fall 2026 promotion the first mattress is $199, and any additional cleaning scheduled within 7 days of the first service is also $199.",
+    a: "The first mattress is $249 (any size), with normal stains, pet odor and ordinary urine accidents included. Each additional full, queen or king mattress is $199, and each additional kids bed (twin/full) is $149. Underside/full-surface treatment is +$50–$75; severe or biohazard contamination carries a custom surcharge. During our Fall 2026 promotion the first mattress is $199, and any additional cleaning scheduled within 7 days of the first service is also $199.",
   },
   {
     q: "What is dry vapor steam, exactly?",
-    a: "Superheated water vapor with very little actual moisture — roughly 5% water content, compared to the 40–60% typical of hot-water extraction. At the nozzle it is hot enough to do the sanitation work, but it leaves the mattress surface nearly dry and puts essentially nothing into the foam core.",
+    a: "Superheated water vapor with very little actual moisture: our Vapor Clean machines are rated by their maker at 5 to 6% moisture content. At the nozzle it is hot enough to do the sanitation work, but it leaves the mattress surface nearly dry and puts essentially nothing into the foam core.",
   },
   {
     q: "How long before I can sleep on the mattress?",
-    a: "Typically about 30–60 minutes in a ventilated bedroom. There is no wet core to dry and no chemical residue to off-gas.",
+    a: "It depends on the mattress, the room and the humidity, so we do not quote a fixed time. Dry vapor steam puts very little water into the mattress, and Sleep Sanitation's Knowledge Center explains how quickly a treated mattress should dry.",
   },
   {
     q: "Will steam cleaning damage my mattress or void the warranty?",
-    a: "Improperly applied heat and moisture can damage a mattress, which is why we read the law tag, identify the construction, and match temperature, nozzle distance, and pass speed to your specific mattress. We treat memory foam, latex, hybrid, organic, and traditional innerspring builds. Our process is designed to be warranty-safe precisely because it is low-moisture.",
+    a: "Improperly applied heat and moisture can damage a mattress, which is why we read the law tag, identify the construction, and match temperature, nozzle distance, and pass speed to your specific mattress. We treat memory foam, latex, hybrid, organic, and traditional innerspring builds. Your care label and warranty terms govern, so check your warranty before booking.",
   },
   {
     q: "Can you clean an organic or natural mattress, like an Avocado?",

@@ -7,7 +7,7 @@ author: "Matthew Brunken"
 excerpt: "Bed mites (house dust mites) are a fact of indoor life in Nebraska, not a mattress defect. What they are, what steam heat does to them, and what keeps them from coming straight back."
 ---
 
-Bed mites (house dust mites) are a fact of indoor life, not a sign of a dirty house. Our dry vapor steam kills them with heat, and the rest of this guide covers what that does and does not mean.
+Bed mites (house dust mites) are a fact of indoor life, not a sign of a dirty house. Our dry vapor steam uses heat to kill them; in published tests, a 96°C steam cleaner killed all of the mites in treated carpet and mattress samples (Glass and Needham, 2004). The rest of this guide covers what that does and does not mean.
 
 ## What bed mites actually are
 
@@ -19,7 +19,7 @@ From October through April, a Lincoln bedroom is a closed room with the heat run
 
 ## What actually helps
 
-**Heat.** Steam kills bed mites. In published tests, Glass and Needham (2004) reported 100 percent mortality of D. farinae in carpet and mattress samples treated with a 96°C steam cleaner, and Colloff (1995) found no live mites in steam-treated, laboratory-seeded carpet squares over four months. Those were study conditions with those machines, not a measurement in your bedroom. Sleep Sanitation's Knowledge Center covers both studies in detail in [Does steam kill dust mites in mattresses?](https://sleepsanitation.com/knowledge-center/mattress-dust-mites-allergens/does-steam-kill-dust-mites-in-mattresses)
+**Heat.** Steam heat killed bed mites in published tests: Glass and Needham (2004) reported 100 percent mortality of D. farinae in carpet and mattress samples treated with a 96°C steam cleaner, and Colloff (1995) found no live mites in steam-treated, laboratory-seeded carpet squares over four months. Those were study conditions with those machines, not a measurement in your bedroom. Sleep Sanitation's Knowledge Center covers both studies in detail in [Does steam kill dust mites in mattresses?](https://sleepsanitation.com/knowledge-center/mattress-dust-mites-allergens/does-steam-kill-dust-mites-in-mattresses)
 
 **HEPA vacuuming.** Dead mites and droppings stay in the fabric until something lifts them, which is why every visit includes it.
 

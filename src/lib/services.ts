@@ -19,18 +19,18 @@ export const services: Service[] = [
       "Mattress cleaning in Lincoln, Nebraska using low-moisture dry vapor steam instead of wet extraction. $249 first mattress, UV-C light treatment included.",
     h1: "Mattress Sanitization in Lincoln",
     intro:
-      "A structured, low-moisture sanitation appointment for the surface you sleep on every night — built for mattresses, not adapted from carpet-cleaning equipment. First mattress $249, any size, with normal stains, pet odor and ordinary urine accidents included.",
+      "A structured, low-moisture sanitation appointment for the surface you sleep on every night built for mattresses. First mattress $249, any size, with normal stains, pet odor and ordinary urine accidents included.",
     includes: [
       "Assessment of fabric, construction, and bedroom environment",
       "Clean-entry setup: gloves and shoe booties on, staged tools, protected floor, equipment disinfected between jobs",
       "Dry vapor steam across the top surface, seams, quilting, and edges",
-      "Side edge treatment (the zone every extraction wand skips)",
+      "Side edge treatment",
       "Targeted work on higher-accumulation zones",
       "UV-C light treatment over the sleep surface",
       "Inspection before and after, with what we found reported to you",
     ],
     detail: [
-      "Most \"mattress cleaning\" in Lincoln is a carpet cleaner with an upholstery wand. That means hot water injected into a surface that should be treated with restraint, a foam core that stays damp for a day or two, and detergent residue left where you breathe for eight hours a night.",
+      "Ask any mattress cleaner what goes into the mattress and what stays behind. Hot-water extraction injects water and vacuums it back out; how much stays in a foam core depends on the equipment and the operator.",
       "Our protocol runs the other direction. Dry vapor steam carries heat with very little water. At the nozzle the vapor is superheated, so it lifts and neutralizes what has accumulated in the quilting and seam channels without soaking the core.",
       "We start by reading the law tag. Memory foam, latex, hybrid, innerspring, and organic builds all react differently to heat and pass speed, and a technician who does not check is guessing. Then we contain the room, treat the surface in overlapping passes, detail the seams and edges, finish with UV-C light treatment, and reset the bedroom so the last impression matches the first.",
       "What we do not claim: this is a mattress sanitation protocol, not a medical treatment. It is not allergy or asthma therapy, and it is not pest control. If you have an active bed bug infestation, that is a licensed pest-control problem, and we will tell you so on the phone rather than sell you an appointment that cannot solve it.",
@@ -38,7 +38,7 @@ export const services: Service[] = [
     faq: [
       {
         q: "How is this different from the mattress cleaning I've had in Lincoln before?",
-        a: "Most local providers use hot-water extraction, the same method used on carpet: inject water, vacuum it back out. That leaves significant moisture and mostly addresses surface soil. Dry vapor steam uses heat with minimal moisture, reaches into quilting and seam channels, and leaves no residue or wet core behind.",
+        a: "Hot-water extraction, the method used on carpet, injects water and vacuums it back out. Dry vapor steam uses heat with minimal moisture, reaches into quilting and seam channels, and leaves no residue or wet core behind.",
       },
       {
         q: "Will steam damage my mattress?",
@@ -46,7 +46,7 @@ export const services: Service[] = [
       },
       {
         q: "How long before I can sleep on it?",
-        a: "Typically about 30–60 minutes in a ventilated bedroom. There is no wet core to dry out and nothing left behind to off-gas.",
+        a: "It depends on the mattress, the room and the humidity, so we do not quote a fixed time. Dry vapor steam puts very little water into the mattress, and Sleep Sanitation's Knowledge Center explains how quickly a treated mattress should dry.",
       },
       {
         q: "Do I need to buy anything or move anything?",
@@ -73,7 +73,7 @@ export const services: Service[] = [
     detail: [
       "Wet extraction is a good technology. On carpet, it is the standard for a reason: carpet fibers and a pad underneath can take a hot-water injection and survive a slow dry. A mattress cannot. Its core is foam or fiber batting, and once that core takes on water inside a closed bedroom, it does not dry in a day. The moisture you cannot see is the part that concerns us.",
       "Dry vapor steam is superheated water vapor at very low moisture content. It carries the heat that breaks down oils, lifts soil out of textured quilting, and neutralizes organisms on contact, while leaving the foam core essentially dry. No chemical residue, no lingering damp.",
-      "We are honest about the trade-off: extraction can flush a large volume of liquid through heavily saturated padding in one pass, and for a mattress that has been flooded with a significant fluid volume, there are cases where an extraction step is genuinely useful. When we hit that situation we say so. What we will not do is run a carpet-cleaning process on a sleep surface as the default, because the default matters more than the exception.",
+      "We are honest about the trade-off: extraction can flush a large volume of liquid through heavily saturated padding in one pass, and for a mattress that has been flooded with a significant fluid volume, there are cases where an extraction step is genuinely useful. When we hit that situation we say so. What we will not do is make extraction the default on a sleep surface, because the default matters more than the exception.",
       "For the standard case — dust accumulation, bed mites, dander, odors, a mattress that has never been professionally treated — dry vapor steam does the job with far less risk to the thing you sleep on. The comparison table on our home page lays out the specific differences field by field.",
     ],
     faq: [
@@ -146,13 +146,13 @@ export const services: Service[] = [
     detail: [
       "We show up to a lot of mattresses with a pet-accident history, and the story is almost always the same: it was cleaned when it happened, it smelled fine for a while, and then it came back. Odor comes back because urine contains urea and uric acid salts that crystallize in the fiber. Those crystals reactivate with humidity — a warm body, a humid Lincoln summer, a closed-up bedroom. Fragrance covers them until the next humid night.",
       "The fix is enzymatic: the proteins and uric salts that carry the odor have to be broken down, not masked. We apply an enzymatic treatment to the affected zones, allow the dwell time it needs, then verify with ATP testing rather than trusting our noses. ATP measurement reads actual biological residue on the surface, so we can tell you whether the source is genuinely down instead of guessing.",
-      "Where the wicking has reached the bottom panel, underside/full-surface treatment matters, and we will tell you when we see it. A mattress that has been repeatedly soaked over years — the classic case of a puppy mattress — is extensive contamination: it carries a custom surcharge, and it is sometimes past what any cleaning process can fully resolve. We would rather tell you that on the phone than after you have paid.",
-      "This service also covers child accidents and other bodily-fluid situations, which is where the CDC-aligned decontamination practice and the ATP verification matter most. We treat those without commentary and without leaving you wondering whether it worked.",
+      "Where the wicking has reached the bottom panel, underside/full-surface treatment matters, and we will tell you when we see it. A mattress that has been repeatedly soaked over years — the classic case of a puppy mattress — is severe contamination: it carries a custom surcharge, and it is sometimes past what any cleaning process can fully resolve. We would rather tell you that on the phone than after you have paid.",
+      "This service also covers child accidents and other bodily-fluid situations, which is where careful decontamination and the ATP verification matter most. We treat those without commentary and without leaving you wondering whether it worked.",
     ],
     faq: [
       {
         q: "How much does pet urine treatment cost?",
-        a: "Pet odor and ordinary urine accident treatment are included in the base mattress price: $249 for the first mattress ($199 during our Fall 2026 promotion). Severe, biohazard or extensive contamination carries a custom surcharge, confirmed before any work starts.",
+        a: "Pet odor and ordinary urine accident treatment are included in the base mattress price: $249 for the first mattress ($199 during our Fall 2026 promotion). Severe or biohazard contamination carries a custom surcharge, confirmed before any work starts.",
       },
       {
         q: "Can the smell really be permanently removed?",

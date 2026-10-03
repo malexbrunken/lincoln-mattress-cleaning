@@ -1,6 +1,7 @@
 ---
 title: "Resetting a Used Mattress Before Your First Night on It"
 date: "2026-08-28"
+updated: "2026-10-03"
 category: "Mattress Care"
 author: "Matthew Brunken"
 excerpt: "Inherited, handed down, bought used, or a rental — a used mattress comes with a history nobody documented. Here is what to look at, what a professional reset covers, and when replacement is the smarter call."
@@ -53,7 +54,7 @@ That is the specific case where dry vapor steam is not just a preference. It is 
 | Additional full/queen/king mattress | $199 |
 | Additional kids bed (twin/full) | $149 |
 | Underside/full-surface treatment | +$50–$75 |
-| Severe/biohazard/extensive contamination | Custom surcharge |
+| Severe or biohazard contamination | Custom surcharge |
 
 Compare that to a comparable new mattress plus disposal plus the off-gassing period. For most inherited mattresses, the reset is the better use of the money — and for the ones where it is not, we will say so before you pay.
 

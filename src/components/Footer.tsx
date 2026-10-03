@@ -50,7 +50,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10 py-5 text-center text-sm text-white/60 px-4">
-        © {new Date().getFullYear()} {site.name}, a locally owned and operated division of {site.parentBrand} · Lincoln &amp; Lancaster County, NE ·{" "}
+        © {new Date().getFullYear()} {site.name} · <Link href="/about" className="underline hover:text-teal-bright">Operated by Sleep Sanitation LLC</Link> · Lincoln &amp; Lancaster County, NE ·{" "}
         <Link href="/sitemap.xml" className="underline hover:text-teal-bright">Sitemap</Link>
       </div>
     </footer>
