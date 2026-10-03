@@ -25,6 +25,7 @@ export function Header() {
           <Link href="/service-areas" className="text-white/85 hover:text-teal-bright transition-colors">Service Areas</Link>
           <Link href="/gallery" className="text-white/85 hover:text-teal-bright transition-colors">Our Work</Link>
           <Link href="/academic-year" className="text-white/85 hover:text-teal-bright transition-colors">Academic Year</Link>
+          <Link href="/airbnb-hosts" className="text-white/85 hover:text-teal-bright transition-colors">Airbnb Hosts</Link>
           <Link href="/faq" className="text-white/85 hover:text-teal-bright transition-colors">FAQ</Link>
         </nav>
         <a
@@ -41,6 +42,7 @@ export function Header() {
         <Link href="/service-areas" className="whitespace-nowrap text-white/85 hover:text-teal-bright">Areas</Link>
         <Link href="/gallery" className="whitespace-nowrap text-white/85 hover:text-teal-bright">Our Work</Link>
         <Link href="/guides" className="whitespace-nowrap text-white/85 hover:text-teal-bright">Guides</Link>
+        <Link href="/airbnb-hosts" className="whitespace-nowrap text-white/85 hover:text-teal-bright">Hosts</Link>
         <Link href="/faq" className="whitespace-nowrap text-white/85 hover:text-teal-bright">FAQ</Link>
       </nav>
     </header>
