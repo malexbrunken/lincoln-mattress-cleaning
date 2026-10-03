@@ -15,10 +15,10 @@ export function LocalBusinessJsonLd() {
     priceRange: "$$",
     makesOffer: {
       "@type": "Offer",
-      price: "249",
+      price: "199",
       priceCurrency: "USD",
       description:
-        "Mattress sanitation, first mattress, any size. Normal stains, pet odor and ordinary urine accidents included. Fall 2026 promotion: first mattress $199, and any additional cleaning scheduled within 7 days of the first service is also $199.",
+        "Mattress sanitation, first mattress, any size: limited-time Fall 2026 offer (regular price $249). Normal stains, pet odor and ordinary urine accidents included. Book another cleaning within 7 days of your service and it's also $199.",
     },
     parentOrganization: {
       "@type": "Organization",
