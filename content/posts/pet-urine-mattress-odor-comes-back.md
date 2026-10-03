@@ -4,7 +4,7 @@ date: "2026-09-03"
 updated: "2026-10-03"
 category: "Odor & Stains"
 author: "Matthew Brunken"
-excerpt: "Urine odor returns because uric acid salts crystallize in the fiber and reactivate with humidity. Here is why masking fails, what enzymatic breakdown does, and how ATP testing verifies the result instead of guessing."
+excerpt: "Urine odor returns because uric acid salts crystallize in the fiber and reactivate with humidity. Here is why masking fails, what enzymatic breakdown does, and what we check before we leave."
 ---
 
 The pattern is almost universal: the accident happens, it gets cleaned, it smells fine for a few months, and then one humid week it is back — often stronger than anyone remembers. Nothing supernatural is going on. The chemistry is just slower than the cleaning was.
@@ -21,11 +21,11 @@ Household cleaners and fragrance treatments work on the surface, where the smell
 
 The salts have to be broken down, not covered. Enzymatic treatment does that: the enzymes digest the proteins and uric compounds that carry the odor, rather than binding them temporarily to a fragrance. It also needs dwell time — an enzymatic product rushed through in two minutes has not done its work.
 
-Then it needs verification. And this is where most services stop short, because the only instrument they brought was a nose. Noses adapt within minutes to a room smell; a technician who has been standing in that bedroom for twenty minutes is not a reliable detector.
+Then it needs an honest read on the result. Noses adapt within minutes to a room smell, so a technician who has been standing in that bedroom for twenty minutes is not a reliable detector, and neither is the owner.
 
-## How we verify
+## What we check before we leave
 
-We use ATP testing on the treated zones. ATP measurement reads actual biological residue present on a surface, so it reports whether the source has genuinely been reduced rather than whether it currently smells acceptable. On fluid treatments that verification is part of the service, not an upsell.
+We run a moisture test after the job to check that the treated zones aren't left wet.
 
 We also run the full dry vapor steam pass across the sleep surface afterwards and finish with UV-C light treatment, because a mattress with a fluid history can have an ordinary accumulation problem on top of the specific one.
 

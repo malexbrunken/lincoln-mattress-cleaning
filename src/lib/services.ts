@@ -131,13 +131,13 @@ export const services: Service[] = [
     name: "Pet Urine & Odor Treatment",
     title: "Pet Urine & Odor Removal From Mattresses | Lincoln, NE",
     description:
-      "Pet urine, child accidents, and odor treatment for Lincoln mattresses: enzymatic protein breakdown with ATP verification. Pet odor and ordinary urine accidents are included.",
+      "Pet urine, child accidents, and odor treatment for Lincoln mattresses: enzymatic protein breakdown and a moisture test after the job. Pet odor and ordinary urine accidents are included.",
     h1: "Pet Urine & Odor Treatment",
     intro:
       "Urine does not sit on a mattress. It wicks into the quilting, through the seam channels, and into the foam. Surface treatment does not fix it — the source has to be broken down where it actually is.",
     includes: [
       "Enzymatic protein degradation on affected zones (ordinary urine accidents included)",
-      "ATP verification to confirm the source is genuinely reduced",
+      "Moisture test after the job",
       "Targeted pet odor neutralization of dander oils (included)",
       "Dry vapor steam across the full sleep surface",
       "UV-C light treatment",
@@ -145,9 +145,9 @@ export const services: Service[] = [
     ],
     detail: [
       "We show up to a lot of mattresses with a pet-accident history, and the story is almost always the same: it was cleaned when it happened, it smelled fine for a while, and then it came back. Odor comes back because urine contains urea and uric acid salts that crystallize in the fiber. Those crystals reactivate with humidity — a warm body, a humid Lincoln summer, a closed-up bedroom. Fragrance covers them until the next humid night.",
-      "The fix is enzymatic: the proteins and uric salts that carry the odor have to be broken down, not masked. We apply an enzymatic treatment to the affected zones, allow the dwell time it needs, then verify with ATP testing rather than trusting our noses. ATP measurement reads actual biological residue on the surface, so we can tell you whether the source is genuinely down instead of guessing.",
+      "The fix is enzymatic: the proteins and uric salts that carry the odor have to be broken down, not masked. We apply an enzymatic treatment to the affected zones and allow the dwell time it needs.",
       "Where the wicking has reached the bottom panel, underside/full-surface treatment matters, and we will tell you when we see it. A mattress that has been repeatedly soaked over years — the classic case of a puppy mattress — is severe contamination: it carries a custom surcharge, and it is sometimes past what any cleaning process can fully resolve. We would rather tell you that on the phone than after you have paid.",
-      "This service also covers child accidents and other bodily-fluid situations, which is where careful decontamination and the ATP verification matter most. We treat those without commentary and without leaving you wondering whether it worked.",
+      "This service also covers child accidents and other bodily-fluid situations, which is where careful decontamination matters most. We treat those without commentary.",
     ],
     faq: [
       {
@@ -156,7 +156,7 @@ export const services: Service[] = [
       },
       {
         q: "Can the smell really be permanently removed?",
-        a: "For recent or moderate accidents, yes — enzymatic breakdown plus verification usually resolves it. For older mattresses with years of repeated saturation deep into the core, we will tell you honestly if the odor source is beyond what surface treatment can reach.",
+        a: "For recent or moderate accidents, yes — enzymatic breakdown usually resolves it. For older mattresses with years of repeated saturation deep into the core, we will tell you honestly if the odor source is beyond what surface treatment can reach.",
       },
       {
         q: "Is it safe for my pets and kids to be in the house afterwards?",

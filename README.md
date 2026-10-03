@@ -31,7 +31,7 @@ src/app/
   services/[slug]/             service pages (steam sanitation, comparison, dust mites, odor, UV-C, CO2, rentals)
   service-areas/[slug]/        Lincoln + 13 surrounding towns
   pricing/                     canonical Sleep Sanitation price list + estimate calculator
-  gallery/                     real job photos incl. UV-C readings before/after
+  gallery/                     real job photos (no UV-C readings; we don't take them)
   guides/                      hub-and-spoke content library
   faq/ about/ contact/         trust + conversion
   sitemap.ts robots.ts         SEO plumbing
