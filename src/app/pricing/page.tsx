@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const faq = [
   {
     q: "How much does mattress cleaning cost in Lincoln?",
-    a: "The first mattress is $249, any size from twin through king, including dry-vapor sanitation, the UV-C / HEPA protocol, normal stain treatment, pet odor treatment and ordinary urine accident treatment. Each additional full, queen or king mattress is $199, and each additional kids bed (twin/full) is $149. During our Fall 2026 promotion the first mattress is $199, and any additional cleaning scheduled within 7 days of the first service is also $199.",
+    a: "The first mattress is $249, any size from twin through king, including dry-vapor sanitation, UV-C light treatment and HEPA vacuuming, normal stain treatment, pet odor treatment and ordinary urine accident treatment. Each additional full, queen or king mattress is $199, and each additional kids bed (twin/full) is $149. During our Fall 2026 promotion the first mattress is $199, and any additional cleaning scheduled within 7 days of the first service is also $199.",
   },
   {
     q: "Why is the first mattress $249 regardless of size?",
@@ -23,7 +23,7 @@ const faq = [
   },
   {
     q: "Is there a fee to come to my home?",
-    a: "No. Travel is included anywhere in our Lincoln service radius — Lincoln and the surrounding 40 miles, including Waverly, Hickman, Seward, Crete, Wahoo, Ashland, and Gretna.",
+    a: "No. Travel is included anywhere in our Lincoln service radius — Lincoln, Lancaster County, Seward, Crete, Wahoo and Ashland.",
   },
   {
     q: "Do you require a deposit?",
@@ -44,7 +44,7 @@ export default function PricingPage() {
         <div className="relative max-w-6xl mx-auto px-4 py-16 md:py-24">
           <p className="kicker text-teal-bright mb-4">Transparent pricing</p>
           <h1 className="text-5xl md:text-6xl font-semibold leading-tight max-w-4xl mb-5">
-            One clinical-standard rate.
+            One published rate.
           </h1>
           <PromoBanner className="max-w-2xl mb-6" />
           <p className="text-xl text-white/70 max-w-2xl">
@@ -103,7 +103,7 @@ export default function PricingPage() {
           <aside className="lg:sticky lg:top-28">
             <QuoteCalc />
             <p className="text-sm text-mist mt-4">
-              Service available across Lincoln, Omaha &amp; surrounding communities through our sister sites.
+              Service available across Lincoln, Lancaster County and nearby towns.
             </p>
           </aside>
         </div>

@@ -5,7 +5,7 @@ import { getPosts } from "@/lib/posts";
 export const metadata: Metadata = {
   title: "Mattress Care Guides | Lincoln, NE",
   description:
-    "Practical mattress care guides for Lincoln and Nebraska households: how often to clean a mattress, dust mites, pet urine odor, steam versus extraction, student rentals, and mattress cleaning costs.",
+    "Practical mattress care guides for Lincoln and Nebraska households: how often to clean a mattress, bed mites, pet urine odor, steam versus extraction, student rentals, and mattress cleaning costs.",
 };
 
 export default function GuidesPage() {

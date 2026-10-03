@@ -28,7 +28,7 @@ Where the mattress is salvageable, our protocol runs inspect, isolate, sanitize,
 - Law tag read and construction identified before any heat is applied.
 - Dry vapor steam in calibrated passes across the top surface, seams, quilting, and side edges.
 - Target work on higher-accumulation zones.
-- UV-C post-treatment with a surface reading, photographed before and after.
+- UV-C light treatment, with gloves and shoe booties on and equipment disinfected between jobs.
 
 The [mattress sanitization service page](/services/mattress-sanitization) lists inclusions in full. If the law tag or inspection turns up fluid history, the [urine and odor treatment](/services/pet-urine-odor-treatment), included for ordinary accidents, addresses the source rather than the surface.
 
@@ -46,7 +46,7 @@ That is the specific case where dry vapor steam is not just a preference. It is 
 | --- | --- |
 | **Mattress Sanitation** | **$249 first mattress** |
 | Dry-vapor sanitation | Included |
-| UV-C / HEPA protocol | Included |
+| UV-C light treatment and HEPA vacuuming | Included |
 | Normal stain treatment | Included |
 | Pet odor treatment | Included |
 | **Ordinary urine accident treatment** | **Included** |
@@ -66,4 +66,4 @@ Fit a waterproof protector immediately afterwards. On a mattress with a history,
 - [Mattress sanitization service](/services/mattress-sanitization)
 - [Mattress cleaning in Lincoln: the complete guide](/guides/mattress-cleaning-lincoln-ne-guide)
 - [How often should you clean a mattress?](/guides/how-often-should-you-clean-a-mattress)
-- [Our work — real jobs, including a pre-treatment reading of 0 after](/gallery)
+- [Our work: photos from real jobs](/gallery)

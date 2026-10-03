@@ -7,7 +7,7 @@ export type JobImage = {
   url: string;
   alt: string;
   caption: string;
-  tag: "equipment" | "before" | "after" | "process" | "verification";
+  tag: "equipment" | "before" | "after" | "process";
 };
 
 const C = "https://res.cloudinary.com/f69kw8ao/image/upload";
@@ -18,7 +18,7 @@ export const jobImages: JobImage[] = [
     url: `${C}/v1789519656/IMG_3135_wyon0z.jpg`,
     alt: "Vapor clean steam cleaner standing beside a mattress vacuum with UV-C light",
     caption:
-      "The two tools that define the service: a dry vapor steam cleaner and a UV-C mattress vacuum with a surface reader.",
+      "The two tools that define the service: a dry vapor steam cleaner and a mattress vacuum with UV-C light.",
     tag: "equipment",
   },
   {
@@ -50,13 +50,6 @@ export const jobImages: JobImage[] = [
     tag: "before",
   },
   {
-    id: "verification-zero",
-    url: `${C}/v1789519659/IMG_3133_gf7wh4.jpg`,
-    alt: "UV-C mattress vacuum reader displaying a score of 0 after cleaning",
-    caption: "After: the same UV-C vacuum reader that showed a high reading before treatment reads 0.",
-    tag: "verification",
-  },
-  {
     id: "serta-tag",
     url: `${C}/v1789519644/IMG_3134_sfjryq.jpg`,
     alt: "Close-up of a Serta Perfect Sleeper mattress law tag",
@@ -81,4 +74,6 @@ export const jobImages: JobImage[] = [
 ];
 
 export const heroImage = jobImages[1];
-export const beforeAfterPair = { before: jobImages[3], after: jobImages[7] };
+const byId = (id: string) => jobImages.find((i) => i.id === id)!;
+export const beforeAfterPair = { before: byId("before-stains"), after: byId("after-avocado-topper") };
+export { byId as imageById };

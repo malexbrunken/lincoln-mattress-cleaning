@@ -6,7 +6,7 @@ import { FaqJsonLd } from "@/components/JsonLd";
 export const metadata: Metadata = {
   title: "Mattress Cleaning FAQ | Lincoln, NE",
   description:
-    "Answers about mattress cleaning in Lincoln, NE: cost, drying time, memory foam and organic mattresses, dust mites, pet accidents, bed bugs, warranty, and what dry vapor steam actually does.",
+    "Answers about mattress cleaning in Lincoln, NE: cost, drying time, memory foam and organic mattresses, bed mites, pet accidents, bed bugs, warranty, and what dry vapor steam actually does.",
 };
 
 const faqs = [
@@ -31,20 +31,20 @@ const faqs = [
     a: "Yes — and those are among the builds where dry vapor steam matters most, because natural and organic constructions are the least tolerant of a soaked foam core. One of the jobs in our gallery is an Avocado mattress with its foam topper.",
   },
   {
-    q: "How long does the dust mite reduction last?",
-    a: "In a typical Lincoln home with standard HVAC filtration and hygiene, we describe the benefit as lasting roughly 12–18 months. Reinfestation depends on humidity, bedding hygiene, pets, and whether an allergen-proof encasement is used. We recommend annual treatment as maintenance and semi-annual for households with significant allergy sensitivity or pets.",
+    q: "Does your steam kill bed mites?",
+    a: "Yes. Bed mites (house dust mites) die from heat, and published steam tests measured it: Glass and Needham (2004) reported 100 percent mortality of D. farinae in carpet and mattress samples treated with a 96°C steam cleaner, and Colloff (1995) found no live mites in steam-treated, laboratory-seeded carpet squares over four months. Those were study conditions, not a measurement in your bedroom. Mites can return from the room around the bed, so an encasement and lower bedroom humidity help afterwards. This is general information, not medical advice.",
   },
   {
     q: "My dog peed on the mattress. Is it salvageable?",
-    a: "Often yes. Urine wicks into the quilting and seam channels, and the odor returns later because uric acid salts crystallize and reactivate with humidity. Our enzymatic urine treatment, included for ordinary accidents, breaks those compounds down, and we verify with ATP testing rather than trusting our noses. Where a mattress has years of repeated saturation deep into the core, we will tell you honestly if it is beyond what surface treatment can reach.",
+    a: "In many cases, yes. Urine wicks into the quilting and seam channels, and the odor returns later because uric acid salts crystallize and reactivate with humidity. Our enzymatic urine treatment, included for ordinary accidents, breaks those compounds down, Where a mattress has years of repeated saturation deep into the core, we will tell you honestly if it is beyond what surface treatment can reach.",
   },
   {
     q: "Do you kill bed bugs?",
-    a: "No. We are not pest control and we are not licensed for it. If you have an active infestation, you need a licensed pest-control professional, and we will say that on the phone. What we do is treat the mattress surface and remove the cast debris and allergen reservoirs after the infestation itself has been professionally resolved — which is what makes the mattress comfortable to sleep on again.",
+    a: "No. We are not pest control and we are not licensed for it. If you have an active infestation, you need a licensed pest-control professional, and we will say that on the phone. What we do is treat the mattress surface and clean it after the infestation itself has been professionally resolved.",
   },
   {
-    q: "Is the process safe for kids, pets, and chemical-sensitive households?",
-    a: "Yes. No chemical residue is left in the foam, which is exactly why we use dry vapor steam rather than a detergent wash. There is no fragrance left behind either.",
+    q: "Do you leave chemicals in the mattress?",
+    a: "No. No chemical residue is left in the foam, which is exactly why we use dry vapor steam rather than a detergent wash. There is no fragrance left behind either.",
   },
   {
     q: "Do I need to do anything before you arrive?",
@@ -56,7 +56,7 @@ const faqs = [
   },
   {
     q: "What areas do you serve?",
-    a: "Lincoln and the surrounding 40 miles — Waverly, Hickman, Bennet, Eagle, Palmyra, Firth, Malcolm, Raymond, Seward, Crete, Wahoo, Ashland, and Gretna. Call and we will confirm your address before you book.",
+    a: "Lincoln and Lancaster County (Waverly, Hickman, Bennet, Firth, Malcolm, Raymond), plus Eagle, Palmyra, Seward, Crete, Wahoo and Ashland. Call and we will confirm your address before you book.",
   },
 ];
 

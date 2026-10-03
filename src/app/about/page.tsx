@@ -17,7 +17,7 @@ export default function AboutPage() {
       </nav>
       <h1 className="text-4xl md:text-5xl font-semibold text-navy mb-5">About Lincoln Mattress Cleaning</h1>
       <p className="text-xl mb-6">
-        We are the Lincoln, Nebraska service of {site.parentBrand} — a mattress-only provider built around one
+        Lincoln Mattress Cleaning is a locally owned and operated division of {site.parentBrand}, a mattress-only provider built around one
         idea: the surface you sleep on deserves a standard that was designed for it, not borrowed from carpet
         cleaning.
       </p>
@@ -48,8 +48,8 @@ export default function AboutPage() {
           of wet extraction — sanitized without soaking the core.
         </li>
         <li>
-          <strong>Verified work.</strong> UV-C post-treatment and pre/post surface readings on our mattress
-          vacuum. We photograph the readings and show them to you.
+          <strong>Hygiene on every job.</strong> Technicians wear gloves and shoe booties, and equipment is
+          disinfected between jobs. UV-C light treatment is part of every visit.
         </li>
         <li>
           <strong>Published pricing.</strong> $249 for the first mattress, any size, with every extra listed openly
@@ -65,13 +65,13 @@ export default function AboutPage() {
       <p className="mb-5">
         Inspect, isolate, sanitize, detail, reset. We read the law tag before anything touches the mattress,
         contain the bedroom, work the surface in calibrated passes, give the seams and edges the attention an
-        upholstery wand never does, finish with UV-C, and leave the room as we found it.
+        upholstery wand never does, finish with UV-C light treatment, and leave the room as we found it.
       </p>
 
       <h2 className="text-2xl font-semibold text-navy mb-3">Where we work</h2>
       <p className="mb-8">
-        Lincoln and the surrounding 40 miles — including{" "}
-        {["lincoln", "waverly", "hickman", "seward", "crete", "wahoo", "ashland", "gretna"]
+        We cover{" "}
+        {["lincoln", "lancaster-county", "seward-and-crete", "wahoo-and-ashland"]
           .map((s) => townBySlug(s))
           .filter((t): t is NonNullable<typeof t> => !!t)
           .map((t, i, arr) => (
@@ -82,17 +82,17 @@ export default function AboutPage() {
               {i < arr.length - 2 ? ", " : i === arr.length - 2 ? ", and " : ""}
             </span>
           ))}
-        . The Omaha metro is served by our sister property,{" "}
+        . For Omaha, see{" "}
         <a href="https://omahamattresscleaning.com" className="text-teal-deep underline font-semibold" rel="noopener">
           Omaha Mattress Cleaning
         </a>
-        .
+        , another {site.parentBrand} division.
       </p>
 
       <h2 className="text-2xl font-semibold text-navy mb-3">Editorial standards</h2>
       <p className="mb-8">
         The guides on this site are written to be useful whether or not you hire us. Claims about steam,
-        moisture, dust mites, and contamination are worded conservatively, pricing on every page matches the
+        moisture, bed mites, and contamination are worded conservatively, pricing on every page matches the
         published price list, and we do not publish reviews or results we cannot substantiate. Where a question
         has a genuine &ldquo;this is not our job&rdquo; answer — bed bug eradication, allergy treatment,
         diagnosing a mattress that should simply be replaced — we say that instead of selling you an

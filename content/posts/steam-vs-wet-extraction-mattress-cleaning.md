@@ -25,7 +25,7 @@ Dry vapor steam carries heat with very little water — around 5% moisture conte
 | What it reaches | Surface soil and visible spots | Surface plus upper layers, seams, quilting, edges |
 | Heat at the surface | Limited by water temperature | Superheated vapor, calibrated per mattress |
 | Chemistry | Detergent and fragrance left in the foam | No chemical residue |
-| Verification | Visual result | Pre/post surface reading, ATP on fluid treatments |
+| Hygiene | Varies | Gloves and shoe booties on every job; equipment disinfected between jobs |
 | Equipment designed for | Floors and upholstery | Mattresses and sleep surfaces |
 
 ## Where extraction genuinely wins

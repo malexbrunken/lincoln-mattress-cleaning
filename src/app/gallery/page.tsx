@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Our Work | Real Mattress Sanitation Jobs in Lincoln, NE",
   description:
-    "Real mattress sanitation jobs around Lincoln, Nebraska — pre-cleaning pet and child urine staining, dry vapor steam in progress, cleaned mattresses, and UV-C surface readings before and after.",
+    "Real mattress sanitation jobs around Lincoln, Nebraska — pre-cleaning pet and child urine staining, dry vapor steam in progress, cleaned mattresses, and the kit we bring.",
 };
 
 export default function GalleryPage() {
@@ -19,7 +19,7 @@ export default function GalleryPage() {
       <h1 className="text-4xl md:text-5xl font-semibold text-navy mb-4">Our Work</h1>
       <p className="text-lg text-mist mb-10 max-w-3xl">
         These are photographs from actual appointments — the kit we bring, the staining we are called about, the
-        steam doing the work, and the surface reading on the same machine before and after treatment. Nothing
+        steam doing the work, and the finished beds. Nothing
         here is stock photography.
       </p>
 
@@ -56,12 +56,10 @@ export default function GalleryPage() {
 
       <div className="bg-ice border border-line rounded-2xl p-7 md:p-9 mt-14 grid gap-6 md:grid-cols-[1.2fr_.8fr] items-center">
         <div>
-          <h2 className="text-2xl font-semibold mb-3">Why we show the evidence</h2>
+          <h2 className="text-2xl font-semibold mb-3">What every visit includes</h2>
           <p className="text-mist">
-            &ldquo;Clean&rdquo; is not a claim, it is a measurement. Our UV-C mattress vacuum carries a surface
-            reader, so we can take a reading before treatment and another after — and show you both. On the job
-            in this gallery, the same machine that read high on the untreated surface read{" "}
-            <strong className="text-navy">0</strong> once the dry vapor steam and UV-C passes were complete.
+            Dry vapor steam, HEPA vacuuming and UV-C light treatment on every mattress. Technicians wear gloves
+            and shoe booties in your home, and every piece of equipment is disinfected between jobs.
           </p>
         </div>
         <div className="flex flex-wrap gap-3">

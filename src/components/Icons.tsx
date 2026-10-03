@@ -1,4 +1,4 @@
-// Hand-drawn line icon set — clinical, no emoji.
+// Hand-drawn line icon set no emoji.
 const S = { strokeLinecap: "round" as const, strokeLinejoin: "round" as const };
 
 export const IconMattress = ({ className = "w-6 h-6" }: { className?: string }) => (

@@ -12,7 +12,7 @@ The mattress in an off-campus Lincoln apartment is usually the one surface that 
 
 A rental mattress arrives with a history nobody documented: previous occupants, previous pets, previous accidents, previous illness. Parents furnishing a student apartment generally discover this at move-in, and the choice looks like $249 or a few hundred more for a new mattress plus disposal logistics plus an off-gassing period.
 
-Sanitizing the mattress is usually the answer — and it is the answer for a reason beyond cost. The accumulation that matters (skin cells, dander, dust-mite reservoirs, odor compounds) is exactly what a heat-based low-moisture process addresses. A brand new mattress is nice, but a sanitized one solves the actual problem in an hour.
+Sanitizing the mattress is the answer in many cases — and it is the answer for a reason beyond cost. The accumulation that matters (skin cells, dander, bed mites (house dust mites), odor compounds) is exactly what a heat-based low-moisture process addresses. A brand new mattress is nice, but a sanitized one solves the actual problem in an hour.
 
 ## What we do for student housing
 

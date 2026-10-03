@@ -6,6 +6,7 @@ export type Post = {
   slug: string;
   title: string;
   date: string;
+  updated?: string;
   excerpt: string;
   category: string;
   author: string;
@@ -26,6 +27,7 @@ export function getPosts(): Post[] {
       slug,
       title: data.title ?? slug,
       date: data.date ? new Date(data.date).toISOString() : "",
+      updated: data.updated ? new Date(data.updated).toISOString() : undefined,
       excerpt: data.excerpt ?? "",
       category: data.category ?? "Mattress Care",
       author: data.author ?? "Matthew Brunken",

@@ -4,9 +4,9 @@ import { services } from "@/lib/services";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Mattress Cleaning Services Lincoln NE | Sanitation, Dust Mites, Odor",
+  title: "Mattress Cleaning Services Lincoln NE | Sanitation, Bed Mites, Odor",
   description:
-    "Full menu of mattress services in Lincoln, Nebraska: dry vapor steam sanitization, dust mite and allergen reduction, pet urine and odor treatment, UV-C post-treatment, and bedroom CO₂ testing.",
+    "Full menu of mattress services in Lincoln, Nebraska: dry vapor steam sanitization, bed mite treatment, pet urine and odor treatment, UV-C light treatment, and bedroom CO₂ testing.",
 };
 
 export default function ServicesPage() {

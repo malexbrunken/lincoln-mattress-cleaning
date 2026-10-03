@@ -26,7 +26,7 @@ Then it needs verification. And this is where most services stop short, because 
 
 We use ATP testing on the treated zones. ATP measurement reads actual biological residue present on a surface, so it reports whether the source has genuinely been reduced rather than whether it currently smells acceptable. On fluid treatments that verification is part of the service, not an upsell.
 
-We also run the full dry vapor steam pass across the sleep surface afterwards and finish with UV-C post-treatment, because a mattress with a fluid history usually has an ordinary accumulation problem on top of the specific one.
+We also run the full dry vapor steam pass across the sleep surface afterwards and finish with UV-C light treatment, because a mattress with a fluid history can have an ordinary accumulation problem on top of the specific one.
 
 ## What it costs
 

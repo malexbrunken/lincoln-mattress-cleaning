@@ -16,23 +16,23 @@ export const services: Service[] = [
     name: "Mattress Sanitization",
     title: "Mattress Cleaning Lincoln NE | Dry Vapor Steam Sanitation",
     description:
-      "Mattress cleaning in Lincoln, Nebraska using low-moisture dry vapor steam instead of wet extraction. $249 first mattress, UV-C post-treatment, dry in about an hour.",
+      "Mattress cleaning in Lincoln, Nebraska using low-moisture dry vapor steam instead of wet extraction. $249 first mattress, UV-C light treatment included.",
     h1: "Mattress Sanitization in Lincoln",
     intro:
       "A structured, low-moisture sanitation appointment for the surface you sleep on every night — built for mattresses, not adapted from carpet-cleaning equipment. First mattress $249, any size, with normal stains, pet odor and ordinary urine accidents included.",
     includes: [
       "Assessment of fabric, construction, and bedroom environment",
-      "Clean-entry containment — boot covers, staged tools, protected floor",
+      "Clean-entry setup: gloves and shoe booties on, staged tools, protected floor, equipment disinfected between jobs",
       "Dry vapor steam across the top surface, seams, quilting, and edges",
       "Side edge treatment (the zone every extraction wand skips)",
       "Targeted work on higher-accumulation zones",
-      "UV-C post-treatment over the sleep surface",
+      "UV-C light treatment over the sleep surface",
       "Inspection before and after, with what we found reported to you",
     ],
     detail: [
       "Most \"mattress cleaning\" in Lincoln is a carpet cleaner with an upholstery wand. That means hot water injected into a surface that should be treated with restraint, a foam core that stays damp for a day or two, and detergent residue left where you breathe for eight hours a night.",
-      "Our protocol runs the other direction. Dry vapor steam carries heat with very little water — roughly 5% moisture content against the 40–60% typical of wet extraction. At the nozzle the vapor is superheated, so it lifts and neutralizes what has accumulated in the quilting and seam channels without soaking the core. The mattress is normally dry within about an hour in a ventilated bedroom.",
-      "We start by reading the law tag. Memory foam, latex, hybrid, innerspring, and organic builds all react differently to heat and pass speed, and a technician who does not check is guessing. Then we contain the room, treat the surface in overlapping passes, detail the seams and edges, finish with UV-C, and reset the bedroom so the last impression matches the first.",
+      "Our protocol runs the other direction. Dry vapor steam carries heat with very little water. At the nozzle the vapor is superheated, so it lifts and neutralizes what has accumulated in the quilting and seam channels without soaking the core.",
+      "We start by reading the law tag. Memory foam, latex, hybrid, innerspring, and organic builds all react differently to heat and pass speed, and a technician who does not check is guessing. Then we contain the room, treat the surface in overlapping passes, detail the seams and edges, finish with UV-C light treatment, and reset the bedroom so the last impression matches the first.",
       "What we do not claim: this is a mattress sanitation protocol, not a medical treatment. It is not allergy or asthma therapy, and it is not pest control. If you have an active bed bug infestation, that is a licensed pest-control problem, and we will tell you so on the phone rather than sell you an appointment that cannot solve it.",
     ],
     faq: [
@@ -72,59 +72,57 @@ export const services: Service[] = [
     ],
     detail: [
       "Wet extraction is a good technology. On carpet, it is the standard for a reason: carpet fibers and a pad underneath can take a hot-water injection and survive a slow dry. A mattress cannot. Its core is foam or fiber batting, and once that core takes on water inside a closed bedroom, it does not dry in a day. The moisture you cannot see is the part that concerns us.",
-      "Dry vapor steam is superheated water vapor at very low moisture content. It carries the heat that breaks down oils, lifts soil out of textured quilting, and neutralizes organisms on contact, while leaving the foam core essentially dry. That is why it is used in hospital and food-service sanitation — high kill rates, no chemical residue, no lingering damp.",
+      "Dry vapor steam is superheated water vapor at very low moisture content. It carries the heat that breaks down oils, lifts soil out of textured quilting, and neutralizes organisms on contact, while leaving the foam core essentially dry. No chemical residue, no lingering damp.",
       "We are honest about the trade-off: extraction can flush a large volume of liquid through heavily saturated padding in one pass, and for a mattress that has been flooded with a significant fluid volume, there are cases where an extraction step is genuinely useful. When we hit that situation we say so. What we will not do is run a carpet-cleaning process on a sleep surface as the default, because the default matters more than the exception.",
-      "For the standard case — dust accumulation, allergen reservoirs, dander, odors, a mattress that has never been professionally treated — dry vapor steam does the job with far less risk to the thing you sleep on. The comparison table on our home page lays out the specific differences field by field.",
+      "For the standard case — dust accumulation, bed mites, dander, odors, a mattress that has never been professionally treated — dry vapor steam does the job with far less risk to the thing you sleep on. The comparison table on our home page lays out the specific differences field by field.",
     ],
     faq: [
       {
         q: "Is dry vapor steam actually hot enough to matter?",
-        a: "The vapor is superheated at the nozzle and reaches the surface well above the threshold that matters for neutralizing dust-mite allergen and common surface organisms. What makes it safe is the moisture content and the calibrated application, not a compromise on temperature.",
+        a: "The vapor is superheated at the nozzle and delivers heat to the surface. In published tests, a 96°C steam cleaner killed all of the bed mites (house dust mites) in treated carpet and mattress samples (Glass and Needham, 2004). Low moisture and calibrated passes protect the mattress; the temperature is not turned down.",
       },
       {
         q: "Doesn't my mattress need water to get clean?",
-        a: "No. Water is a carrier. Heat plus mechanical passes plus extraction into microfiber is what actually removes soil and allergen reservoirs. Adding more water than necessary just creates a drying problem inside foam.",
+        a: "No. Water is a carrier. Heat plus mechanical passes plus extraction into microfiber is what actually removes soil and debris. Adding more water than necessary just creates a drying problem inside foam.",
       },
       {
         q: "My old mattress smells musty. Will steam fix that?",
-        a: "Usually the musty smell is a moisture and microbial problem in the upper layers, and attacking the source with dry heat helps more than adding water. If the odor is coming from a deep, long-term saturation, we will tell you honestly that the mattress may be past recovery and should be replaced.",
+        a: "A musty smell can be a moisture and microbial problem in the upper layers, and attacking the source with dry heat helps more than adding water. If the odor is coming from a deep, long-term saturation, we will tell you honestly that the mattress may be past recovery and should be replaced.",
       },
     ],
   },
   {
-    slug: "dust-mite-treatment",
-    name: "Dust Mite & Allergen Reduction",
-    title: "Dust Mite Treatment for Mattresses | Lincoln, NE",
-    description:
-      "Dust mite and allergen reservoir reduction for Lincoln mattresses using dry vapor steam — no chemicals, no soaking, with realistic expectations about how long results last.",
-    h1: "Dust Mite & Allergen Reservoir Reduction",
-    intro:
-      "A mattress collects skin cells, dust, and mite-related debris over years of nightly use. This service targets that reservoir directly — with honest expectations about what a single appointment can and cannot do.",
+    slug: "bed-mite-treatment",
+    name: "Bed Mite Treatment",
+    title: "Bed Mite Treatment for Mattresses | Lincoln, NE",
+    description: "Bed mites (house dust mites) in Lincoln mattresses: dry vapor steam heat, HEPA vacuuming and UV-C light treatment, and what published steam studies did and didn’t measure.",
+    h1: "Bed Mite Treatment",
+    intro: "Bed mites (house dust mites) live in the dust and shed skin flakes that collect in a mattress. Our dry vapor steam uses heat to kill them in the seams, tufts, ridges and edges, and HEPA vacuuming lifts what they leave behind.",
     includes: [
-      "Top surface, seam, and edge treatment with dry vapor steam",
-      "Heat-based reduction of existing mite populations and their waste",
-      "UV-C post-treatment over the sleep surface",
+      "Dry vapor steam over the top surface, seams, tufts, ridges and edges",
+      "HEPA vacuuming to lift dead mites, droppings and dust",
+      "UV-C light treatment as part of the visit",
       "Underside/full-surface treatment available (+$50–$75)",
-      "Practical guidance on encasements, humidity, and timing",
+      "Plain advice on encasements and bedroom humidity",
     ],
     detail: [
-      "Dust mites are not a mattress defect, they are a fact of indoor life. They feed on shed skin cells and thrive in warm, humid conditions. A mattress is the ideal habitat: warm all night, humidified by the sleeper, and rarely cleaned because it is not visible. Allergy and indoor-air guidance typically points at bedding and mattresses as a major exposure site for the allergen they produce.",
-      "Heat is the honest answer here. Dry vapor steam neutralizes existing populations and their waste in the upper layers without introducing moisture — and moisture is precisely what helps them come back. In a typical Lincoln home with normal HVAC filtration and standard hygiene, we describe the benefit as lasting roughly 12–18 months, which is why we recommend annual treatment as maintenance and semi-annual for households with significant allergy sensitivity or pets.",
-      "We will not tell you this cures allergies. It does not, and any provider who claims that is selling you something. What a thorough mattress sanitation appointment does is remove a large, concentrated, nightly exposure source from the room where you spend a third of your life. Many customers describe easier mornings; the honest framing is that we are reducing an exposure source, not treating a medical condition.",
-      "Reinfestation depends on your environment, not on our visit. An allergen-proof encasement fitted afterwards materially extends the benefit, and keeping bedroom humidity under about 50% makes the room less hospitable to begin with. We will walk through both before we leave.",
+      "Bed mites are the animals scientists call house dust mites. They feed on shed skin flakes and do well in warm, humid bedding, so a mattress that is slept on every night suits them.",
+      "Heat is what kills them. In published steam tests, Glass and Needham (2004) reported 100 percent mortality of D. farinae after treating carpet and mattress samples with a 96°C steam cleaner, and Colloff and colleagues (1995) found no live mites in steam-treated, laboratory-seeded carpet squares over four months. Those were study conditions with those machines, not a measurement taken in your bedroom.",
+      "Killing mites and removing what they leave behind are two separate jobs. Dead mites and droppings stay in the fabric until they are lifted, which is why every visit includes HEPA vacuuming. Sleep Sanitation’s Knowledge Center reviews both studies in its article on whether steam kills dust mites in mattresses.",
+      "Mites come back from the room around the bed, so what happens after the visit matters too. An encasement fitted afterwards and lower bedroom humidity both help, and we will talk through both. We make no allergy, asthma or medical claim. This is general information, not medical advice.",
     ],
     faq: [
       {
-        q: "How long does the dust mite reduction last?",
-        a: "In a typical Lincoln home with HVAC filtration and standard hygiene habits, we describe the benefit as lasting approximately 12–18 months. Reinfestation depends on humidity, bedding hygiene, pets, and whether an encasement is used.",
+        q: "Does your steam kill bed mites?",
+        a: "Yes, with heat. Published steam tests measured the effect: Glass and Needham (2004) reported 100 percent mortality of D. farinae after a 96°C steam cleaner on carpet and mattress samples. Those were study conditions, not your bedroom.",
       },
       {
-        q: "Can you treat the pillows and bedding too?",
-        a: "Pillows can be treated in the same appointment. Sheets, blankets, and washable covers are best handled in your own washer on a hot cycle — that is more effective than anything we could do on site.",
+        q: "Are bed mites the same as bed bugs?",
+        a: "No. Bed mites (house dust mites) are microscopic and live in dust and skin flakes. Bed bugs are insects you can see. For bed bugs, call a licensed pest professional first; we are not pest control.",
       },
       {
         q: "Should I get an encasement first or after?",
-        a: "After. Treat the mattress first, then fit the encasement so you are not sealing a reservoir inside it.",
+        a: "After. Treat the mattress first, then fit the encasement.",
       },
     ],
   },
@@ -142,7 +140,7 @@ export const services: Service[] = [
       "ATP verification to confirm the source is genuinely reduced",
       "Targeted pet odor neutralization of dander oils (included)",
       "Dry vapor steam across the full sleep surface",
-      "UV-C post-treatment",
+      "UV-C light treatment",
       "Underside/full-surface treatment available (+$50–$75) for wicking that reached the bottom panel",
     ],
     detail: [
@@ -167,70 +165,29 @@ export const services: Service[] = [
     ],
   },
   {
-    slug: "bed-bug-allergen-reduction",
-    name: "Bed Bug Debris & Allergen Reduction",
-    title: "Bed Bug Debris & Mattress Allergen Reduction | Lincoln, NE",
-    description:
-      "What mattress sanitation can and cannot do about bed bugs in Lincoln — debris and allergen reduction on a treated mattress, plus when to call a licensed pest professional instead.",
-    h1: "Bed Bug Debris & Allergen Reduction",
-    intro:
-      "We do not claim to be pest control, and we will not pretend mattress sanitation replaces it. Here is exactly what our process does and does not do — so you can make the right call.",
-    includes: [
-      "Straight assessment: active infestation vs. residual debris",
-      "Dry vapor steam at temperatures that address surface organisms",
-      "Removal of debris and cast material from seams and channels",
-      "UV-C mattress vacuum pass with surface readings before and after",
-      "Honest referral to licensed pest control when that is the correct answer",
-    ],
-    detail: [
-      "If you are seeing live bugs, fresh blood spotting, or newly cast skins, you have an active infestation and you need a licensed pest-control professional, not a cleaning service. We will say that on the phone, in those words, and we would rather lose the booking than take money for an appointment that cannot solve your problem.",
-      "Where mattress sanitation genuinely helps is the residue problem. After an infestation has been treated — or in the aftermath of a past one — mattresses hold cast skins, fecal spotting, and the allergens that cause lingering skin and airway irritation. Those are debris and allergen reservoirs, and they are exquisitely uncomfortable to sleep on even when nothing is alive. That is what our protocol addresses: heat-based treatment of the surface, debris and allergen removal from quilting and seams, and a UV-C vacuum pass with surface readings before and after so you can see the change rather than take our word for it.",
-      "We also treat mattresses in the aftermath of infestations in student rentals and apartment turnovers around UNL, where a mattress has a history the current tenant did not create. The mattress is usually salvageable once the infestation itself is professionally resolved.",
-      "Our pre- and post-treatment readings come from a UV-C mattress vacuum with a surface reader. We photograph them on real jobs, and those photos are in our gallery — including a job that read high before treatment and 0 after.",
-    ],
-    faq: [
-      {
-        q: "Do you kill bed bugs?",
-        a: "We do not offer pest control, and we are not licensed for it. We treat the mattress surface and remove debris and allergen reservoirs, which is a different job. Active infestations need a licensed pest professional. After that work is done, we can make the mattress sleepable again.",
-      },
-      {
-        q: "What is the surface reader you use?",
-        a: "Our UV-C mattress vacuum includes a reader that reports a surface contamination score. We run it before and after treatment and show you both readings. It is a verification tool for our own work, not a medical or pest-detection instrument.",
-      },
-      {
-        q: "Should I just replace the mattress instead?",
-        a: "Sometimes yes, and we will say so. If the core is saturated, if the construction is failing, or if the infestation was severe, replacement is the better use of your money. We would rather tell you that than sell an appointment.",
-      },
-    ],
-  },
-  {
     slug: "uv-c-post-treatment",
-    name: "UV-C Post-Treatment",
-    title: "UV-C Mattress Post-Treatment | Included in Every Visit",
-    description:
-      "Every Sleep Sanitation mattress appointment in Lincoln finishes with a UV-C post-treatment pass and surface readings before and after. Included, never an upsell.",
-    h1: "UV-C Post-Treatment",
-    intro:
-      "Included in every mattress appointment — not an add-on, not an upsell. After the dry vapor steam pass, the surface gets a UV-C treatment and a verification reading.",
+    name: "UV-C Light Treatment",
+    title: "UV-C Light Treatment for Mattresses | Included in Every Visit",
+    description: "UV-C light treatment is part of every Lincoln mattress sanitation visit, after the dry vapor steam pass. Included in the base price, never a separate line item.",
+    h1: "UV-C Light Treatment",
+    intro: "Included in every mattress appointment. After the dry vapor steam pass, the sleep surface gets UV-C light treatment.",
     includes: [
-      "UV-C pass across the full top surface and edges after steaming",
-      "Pre-treatment and post-treatment surface readings",
-      "Readings photographed and shown to you on request",
+      "UV-C light treatment across the top surface and edges after steaming",
       "Included in the base mattress price",
     ],
     detail: [
-      "UV-C is the third step in the sequence, and the order matters. Steam does the lifting and the heat work; the UV-C pass follows on the cleaner surface. Running UV-C first would mean shining it at soil, which is not where it does the most good.",
-      "It is also how we verify our own work. Our UV-C mattress vacuum carries a surface reader, and we take a reading before treatment and after. On a recent job the same machine read high on the pre-treatment surface and 0 after — that before-and-after pair is in our gallery, because we think a service should show its evidence rather than describe it.",
-      "You will never see UV-C post-treatment priced as a line item on a Sleep Sanitation appointment. It is part of what a mattress sanitation visit is, at the published rate, for every customer.",
+      "UV-C comes after steam, and the order matters. Steam does the heat work and loosens soil, and the UV-C light treatment follows on the cleaner surface.",
+      "UV-C light is one step of the sanitation process. We don’t take or report UV-C readings or measurements, and we make no disinfection or health claim for it.",
+      "You will never see UV-C light treatment priced as a line item. It is part of what a mattress sanitation visit is, at the published rate, for every customer.",
     ],
     faq: [
       {
-        q: "Is UV-C post-treatment an extra charge?",
-        a: "No. It is included in the base mattress price — $249 for the first mattress and $149–$199 for each additional mattress.",
+        q: "Is UV-C light treatment an extra charge?",
+        a: "No. It is included in the base mattress price: $249 for the first mattress ($199 during the Fall 2026 promotion) and $149–$199 for each additional mattress.",
       },
       {
-        q: "Can you show me the readings?",
-        a: "Yes, and we encourage it. We photograph the pre- and post-treatment readings and will show you both on site.",
+        q: "Do you take UV-C readings?",
+        a: "No. UV-C light is a treatment step in our process. We don’t measure or report readings.",
       },
     ],
   },
@@ -261,7 +218,7 @@ export const services: Service[] = [
       },
       {
         q: "Is this a medical test?",
-        a: "No. It measures bedroom air quality — CO₂ and ventilation patterns. It is not a clinical test and we do not interpret it medically.",
+        a: "No. It measures bedroom air quality — CO₂ and ventilation patterns. It is not a medical test and we do not interpret it medically.",
       },
       {
         q: "Can I add it to a mattress appointment?",

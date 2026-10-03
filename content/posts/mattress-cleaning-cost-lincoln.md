@@ -12,7 +12,7 @@ Most cleaners in this market will not publish a mattress price, and the reason i
 
 **Fall 2026 promotion:** your first mattress is $199 (regular $249). Any additional cleaning scheduled within 7 days of your first service is also $199, so you can see our work first.
 
-**The first mattress is $249, any size.** Twin through king, same rate. The rate covers dry-vapor sanitation, the UV-C / HEPA protocol, normal stain treatment, pet odor treatment and ordinary urine accident treatment.
+**The first mattress is $249, any size.** Twin through king, same rate. The rate covers dry-vapor sanitation, UV-C light treatment and HEPA vacuuming, normal stain treatment, pet odor treatment and ordinary urine accident treatment.
 
 **Each additional mattress in the same visit is $199 for full, queen or king, and $149 for a kids bed (twin/full).** Same inclusions. Booking two, three, or four mattresses in one appointment is meaningfully cheaper than booking them separately, because we are already in the house with the equipment set up.
 
@@ -24,7 +24,7 @@ We charge one rate for any size on the first mattress on purpose. Size-based pri
 | --- | --- |
 | **Mattress Sanitation** | **$249 first mattress** |
 | Dry-vapor sanitation | Included |
-| UV-C / HEPA protocol | Included |
+| UV-C light treatment and HEPA vacuuming | Included |
 | Normal stain treatment | Included |
 | Pet odor treatment | Included |
 | **Ordinary urine accident treatment** | **Included** |
@@ -40,7 +40,7 @@ Underside/full-surface treatment is the only routine extra, and we will tell you
 - **No travel fee.** Anywhere in Lincoln and the surrounding 40 miles.
 - **No deposit.** Pricing is confirmed at the time of service.
 - **No charge for the underside inspection.** If we look and it does not need treating, we say so.
-- **UV-C, stains, pet odor and ordinary urine accidents are not line items.** They are included in the base rate for every customer.
+- **UV-C light treatment, stains, pet odor and ordinary urine accidents are not line items.** They are included in the base rate for every customer.
 
 ## A realistic comparison
 

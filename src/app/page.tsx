@@ -3,7 +3,7 @@ import Link from "next/link";
 import { site, packages, comparison } from "@/lib/site";
 import { services } from "@/lib/services";
 import { towns } from "@/lib/towns";
-import { heroImage, jobImages, beforeAfterPair } from "@/lib/images";
+import { heroImage, beforeAfterPair, imageById } from "@/lib/images";
 import { QuoteCalc } from "@/components/QuoteCalc";
 import { PromoBanner, IncludedTable } from "@/components/Pricing";
 import { FaqJsonLd } from "@/components/JsonLd";
@@ -31,17 +31,17 @@ const standards = [
   },
   {
     icon: IconUVC,
-    title: "Verified, then shown to you",
-    text: "Pre- and post-treatment surface readings on our UV-C vacuum, and we photograph them.",
+    title: "Gloves, booties, clean gear",
+    text: "Technicians wear gloves and shoe booties, and every piece of equipment is disinfected between jobs.",
   },
 ];
 
 const process = [
   ["01", "Inspect", "We read the law tag, assess fabric condition and construction, and look at the bedroom environment before anything is applied."],
-  ["02", "Isolate", "Boot covers on, tools staged cleanly, your floor and bedding protected. The room is contained before treatment begins."],
+  ["02", "Isolate", "Gloves and shoe booties on, disinfected tools staged cleanly, your floor and bedding protected. The room is contained before treatment begins."],
   ["03", "Sanitize", "Dry vapor steam in overlapping passes across the sleep surface, with calibrated temperature for your mattress type."],
   ["04", "Detail", "Seams, quilting channels, piping, and the side edges — the zones an upholstery wand never actually reaches."],
-  ["05", "Reset", "UV-C post-treatment, a verification reading, tools broken down in order, and the room left as we found it."],
+  ["05", "Reset", "UV-C light treatment, tools broken down in order, and the room left as we found it."],
 ];
 
 const homeFaq = [
@@ -51,15 +51,15 @@ const homeFaq = [
   },
   {
     q: "Where in Nebraska do you work?",
-    a: "Lincoln and the surrounding 40 miles, including Waverly, Hickman, Bennet, Eagle, Palmyra, Firth, Malcolm, Raymond, Seward, Crete, Wahoo, Ashland, and Gretna. The Omaha metro is covered by our sister site, and we can arrange a Lincoln-route appointment on request.",
+    a: "Lincoln and Lancaster County, including Waverly, Hickman, Bennet, Firth, Malcolm and Raymond, plus Eagle, Palmyra, Seward, Crete, Wahoo and Ashland. Call and we will confirm your address before you book.",
   },
   {
     q: "Do you use chemicals or leave anything behind?",
-    a: "No chemical residue. The mattress process is dry vapor steam plus UV-C post-treatment. Nothing is left in the foam for you to sleep against, which is why it is safe for kids, pets, and chemical-sensitive households.",
+    a: "No chemical residue. The mattress process is dry vapor steam, HEPA vacuuming and UV-C light treatment, so nothing is left in the foam for you to sleep against. Enzyme treatment is used only on urine spots, and we tell you before we apply it.",
   },
   {
     q: "Is this pest control?",
-    a: "No. If you have an active bed bug infestation, you need a licensed pest-control professional and we will tell you that on the phone. What we do is treat the mattress surface and remove the debris and allergen reservoirs that make a mattress uncomfortable to sleep on afterwards.",
+    a: "No. If you have an active bed bug infestation, you need a licensed pest-control professional and we will tell you that on the phone. What we do is treat the mattress surface and kill bed mites (house dust mites) with steam heat and lift the debris with HEPA vacuuming. Bed bugs are a separate problem for pest control.",
   },
 ];
 
@@ -87,7 +87,7 @@ export default function HomePage() {
               A {site.parentBrand} service · Lincoln, Nebraska
             </p>
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-semibold leading-[.98] text-balance mb-7">
-              Mattress cleaning,<br />held to a clinical standard.
+              Mattress cleaning,<br />with gloves, booties and clean gear.
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-2xl leading-relaxed mb-9">
               Lincoln&apos;s mattress-only service. Low-moisture dry vapor steam instead of carpet-cleaning
@@ -138,13 +138,13 @@ export default function HomePage() {
             Most mattress cleaning was built by carpet cleaners.
           </h2>
           <p className="text-xl text-mist leading-relaxed mb-6">
-            In Lincoln, &ldquo;mattress cleaning&rdquo; usually means a carpet extractor with an upholstery
+            In Lincoln, &ldquo;mattress cleaning&rdquo; can mean a carpet extractor with an upholstery
             wand — hot water injected into a surface that stays warm and humid for eight hours a night. The
             foam holds that moisture long after the truck pulls away.
           </p>
           <p className="text-xl text-mist leading-relaxed mb-8">
-            We treat your bed as the recovery surface it is: heat without the water, a protocol built around
-            mattresses, and verification before we leave.
+            We treat your bed as the recovery surface it is: heat without the water, a process built around
+            mattresses, and gloves, shoe booties and disinfected equipment on every job.
           </p>
           <Link
             href="/services/dry-vapor-steam-vs-extraction"
@@ -156,8 +156,8 @@ export default function HomePage() {
         <div className="relative">
           <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl shadow-navy/20">
             <Image
-              src={jobImages[2].url}
-              alt={jobImages[2].alt}
+              src={imageById("steam-fog").url}
+              alt={imageById("steam-fog").alt}
               fill
               sizes="(max-width:1024px) 100vw, 55vw"
               className="object-cover"
@@ -217,7 +217,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Before / after with verification */}
+      {/* Before / after */}
       <section className="max-w-6xl mx-auto px-4 py-20 md:py-28">
         <div className="max-w-3xl mb-12">
           <p className="kicker text-teal-deep mb-4">Real jobs, unedited</p>
@@ -225,8 +225,7 @@ export default function HomePage() {
             We photograph the evidence, not just the finished mattress.
           </h2>
           <p className="text-xl text-mist">
-            Every one of these images is from an actual appointment — including the readings on the machine
-            that measures the surface before and after treatment.
+            Every one of these images is from an actual appointment.
           </p>
         </div>
 
@@ -251,27 +250,24 @@ export default function HomePage() {
         <div className="grid gap-7 md:grid-cols-[1fr_.8fr] items-center bg-ice rounded-3xl border border-line p-7 md:p-9">
           <div>
             <IconGauge className="w-8 h-8 text-teal-deep mb-3" />
-            <h3 className="text-2xl md:text-3xl font-semibold mb-3">
-              A high reading before. Zero after.
-            </h3>
+            <h3 className="text-2xl md:text-3xl font-semibold mb-3">Clean gear, every job.</h3>
             <p className="text-mist">
-              Our UV-C mattress vacuum carries a surface reader. On this job it showed a high score on the
-              pre-treatment surface; after the dry vapor steam pass and UV-C treatment, the same machine read{" "}
-              <strong className="text-navy">0</strong>. You get both readings — before and after — on request, on
-              every appointment.
+              Technicians wear gloves and shoe booties in your home, and the steam system, vacuum and tools are
+              disinfected between jobs. The last step on the mattress is UV-C light treatment, included in the
+              published price.
             </p>
           </div>
           <figure className="rounded-2xl overflow-hidden border border-line bg-white">
             <div className="relative aspect-[4/3]">
               <Image
-                src={jobImages[5].url}
-                alt={jobImages[5].alt}
+                src={imageById("kit").url}
+                alt={imageById("kit").alt}
                 fill
                 sizes="(max-width:768px) 100vw, 40vw"
                 className="object-cover"
               />
             </div>
-            <figcaption className="p-4 text-sm text-mist">{jobImages[5].caption}</figcaption>
+            <figcaption className="p-4 text-sm text-mist">{imageById("kit").caption}</figcaption>
           </figure>
         </div>
       </section>
@@ -343,7 +339,7 @@ export default function HomePage() {
               No hidden fees. No size-based upsells on your first mattress.
             </h2>
             <p className="text-xl text-mist">
-              One clinical-standard rate, because the surface you sleep on deserves better than guesswork.
+              One published rate, because the surface you sleep on deserves better than guesswork.
             </p>
           </div>
           <div className="grid gap-8 lg:grid-cols-[1.35fr_.8fr] items-start">
@@ -401,10 +397,9 @@ export default function HomePage() {
             Nebraska bedrooms are closed rooms eight months a year.
           </h2>
           <p className="text-lg text-mist leading-relaxed mb-5">
-            A bedroom sealed against a Nebraska January stays warm and humid every night, which is exactly the
-            condition dust-mite populations and odors favor. By the time spring arrives, most people are
-            sleeping on a reservoir that has been building since October — and blaming the season for morning
-            congestion.
+            A bedroom sealed against a Nebraska January stays warm and humid every night, and bed mites
+            (house dust mites) do well in warm, humid bedding. By spring, that mattress has spent months in a
+            closed room. This is general information, not medical advice.
           </p>
           <p className="text-lg text-mist leading-relaxed mb-8">
             Add Lincoln&apos;s student rental turnover, where a mattress passes between tenants with no service
@@ -422,8 +417,8 @@ export default function HomePage() {
         </div>
         <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl shadow-navy/15">
           <Image
-            src={jobImages[6].url}
-            alt={jobImages[6].alt}
+            src={imageById("serta-tag").url}
+            alt={imageById("serta-tag").alt}
             fill
             sizes="(max-width:1024px) 100vw, 50vw"
             className="object-cover"
