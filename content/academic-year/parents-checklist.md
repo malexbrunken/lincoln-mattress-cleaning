@@ -1,7 +1,7 @@
 ---
 title: "A Parent's Mattress Checklist for the UNL Year"
 h1: "A parent's mattress checklist for the UNL year"
-description: "Month by month from UNL's January housing application to the May move-out: when the mattress question comes up for a Husker in a residence hall or an off-campus apartment, and what to do each time."
+description: "Month by month from UNL's January housing application to May move-out: when the mattress question comes up for a Husker, and what to do each time."
 answer: "If your student lives in a UNL residence hall, the mattress is the university's and your list is short: a pad, washable bedding and a check at move-out. If they rent off campus, the mattress is the big item, and the dates to plan around are the lease start, UNL's mid-August move-in and the May move-out."
 order: 3
 published: "2026-10-03"
@@ -32,8 +32,8 @@ faq:
     a: "UNL provides the mattress. Its move-in page says beds are lofted in traditional halls and two-bedroom suites and unlofted in apartments and four-bedroom suites, which is worth knowing before you buy a topper or sheets."
   - q: "Can you clean a mattress in a UNL residence hall?"
     a: "No. Residence hall mattresses are University Housing property; damage goes through UNL's Fix-It process. We clean mattresses in off-campus apartments and houses."
-  - q: "Who helps my student with a lease problem?"
-    a: "UNL Student Legal Services, in the Nebraska Union, room 335, 402-472-3350, publishes a landlord and tenant handbook that includes bed bugs and move-in conditions."
+  - q: "Who can my student call about bed bugs in a rental?"
+    a: "UNL Student Legal Services, in the Nebraska Union, room 335, 402-472-3350. Its bed bug page tells Lincoln renters to call the Housing Code Office at (402) 441-7521 about a suspected infestation."
 sources:
   - name: "UNL Admissions: First-Year Dates and Deadlines"
     url: "https://go.unl.edu/dates"
@@ -56,6 +56,8 @@ sources:
 changelog:
   - date: "2026-10-03"
     note: "First published, with UNL's 2027 first-year dates."
+  - date: "2026-10-03"
+    note: "Limited the Student Legal Services answer to what its bed bug page says."
 ---
 
 ## If your student lives in a residence hall

@@ -1,7 +1,7 @@
 ---
 title: "May Move-Out in Lincoln: Keep, Store or Get Rid of a Mattress"
 h1: "May move-out: keep, store or get rid of a mattress"
-description: "UNL halls closed at 1 PM on May 9, 2026, and off-campus leases turn over the same month. Lincoln's North 48th Street transfer station, what to do with a bed you're keeping, and why the curb is the wrong answer."
+description: "UNL halls closed at 1 PM on May 9, 2026. Lincoln's North 48th Street transfer station, what to do with a bed you're keeping, and why not the curb."
 answer: "Decide what happens to the mattress before move-out week. Lancaster County residents can take one to the City of Lincoln's North 48th Street transfer station with a covered, secured load. If you are keeping it, clean it and let it dry fully before it goes into storage."
 order: 4
 published: "2026-10-03"
@@ -9,8 +9,8 @@ updated: "2026-10-03"
 timeline:
   - when: "Week of May 4, 2026"
     what: "Centralized checkout began Monday, May 4; meters near the halls were hooded for one-hour loading."
-    source: "UNL Move Out; UNL Parking and Transit"
-    url: "https://moveout.unl.edu/"
+    source: "UNL Parking and Transit Services announcement"
+    url: "https://newsroom.unl.edu/announce/unlpts/20266/107621"
   - when: "May 9, 2026, 1 PM"
     what: "All residence halls closed. Graduating students had until 11 AM on May 10."
     source: "UNL Move Out"
@@ -48,6 +48,8 @@ sources:
 changelog:
   - date: "2026-10-03"
     note: "First published, using the May 2026 move-out schedule."
+  - date: "2026-10-03"
+    note: "Hooded-meter row now cites the UNL Parking and Transit announcement."
 ---
 
 ## Getting rid of it

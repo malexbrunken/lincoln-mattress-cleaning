@@ -6,9 +6,9 @@ import { YearTimeline } from "@/components/YearTimeline";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "The Lincoln Academic Year: A Mattress Calendar for UNL Renters and Parents",
+  title: { absolute: "The Lincoln Academic Year: A Mattress Calendar for UNL Renters" },
   description:
-    "UNL's housing and move dates, from the January housing application to May move-out, and what each one means for a mattress in an off-campus Lincoln apartment.",
+    "UNL's housing and move dates, from the January application to May move-out, and what each means for a mattress in an off-campus Lincoln apartment.",
   alternates: { canonical: "/academic-year" },
 };
 
@@ -29,6 +29,21 @@ const year = [
   { when: "August 15 to 18, 2027", what: "Projected on-campus move-in for fall 2027; first day of fall courses August 23, 2027.", source: "UNL Admissions", url: U.dates },
 ];
 
+const faq = [
+  {
+    q: "Do you clean UNL residence hall mattresses?",
+    a: "No. Hall beds belong to University Housing, which handles damage through Fix-It requests at move-out. Our work is in off-campus apartments and houses.",
+  },
+  {
+    q: "When is UNL move-in for fall 2027?",
+    a: "UNL's admissions calendar projects on-campus move-in for August 15 to 18, 2027, with fall courses starting August 23, 2027. Those dates are listed as projected.",
+  },
+  {
+    q: "When should an off-campus mattress be cleaned?",
+    a: "When the apartment is empty, before furniture moves in, so the mattress can dry with the room clear. If your lease turns over in May or August, book for the gap between tenants, and check the care label and warranty terms first.",
+  },
+];
+
 export default function AcademicYearHub() {
   const pages = getYearPages();
   const hub = {
@@ -39,9 +54,15 @@ export default function AcademicYearHub() {
     url: `${site.url}/academic-year`,
     hasPart: pages.map((p) => ({ "@type": "Article", headline: p.h1, url: `${site.url}/academic-year/${p.slug}` })),
   };
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+  };
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(hub) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <BreadcrumbJsonLd items={[{ name: "Home", url: site.url }, { name: "The Lincoln academic year", url: `${site.url}/academic-year` }]} />
       <nav aria-label="Breadcrumb" className="text-mist mb-4 text-sm">
         <Link href="/" className="text-teal hover:underline">Home</Link> › The Lincoln academic year
@@ -49,7 +70,7 @@ export default function AcademicYearHub() {
       <p className="kicker text-teal-deep mb-2">Lincoln, by the calendar</p>
       <h1 className="text-4xl font-semibold text-navy mb-4 leading-tight">The Lincoln academic year</h1>
       <p className="text-xl text-navy mb-8">
-        Lincoln&apos;s rental year runs on UNL&apos;s calendar: an August move-in, a May move-out and a summer in between. These
+        UNL&apos;s calendar sets an August move-in, a May move-out and a summer break in between. These
         guides take one date at a time and say what it means for a mattress in an off-campus apartment or house.
       </p>
 
@@ -77,6 +98,13 @@ export default function AcademicYearHub() {
           <a href="https://sleepsanitation.com/knowledge-center" rel="noopener">Sleep Sanitation Knowledge Center</a>.
           This section sticks to the UNL calendar and Lincoln rules.
         </p>
+        <h2>Questions about the year</h2>
+        {faq.map((f) => (
+          <div key={f.q}>
+            <h3>{f.q}</h3>
+            <p>{f.a}</p>
+          </div>
+        ))}
         <h2>What we don&apos;t know</h2>
         <ul>
           <li>UNL&apos;s 2027 move-out date. University Housing publishes it in the spring.</li>
@@ -85,6 +113,7 @@ export default function AcademicYearHub() {
         <h2>Changelog</h2>
         <ul>
           <li>October 3, 2026: hub and first four guides published.</li>
+          <li>October 3, 2026: added hub questions; tightened wording on rental timing.</li>
         </ul>
       </div>
     </div>

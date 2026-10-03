@@ -1,7 +1,7 @@
 ---
 title: "August Move-In in Lincoln: A Mattress Plan for an Off-Campus Apartment"
 h1: "August move-in: a mattress plan for an off-campus apartment"
-description: "UNL moves residence halls in over four days in mid August. For an off-campus apartment, the week before is when to inspect the bed, put any problem in writing to the landlord, and book cleaning."
+description: "UNL moves residence halls in over four days in mid August. For an off-campus apartment: inspect the bed, tell the landlord in writing, then book cleaning."
 answer: "Inspect the apartment's bed, or the one you are bringing, before the first night, and put any problem in writing to your landlord that day. UNL's Move-In 2026 ran August 16 to 19 and classes started August 24, so the week before move-in is the window for a cleaning appointment."
 order: 1
 published: "2026-10-03"
@@ -25,7 +25,7 @@ timeline:
     url: "https://go.unl.edu/dates"
 faq:
   - q: "The apartment came furnished. Who is responsible for the mattress?"
-    a: "Your lease says. Nebraska law requires a landlord, after written or actual notice, to keep a rental fit and habitable, which is why a written note on day one matters. UNL Student Legal Services can help a student read a lease."
+    a: "Your lease says. Nebraska law requires a landlord, after written or actual notice, to keep a rental fit and habitable, which is why a written note on day one matters."
   - q: "Can you clean the bed the same week we move in?"
     a: "Yes, if we have an opening. Book before your move-in date so the bed can dry before the first night."
   - q: "What if I find bugs?"
@@ -52,6 +52,8 @@ sources:
 changelog:
   - date: "2026-10-03"
     note: "First published, using 2026 move-in dates and the projected 2027 dates."
+  - date: "2026-10-03"
+    note: "Removed an unsourced line about Memorial Stadium check-in history; added a care label and warranty step."
 ---
 
 ## Move-in week, step by step
@@ -61,11 +63,12 @@ changelog:
 3. **If you find bugs, get them identified.** Extension reports that about half of the suspected bed bugs brought to Nebraska Extension in Lancaster County turn out to be bat bugs, which are handled differently.
 4. **Call the Housing Code Office at (402) 441-7521** for a suspected infestation, the number UNL Student Legal Services gives Lincoln renters.
 5. **Book cleaning for the empty apartment,** before your furniture arrives, so the mattress can dry with the room clear.
-6. **Make the bed only when it is dry to the touch.** Sleep Sanitation explains drying in [how quickly a treated mattress should dry](https://sleepsanitation.com/knowledge-center/mattress-moisture-heat-drying-construction/how-quickly-should-a-treated-mattress-dry).
+6. **Check your care label and warranty terms** before you book any cleaning.
+7. **Make the bed only when it is dry to the touch.** Sleep Sanitation explains drying in [how quickly a treated mattress should dry](https://sleepsanitation.com/knowledge-center/mattress-moisture-heat-drying-construction/how-quickly-should-a-treated-mattress-dry).
 
 ## Lincoln traffic that week
 
-UNL ran Move-In 2026 check-in through Memorial Stadium for the second year in a row, and residence hall moves filled August 16 to 19. If you are moving into an apartment near City Campus that week, plan around campus traffic, or schedule your own move and any cleaning for the days before.
+UNL ran Move-In 2026 check-in through Memorial Stadium, and residence hall moves filled August 16 to 19. If you are moving into an apartment near City Campus that week, plan around campus traffic, or schedule your own move and any cleaning for the days before.
 
 ## Bringing a used bed?
 

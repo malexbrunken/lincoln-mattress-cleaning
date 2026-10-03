@@ -14,7 +14,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps<"/academic-year/[slug]">): Promise<Metadata> {
   const p = getYearPage((await params).slug);
   if (!p) return {};
-  return { title: p.title, description: p.description, alternates: { canonical: `/academic-year/${p.slug}` } };
+  return { title: { absolute: p.title }, description: p.description, alternates: { canonical: `/academic-year/${p.slug}` } };
 }
 
 export default async function YearPageRoute({ params }: PageProps<"/academic-year/[slug]">) {

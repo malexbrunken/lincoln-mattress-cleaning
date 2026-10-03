@@ -1,18 +1,18 @@
 ---
 title: "Buying a Used Mattress for a Lincoln Apartment: Inspection First"
 h1: "Buying a used mattress for a Lincoln apartment"
-description: "Used beds change hands in Lincoln around UNL's May move-out and August move-in. What UNL Student Legal Services and Nebraska Extension say to check before a secondhand mattress comes home."
+description: "What UNL Student Legal Services and Nebraska Extension say to check before a secondhand mattress comes into a Lincoln apartment, and who to call about bugs."
 answer: "Inspect a used mattress before it goes in the car, not after. UNL Student Legal Services tells students to avoid curbside beds and to ask whether anyone experienced has inspected a used one for bed bugs. If it passes, cleaning is the next step; if it doesn't, leave it."
 order: 2
 published: "2026-10-03"
 updated: "2026-10-03"
 timeline:
   - when: "May 4 to 9, 2026"
-    what: "Residence hall checkout week, with halls closing at 1 PM on Saturday, May 9. Off-campus leases turn over too, and furniture changes hands."
+    what: "Residence hall checkout week, with halls closing at 1 PM on Saturday, May 9. If your lease turns over in May, inspect any bed you take over."
     source: "UNL Housing"
     url: "https://moveout.unl.edu/"
   - when: "May 9 to August 23, 2026"
-    what: "UNL summer break, when apartments sit empty between tenants."
+    what: "UNL summer break. If your apartment is empty between leases, that is the time to have the mattress cleaned."
     source: "UNL Housing"
     url: "https://housing.unl.edu/break-information/"
   - when: "August 16 to 19, 2026"
@@ -47,6 +47,8 @@ sources:
 changelog:
   - date: "2026-10-03"
     note: "First published."
+  - date: "2026-10-03"
+    note: "Reworded lease timing as advice rather than a market claim; added a care label and warranty line."
 ---
 
 ## Before you agree to buy
@@ -67,7 +69,7 @@ changelog:
 
 ## Once it passes
 
-Book a cleaning before the first night. What sanitizing can and can't do for a secondhand bed is covered in Sleep Sanitation's [can a used mattress be sanitized](https://sleepsanitation.com/knowledge-center/mattress-owners-decision-center/can-a-used-mattress-be-sanitized); the parts that change in Lincoln are the timing above and the offices on this page.
+Book a cleaning before the first night, and check the care label and warranty terms first. What sanitizing can and can't do for a secondhand bed is covered in Sleep Sanitation's [can a used mattress be sanitized](https://sleepsanitation.com/knowledge-center/mattress-owners-decision-center/can-a-used-mattress-be-sanitized); the parts that change in Lincoln are the timing above and the offices on this page.
 
 If you wake up with bites after a first night on a used bed, the state health department (DHHS) notes bed bugs are not known to carry disease; a doctor can tell you more. Nothing here is medical advice.
 
