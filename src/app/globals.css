@@ -91,6 +91,7 @@ h1, h2, h3, .font-display {
 .prose-mc h3 { font-size: 1.2rem; font-weight: 600; color: var(--navy-2); margin: 1.6rem 0 0.5rem; font-family: var(--font-source-sans), sans-serif; letter-spacing: 0.01em; }
 .prose-mc p { margin: 0 0 1.1rem; }
 .prose-mc ul { margin: 0 0 1.25rem; padding-left: 1.4rem; }
+.prose-mc ol { margin: 0 0 1.25rem; padding-left: 1.6rem; list-style: decimal; }
 .prose-mc li { margin-bottom: 0.5rem; }
 .prose-mc a { color: var(--teal-deep); text-decoration: underline; font-weight: 600; text-underline-offset: 2px; }
 .prose-mc strong { color: var(--navy); }

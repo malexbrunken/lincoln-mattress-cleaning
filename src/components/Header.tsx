@@ -24,6 +24,7 @@ export function Header() {
           <Link href="/pricing" className="text-white/85 hover:text-teal-bright transition-colors">Pricing</Link>
           <Link href="/service-areas" className="text-white/85 hover:text-teal-bright transition-colors">Service Areas</Link>
           <Link href="/gallery" className="text-white/85 hover:text-teal-bright transition-colors">Our Work</Link>
+          <Link href="/academic-year" className="text-white/85 hover:text-teal-bright transition-colors">Academic Year</Link>
           <Link href="/faq" className="text-white/85 hover:text-teal-bright transition-colors">FAQ</Link>
         </nav>
         <a
