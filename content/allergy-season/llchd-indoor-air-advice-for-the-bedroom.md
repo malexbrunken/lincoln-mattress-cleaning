@@ -45,4 +45,4 @@ Lincoln's local air quality index comes from ozone, carbon monoxide and fine par
 
 ## Where our visit fits
 
-We HEPA vacuum as part of every visit, and one of our three checks is a CO2 check in the bedroom; the others are a moisture check after the job and the dust mite sensor on our UV-C vacuum. None of them is an LLCHD test. Sleep Sanitation weighs [whether professional mattress sanitation is worth it](https://sleepsanitation.com/knowledge-center/mattress-owners-decision-center/is-professional-mattress-sanitation-worth-it).
+We HEPA vacuum as part of every visit, and every visit includes two checks: a moisture check after the job and the dust mite (bed mite) sensor on our UV-C vacuum. 72-hour bedroom CO₂ testing is a separate optional service, booked on its own or added to a visit and priced by quote; it isn't a medical test. None of these is an LLCHD test. Sleep Sanitation weighs [whether professional mattress sanitation is worth it](https://sleepsanitation.com/knowledge-center/mattress-owners-decision-center/is-professional-mattress-sanitation-worth-it).

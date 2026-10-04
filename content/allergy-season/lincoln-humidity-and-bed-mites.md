@@ -56,4 +56,4 @@ G2069's bedding steps and the two published steam studies are covered in our [Li
 
 ## Our dust mite sensor
 
-Our UV-C vacuum's dust mite sensor is one of our three checks, with a moisture check after the job and a bedroom CO2 check; none of the three measures room humidity. Sleep Sanitation's [bed mite and bed bug comparison](https://sleepsanitation.com/knowledge-center/mattress-dust-mites-allergens/dust-mites-vs-bed-bugs-vs-bed-mites) sorts out the names.
+Our UV-C vacuum's dust mite sensor is one of the two checks in every visit, with a moisture check after the job; neither measures room humidity. 72-hour bedroom CO₂ testing is a separate optional service, booked on its own or added to a visit and priced by quote; it isn't a medical test. Sleep Sanitation's [bed mite and bed bug comparison](https://sleepsanitation.com/knowledge-center/mattress-dust-mites-allergens/dust-mites-vs-bed-bugs-vs-bed-mites) sorts out the names.
