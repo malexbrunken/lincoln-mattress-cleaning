@@ -12,7 +12,7 @@ timeline:
     source: "UNL Housing"
     url: "https://moveout.unl.edu/"
   - when: "May 9 to August 23, 2026"
-    what: "UNL summer break. If your apartment is empty between leases, that is the time to have the mattress cleaned."
+    what: "UNL summer break. If your apartment is empty over the summer, that is the time to have the mattress cleaned."
     source: "UNL Housing"
     url: "https://housing.unl.edu/break-information/"
   - when: "August 16 to 19, 2026"

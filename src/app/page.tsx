@@ -221,7 +221,7 @@ export default function HomePage() {
         <div className="max-w-3xl mb-12">
           <p className="kicker text-teal-deep mb-4">Real jobs, unedited</p>
           <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-5">
-            We photograph the evidence, not just the finished mattress.
+            What the mattress looked like, before and after.
           </h2>
           <p className="text-xl text-mist">
             Every one of these images is from an actual appointment.
@@ -395,15 +395,10 @@ export default function HomePage() {
           <h2 className="text-3xl md:text-4xl font-semibold leading-tight mb-6">
             Nebraska bedrooms are closed rooms eight months a year.
           </h2>
-          <p className="text-lg text-mist leading-relaxed mb-5">
+          <p className="text-lg text-mist leading-relaxed mb-8">
             A bedroom sealed against a Nebraska January stays warm and humid every night, and bed mites
             (house dust mites) do well in warm, humid bedding. By spring, that mattress has spent months in a
             closed room. This is general information, not medical advice.
-          </p>
-          <p className="text-lg text-mist leading-relaxed mb-8">
-            Add Lincoln&apos;s student rental turnover, where a mattress passes between tenants with no service
-            history at all, and it becomes clear why this market needs a mattress-only provider rather than
-            another add-on line item.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link href="/guides/mattress-cleaning-lincoln-ne-guide" className="bg-navy text-white font-bold px-6 py-3.5 rounded-xl min-h-12 flex items-center hover:bg-navy-2 transition-colors">

@@ -24,8 +24,7 @@ export const towns: Town[] = [
     intro:
       "Lincoln is our home market. We treat mattresses across the city, from older homes in Near South and Everett to newer builds in the Highlands and student apartments around UNL.",
     local: [
-      "Two things shape a Lincoln mattress appointment. The first is winter: a bedroom closed up against a Nebraska January holds warmth and the moisture a sleeper gives off every night, and bed mites (house dust mites) do well in warm, humid bedding. Low-moisture dry vapor steam is the right tool there, because it treats with heat without adding a soaking.",
-      "The second is turnover. Lincoln has a large student rental market, and around UNL a mattress can pass through several tenants with no record of its history. Our Lincoln academic-year guide covers the timing.",
+      "Winter shapes a Lincoln mattress appointment: a bedroom closed up against a Nebraska January holds warmth and the moisture a sleeper gives off every night, and bed mites (house dust mites) do well in warm, humid bedding. Low-moisture dry vapor steam is the right tool there, because it treats with heat without adding a soaking.",
       "Older homes can hold older beds with constructions that need care, so we read the law tag and care label before anything touches the mattress and set steam temperature and pass speed for what it is made of.",
     ],
     anchors: [
@@ -69,7 +68,7 @@ export const towns: Town[] = [
     intro:
       "Seward, northwest of Lincoln, and Crete, south of Lincoln on Highway 103, are both college towns inside our regular radius.",
     local: [
-      "Both towns have student housing around a campus: Concordia University in Seward and Doane University in Crete. That brings the same turnover pattern we see around UNL, with mattresses that pass between tenants and arrive with no history. For a used or rental mattress, inspect for bed bugs first; if you see signs, call a licensed pest professional before booking any cleaning.",
+      "Both towns have student housing around a campus: Concordia University in Seward and Doane University in Crete. For a used or rental mattress, inspect for bed bugs first; if you see signs, call a licensed pest professional before booking any cleaning.",
       "Family homes in both counties range from new builds at the edge of town to old farmhouses. Every bed gets the same inspection first, with steam temperature and pass speed set for the materials on its label.",
     ],
     places: [

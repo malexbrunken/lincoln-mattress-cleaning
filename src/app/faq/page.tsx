@@ -51,10 +51,6 @@ const faqs = [
     a: "Strip the bedding and clear the nightstands. We bring everything else, including the containment setup. Sheets, pillowcases, and washable covers are best run through your own laundry on a hot cycle — that is more effective than anything we could do on site.",
   },
   {
-    q: "Do you service apartment turnovers and student rentals?",
-    a: "Yes, and it is a large share of our Lincoln work. Multi-mattress pricing makes a block of units practical, we schedule between lease periods, and we document what was treated per mattress.",
-  },
-  {
     q: "What areas do you serve?",
     a: "Lincoln and Lancaster County (Waverly, Hickman, Bennet, Firth, Malcolm, Raymond), plus Eagle, Palmyra, Seward, Crete, Wahoo and Ashland. Call and we will confirm your address before you book.",
   },
