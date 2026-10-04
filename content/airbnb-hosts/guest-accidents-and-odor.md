@@ -21,7 +21,7 @@ rules:
     url: "https://www.lincoln.ne.gov/City/Departments/LTU/Utilities/Solid-Waste-Management"
 faq:
   - q: "Is an ordinary guest accident included in your price?"
-    a: "Yes. Normal stains, pet odor and ordinary urine accidents are part of the regular price on our pricing page, and a severe or biohazard case carries a surcharge that you hear before any work starts."
+    a: "Yes. Normal stains, pet odor and ordinary urine accidents are included in the published price on our pricing page, and a severe or biohazard case carries a surcharge that you hear before any work starts."
   - q: "Will Airbnb reimburse my cleaning bill?"
     a: "We can't promise that. Airbnb says host damage protection isn't insurance, reviews each request, and pays only cleaning costs above the cleaning fee you charged."
   - q: "Who handles a guest accident on a game weekend?"

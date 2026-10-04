@@ -3,22 +3,22 @@ import Link from "next/link";
 import { packages, addonDetails, site } from "@/lib/site";
 import { QuoteCalc } from "@/components/QuoteCalc";
 import { PromoBanner, IncludedTable } from "@/components/Pricing";
-import { FaqJsonLd } from "@/components/JsonLd";
+import { FaqJsonLd, PricingOffersJsonLd } from "@/components/JsonLd";
+import { PROMO, priceText } from "@/lib/prices";
 import { IconMattress } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Mattress Cleaning Prices Lincoln NE | $249 First Mattress",
-  description:
-    "Lincoln, NE mattress cleaning prices: $249 first mattress ($199 Fall 2026 promotion), $149–$199 each additional. Stains, pet odor and ordinary urine included.",
+  title: `Mattress Cleaning Prices Lincoln NE | ${priceText.first} First Mattress`,
+  description: `Lincoln, NE mattress cleaning prices: ${priceText.first} first mattress${PROMO.active ? ` (${priceText.promoFirst} ${PROMO.label})` : ""}, ${priceText.additionalRange} each additional. Stains, pet odor and ordinary urine included.`,
 };
 
 const faq = [
   {
     q: "How much does mattress cleaning cost in Lincoln?",
-    a: "The first mattress is $249, any size from twin through California king, including dry-vapor sanitation, UV-C light treatment and HEPA vacuuming, normal stain treatment, pet odor treatment and ordinary urine accident treatment. Each additional full, queen or king mattress is $199, and each additional kids bed (twin/full) is $149. During our Fall 2026 promotion the first mattress is $199, and any additional cleaning scheduled within 7 days of the first service is also $199.",
+    a: `The first mattress is ${priceText.first}, any size from twin through California king, including dry-vapor sanitation, UV-C light treatment and HEPA vacuuming, normal stain treatment, pet odor treatment and ordinary urine accident treatment. Each additional full, queen or king mattress is ${priceText.additionalLarge}, and each additional kids bed (twin/full) is ${priceText.additionalKids}.${PROMO.active ? ` During our ${PROMO.label} the first mattress is ${priceText.promoFirst}, and any additional cleaning scheduled within ${PROMO.rebookDays} days of the first service is also $${PROMO.rebookPrice}.` : ""}`,
   },
   {
-    q: "Why is the first mattress $249 regardless of size?",
+    q: `Why is the first mattress ${priceText.first} regardless of size?`,
     a: "Because size-based pricing on a mattress service mostly penalizes people who own a king. The work involved in sanitizing a twin and a king is close enough that we prefer one honest rate, and you will not get a surprise upsell on the mattress you called about.",
   },
   {
@@ -39,6 +39,7 @@ export default function PricingPage() {
   return (
     <>
       <FaqJsonLd faq={faq} />
+      <PricingOffersJsonLd />
 
       <section className="bg-navy text-white texture-grain">
         <div className="relative max-w-6xl mx-auto px-4 py-16 md:py-24">
@@ -58,7 +59,7 @@ export default function PricingPage() {
         <div className="grid gap-10 lg:grid-cols-[1.35fr_.8fr] items-start">
           <div className="space-y-6">
             <h2 className="text-3xl font-semibold">What&apos;s included</h2>
-            <IncludedTable />
+            <IncludedTable promo />
             {packages.map((p) => (
               <article
                 key={p.name}
@@ -80,6 +81,7 @@ export default function PricingPage() {
                     <p className="text-mist mt-2 max-w-xl">{p.blurb}</p>
                   </div>
                   <div className="text-right">
+                    {p.priceLabel && <p className="text-xs font-bold uppercase tracking-[0.12em] text-mist">{p.priceLabel}</p>}
                     <p className="font-display text-5xl font-semibold text-teal-deep">{p.price}</p>
                     <p className="text-xs text-mist mt-1 max-w-[200px]">{p.priceNote}</p>
                   </div>
@@ -101,7 +103,7 @@ export default function PricingPage() {
             </div>
           </div>
           <aside className="lg:sticky lg:top-28">
-            <QuoteCalc />
+            <QuoteCalc promo />
             <p className="text-sm text-mist mt-4">
               Service available across Lincoln, Lancaster County and nearby towns.
             </p>

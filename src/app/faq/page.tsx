@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
 import { FaqJsonLd } from "@/components/JsonLd";
+import { priceText } from "@/lib/prices";
 
 export const metadata: Metadata = {
   title: "Mattress Cleaning FAQ | Lincoln, NE",
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "How much does mattress cleaning cost in Lincoln?",
-    a: "The first mattress is $249 (any size), with normal stains, pet odor and ordinary urine accidents included. Each additional full, queen or king mattress is $199, and each additional kids bed (twin/full) is $149. Underside/full-surface treatment is +$50–$75; severe or biohazard contamination carries a custom surcharge. During our Fall 2026 promotion the first mattress is $199, and any additional cleaning scheduled within 7 days of the first service is also $199.",
+    a: `The first mattress is ${priceText.first} (any size), with normal stains, pet odor and ordinary urine accidents included. Each additional full, queen or king mattress is ${priceText.additionalLarge}, and each additional kids bed (twin/full) is ${priceText.additionalKids}. Underside/full-surface treatment is ${priceText.underside}; severe or biohazard contamination carries a custom surcharge.`,
   },
   {
     q: "What is dry vapor steam, exactly?",

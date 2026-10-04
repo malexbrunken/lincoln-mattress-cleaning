@@ -1,3 +1,4 @@
+import { priceText } from "@/lib/prices";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
@@ -44,7 +45,7 @@ export default function AboutPage() {
           disinfected between jobs. UV-C light treatment is part of every visit.
         </li>
         <li>
-          <strong>Published pricing.</strong> $249 for the first mattress, any size, with every extra listed openly
+          <strong>Published pricing.</strong> {priceText.first} for the first mattress, any size, with every extra listed openly
           on our <Link href="/pricing" className="text-teal-deep underline font-semibold">pricing page</Link>.
         </li>
         <li>

@@ -20,7 +20,7 @@ Households with both get the most benefit from the tighter interval.
 
 ## Multi-mattress households
 
-Every mattress in the house is on the same clock. Guest-room mattresses that get used four times a year still accumulate — often more, because a closed-up guest room with no airflow is an ideal environment. Booking the whole house in one visit is both faster and cheaper: $249 for the first mattress and $149–$199 for each additional.
+Every mattress in the house is on the same clock. Guest-room mattresses that get used four times a year still accumulate — often more, because a closed-up guest room with no airflow is an ideal environment. Booking the whole house in one visit is both faster and cheaper: {{price.first}} for the first mattress and {{price.additionalRange}} for each additional.
 
 ## Triggers that override the calendar
 

@@ -1,3 +1,5 @@
+import { priceText } from "@/lib/prices";
+
 export type Service = {
   slug: string;
   name: string;
@@ -16,10 +18,10 @@ export const services: Service[] = [
     name: "Mattress Sanitization",
     title: "Mattress Cleaning Lincoln NE | Dry Vapor Steam Sanitation",
     description:
-      "Mattress cleaning in Lincoln, Nebraska using low-moisture dry vapor steam instead of wet extraction. $249 first mattress, UV-C light treatment included.",
+      `Mattress cleaning in Lincoln, Nebraska using low-moisture dry vapor steam instead of wet extraction. ${priceText.first} first mattress, UV-C light treatment included.`,
     h1: "Mattress Sanitization in Lincoln",
     intro:
-      "A structured, low-moisture sanitation appointment for the surface you sleep on every night built for mattresses. First mattress $249, any size, with normal stains, pet odor and ordinary urine accidents included.",
+      `A structured, low-moisture sanitation appointment for the surface you sleep on every night built for mattresses. First mattress ${priceText.first}, any size, with normal stains, pet odor and ordinary urine accidents included.`,
     includes: [
       "Assessment of fabric, construction, and bedroom environment",
       "Clean-entry setup: gloves and shoe booties on, staged tools, protected floor, equipment disinfected between jobs",
@@ -102,7 +104,7 @@ export const services: Service[] = [
       "Dry vapor steam over the top surface, seams, tufts, ridges and edges",
       "HEPA vacuuming to lift dead mites, droppings and dust",
       "UV-C light treatment as part of the visit",
-      "Underside/full-surface treatment available (+$50–$75)",
+      `Underside/full-surface treatment available (${priceText.underside})`,
       "Plain advice on encasements and bedroom humidity",
     ],
     detail: [
@@ -141,7 +143,7 @@ export const services: Service[] = [
       "Targeted pet odor neutralization of dander oils (included)",
       "Dry vapor steam across the full sleep surface",
       "UV-C light treatment",
-      "Underside/full-surface treatment available (+$50–$75) for wicking that reached the bottom panel",
+      `Underside/full-surface treatment available (${priceText.underside}) for wicking that reached the bottom panel`,
     ],
     detail: [
       "We show up to a lot of mattresses with a pet-accident history, and the story is almost always the same: it was cleaned when it happened, it smelled fine for a while, and then it came back. Odor comes back because urine contains urea and uric acid salts that crystallize in the fiber. Those crystals reactivate with humidity — a warm body, a humid Lincoln summer, a closed-up bedroom. Fragrance covers them until the next humid night.",
@@ -152,7 +154,7 @@ export const services: Service[] = [
     faq: [
       {
         q: "How much does pet urine treatment cost?",
-        a: "Pet odor and ordinary urine accident treatment are included in the base mattress price: $249 for the first mattress ($199 during our Fall 2026 promotion). Severe or biohazard contamination carries a custom surcharge, confirmed before any work starts.",
+        a: `Pet odor and ordinary urine accident treatment are included in the base mattress price: ${priceText.first} for the first mattress. Severe or biohazard contamination carries a custom surcharge, confirmed before any work starts.`,
       },
       {
         q: "Can the smell really be permanently removed?",
@@ -183,7 +185,7 @@ export const services: Service[] = [
     faq: [
       {
         q: "Is UV-C light treatment an extra charge?",
-        a: "No. It is included in the base mattress price: $249 for the first mattress ($199 during the Fall 2026 promotion) and $149–$199 for each additional mattress.",
+        a: `No. It is included in the base mattress price: ${priceText.first} for the first mattress and ${priceText.additionalRange} for each additional mattress.`,
       },
       {
         q: "Do you take UV-C readings?",

@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { fillPrices } from "@/lib/prices";
 
 /**
  * L1 "The Lincoln academic year". Lincoln pages are organized by calendar, so every page leads with a
@@ -32,7 +33,7 @@ export function getYearPages(): YearPage[] {
     .readdirSync(dir)
     .filter((f) => f.endsWith(".md"))
     .map((f) => {
-      const { data, content } = matter(fs.readFileSync(path.join(dir, f), "utf8"));
+      const { data, content } = matter(fillPrices(fs.readFileSync(path.join(dir, f), "utf8")));
       return { ...(data as Omit<YearPage, "slug" | "body">), slug: f.replace(/\.md$/, ""), body: content } as YearPage;
     })
     .filter((p) => !p.draft)

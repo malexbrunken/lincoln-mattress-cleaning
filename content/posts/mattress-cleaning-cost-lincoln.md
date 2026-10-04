@@ -4,18 +4,16 @@ date: "2026-09-08"
 updated: "2026-10-03"
 category: "Pricing"
 author: "Matthew Brunken"
-excerpt: "Published mattress cleaning prices for Lincoln: $249 for the first mattress any size ($199 during our Fall 2026 promotion), $149–$199 for each additional, with stains, pet odor and ordinary urine accidents included."
+excerpt: "Published mattress cleaning prices for Lincoln: {{price.first}} for the first mattress any size, {{price.additionalRange}} for each additional, with stains, pet odor and ordinary urine accidents included."
 ---
 
 Most cleaners in this market will not publish a mattress price, and the reason is usually that the answer depends on who is asking. We publish ours, on this page and on our [pricing page](/pricing), because a fair price should not require a phone call to find out.
 
 ## Base pricing
 
-**Fall 2026 promotion:** your first mattress is $199 (regular $249). Any additional cleaning scheduled within 7 days of your first service is also $199, so you can see our work first.
+**The first mattress is {{price.first}}, any size.** Twin through California king, same rate. The rate covers dry-vapor sanitation, UV-C light treatment and HEPA vacuuming, normal stain treatment, pet odor treatment and ordinary urine accident treatment.
 
-**The first mattress is $249, any size.** Twin through California king, same rate. The rate covers dry-vapor sanitation, UV-C light treatment and HEPA vacuuming, normal stain treatment, pet odor treatment and ordinary urine accident treatment.
-
-**Each additional mattress in the same visit is $199 for full, queen or king, and $149 for a kids bed (twin/full).** Same inclusions. Booking two, three, or four mattresses in one appointment is meaningfully cheaper than booking them separately, because we are already in the house with the equipment set up.
+**Each additional mattress in the same visit is {{price.additionalLarge}} for full, queen or king, and {{price.additionalKids}} for a kids bed (twin/full).** Same inclusions. Booking two, three, or four mattresses in one appointment is meaningfully cheaper than booking them separately, because we are already in the house with the equipment set up.
 
 We charge one rate for any size on the first mattress on purpose. Size-based pricing on a mattress service mostly penalizes people who own a king, and we would rather not structure our prices around that.
 
@@ -23,15 +21,15 @@ We charge one rate for any size on the first mattress on purpose. Size-based pri
 
 | Service | Price |
 | --- | --- |
-| **Mattress Sanitation** | **$249 first mattress** |
+| **Mattress Sanitation** | **{{price.first}} first mattress** |
 | Dry-vapor sanitation | Included |
 | UV-C light treatment and HEPA vacuuming | Included |
 | Normal stain treatment | Included |
 | Pet odor treatment | Included |
 | **Ordinary urine accident treatment** | **Included** |
-| Additional full/queen/king mattress | $199 |
-| Additional kids bed (twin/full) | $149 |
-| Underside/full-surface treatment | +$50–$75 |
+| Additional full/queen/king mattress | {{price.additionalLarge}} |
+| Additional kids bed (twin/full) | {{price.additionalKids}} |
+| Underside/full-surface treatment | {{price.underside}} |
 | Severe or biohazard contamination | Custom surcharge |
 
 Underside/full-surface treatment is the only routine extra, and we will tell you after we see the mattress whether it applies. Severe or biohazard contamination is quoted before any work starts.
@@ -45,7 +43,7 @@ Underside/full-surface treatment is the only routine extra, and we will tell you
 
 ## A realistic comparison
 
-Replacing a queen mattress with a comparable new one is typically several hundred dollars or more, plus the logistics of getting rid of the old one, plus a new mattress that has its own off-gassing period. Sanitizing the one you own is $249. That is the comparison most customers are actually making.
+Replacing a queen mattress with a comparable new one is typically several hundred dollars or more, plus the logistics of getting rid of the old one, plus a new mattress that has its own off-gassing period. Sanitizing the one you own is {{price.first}}. That is the comparison most customers are actually making.
 
 The other comparison: a professional annual mattress service works out to less than a couple of dollars a day over the life of the appointment-to-appointment interval, for the surface you spend roughly a third of your life on.
 

@@ -1,3 +1,5 @@
+import { PRICES, PROMO, priceText } from "@/lib/prices";
+
 export const site = {
   name: "Lincoln Mattress Cleaning",
   shortName: "Lincoln Mattress Cleaning",
@@ -43,6 +45,8 @@ type Package = {
   name: string;
   popular?: boolean;
   price: string;
+  /** Small label shown right above the price, e.g. "Each additional". */
+  priceLabel?: string;
   priceNote: string;
   blurb: string;
   features: string[];
@@ -53,20 +57,22 @@ type Package = {
  * sleepsanitation.com/pricing so every property quotes the same rate.
  */
 export const pricing = {
-  first: { label: "Mattress Sanitation, first mattress", price: 249, note: "Any size, twin through California king" },
+  first: { label: "Mattress Sanitation, first mattress", price: PRICES.first, note: "Any size, twin through California king" },
   additional: [
-    { label: "Additional full/queen/king mattress", price: 199 },
-    { label: "Additional kids bed (twin/full)", price: 149 },
+    { label: "Additional full/queen/king mattress", price: PRICES.additionalLarge },
+    { label: "Additional kids bed (twin/full)", price: PRICES.additionalKids },
   ],
-  underside: "+$50–$75",
+  underside: priceText.underside,
+  /** Shown on /pricing only. */
   promo: {
-    label: "Fall 2026 promotion",
-    badge: "Limited-time Fall 2026 offer",
-    first: 199,
-    followUp: "Book another cleaning within 7 days of your service and it's also $199.",
+    active: PROMO.active,
+    label: PROMO.label,
+    badge: PROMO.badge,
+    first: PROMO.first,
+    followUp: priceText.promoFollowUp,
   },
   included: [
-    { service: "Mattress Sanitation, first mattress", price: "promo", bold: true },
+    { service: "Mattress Sanitation, first mattress", price: "first", bold: true },
     { service: "Professional inspection: we identify the mattress materials and choose the steam setting and pass speed", price: "Included", bold: false },
     { service: "Clean-entry setup (boot covers, staged tools, protected floor)", price: "Included", bold: false },
     { service: "Dry-vapor sanitation", price: "Included", bold: false },
@@ -78,9 +84,9 @@ export const pricing = {
     { service: "Ordinary urine accident treatment", price: "Included", bold: true },
     { service: "Enzyme treatment for urine and organic odor", price: "Included", bold: false },
     { service: "Organic cleaning methods by default", price: "Included", bold: false },
-    { service: "Additional full/queen/king mattress", price: "$199", bold: false },
-    { service: "Additional kids bed (twin/full)", price: "$149", bold: false },
-    { service: "Underside/full-surface treatment", price: "+$50–$75", bold: false },
+    { service: "Additional full/queen/king mattress", price: priceText.additionalLarge, bold: false },
+    { service: "Additional kids bed (twin/full)", price: priceText.additionalKids, bold: false },
+    { service: "Underside/full-surface treatment", price: priceText.underside, bold: false },
     { service: "Severe or biohazard contamination", price: "Custom surcharge", bold: false },
   ],
 } as const;
@@ -93,15 +99,15 @@ export const pricing = {
 export const plainAnswer =
   `Lincoln Mattress Cleaning is a mattress sanitation service in Lincoln, NE, operated by ${site.parentBrand}. ` +
   `We use Italian dry vapor steam, UV-C light treatment and HEPA vacuuming, with enzyme treatment for urine. ` +
-  `The first mattress is $${pricing.first.price}, or $${pricing.promo.first} with our Fall 2026 offer. ` +
+  `The first mattress is ${priceText.first}, any size. ` +
   `We serve Lincoln, Lancaster County and nearby towns. Call or text ${site.phone} to book.`;
 
 export const packages: Package[] = [
   {
     name: "First Mattress",
     popular: true,
-    price: "$249",
-    priceNote: "Any size, twin through California king · $199 during our Fall 2026 promotion",
+    price: priceText.first,
+    priceNote: "Any size, twin through California king",
     blurb:
       "One appointment on your first mattress, with gloves, shoe booties and disinfected equipment. Top surface and side edges, dry vapor steam, UV-C light treatment, and normal stains, pet odor and ordinary urine accidents included.",
     features: [
@@ -116,8 +122,9 @@ export const packages: Package[] = [
   },
   {
     name: "Each Additional Mattress",
-    price: "$149–$199",
-    priceNote: "Kids bed (twin/full) $149 · Full, Queen or King $199",
+    priceLabel: "Each additional mattress",
+    price: priceText.additionalRange,
+    priceNote: `Each additional kids bed (twin/full) ${priceText.additionalKids} · Each additional full, queen or king ${priceText.additionalLarge}`,
     blurb:
       "Booked in the same visit as your first mattress. Same protocol, same inclusions — priced by size so a whole house costs less than separate appointments.",
     features: [
@@ -134,7 +141,7 @@ export const packages: Package[] = [
 export const addonDetails = [
   {
     name: "Underside/full-surface treatment",
-    price: "+$50–$75",
+    price: priceText.underside,
     text: "Complete six-surface coverage. Recommended for severe allergy households or any mattress with visible underside contamination — dust, staining, or debris on the bottom panel and box-spring interface.",
   },
   {
