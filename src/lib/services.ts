@@ -198,20 +198,20 @@ export const services: Service[] = [
     name: "72-Hour Bedroom CO₂ Testing",
     title: "72-Hour Bedroom CO₂ Testing | Lincoln, NE Sleep Environment",
     description:
-      "A 72-hour bedroom CO₂ monitor in Lincoln, NE. Measures overnight ventilation and air quality — the factor that disrupts sleep before anything else shows up.",
+      "Optional 72-hour bedroom CO₂ testing in Lincoln, NE: three nights of CO₂ logging to show how a closed bedroom ventilates. Booked on its own or with a visit; priced by quote.",
     h1: "72-Hour Bedroom CO₂ Testing",
     intro:
-      "A monitor runs in your bedroom for three days and measures what your sleep environment does overnight. Standalone or alongside a mattress appointment; ask us for current pricing.",
+      "A monitor runs in your bedroom for three days and measures what your sleep environment does overnight. It's an optional service, not part of a mattress visit: book it on its own or add it to a mattress appointment. Priced by quote.",
     includes: [
       "Monitor placed in the bedroom for 72 hours",
-      "Overnight CO₂ checks across three full nights",
+      "Overnight CO₂ logging across three full nights",
       "Report on ventilation patterns and how the room behaves while you sleep",
       "Practical recommendations on airflow and ventilation",
     ],
     detail: [
-      "A bedroom is a closed box that two adults exhale into for eight hours. If fresh air is not moving through it, CO₂ climbs overnight — and elevated overnight CO₂ is associated with unrefreshing sleep and grogginess that people usually blame on everything except the room. It is also one of the most common causes of morning congestion that we see in Lincoln homes.",
+      "A bedroom is a closed box that two adults exhale into for eight hours. If fresh air is not moving through it, CO₂ climbs overnight. CO₂ is a practical marker of how much fresh air reaches the room, which is what this service measures.",
       "Testing is the only way to know. When a room is sealed, when the door is shut and nothing exchanges air, three nights of data will show it plainly. When a room ventilates well, the check shows that too, and you can stop wondering.",
-      "We place the monitor, you live normally, and we collect it after 72 hours with a report on the patterns. Where the data points at something fixable — a return vent that is blocked, a door that never opens, a fan that is not running — you get the recommendation in plain language. This pairs naturally with a mattress appointment, but it stands alone fine. Ask us for current pricing.",
+      "We place the monitor, you live normally, and we collect it after 72 hours with a report on the patterns. Where the data points at something fixable — a return vent that is blocked, a door that never opens, a fan that is not running — you get the recommendation in plain language. It isn't included in a mattress visit; you can book it on its own or add it to one. It's priced by quote.",
     ],
     faq: [
       {
@@ -224,7 +224,11 @@ export const services: Service[] = [
       },
       {
         q: "Can I add it to a mattress appointment?",
-        a: "Yes. The monitor can be placed during a mattress visit and collected 72 hours later.",
+        a: "Yes. It isn't included in a mattress visit, but the monitor can be placed during one and collected 72 hours later. It's priced by quote.",
+      },
+      {
+        q: "How much does it cost?",
+        a: "It's priced by quote, whether you book it on its own or add it to a mattress visit. Call or text us for a quote.",
       },
     ],
   },

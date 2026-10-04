@@ -97,7 +97,7 @@ export function LocalBusinessJsonLd() {
         offer("Pet urine and odor treatment", "Enzyme treatment for urine and organic odor. Ordinary urine accidents and pet odor are included in the mattress price; severe or biohazard contamination is quoted before any work starts."),
         offer("Bed mite (house dust mite) treatment", "Dry vapor steam heat and HEPA vacuuming over the seams, tufts, ridges and edges. Included in the mattress price."),
         offer("UV-C light treatment", "A step in every mattress visit, after the dry vapor steam pass. Included in the mattress price."),
-        offer("72-hour bedroom CO₂ check", "A monitor runs in the bedroom for three nights. Standalone or with a mattress visit; call for current pricing."),
+        offer("72-hour bedroom CO₂ testing (optional service, priced by quote)", "Optional service, not part of a mattress visit: a monitor runs in the bedroom for three nights. Booked on its own or added to a mattress visit. Priced by quote. Not a medical test."),
       ],
     },
   };
