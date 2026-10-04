@@ -1,6 +1,7 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { site, packages, comparison } from "@/lib/site";
+import { site, packages, comparison, plainAnswer } from "@/lib/site";
 import { services } from "@/lib/services";
 import { towns } from "@/lib/towns";
 import { heroImage, beforeAfterPair, imageById } from "@/lib/images";
@@ -17,6 +18,16 @@ import {
   IconThermometer,
   IconUVC,
 } from "@/components/Icons";
+
+const homeTitle = "Mattress Cleaning & Sanitation in Lincoln, NE";
+const homeDescription =
+  "Mattress sanitation in Lincoln, NE by Sleep Sanitation: dry vapor steam, UV-C light and HEPA vacuuming. $249 first mattress, $199 Fall 2026 offer.";
+
+export const metadata: Metadata = {
+  title: { absolute: homeTitle },
+  description: homeDescription,
+  openGraph: { title: homeTitle, description: homeDescription, url: site.url },
+};
 
 const standards = [
   {
@@ -46,12 +57,20 @@ const process = [
 
 const homeFaq = [
   {
-    q: "How much does mattress cleaning cost in Lincoln?",
-    a: "The first mattress is $249, any size, with normal stains, pet odor and ordinary urine accidents included. Each additional full, queen or king mattress is $199, and each additional kids bed (twin/full) is $149. During our Fall 2026 promotion the first mattress is $199, and any additional cleaning scheduled within 7 days of the first service is also $199.",
+    q: "What is mattress sanitation, and how is it different from carpet cleaning?",
+    a: "Mattress sanitation is a cleaning visit built around the mattress itself. We use dry vapor steam, which carries heat with very little water, then HEPA vacuuming and UV-C light treatment across the top surface, seams and edges, with enzyme treatment on urine spots. Carpet cleaning is set up for carpets and rugs. Mattresses are our only business.",
   },
   {
-    q: "Where in Nebraska do you work?",
+    q: "How much does mattress cleaning cost in Lincoln?",
+    a: "The first mattress is $249, any size, with normal stains, pet odor and ordinary urine accidents included. Each additional full, queen or king mattress is $199, and each additional kids bed (twin/full) is $149. During our Fall 2026 promotion the first mattress is $199, and any additional cleaning scheduled within 7 days of the first service is also $199. Severe or biohazard contamination carries a custom surcharge, quoted before any work starts.",
+  },
+  {
+    q: "What areas do you serve?",
     a: "Lincoln and Lancaster County, including Waverly, Hickman, Bennet, Firth, Malcolm and Raymond, plus Eagle, Palmyra, Seward, Crete, Wahoo and Ashland. Call and we will confirm your address before you book.",
+  },
+  {
+    q: "How long does it take?",
+    a: "It depends on how many mattresses you have and their condition, and we confirm your appointment time when you book. Afterwards, leave the bed unmade until the mattress is dry to the touch. We do a moisture check after the job before we leave.",
   },
   {
     q: "Do you use chemicals or leave anything behind?",
@@ -87,12 +106,9 @@ export default function HomePage() {
               A {site.parentBrand} service · Lincoln, Nebraska
             </p>
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-semibold leading-[.98] text-balance mb-7">
-              Mattress cleaning,<br />with gloves, booties and clean gear.
+              Mattress cleaning &amp; sanitation in Lincoln, NE.
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 max-w-2xl leading-relaxed mb-9">
-              Lincoln&apos;s mattress-only service. Low-moisture dry vapor steam, so your mattress is sanitized,
-              not soaked.
-            </p>
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed mb-9">{plainAnswer}</p>
             <div className="flex flex-wrap gap-4">
               <a
                 href={site.phoneHref}

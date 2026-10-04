@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   // './' resolves to a per-route canonical (e.g. /pricing → https://lincolnmattresscleaning.com/pricing)
   alternates: { canonical: "./" },
   title: {
-    default: "Mattress Cleaning Lincoln NE | Dry Vapor Steam Sanitation",
+    default: "Mattress Cleaning & Sanitation in Lincoln, NE",
     template: "%s | Lincoln Mattress Cleaning",
   },
   description: site.description,
