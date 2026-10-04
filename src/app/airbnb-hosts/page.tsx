@@ -1,3 +1,4 @@
+import { priceText } from "@/lib/prices";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getHostPages } from "@/lib/strHosts";
@@ -82,8 +83,8 @@ export default function AirbnbHostsHub() {
             </p>
             <h2>What stays the same at every Lincoln listing</h2>
             <p>
-              A game weekend, a tax question or a guest accident doesn&apos;t change the visit. A host pays $249 for the first
-              mattress, or $199 while the Fall 2026 first-mattress offer runs; each added full, queen or king is $199 and a kids bed $149,
+              A game weekend, a tax question or a guest accident doesn&apos;t change the visit. A host pays {priceText.first} for the first
+              mattress; each additional full, queen or king is {priceText.additionalLarge} and each additional kids bed {priceText.additionalKids},
               with a surcharge only for a severe or biohazard case, and we work Monday to Friday, 9am to 6pm, answering calls and texts on weekends. We record every mattress on an inspection form (material, special care
               notes, urine or odor observations) and run three checks: moisture after the job, CO2 in the bedroom, and the dust mite
               sensor on our UV-C vacuum. Crews wear gloves and shoe booties and disinfect equipment between jobs. Check each mattress&apos;s care label and warranty terms before booking. This page is general information, not medical advice.

@@ -1,4 +1,5 @@
 import { site, pricing, plainAnswer } from "@/lib/site";
+import { PRICES, PROMO, priceText } from "@/lib/prices";
 
 const BUSINESS_ID = `${site.url}/#business`;
 const SANITATION_ID = `${site.url}/#mattress-sanitation`;
@@ -90,15 +91,9 @@ export function LocalBusinessJsonLd() {
             url: `${site.url}/services/mattress-sanitization`,
           },
         },
-        offer(
-          "Fall 2026 offer: first mattress",
-          `Limited-time Fall 2026 offer on the first mattress, any size (regular price $${pricing.first.price}). ${pricing.promo.followUp}`,
-          { price: String(pricing.promo.first) },
-          SANITATION_ID,
-        ),
         offer("Additional full, queen or king mattress", "Same visit as the first mattress.", { price: String(pricing.additional[0].price) }, SANITATION_ID),
         offer("Additional kids bed (twin or full)", "Same visit as the first mattress.", { price: String(pricing.additional[1].price) }, SANITATION_ID),
-        offer("Underside/full-surface treatment", "Add-on for the bottom panel and full six-surface coverage.", { min: "50", max: "75" }),
+        offer("Underside/full-surface treatment", "Add-on for the bottom panel and full six-surface coverage.", { min: String(PRICES.underside.min), max: String(PRICES.underside.max) }),
         offer("Pet urine and odor treatment", "Enzyme treatment for urine and organic odor. Ordinary urine accidents and pet odor are included in the mattress price; severe or biohazard contamination is quoted before any work starts."),
         offer("Bed mite (house dust mite) treatment", "Dry vapor steam heat and HEPA vacuuming over the seams, tufts, ridges and edges. Included in the mattress price."),
         offer("UV-C light treatment", "A step in every mattress visit, after the dry vapor steam pass. Included in the mattress price."),
@@ -112,6 +107,42 @@ export function LocalBusinessJsonLd() {
       dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
     />
   );
+}
+
+/**
+ * Offer schema for /pricing only: the regular first-mattress price plus, while it runs,
+ * the first-mattress promotion (pricing rule 2026-10-04: the promo appears nowhere else).
+ */
+export function PricingOffersJsonLd() {
+  const service = { "@type": "Service", "@id": SANITATION_ID, name: "Mattress sanitation", provider: { "@id": BUSINESS_ID } };
+  const offers: Record<string, unknown>[] = [
+    {
+      "@type": "Offer",
+      name: "Mattress sanitation, first mattress",
+      description: "Any size, twin through California king.",
+      price: String(PRICES.first),
+      priceCurrency: "USD",
+      itemOffered: service,
+      url: `${site.url}/pricing`,
+    },
+  ];
+  if (PROMO.active) {
+    offers.push({
+      "@type": "Offer",
+      name: `${PROMO.label}: first mattress`,
+      description: `Limited-time offer on the first mattress, any size (regular price ${priceText.first}). ${priceText.promoFollowUp}`,
+      price: String(PROMO.first),
+      priceCurrency: "USD",
+      itemOffered: service,
+      url: `${site.url}/pricing`,
+    });
+  }
+  offers.push(
+    { "@type": "Offer", name: "Each additional full, queen or king mattress", description: "Same visit as the first mattress.", price: String(PRICES.additionalLarge), priceCurrency: "USD", itemOffered: service },
+    { "@type": "Offer", name: "Each additional kids bed (twin or full)", description: "Same visit as the first mattress.", price: String(PRICES.additionalKids), priceCurrency: "USD", itemOffered: service },
+  );
+  const data = { "@context": "https://schema.org", "@graph": offers };
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
 }
 
 /** FAQ JSON-LD */

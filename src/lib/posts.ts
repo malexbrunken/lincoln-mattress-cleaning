@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { fillPrices } from "@/lib/prices";
 
 export type Post = {
   slug: string;
@@ -22,7 +23,7 @@ export function getPosts(): Post[] {
   const posts = files.map((f) => {
     const slug = f.replace(/\.md$/, "");
     const raw = fs.readFileSync(path.join(postsDir, f), "utf8");
-    const { data, content } = matter(raw);
+    const { data, content } = matter(fillPrices(raw));
     return {
       slug,
       title: data.title ?? slug,

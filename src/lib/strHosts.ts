@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { fillPrices } from "@/lib/prices";
 
 /**
  * L2 "Lincoln Airbnb and short-term rental hosts". Page anatomy differs from L1's timeline-first pages:
@@ -35,7 +36,7 @@ export function getHostPages(): HostPage[] {
     .readdirSync(dir)
     .filter((f) => f.endsWith(".md"))
     .map((f) => {
-      const { data, content } = matter(fs.readFileSync(path.join(dir, f), "utf8"));
+      const { data, content } = matter(fillPrices(fs.readFileSync(path.join(dir, f), "utf8")));
       return { ...(data as Omit<HostPage, "slug" | "body">), slug: f.replace(/\.md$/, ""), body: content } as HostPage;
     })
     .filter((p) => !p.draft)

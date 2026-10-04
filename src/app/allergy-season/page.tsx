@@ -1,3 +1,4 @@
+import { priceText } from "@/lib/prices";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllergyPages } from "@/lib/allergySeason";
@@ -110,8 +111,8 @@ export default function AllergySeasonHub() {
       <section id="visit" aria-label="Booking a Lincoln visit" className="border-l-8 border-teal bg-white rounded-r-2xl p-7 mb-12 max-w-4xl">
         <h2 className="text-2xl font-semibold text-navy mb-4">Booking a Lincoln visit in allergy season</h2>
         <p className="text-lg mb-4">
-          Pollen season doesn&apos;t change the bill: the first mattress is $249, or $199 while our Fall 2026 first-mattress offer runs,
-          each additional full, queen or king is $199 and each additional kids bed $149, with normal stains, pet odor and ordinary urine
+          Pollen season doesn&apos;t change the bill: the first mattress is {priceText.first},
+          each additional full, queen or king is {priceText.additionalLarge} and each additional kids bed {priceText.additionalKids}, with normal stains, pet odor and ordinary urine
           accidents included and a surcharge only for a severe or biohazard case, which you&apos;ll hear before any work starts.
         </p>
         <p className="text-lg mb-4">

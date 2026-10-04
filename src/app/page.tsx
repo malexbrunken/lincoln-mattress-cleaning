@@ -6,7 +6,8 @@ import { services } from "@/lib/services";
 import { towns } from "@/lib/towns";
 import { heroImage, beforeAfterPair, imageById } from "@/lib/images";
 import { QuoteCalc } from "@/components/QuoteCalc";
-import { PromoBanner, IncludedTable } from "@/components/Pricing";
+import { IncludedTable } from "@/components/Pricing";
+import { priceText } from "@/lib/prices";
 import { FaqJsonLd } from "@/components/JsonLd";
 import {
   IconDropletSlash,
@@ -20,8 +21,7 @@ import {
 } from "@/components/Icons";
 
 const homeTitle = "Mattress Cleaning & Sanitation in Lincoln, NE";
-const homeDescription =
-  "Mattress sanitation in Lincoln, NE by Sleep Sanitation: dry vapor steam, UV-C light and HEPA vacuuming. $249 first mattress, $199 Fall 2026 offer.";
+const homeDescription = `Mattress sanitation in Lincoln, NE by Sleep Sanitation: dry vapor steam, UV-C light and HEPA vacuuming. ${priceText.first} first mattress, any size.`;
 
 export const metadata: Metadata = {
   title: { absolute: homeTitle },
@@ -62,7 +62,7 @@ const homeFaq = [
   },
   {
     q: "How much does mattress cleaning cost in Lincoln?",
-    a: "The first mattress is $249, any size, with normal stains, pet odor and ordinary urine accidents included. Each additional full, queen or king mattress is $199, and each additional kids bed (twin/full) is $149. During our Fall 2026 promotion the first mattress is $199, and any additional cleaning scheduled within 7 days of the first service is also $199. Severe or biohazard contamination carries a custom surcharge, quoted before any work starts.",
+    a: `The first mattress is ${priceText.first}, any size, with normal stains, pet odor and ordinary urine accidents included. Each additional full, queen or king mattress is ${priceText.additionalLarge}, and each additional kids bed (twin/full) is ${priceText.additionalKids}. Severe or biohazard contamination carries a custom surcharge, quoted before any work starts.`,
   },
   {
     q: "What areas do you serve?",
@@ -123,9 +123,8 @@ export default function HomePage() {
                 See published pricing
               </Link>
             </div>
-            <PromoBanner className="mt-6 max-w-xl" />
             <p className="mt-6 text-sm text-white/65 tracking-wide">
-              FIRST MATTRESS $249 · ANY SIZE · STAINS, PET ODOR &amp; ORDINARY URINE INCLUDED · MON–FRI 9AM–6PM
+              FIRST MATTRESS {priceText.first} · ANY SIZE · STAINS, PET ODOR &amp; ORDINARY URINE INCLUDED · MON–FRI 9AM–6PM
             </p>
           </div>
         </div>
@@ -359,7 +358,6 @@ export default function HomePage() {
           </div>
           <div className="grid gap-8 lg:grid-cols-[1.35fr_.8fr] items-start">
             <div className="grid gap-5">
-              <PromoBanner />
               <h3 className="text-2xl md:text-3xl font-semibold">What&apos;s included</h3>
               <IncludedTable />
               {packages.map((p) => (
@@ -383,6 +381,7 @@ export default function HomePage() {
                       <p className="text-mist leading-relaxed">{p.blurb}</p>
                     </div>
                     <div className="text-right">
+                      {p.priceLabel && <p className="text-xs font-bold uppercase tracking-[0.12em] text-mist">{p.priceLabel}</p>}
                       <p className="font-display text-4xl font-semibold text-teal-deep">{p.price}</p>
                       <p className="text-xs text-mist mt-1 max-w-[190px]">{p.priceNote}</p>
                     </div>
@@ -485,7 +484,6 @@ export default function HomePage() {
           <p className="text-xl text-white/75 mb-8">
             No deposit required. Your exact quote takes under a minute on the phone.
           </p>
-          <PromoBanner className="max-w-xl mx-auto mb-8 text-left" />
           <a
             href={site.phoneHref}
             className="inline-flex bg-teal hover:bg-teal-bright text-white font-bold text-lg px-8 py-4 rounded-xl min-h-12 items-center transition-colors shadow-xl shadow-black/30"

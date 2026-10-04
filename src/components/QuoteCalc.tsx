@@ -1,28 +1,29 @@
 "use client";
 
 import { useState } from "react";
+import { PRICES, PROMO, priceText } from "@/lib/prices";
 
 /**
- * Estimate calculator wired to the canonical price list:
- * first mattress $249 (Fall 2026 promotion: $199); additional full/queen/king $199;
- * additional kids bed (twin/full) $149; underside/full-surface treatment +$50–$75 per mattress.
+ * Estimate calculator wired to the canonical price list in lib/prices.ts.
  * Dry-vapor sanitation, UV-C light treatment and HEPA vacuuming, normal stains, pet odor and ordinary urine
  * accidents are included. Severe or biohazard contamination is a custom surcharge.
+ * `promo` applies the first-mattress promotion and is for /pricing only (pricing rule 2026-10-04).
  */
-const FIRST = 249;
-const PROMO_FIRST = 199;
+const FIRST = PRICES.first;
 
-export function QuoteCalc() {
+export function QuoteCalc({ promo = false }: { promo?: boolean }) {
+  const showPromo = promo && PROMO.active;
+  const firstPrice = showPromo ? PROMO.first : FIRST;
   const [mattresses, setMattresses] = useState(2);
   const [kidsAdditional, setKidsAdditional] = useState(false);
   const [underside, setUnderside] = useState(false);
 
-  const perAdditional = kidsAdditional ? 149 : 199;
+  const perAdditional = kidsAdditional ? PRICES.additionalKids : PRICES.additionalLarge;
   const additionalCount = Math.max(0, mattresses - 1);
   const regularBase = FIRST + additionalCount * perAdditional;
-  const promoBase = PROMO_FIRST + additionalCount * perAdditional;
-  const undersideLow = underside ? 50 * mattresses : 0;
-  const undersideHigh = underside ? 75 * mattresses : 0;
+  const base = firstPrice + additionalCount * perAdditional;
+  const undersideLow = underside ? PRICES.underside.min * mattresses : 0;
+  const undersideHigh = underside ? PRICES.underside.max * mattresses : 0;
   const fmt = (lo: number, hi: number) => (lo === hi ? `$${lo.toLocaleString()}` : `$${lo.toLocaleString()}–$${hi.toLocaleString()}`);
 
   return (
@@ -67,7 +68,7 @@ export function QuoteCalc() {
               }`}
             >
               <span>Full, Queen or King</span>
-              <span className="text-sm text-mist font-normal">$199 each</span>
+              <span className="text-sm text-mist font-normal">{priceText.additionalLarge} each additional</span>
             </button>
             <button
               type="button"
@@ -79,7 +80,7 @@ export function QuoteCalc() {
               }`}
             >
               <span>Kids bed (twin or full)</span>
-              <span className="text-sm text-mist font-normal">$149 each</span>
+              <span className="text-sm text-mist font-normal">{priceText.additionalKids} each additional</span>
             </button>
           </div>
         </div>
@@ -92,7 +93,7 @@ export function QuoteCalc() {
           onChange={(e) => setUnderside(e.target.checked)}
           className="w-5 h-5 accent-teal-deep"
         />
-        <span className="font-semibold text-[15px] leading-snug">Underside / full-surface treatment  +$50–$75 each</span>
+        <span className="font-semibold text-[15px] leading-snug">Underside / full-surface treatment  {priceText.underside} each</span>
       </label>
       <p className="text-xs text-mist mt-2">
         Included at no charge: dry-vapor sanitation, UV-C light treatment and HEPA vacuuming, normal stains, pet odor and ordinary urine accidents.
@@ -103,9 +104,11 @@ export function QuoteCalc() {
           <li className="flex justify-between gap-3">
             <span>First mattress</span><span className="tabular-nums">${FIRST}</span>
           </li>
-          <li className="flex justify-between gap-3 font-semibold text-teal-deep">
-            <span>Fall 2026 promotion</span><span className="tabular-nums">−${FIRST - PROMO_FIRST}</span>
-          </li>
+          {showPromo && (
+            <li className="flex justify-between gap-3 font-semibold text-teal-deep">
+              <span>{PROMO.label}</span><span className="tabular-nums">−${FIRST - PROMO.first}</span>
+            </li>
+          )}
           {additionalCount > 0 && (
             <li className="flex justify-between gap-3">
               <span>
@@ -124,12 +127,14 @@ export function QuoteCalc() {
         <div className="flex items-baseline justify-between gap-3">
           <p className="text-sm text-mist font-medium leading-snug">Estimated total:</p>
           <p className="font-display text-4xl font-extrabold text-teal-deep tabular-nums" suppressHydrationWarning>
-            {fmt(promoBase + undersideLow, promoBase + undersideHigh)}
+            {fmt(base + undersideLow, base + undersideHigh)}
           </p>
         </div>
-        <p className="text-xs text-mist text-right mt-1" suppressHydrationWarning>
-          Regular price {fmt(regularBase + undersideLow, regularBase + undersideHigh)}
-        </p>
+        {showPromo && (
+          <p className="text-xs text-mist text-right mt-1" suppressHydrationWarning>
+            Regular price {fmt(regularBase + undersideLow, regularBase + undersideHigh)}
+          </p>
+        )}
       </div>
       <p className="text-xs text-mist mt-3">
         Estimate only. We confirm your final price when you book. Severe or biohazard contamination is quoted as a custom surcharge.

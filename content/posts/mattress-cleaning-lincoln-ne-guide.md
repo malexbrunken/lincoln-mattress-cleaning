@@ -13,7 +13,7 @@ This is the guide we would give a Lincoln neighbor who asked what we actually do
 
 Ask any mattress cleaner what equipment touches the mattress and how much water goes in. Our answer: **dry vapor steam**, and our Vapor Clean machines are rated by their maker at 5 to 6% moisture content, applied at temperatures high enough to do the sanitation work, leaving the foam core essentially dry and nothing behind for you to sleep against.
 
-The first mattress is $249, any size, with normal stains, pet odor and ordinary urine accidents included ($199 during our Fall 2026 promotion). Each additional mattress in the same visit is $149–$199. Everything is published on our [pricing page](/pricing).
+The first mattress is {{price.first}}, any size, with normal stains, pet odor and ordinary urine accidents included. Each additional mattress in the same visit is {{price.additionalRange}}. Everything is published on our [pricing page](/pricing).
 
 ## Why Nebraska bedrooms make this an annual job
 
@@ -37,18 +37,16 @@ The [full service page](/services/mattress-sanitization) covers what is included
 
 | Service | Price |
 | --- | --- |
-| **Mattress Sanitation** | **$249 first mattress** |
+| **Mattress Sanitation** | **{{price.first}} first mattress** |
 | Dry-vapor sanitation | Included |
 | UV-C light treatment and HEPA vacuuming | Included |
 | Normal stain treatment | Included |
 | Pet odor treatment | Included |
 | **Ordinary urine accident treatment** | **Included** |
-| Additional full/queen/king mattress | $199 |
-| Additional kids bed (twin/full) | $149 |
-| Underside/full-surface treatment | +$50–$75 |
+| Additional full/queen/king mattress | {{price.additionalLarge}} |
+| Additional kids bed (twin/full) | {{price.additionalKids}} |
+| Underside/full-surface treatment | {{price.underside}} |
 | Severe or biohazard contamination | Custom surcharge |
-
-**Fall 2026 promotion:** your first mattress is $199 (regular $249). Any additional cleaning scheduled within 7 days of your first service is also $199, so you can see our work first.
 
 There is no travel fee inside our service radius and no deposit required. We added a full breakdown of what is included on the [pricing page](/pricing), and there is an estimate calculator there if you want to price a two- or three-mattress visit before calling.
 

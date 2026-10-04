@@ -41,19 +41,17 @@ That is the specific case where dry vapor steam is not just a preference. It is 
 
 ## What it costs
 
-**Fall 2026 promotion:** your first mattress is $199 (regular $249). Any additional cleaning scheduled within 7 days of your first service is also $199, so you can see our work first.
-
 | Service | Price |
 | --- | --- |
-| **Mattress Sanitation** | **$249 first mattress** |
+| **Mattress Sanitation** | **{{price.first}} first mattress** |
 | Dry-vapor sanitation | Included |
 | UV-C light treatment and HEPA vacuuming | Included |
 | Normal stain treatment | Included |
 | Pet odor treatment | Included |
 | **Ordinary urine accident treatment** | **Included** |
-| Additional full/queen/king mattress | $199 |
-| Additional kids bed (twin/full) | $149 |
-| Underside/full-surface treatment | +$50–$75 |
+| Additional full/queen/king mattress | {{price.additionalLarge}} |
+| Additional kids bed (twin/full) | {{price.additionalKids}} |
+| Underside/full-surface treatment | {{price.underside}} |
 | Severe or biohazard contamination | Custom surcharge |
 
 Compare that to a comparable new mattress plus disposal plus the off-gassing period. For most inherited mattresses, the reset is the better use of the money — and for the ones where it is not, we will say so before you pay.

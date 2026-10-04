@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { fillPrices } from "@/lib/prices";
 
 /**
  * L4 "Allergy season in Lincoln". Page anatomy differs from L1 (timeline first), L2 (checklist on top plus a
@@ -37,7 +38,7 @@ export function getAllergyPages(): AllergyPage[] {
     .readdirSync(dir)
     .filter((f) => f.endsWith(".md"))
     .map((f) => {
-      const { data, content } = matter(fs.readFileSync(path.join(dir, f), "utf8"));
+      const { data, content } = matter(fillPrices(fs.readFileSync(path.join(dir, f), "utf8")));
       return { ...(data as Omit<AllergyPage, "slug" | "body">), slug: f.replace(/\.md$/, ""), body: content } as AllergyPage;
     })
     .filter((p) => !p.draft)

@@ -1,3 +1,4 @@
+import { priceText } from "@/lib/prices";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -14,7 +15,7 @@ export async function generateMetadata({ params }: PageProps<"/service-areas/[sl
   if (!t) return {};
   return {
     title: `${t.headline} | Dry Vapor Steam Sanitation`,
-    description: `Mattress cleaning and sanitization in ${t.name}, Nebraska. Low-moisture dry vapor steam, UV-C light treatment and HEPA vacuuming, $249 first mattress. In-home service.`,
+    description: `Mattress cleaning and sanitization in ${t.name}, Nebraska. Low-moisture dry vapor steam, UV-C light treatment and HEPA vacuuming, ${priceText.first} first mattress. In-home service.`,
   };
 }
 
@@ -81,7 +82,7 @@ export default async function TownPage({ params }: PageProps<"/service-areas/[sl
           <Link href="/services/mattress-sanitization" className="text-teal-deep underline font-semibold">
             Mattress sanitization
           </Link>{" "}
-          — $249 first mattress, any size
+          — {priceText.first} first mattress, any size
         </li>
         <li>
           💧{" "}
