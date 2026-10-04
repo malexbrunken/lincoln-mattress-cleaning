@@ -3,6 +3,23 @@ import { PRICES, PROMO, priceText } from "@/lib/prices";
 
 const BUSINESS_ID = `${site.url}/#business`;
 const SANITATION_ID = `${site.url}/#mattress-sanitation`;
+const FOUNDER_ID = `${site.url}/#founder`;
+
+/** Matthew Brunken, founder of Sleep Sanitation. One Person entity, referenced by @id elsewhere. */
+export const founder = {
+  "@type": "Person",
+  "@id": FOUNDER_ID,
+  name: "Matthew Brunken",
+  jobTitle: "Founder",
+  url: `${site.url}/about`,
+  sameAs: [
+    "https://matthewbrunken.me",
+    "https://github.com/malexbrunken",
+    "https://twitter.com/matthew_brunken",
+    "https://sleepsanitation.com/matthew-brunken",
+  ],
+  worksFor: { "@id": BUSINESS_ID },
+};
 
 /** An Offer in the catalog. Services with no separate price say so in `description`. */
 function offer(name: string, description: string, price?: { price?: string; min?: string; max?: string }, serviceId?: string) {
@@ -37,6 +54,7 @@ export function LocalBusinessJsonLd() {
     telephone: site.phoneE164,
     email: site.email,
     priceRange: "$$",
+    founder,
     parentOrganization: {
       "@type": "LocalBusiness",
       "@id": "https://sleepsanitation.com/#business",
@@ -183,15 +201,9 @@ export function ServiceJsonLd({ name, description, url }: { name: string; descri
   );
 }
 
-/** Person entity used as the editorial author across the guide library. */
-export function AuthorJsonLd({ name }: { name: string }) {
-  const data = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name,
-    url: `${site.url}/about`,
-    worksFor: { "@id": BUSINESS_ID },
-  };
+/** Person entity used as the editorial author across the guide library (the founder). */
+export function AuthorJsonLd() {
+  const data = { "@context": "https://schema.org", ...founder };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
 }
 
@@ -215,8 +227,8 @@ export function ArticleJsonLd({
   description,
   url,
   date,
-  author,
-}: { title: string; description: string; url: string; date: string; author: string }) {
+  updated,
+}: { title: string; description: string; url: string; date: string; updated?: string }) {
   const data = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -225,10 +237,32 @@ export function ArticleJsonLd({
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     url,
     datePublished: date,
-    dateModified: date,
-    author: { "@type": "Person", name: author, url: `${site.url}/about` },
+    dateModified: updated ?? date,
+    author: { "@type": "Person", "@id": FOUNDER_ID, name: founder.name, url: founder.url, sameAs: founder.sameAs },
     publisher: { "@id": BUSINESS_ID },
     isPartOf: { "@type": "Blog", "@id": `${site.url}/guides` },
+    inLanguage: "en-US",
+  };
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
+}
+
+/** WebPage JSON-LD with dateModified, for core and hub pages whose content lives in code. */
+export function WebPageJsonLd({
+  name,
+  path,
+  dateModified,
+  type = "WebPage",
+}: { name: string; path: string; dateModified: string; type?: "WebPage" | "CollectionPage" | "AboutPage" | "FAQPage" | "ContactPage" }) {
+  const url = `${site.url}${path}`;
+  const data = {
+    "@context": "https://schema.org",
+    "@type": type,
+    "@id": `${url}#webpage`,
+    name,
+    url,
+    dateModified,
+    isPartOf: { "@type": "WebSite", "@id": `${site.url}/#website`, url: site.url, name: site.name },
+    publisher: { "@id": BUSINESS_ID },
     inLanguage: "en-US",
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;

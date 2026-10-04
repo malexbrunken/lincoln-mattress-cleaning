@@ -5,7 +5,7 @@ import { fmtDate, getYearPage, getYearPages } from "@/lib/academicYear";
 import { site } from "@/lib/site";
 import { Markdown } from "@/components/Markdown";
 import { YearTimeline } from "@/components/YearTimeline";
-import { BreadcrumbJsonLd, FaqJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, FaqJsonLd, founder } from "@/components/JsonLd";
 
 export function generateStaticParams() {
   return getYearPages().map((p) => ({ slug: p.slug }));
@@ -32,7 +32,7 @@ export default async function YearPageRoute({ params }: PageProps<"/academic-yea
     mainEntityOfPage: url,
     datePublished: p.published,
     dateModified: p.updated,
-    author: { "@type": "Organization", name: site.name, url: `${site.url}/about` },
+    author: { "@id": founder["@id"], "@type": "Person", name: founder.name, url: founder.url, sameAs: founder.sameAs },
     publisher: { "@id": `${site.url}/#business` },
     isPartOf: { "@type": "CollectionPage", "@id": `${site.url}/academic-year` },
     inLanguage: "en-US",
@@ -62,7 +62,7 @@ export default async function YearPageRoute({ params }: PageProps<"/academic-yea
 
         {p.faq?.length > 0 && (
           <>
-            <h2>Questions from Lincoln renters and parents</h2>
+            <h2>Questions from students and parents</h2>
             {p.faq.map((f) => (
               <div key={f.q}>
                 <h3>{f.q}</h3>

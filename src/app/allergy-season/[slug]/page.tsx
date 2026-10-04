@@ -5,7 +5,7 @@ import { getAllergyPage, getAllergyPages } from "@/lib/allergySeason";
 import { fmtDate } from "@/lib/academicYear";
 import { site } from "@/lib/site";
 import { Markdown } from "@/components/Markdown";
-import { BreadcrumbJsonLd, FaqJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, FaqJsonLd, founder } from "@/components/JsonLd";
 
 export function generateStaticParams() {
   return getAllergyPages().map((p) => ({ slug: p.slug }));
@@ -32,7 +32,7 @@ export default async function AllergyGuide({ params }: PageProps<"/allergy-seaso
     mainEntityOfPage: url,
     datePublished: p.published,
     dateModified: p.updated,
-    author: { "@type": "Organization", name: site.name, url: `${site.url}/about` },
+    author: { "@id": founder["@id"], "@type": "Person", name: founder.name, url: founder.url, sameAs: founder.sameAs },
     publisher: { "@id": `${site.url}/#business` },
     isPartOf: { "@type": "CollectionPage", "@id": `${site.url}/allergy-season` },
     inLanguage: "en-US",
@@ -71,7 +71,7 @@ export default async function AllergyGuide({ params }: PageProps<"/allergy-seaso
 
       {p.steps?.length > 0 && (
         <section aria-label="Steps" className="my-12">
-          <h2 className="text-2xl font-semibold text-navy mb-5">Steps for a Lincoln bedroom</h2>
+          <h2 className="text-2xl font-semibold text-navy mb-5">What steps help a Lincoln bedroom?</h2>
           <ol className="grid gap-4 sm:grid-cols-2">
             {p.steps.map((s, i) => (
               <li key={s.title} className="border-2 border-teal/40 rounded-2xl p-5 flex gap-4">
@@ -88,7 +88,7 @@ export default async function AllergyGuide({ params }: PageProps<"/allergy-seaso
 
       {p.faq?.length > 0 && (
         <section aria-label="Questions" className="my-12">
-          <h2 className="text-2xl font-semibold text-navy mb-5">Questions from Lincoln households</h2>
+          <h2 className="text-2xl font-semibold text-navy mb-5">What do Lincoln households ask?</h2>
           <div className="grid gap-4 md:grid-cols-2">
             {p.faq.map((f) => (
               <div key={f.q} className="bg-paper border border-line rounded-2xl p-5">
@@ -126,7 +126,7 @@ export default async function AllergyGuide({ params }: PageProps<"/allergy-seaso
         <p className="mb-4"><Link href="/allergy-season#visit" className="text-teal-deep underline font-semibold">See the allergy season hub</Link> or call {site.phone}, {site.hours.replace(/–/g, " to ")}.</p>
       </div>
 
-      <h2 className="text-2xl font-semibold text-navy mb-4">Other Lincoln allergy season guides</h2>
+      <h2 className="text-2xl font-semibold text-navy mb-4">Which other allergy season guides help?</h2>
       <ul className="grid gap-3 sm:grid-cols-2 text-lg">
         {others.map((o) => (
           <li key={o.slug}>

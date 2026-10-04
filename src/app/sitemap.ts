@@ -6,45 +6,46 @@ import { getPosts } from "@/lib/posts";
 import { getYearPages } from "@/lib/academicYear";
 import { getHostPages } from "@/lib/strHosts";
 import { getAllergyPages } from "@/lib/allergySeason";
+import { SERVICES_UPDATED, TOWNS_UPDATED, updatedFor } from "@/lib/dates";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Fixed dates so IndexNow's 48-hour lastmod window only picks up real changes.
-  const now = new Date("2026-10-03");
+  // Real edit dates (src/lib/dates.ts and each markdown file's `updated`), so IndexNow's
+  // 48-hour lastmod window only picks up real changes.
   const statics = ["", "/services", "/pricing", "/service-areas", "/gallery", "/about", "/faq", "/guides", "/contact", "/privacy-policy"];
   return [
     ...statics.map((p) => ({
       url: `${site.url}${p}`,
-      lastModified: now,
+      lastModified: new Date(updatedFor(p)),
       changeFrequency: "weekly" as const,
       priority: p === "" ? 1 : 0.8,
     })),
     ...services.map((s) => ({
       url: `${site.url}/services/${s.slug}`,
-      lastModified: now,
+      lastModified: new Date(SERVICES_UPDATED),
       changeFrequency: "monthly" as const,
       priority: 0.9,
     })),
     ...towns.map((t) => ({
       url: `${site.url}/service-areas/${t.slug}`,
-      lastModified: now,
+      lastModified: new Date(TOWNS_UPDATED),
       changeFrequency: "monthly" as const,
       priority: 0.85,
     })),
-    { url: `${site.url}/academic-year`, lastModified: new Date("2026-10-03"), changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${site.url}/academic-year`, lastModified: new Date(updatedFor("/academic-year")), changeFrequency: "monthly" as const, priority: 0.8 },
     ...getYearPages().map((p) => ({
       url: `${site.url}/academic-year/${p.slug}`,
       lastModified: new Date(p.updated ?? p.published),
       changeFrequency: "monthly" as const,
       priority: 0.75,
     })),
-    { url: `${site.url}/airbnb-hosts`, lastModified: new Date("2026-10-03"), changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${site.url}/airbnb-hosts`, lastModified: new Date(updatedFor("/airbnb-hosts")), changeFrequency: "monthly" as const, priority: 0.8 },
     ...getHostPages().map((p) => ({
       url: `${site.url}/airbnb-hosts/${p.slug}`,
       lastModified: new Date(p.updated ?? p.published),
       changeFrequency: "monthly" as const,
       priority: 0.75,
     })),
-    { url: `${site.url}/allergy-season`, lastModified: new Date("2026-10-03"), changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${site.url}/allergy-season`, lastModified: new Date(updatedFor("/allergy-season")), changeFrequency: "monthly" as const, priority: 0.8 },
     ...getAllergyPages().map((p) => ({
       url: `${site.url}/allergy-season/${p.slug}`,
       lastModified: new Date(p.updated ?? p.published),

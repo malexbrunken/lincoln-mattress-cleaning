@@ -16,7 +16,7 @@ export const services: Service[] = [
   {
     slug: "mattress-sanitization",
     name: "Mattress Sanitization",
-    title: "Mattress Cleaning Lincoln NE | Dry Vapor Steam Sanitation",
+    title: "Mattress Sanitization in Lincoln, NE",
     description:
       `Mattress cleaning in Lincoln, Nebraska using low-moisture dry vapor steam instead of wet extraction. ${priceText.first} first mattress, UV-C light treatment included.`,
     h1: "Mattress Sanitization in Lincoln",
@@ -24,12 +24,12 @@ export const services: Service[] = [
       `A structured, low-moisture sanitation appointment for the surface you sleep on every night built for mattresses. First mattress ${priceText.first}, any size, with normal stains, pet odor and ordinary urine accidents included.`,
     includes: [
       "Assessment of fabric, construction, and bedroom environment",
-      "Clean-entry setup: gloves and shoe booties on, staged tools, protected floor, equipment disinfected between jobs",
+      "Gloves, shoe booties and equipment disinfected between jobs",
       "Dry vapor steam across the top surface, seams, quilting, and edges",
       "Side edge treatment",
       "Targeted work on higher-accumulation zones",
       "UV-C light treatment over the sleep surface",
-      "Inspection before and after, with what we found reported to you",
+      "Inspection at the start and end of the visit, with what we found reported to you",
     ],
     detail: [
       "Ask any mattress cleaner what goes into the mattress and what stays behind. Hot-water extraction injects water and vacuums it back out; how much stays in a foam core depends on the equipment and the operator.",
@@ -52,19 +52,18 @@ export const services: Service[] = [
       },
       {
         q: "Do I need to buy anything or move anything?",
-        a: "Just strip the bedding and clear the nightstands. We bring everything else, including the containment setup. Bedding and pillows can be run through your own laundry while we work.",
+        a: "Just strip the bedding and clear the nightstands. We bring everything else. Bedding and pillows can be run through your own laundry while we work.",
       },
     ],
   },
   {
     slug: "dry-vapor-steam-vs-extraction",
     name: "Dry Vapor Steam vs. Wet Extraction",
-    title: "Steam vs. Extraction Mattress Cleaning | What Actually Differs",
-    description:
-      "A straight comparison of dry vapor steam and hot-water extraction mattress cleaning — moisture, drying time, what each method reaches, and which mattresses each one suits.",
+    title: "Steam vs. Extraction Mattress Cleaning",
+    description: `Dry vapor steam vs. hot-water extraction mattress cleaning: moisture, what each method reaches, and which mattresses each one suits.`,
     h1: "Dry Vapor Steam vs. Standard Wet Extraction",
     intro:
-      "Both methods are called \"mattress cleaning.\" They are not remotely the same process, and the difference shows up in moisture, drying time, and what is left inside the foam afterwards.",
+      "Both methods are called \"mattress cleaning.\" They are not remotely the same process, and the difference shows up in moisture and in what is left inside the foam afterwards.",
     includes: [
       "Side-by-side method comparison, no marketing gloss",
       "What each process leaves behind in the foam",
@@ -73,7 +72,7 @@ export const services: Service[] = [
       "When dry vapor steam is the safer choice",
     ],
     detail: [
-      "Wet extraction is a good technology. On carpet, it is the standard for a reason: carpet fibers and a pad underneath can take a hot-water injection and survive a slow dry. A mattress cannot. Its core is foam or fiber batting, and once that core takes on water inside a closed bedroom, it does not dry in a day. The moisture you cannot see is the part that concerns us.",
+      "Wet extraction is a good technology. On carpet, it is the standard for a reason: carpet fibers and a pad underneath can take a hot-water injection. A mattress is different. Its core is foam or fiber batting, and water that soaks into that core inside a closed bedroom is hard to get back out. The moisture you cannot see is the part that concerns us.",
       "Dry vapor steam is superheated water vapor at very low moisture content. It carries the heat that breaks down oils, lifts soil out of textured quilting, and neutralizes organisms on contact, while leaving the foam core essentially dry. No chemical residue, no lingering damp.",
       "We are honest about the trade-off: extraction can flush a large volume of liquid through heavily saturated padding in one pass, and for a mattress that has been flooded with a significant fluid volume, there are cases where an extraction step is genuinely useful. When we hit that situation we say so. What we will not do is make extraction the default on a sleep surface, because the default matters more than the exception.",
       "For the standard case — dust accumulation, bed mites, dander, odors, a mattress that has never been professionally treated — dry vapor steam does the job with far less risk to the thing you sleep on. The comparison table on our home page lays out the specific differences field by field.",
@@ -85,7 +84,7 @@ export const services: Service[] = [
       },
       {
         q: "Doesn't my mattress need water to get clean?",
-        a: "No. Water is a carrier. Heat plus mechanical passes plus extraction into microfiber is what actually removes soil and debris. Adding more water than necessary just creates a drying problem inside foam.",
+        a: "No. Water is a carrier. Heat plus mechanical passes plus extraction into microfiber is what actually removes soil and debris. Adding more water than necessary just leaves moisture inside foam.",
       },
       {
         q: "My old mattress smells musty. Will steam fix that?",
@@ -96,8 +95,8 @@ export const services: Service[] = [
   {
     slug: "bed-mite-treatment",
     name: "Bed Mite Treatment",
-    title: "Bed Mite Treatment for Mattresses | Lincoln, NE",
-    description: "Bed mites (house dust mites) in Lincoln mattresses: dry vapor steam heat, HEPA vacuuming and UV-C light treatment, and what published steam studies did and didn’t measure.",
+    title: "Bed Mite Mattress Treatment in Lincoln",
+    description: `Bed mites (house dust mites) in Lincoln mattresses: dry vapor steam heat, HEPA vacuuming and UV-C light treatment, included in the ${priceText.first} visit.`,
     h1: "Bed Mite Treatment",
     intro: "Bed mites (house dust mites) live in the dust and shed skin flakes that collect in a mattress. Our dry vapor steam uses heat to kill them in the seams, tufts, ridges and edges, and HEPA vacuuming lifts what they leave behind.",
     includes: [
@@ -131,15 +130,14 @@ export const services: Service[] = [
   {
     slug: "pet-urine-odor-treatment",
     name: "Pet Urine & Odor Treatment",
-    title: "Pet Urine & Odor Removal From Mattresses | Lincoln, NE",
-    description:
-      "Pet urine, child accidents, and odor treatment for Lincoln mattresses: enzymatic protein breakdown and a moisture test after the job. Pet odor and ordinary urine accidents are included.",
+    title: "Pet Urine and Odor Mattress Treatment",
+    description: `Pet urine, child accident and odor treatment for Lincoln mattresses: enzyme treatment and a moisture check. Ordinary accidents are included.`,
     h1: "Pet Urine & Odor Treatment",
     intro:
       "Urine does not sit on a mattress. It wicks into the quilting, through the seam channels, and into the foam. Surface treatment does not fix it — the source has to be broken down where it actually is.",
     includes: [
       "Enzymatic protein degradation on affected zones (ordinary urine accidents included)",
-      "Moisture test after the job",
+      "Moisture check after the job",
       "Targeted pet odor neutralization of dander oils (included)",
       "Dry vapor steam across the full sleep surface",
       "UV-C light treatment",
@@ -167,10 +165,10 @@ export const services: Service[] = [
     ],
   },
   {
-    slug: "uv-c-post-treatment",
+    slug: "uv-c-light-treatment",
     name: "UV-C Light Treatment",
-    title: "UV-C Light Treatment for Mattresses | Included in Every Visit",
-    description: "UV-C light treatment is part of every Lincoln mattress sanitation visit, after the dry vapor steam pass. Included in the base price, never a separate line item.",
+    title: "UV-C Light Treatment for Mattresses",
+    description: `UV-C light treatment is part of every Lincoln mattress visit, after the dry vapor steam pass, and included in the base price.`,
     h1: "UV-C Light Treatment",
     intro: "Included in every mattress appointment. After the dry vapor steam pass, the sleep surface gets UV-C light treatment.",
     includes: [
@@ -196,9 +194,8 @@ export const services: Service[] = [
   {
     slug: "co2-bedroom-testing",
     name: "72-Hour Bedroom CO₂ Testing",
-    title: "72-Hour Bedroom CO₂ Testing | Lincoln, NE Sleep Environment",
-    description:
-      "Optional 72-hour bedroom CO₂ testing in Lincoln, NE: three nights of CO₂ logging to show how a closed bedroom ventilates. Booked on its own or with a visit; priced by quote.",
+    title: "72-Hour Bedroom CO₂ Testing in Lincoln",
+    description: `Optional 72-hour bedroom CO₂ testing in Lincoln, NE: three nights of CO₂ logging to show how a closed bedroom ventilates. Priced by quote.`,
     h1: "72-Hour Bedroom CO₂ Testing",
     intro:
       "A monitor runs in your bedroom for three days and measures what your sleep environment does overnight. It's an optional service, not part of a mattress visit: book it on its own or add it to a mattress appointment. Priced by quote.",

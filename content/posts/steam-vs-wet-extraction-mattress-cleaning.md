@@ -1,19 +1,27 @@
 ---
 title: "Steam vs. Wet Extraction: What Actually Differs in Mattress Cleaning"
+seoTitle: "Steam vs. Wet Extraction for Mattresses"
 date: "2026-09-12"
-updated: "2026-10-03"
+updated: "2026-10-04"
 category: "Method"
 author: "Matthew Brunken"
-excerpt: "Dry vapor steam and hot-water extraction are both called mattress cleaning. They differ in moisture, drying time, what reaches the foam core, and what gets left behind. Here is the comparison, including when extraction is genuinely the right call."
+excerpt: "Dry vapor steam and hot-water extraction are both called mattress cleaning. How they differ in moisture and what reaches the foam core."
+faq:
+  - q: "What is the difference between dry vapor steam and wet extraction?"
+    a: "Wet extraction uses water as the carrier and vacuums it back out. Dry vapor steam carries heat with very little water, so far less moisture reaches the foam core."
+  - q: "Which is better for a memory foam mattress?"
+    a: "Low-moisture dry vapor steam, because dense foam is the build least tolerant of a soaked core. Check your care label and warranty terms first."
+  - q: "How do I know the mattress is dry?"
+    a: "We run a moisture check after the job, and the bed stays unmade until it is dry to the touch."
 ---
 
 Both processes get called "mattress cleaning," which is why the conversation usually goes in circles. They are different technologies with different failure modes, and the difference is measurable.
 
 ## The core difference: water as carrier vs. heat as the tool
 
-Hot-water extraction uses water as a carrier. You inject a heated detergent solution into the surface, then vacuum it back out along with what it lifted. On carpet, that works well — the fibers and the pad underneath can take it and survive a slow dry.
+Hot-water extraction uses water as a carrier. You inject a heated detergent solution into the surface, then vacuum it back out along with what it lifted. On carpet, that works well, because the fibers and the pad underneath can take it.
 
-A mattress core is foam, latex, or fiber batting. Once it takes on water inside a closed bedroom, it does not dry in a day. The moisture you cannot see is the part that matters, because damp foam is the condition that favors the microbial growth and odor you were trying to get rid of in the first place.
+A mattress core is foam, latex, or fiber batting. Water that soaks into it inside a closed bedroom is hard to get back out. The moisture you cannot see is the part that matters, because damp foam is the condition that favors the microbial growth and odor you were trying to get rid of in the first place.
 
 Dry vapor steam carries heat with very little water; our Vapor Clean machines are rated by their maker at 5 to 6% moisture content. At the nozzle the vapor is superheated, so it lifts and neutralizes what has accumulated in the quilting and seam channels while leaving the core essentially dry.
 
@@ -36,9 +44,9 @@ What we will not do is run a floor-cleaning process on a sleep surface as the de
 
 ## The question that settles it
 
-Ask any provider one thing: *what is the moisture content of your process, and how long until the mattress is dry?*
+Ask one thing about any process: *what is its moisture content, and how is the mattress confirmed dry to the touch before the bed is made?*
 
-If the answer is measured in days, they are putting water into foam. That is not a cleaning preference, it is a physics problem — and the fix is not a fan.
+Putting water into foam is not a cleaning preference, it is a physics problem. We run a moisture check after the job, and the bed stays unmade until it is dry to the touch.
 
 ## What this means for your mattress type
 

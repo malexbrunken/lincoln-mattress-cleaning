@@ -41,7 +41,7 @@ export function Footer() {
           <p className="font-display font-semibold text-white mb-3">Company</p>
           <ul className="space-y-2">
             <li><Link href="/about" className="hover:text-teal-bright transition-colors">About Us</Link></li>
-            <li><Link href="/gallery" className="hover:text-teal-bright transition-colors">Our Work</Link></li>
+            <li><Link href="/gallery" className="hover:text-teal-bright transition-colors">Equipment</Link></li>
             <li><Link href="/guides" className="hover:text-teal-bright transition-colors">Mattress Care Guides</Link></li>
             <li><Link href="/faq" className="hover:text-teal-bright transition-colors">FAQ</Link></li>
             <li><Link href="/contact" className="hover:text-teal-bright transition-colors">Book an Appointment</Link></li>

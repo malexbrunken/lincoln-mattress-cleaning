@@ -1,14 +1,14 @@
 ---
-title: "Buying a Used Mattress for a Lincoln Apartment: Inspection First"
+title: "Buying a Used Mattress for a Lincoln Apartment"
 h1: "Buying a used mattress for a Lincoln apartment"
-description: "What UNL Student Legal Services and Nebraska Extension say to check before a secondhand mattress comes into a Lincoln apartment, and who to call about bugs."
+description: "What UNL and Nebraska Extension say to check before a secondhand mattress comes into a Lincoln apartment, and when in the year to buy and clean one."
 answer: "Inspect a used mattress before it goes in the car, not after. UNL Student Legal Services tells students to avoid curbside beds and to ask whether anyone experienced has inspected a used one for bed bugs. If it passes, cleaning is the next step; if it doesn't, leave it."
 order: 2
 published: "2026-10-03"
-updated: "2026-10-03"
+updated: "2026-10-04"
 timeline:
   - when: "May 4 to 9, 2026"
-    what: "Residence hall checkout week, with halls closing at 1 PM on Saturday, May 9. If your lease turns over in May, inspect any bed you take over."
+    what: "Residence hall checkout week, with halls closing at 1 PM on Saturday, May 9. If you take over a bed from a graduating student, inspect it first."
     source: "UNL Housing"
     url: "https://moveout.unl.edu/"
   - when: "May 9 to August 23, 2026"
@@ -48,10 +48,12 @@ changelog:
   - date: "2026-10-03"
     note: "First published."
   - date: "2026-10-03"
-    note: "Reworded lease timing as advice rather than a market claim; added a care label and warranty line."
+    note: "Reworded the timing as advice rather than a market claim; added a care label and warranty line."
+  - date: "2026-10-04"
+    note: "Rewrote for students and parents; added question headings."
 ---
 
-## Before you agree to buy
+## What should you check before buying a used mattress?
 
 - **Ask where it has been.** Student Legal Services says to verify that an inspection for bed bugs "was conducted by a person experienced in identifying infestations" when buying used beds or furniture.
 - **Skip the curb.** The same office says to avoid scavenging beds and furniture left at the curb for disposal.
@@ -59,7 +61,7 @@ changelog:
 - **Check the box spring and frame too.** Nebraska DHHS lists mattress seams, box springs, bed frames and headboards as hiding places.
 - **Look at the law tag and care label.** It tells you the materials, which decides how the bed can be cleaned, and whether the seller's description matches.
 
-## If you see something
+## What if you see something?
 
 | What you see | What to do |
 | --- | --- |
@@ -67,7 +69,7 @@ changelog:
 | Signs of bed bugs | Don't take it. Nebraska Extension recommends a pest management professional for infestations |
 | Stains or odor only | Cleaning is the next question, not pest control |
 
-## Once it passes
+## What happens once it passes?
 
 Book a cleaning before the first night, and check the care label and warranty terms first. What sanitizing can and can't do for a secondhand bed is covered in Sleep Sanitation's [can a used mattress be sanitized](https://sleepsanitation.com/knowledge-center/mattress-owners-decision-center/can-a-used-mattress-be-sanitized); the parts that change in Lincoln are the timing above and the offices on this page.
 
@@ -76,4 +78,4 @@ If you wake up with bites after a first night on a used bed, the state health de
 ## What we don't know
 
 - **A Nebraska used-bedding rule.** We didn't find one, so we don't say there is or isn't one.
-- **How common bed bugs are in Lincoln rentals.** Student Legal Services says incidence in off-campus student housing "seems" to be increasing, without a number, and we have none either.
+- **How common bed bugs are in off-campus student housing.** We have not found a published number for Lincoln.

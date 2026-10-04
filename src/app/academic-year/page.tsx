@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
+import { updatedFor } from "@/lib/dates";
 import Link from "next/link";
 import { getYearPages } from "@/lib/academicYear";
 import { site } from "@/lib/site";
+import { priceText } from "@/lib/prices";
 import { YearTimeline } from "@/components/YearTimeline";
-import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, WebPageJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: { absolute: "The Lincoln Academic Year: A Mattress Calendar for UNL Renters" },
+  title: { absolute: "UNL Academic Year Mattress Calendar | Lincoln Mattress" },
   description:
-    "UNL's housing and move dates, from the January application to May move-out, and what each means for a mattress in an off-campus Lincoln apartment.",
+    "UNL move-in and move-out dates, from the January housing application to May, and when students and parents should plan a mattress cleaning.",
   alternates: { canonical: "/academic-year" },
 };
 
@@ -40,7 +42,7 @@ const faq = [
   },
   {
     q: "When should an off-campus mattress be cleaned?",
-    a: "When the apartment is empty, before furniture moves in, so the mattress can dry with the room clear. If you move in during May or August, book before your furniture arrives, and check the care label and warranty terms first.",
+    a: "When the room is empty, before furniture moves in. If you move in during May or August, book before your furniture arrives, and check the care label and warranty terms first. The bed stays unmade until it is dry to the touch.",
   },
 ];
 
@@ -61,6 +63,7 @@ export default function AcademicYearHub() {
   };
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
+      <WebPageJsonLd name="The Lincoln academic year" path="/academic-year" dateModified={updatedFor("/academic-year")} type="WebPage" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(hub) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <BreadcrumbJsonLd items={[{ name: "Home", url: site.url }, { name: "The Lincoln academic year", url: `${site.url}/academic-year` }]} />
@@ -70,20 +73,21 @@ export default function AcademicYearHub() {
       <p className="kicker text-teal-deep mb-2">Lincoln, by the calendar</p>
       <h1 className="text-4xl font-semibold text-navy mb-4 leading-tight">The Lincoln academic year</h1>
       <p className="text-xl text-navy mb-8">
-        UNL&apos;s calendar sets an August move-in, a May move-out and a summer break in between. These
-        guides take one date at a time and say what it means for a mattress in an off-campus apartment or house.
+        When should a student&apos;s mattress be cleaned? Before move-in, while the room is empty: in 2026 that was the
+        week before UNL&apos;s August 16 to 19 move-in. These guides follow the UNL calendar for students and parents, from
+        August move-in to May move-out. Lincoln Mattress Cleaning charges {priceText.first} for the first mattress, any size.
       </p>
 
       <YearTimeline items={year} label="The year at a glance" />
 
       <div className="prose-mc text-lg">
-        <h2>Residence halls vs off campus</h2>
+        <h2>Do residence hall beds need cleaning?</h2>
         <p>
           Beds in UNL residence halls belong to University Housing. Its move-out checklist tells residents to check the
           mattress&apos;s condition, submit a Fix-It request for any damage and leave the original mattress pad behind. So these
-          guides are for students and families renting off campus, where the mattress is yours or your landlord&apos;s.
+          guides are for students and parents planning around an off-campus apartment or house.
         </p>
-        <h2>The guides</h2>
+        <h2>Which guide fits your date?</h2>
         <ol>
           {pages.map((p) => (
             <li key={p.slug}>
@@ -91,12 +95,12 @@ export default function AcademicYearHub() {
             </li>
           ))}
         </ol>
-        <h2>Not covered on these pages</h2>
+        <h2>What is not covered here?</h2>
         <p>
-          How steam works on a mattress, how long foam takes to dry, and the biology of bed mites read the same in any
+          How steam works on a mattress and the biology of bed mites read the same in any
           city. That material sits in the{" "}
           <a href="https://sleepsanitation.com/knowledge-center" rel="noopener">Sleep Sanitation Knowledge Center</a>.
-          This section sticks to the UNL calendar and Lincoln rules.
+          This section sticks to the UNL calendar and Lincoln timing.
         </p>
         <h2>Questions about the year</h2>
         {faq.map((f) => (
@@ -108,12 +112,13 @@ export default function AcademicYearHub() {
         <h2>What we don&apos;t know</h2>
         <ul>
           <li>UNL&apos;s 2027 move-out date. University Housing publishes it in the spring.</li>
-          <li>Your lease dates. Off-campus leases are set by each landlord, not by UNL.</li>
+          <li>Your building&apos;s move-in date. Off-campus dates are not set by UNL.</li>
         </ul>
         <h2>Changelog</h2>
         <ul>
           <li>October 3, 2026: hub and first four guides published.</li>
-          <li>October 3, 2026: added hub questions; tightened wording on rental timing.</li>
+          <li>October 3, 2026: added hub questions.</li>
+          <li>October 4, 2026: rewrote the hub and guides for students and parents around move-in and move-out timing.</li>
         </ul>
       </div>
     </div>

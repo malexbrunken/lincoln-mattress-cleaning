@@ -1,40 +1,37 @@
 import type { Metadata } from "next";
+import { updatedFor } from "@/lib/dates";
+import { WebPageJsonLd } from "@/components/JsonLd";
 import Image from "next/image";
 import Link from "next/link";
-import { jobImages, beforeAfterPair } from "@/lib/images";
+import { siteImages, featuredPair } from "@/lib/images";
+import { priceText } from "@/lib/prices";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Our Work | Real Mattress Sanitation Jobs in Lincoln, NE",
+  title: "Mattress Cleaning Equipment and Method",
   description:
-    "Real mattress sanitation jobs around Lincoln, Nebraska — pre-cleaning pet and child urine staining, dry vapor steam in progress, cleaned mattresses, and the kit we bring.",
+    "The equipment behind mattress sanitation in Lincoln, NE: dry vapor steam, a HEPA vacuum with UV-C light treatment, and the law tag we read first.",
+  alternates: { canonical: "/gallery" },
 };
 
 export default function GalleryPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
+      <WebPageJsonLd name="Equipment and method" path="/gallery" dateModified={updatedFor("/gallery")} type="WebPage" />
       <nav aria-label="Breadcrumb" className="text-mist mb-4 text-sm">
-        <Link href="/" className="text-teal hover:underline">Home</Link> › Our Work
+        <Link href="/" className="text-teal hover:underline">Home</Link> › Equipment and Method
       </nav>
-      <h1 className="text-4xl md:text-5xl font-semibold text-navy mb-4">Our Work</h1>
+      <h1 className="text-4xl md:text-5xl font-semibold text-navy mb-4">Equipment and Method</h1>
       <p className="text-lg text-mist mb-10 max-w-3xl">
-        These are photographs from actual appointments — the kit we bring, the staining we are called about, the
-        steam doing the work, and the finished beds. Nothing
-        here is stock photography.
+        What equipment do we use? A dry vapor steam cleaner and a HEPA mattress vacuum with UV-C light treatment, after
+        we read the mattress law tag. The first mattress is {priceText.first}, any size.
       </p>
 
       <div className="grid gap-7 lg:grid-cols-2 mb-14">
-        {[beforeAfterPair.before, beforeAfterPair.after].map((img) => (
+        {featuredPair.map((img) => (
           <figure key={img.id} className="rounded-2xl overflow-hidden border border-line bg-white">
             <div className="relative aspect-[4/3]">
               <Image src={img.url} alt={img.alt} fill sizes="(max-width:1024px) 100vw, 50vw" className="object-cover" />
-              <span
-                className={`absolute top-4 left-4 font-bold text-xs uppercase tracking-[0.18em] px-3 py-1.5 rounded-full ${
-                  img.tag === "before" ? "bg-navy text-white" : "bg-teal text-white"
-                }`}
-              >
-                {img.tag}
-              </span>
             </div>
             <figcaption className="p-5 text-[15px] text-mist">{img.caption}</figcaption>
           </figure>
@@ -42,8 +39,8 @@ export default function GalleryPage() {
       </div>
 
       <div className="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
-        {jobImages
-          .filter((i) => i.id !== beforeAfterPair.before.id && i.id !== beforeAfterPair.after.id)
+        {siteImages
+          .filter((i) => !featuredPair.some((f) => f.id === i.id))
           .map((img) => (
             <figure key={img.id} className="rounded-2xl overflow-hidden border border-line bg-white flex flex-col">
               <div className="relative aspect-[4/3]">
@@ -56,7 +53,7 @@ export default function GalleryPage() {
 
       <div className="bg-ice border border-line rounded-2xl p-7 md:p-9 mt-14 grid gap-6 md:grid-cols-[1.2fr_.8fr] items-center">
         <div>
-          <h2 className="text-2xl font-semibold mb-3">What every visit includes</h2>
+          <h2 className="text-2xl font-semibold mb-3">What does every visit include?</h2>
           <p className="text-mist">
             Dry vapor steam, HEPA vacuuming and UV-C light treatment on every mattress. Technicians wear gloves
             and shoe booties in your home, and every piece of equipment is disinfected between jobs.

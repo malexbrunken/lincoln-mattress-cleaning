@@ -1,12 +1,13 @@
 import { priceText } from "@/lib/prices";
 import type { Metadata } from "next";
+import { updatedFor } from "@/lib/dates";
 import Link from "next/link";
 import { getAllergyPages } from "@/lib/allergySeason";
 import { site } from "@/lib/site";
-import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, WebPageJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: { absolute: "Lincoln Allergy Season: NWU Pollen Count, LLCHD Advice and the Bed" },
+  title: { absolute: "Lincoln Allergy Season: Pollen, Humidity and the Bed" },
   description:
     "Nebraska Wesleyan's pollen count, LLCHD's and Extension's humidity ranges, Lincoln Airport's wind and freeze normals, and five guides for Lincoln bedrooms.",
   alternates: { canonical: "/allergy-season" },
@@ -37,6 +38,7 @@ export default function AllergySeasonHub() {
   };
   return (
     <div className="max-w-5xl mx-auto px-4 py-12">
+      <WebPageJsonLd name="Lincoln allergy season" path="/allergy-season" dateModified={updatedFor("/allergy-season")} type="WebPage" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(hub) }} />
       <BreadcrumbJsonLd items={[{ name: "Home", url: site.url }, { name: "Lincoln allergy season", url: `${site.url}/allergy-season` }]} />
       <nav aria-label="Breadcrumb" className="text-mist mb-4 text-sm">
@@ -68,7 +70,7 @@ export default function AllergySeasonHub() {
       </p>
 
       <div className="prose-mc text-lg max-w-4xl">
-        <h2>Who measures what in Lincoln</h2>
+        <h2>Who measures what in Lincoln?</h2>
         <div className="overflow-x-auto mb-8">
           <table>
             <thead><tr><th>Source</th><th>What it measures or says</th><th>How often</th><th>What it doesn&apos;t cover</th></tr></thead>
@@ -94,7 +96,7 @@ export default function AllergySeasonHub() {
         </div>
       </section>
 
-      <h2 className="text-2xl font-semibold text-navy mb-5">The five guides</h2>
+      <h2 className="text-2xl font-semibold text-navy mb-5">Which guide answers your question?</h2>
       <ol className="grid gap-4 mb-12">
         {pages.map((p, i) => (
           <li key={p.slug} className="flex gap-4 bg-white border border-line rounded-2xl p-5 shadow-sm">
@@ -109,7 +111,7 @@ export default function AllergySeasonHub() {
       </ol>
 
       <section id="visit" aria-label="Booking a Lincoln visit" className="border-l-8 border-teal bg-white rounded-r-2xl p-7 mb-12 max-w-4xl">
-        <h2 className="text-2xl font-semibold text-navy mb-4">Booking a Lincoln visit in allergy season</h2>
+        <h2 className="text-2xl font-semibold text-navy mb-4">When should you book a visit in allergy season?</h2>
         <p className="text-lg mb-4">
           Pollen season doesn&apos;t change the bill: the first mattress is {priceText.first},
           each additional full, queen or king is {priceText.additionalLarge} and each additional kids bed {priceText.additionalKids}, with normal stains, pet odor and ordinary urine

@@ -6,7 +6,7 @@ export const site = {
   parentBrand: "Sleep Sanitation",
   domain: "lincolnmattresscleaning.com",
   url: "https://lincolnmattresscleaning.com",
-  tagline: "Mattress sanitation for Lincoln, Nebraska, with gloves, shoe booties and disinfected equipment on every job.",
+  tagline: "Mattress sanitation for Lincoln, Nebraska: dry vapor steam, HEPA vacuuming and UV-C light treatment, with gloves, shoe booties and equipment disinfected between jobs.",
   phone: "(402) 512-5658",
   phoneHref: "tel:+14025125658",
   /** E.164 form used in JSON-LD; matches sleepsanitation.com's schema. */
@@ -74,10 +74,11 @@ export const pricing = {
   included: [
     { service: "Mattress Sanitation, first mattress", price: "first", bold: true },
     { service: "Professional inspection: we identify the mattress materials and choose the steam setting and pass speed", price: "Included", bold: false },
-    { service: "Clean-entry setup (boot covers, staged tools, protected floor)", price: "Included", bold: false },
+    { service: "Hygiene: gloves, shoe booties and equipment disinfected between jobs", price: "Included", bold: false },
     { service: "Dry-vapor sanitation", price: "Included", bold: false },
     { service: "Dry-vapor steaming of seams, tufts, ridges and edges, where dust and shed skin flakes collect", price: "Included", bold: false },
     { service: "UV-C light treatment and HEPA vacuuming", price: "Included", bold: false },
+    { service: "Two checks: bed mite sensor on the UV-C vacuum, and a moisture check after the job", price: "Included", bold: false },
     { service: "What we found, reported to you after the visit", price: "Included", bold: false },
     { service: "Normal stain treatment", price: "Included", bold: false },
     { service: "Pet odor treatment", price: "Included", bold: false },
@@ -117,7 +118,7 @@ export const packages: Package[] = [
       "UV-C light treatment and HEPA vacuuming",
       "Normal stain treatment",
       "Pet odor and ordinary urine accident treatment",
-      "Clean-entry protocol (boot covers, staged tools)",
+      "Gloves, shoe booties and equipment disinfected between jobs",
     ],
   },
   {
@@ -142,7 +143,7 @@ export const addonDetails = [
   {
     name: "Underside/full-surface treatment",
     price: priceText.underside,
-    text: "Complete six-surface coverage. Recommended for severe allergy households or any mattress with visible underside contamination — dust, staining, or debris on the bottom panel and box-spring interface.",
+    text: "Complete six-surface coverage. Recommended for any mattress with visible underside contamination — dust, staining, or debris on the bottom panel and box-spring interface.",
   },
   {
     name: "Severe or biohazard contamination",

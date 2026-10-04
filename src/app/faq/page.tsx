@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
+import { updatedFor } from "@/lib/dates";
 import Link from "next/link";
 import { site } from "@/lib/site";
-import { FaqJsonLd } from "@/components/JsonLd";
+import { FaqJsonLd, WebPageJsonLd } from "@/components/JsonLd";
 import { priceText } from "@/lib/prices";
 
 export const metadata: Metadata = {
   title: "Mattress Cleaning FAQ | Lincoln, NE",
   description:
-    "Answers about mattress cleaning in Lincoln, NE: cost, drying time, memory foam and organic mattresses, bed mites, pet accidents, bed bugs, warranty, and what dry vapor steam actually does.",
+    "Mattress cleaning questions in Lincoln, NE: cost, after-care, memory foam, bed mites, pet accidents, bed bugs, warranty and how dry vapor steam works.",
 };
 
 const faqs = [
@@ -21,7 +22,7 @@ const faqs = [
   },
   {
     q: "How long before I can sleep on the mattress?",
-    a: "It depends on the mattress, the room and the humidity, so we do not quote a fixed time. Dry vapor steam puts very little water into the mattress, and Sleep Sanitation's Knowledge Center explains how quickly a treated mattress should dry.",
+    a: "The bed stays unmade until it is dry to the touch. Dry vapor steam puts very little water into the mattress, and we run a moisture check after the job.",
   },
   {
     q: "Will steam cleaning damage my mattress or void the warranty?",
@@ -49,7 +50,7 @@ const faqs = [
   },
   {
     q: "Do I need to do anything before you arrive?",
-    a: "Strip the bedding and clear the nightstands. We bring everything else, including the containment setup. Sheets, pillowcases, and washable covers are best run through your own laundry on a hot cycle — that is more effective than anything we could do on site.",
+    a: "Strip the bedding and clear the nightstands. We bring everything else. Sheets, pillowcases, and washable covers are best run through your own laundry on a hot cycle — that is more effective than anything we could do on site.",
   },
   {
     q: "What areas do you serve?",
@@ -60,6 +61,7 @@ const faqs = [
 export default function FaqPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
+      <WebPageJsonLd name="Mattress cleaning FAQ" path="/faq" dateModified={updatedFor("/faq")} type="WebPage" />
       <FaqJsonLd faq={faqs} />
       <nav aria-label="Breadcrumb" className="text-mist mb-4 text-sm">
         <Link href="/" className="text-teal hover:underline">Home</Link> › FAQ

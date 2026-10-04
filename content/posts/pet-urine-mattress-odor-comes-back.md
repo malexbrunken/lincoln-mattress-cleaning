@@ -1,10 +1,18 @@
 ---
 title: "Pet Urine Mattress Odor: Why It Comes Back"
+seoTitle: "Why Pet Urine Mattress Odor Comes Back"
 date: "2026-09-03"
-updated: "2026-10-03"
+updated: "2026-10-04"
 category: "Odor & Stains"
 author: "Matthew Brunken"
-excerpt: "Urine odor returns because uric acid salts crystallize in the fiber and reactivate with humidity. Here is why masking fails, what enzymatic breakdown does, and what we check before we leave."
+excerpt: "Urine odor returns because uric acid salts crystallize in the fiber and reactivate with humidity. Why masking fails and what enzyme treatment does."
+faq:
+  - q: "Why does pet urine odor come back on a mattress?"
+    a: "Uric acid salts crystallize in the fiber and reactivate when the air turns humid, so masking sprays fade and the smell returns."
+  - q: "What removes urine odor from a mattress?"
+    a: "Enzyme treatment that breaks down the organic source, followed by a moisture check after the job."
+  - q: "Is urine treatment extra?"
+    a: "No. Pet odor and ordinary urine accidents are included in the {{price.first}} first-mattress price. Severe or biohazard contamination is quoted before any work starts."
 ---
 
 The pattern is almost universal: the accident happens, it gets cleaned, it smells fine for a few months, and then one humid week it is back — often stronger than anyone remembers. Nothing supernatural is going on. The chemistry is just slower than the cleaning was.
@@ -25,7 +33,7 @@ Then it needs an honest read on the result. Noses adapt within minutes to a room
 
 ## What we check before we leave
 
-We run a moisture test after the job to check that the treated zones aren't left wet.
+We run a moisture check after the job to check that the treated zones aren't left wet.
 
 We also run the full dry vapor steam pass across the sleep surface afterwards and finish with UV-C light treatment, because a mattress with a fluid history can have an ordinary accumulation problem on top of the specific one.
 

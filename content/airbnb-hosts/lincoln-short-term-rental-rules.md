@@ -1,8 +1,8 @@
 ---
-title: "Lincoln Short-Term Rental Rules: License, Guest Cap and Taxes"
+title: "Lincoln Short-Term Rental Rules: License, Cap, Taxes"
 h1: "Lincoln's short-term rental rules: the license, the guest cap and the taxes"
 label: "City license and taxes"
-description: "Lincoln requires a $250 annual license per short-term rental unit, caps guests at two per sleeping area, and charges a 4% occupation tax Airbnb doesn't collect."
+description: "Lincoln requires a $250 yearly license per short-term rental unit, caps guests at two per sleeping area, and charges a 4% tax Airbnb doesn't collect."
 answer: "A Lincoln short-term rental needs a $250 license from Building and Safety for each unit, renewed every year, before it's advertised. Guests are capped at two per sleeping area, up to 12. On top of the state sales and lodging taxes Airbnb collects, the city's 4% short-term rental occupation tax is yours to file by the 25th of each month through Host Compliance; the city's FAQ says Airbnb and VRBO don't collect it."
 order: 2
 published: "2026-10-03"
@@ -57,7 +57,7 @@ changelog:
     note: "First published from the city's licensing, planning and treasurer pages and the 2023 tax FAQ."
 ---
 
-## The Lincoln license
+## What does the Lincoln license require?
 
 The City Council adopted Lincoln's short-term rental rules on June 14, 2021, and they took effect September 20, 2021. A short-term rental is any rental of all or part of a dwelling for stays of no more than 30 consecutive days. The rules, per Building and Safety and the Planning Department:
 
@@ -71,13 +71,13 @@ The City Council adopted Lincoln's short-term rental rules on June 14, 2021, and
 
 The city points to Lincoln Municipal Code chapter 5.39 and sections 27.02.200, 27.06.070 and 27.62.040 for the full text. Questions go to Building and Safety at 402-441-7521.
 
-## The guest cap, sleeping area by sleeping area
+## How does the guest cap work?
 
 Lincoln's cap is two people per sleeping area, up to 12 per rental. A sleeping area is habitable space with at least one working emergency escape and rescue opening, an egress window. Bedrooms count, other rooms can count if they meet egress standards, and hallways, kitchens and bathrooms never do. A three-bedroom house with egress windows in each bedroom tops out at six guests, however many beds you put in it, unless another room also meets the egress standard.
 
 Prices for several mattresses in one visit are on our [pricing page](/pricing).
 
-## The taxes, stacked
+## Which taxes apply?
 
 The city's own example, from its 2023 FAQ, for a $500 Lincoln stay, using the rates in that FAQ:
 
@@ -95,7 +95,7 @@ Airbnb's Nebraska tax page says it collects state and local sales tax and state 
 
 One change is coming. The Treasurer's Occupation Taxes page says information on new short-term rental software is "coming soon," so the Host Compliance filing step may change. This page isn't legal or tax advice; the City Treasurer's line is (402) 441-7457. This page is general information, not medical advice; before any cleaning, check each mattress's care label and warranty terms.
 
-## What we don't know
+## What don't we know?
 
 - **The replacement for Host Compliance.** The city hasn't said what or when.
 - **Whether Airbnb's 29-night threshold and Lincoln's 30-day definition ever disagree on your stay.** Ask the Department of Revenue at (402) 471-5729 if a booking lands on day 30.

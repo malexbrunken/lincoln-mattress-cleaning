@@ -23,7 +23,7 @@ export function Header() {
           <Link href="/services" className="text-white/85 hover:text-teal-bright transition-colors">Services</Link>
           <Link href="/pricing" className="text-white/85 hover:text-teal-bright transition-colors">Pricing</Link>
           <Link href="/service-areas" className="text-white/85 hover:text-teal-bright transition-colors">Service Areas</Link>
-          <Link href="/gallery" className="text-white/85 hover:text-teal-bright transition-colors">Our Work</Link>
+          <Link href="/gallery" className="text-white/85 hover:text-teal-bright transition-colors">Equipment</Link>
           <Link href="/academic-year" className="text-white/85 hover:text-teal-bright transition-colors">Academic Year</Link>
           <Link href="/airbnb-hosts" className="text-white/85 hover:text-teal-bright transition-colors">Airbnb Hosts</Link>
           <Link href="/allergy-season" className="text-white/85 hover:text-teal-bright transition-colors">Allergy Season</Link>
@@ -41,7 +41,7 @@ export function Header() {
         <Link href="/services" className="whitespace-nowrap text-white/85 hover:text-teal-bright">Services</Link>
         <Link href="/pricing" className="whitespace-nowrap text-white/85 hover:text-teal-bright">Pricing</Link>
         <Link href="/service-areas" className="whitespace-nowrap text-white/85 hover:text-teal-bright">Areas</Link>
-        <Link href="/gallery" className="whitespace-nowrap text-white/85 hover:text-teal-bright">Our Work</Link>
+        <Link href="/gallery" className="whitespace-nowrap text-white/85 hover:text-teal-bright">Equipment</Link>
         <Link href="/guides" className="whitespace-nowrap text-white/85 hover:text-teal-bright">Guides</Link>
         <Link href="/airbnb-hosts" className="whitespace-nowrap text-white/85 hover:text-teal-bright">Hosts</Link>
         <Link href="/allergy-season" className="whitespace-nowrap text-white/85 hover:text-teal-bright">Allergies</Link>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPosts, getPost } from "@/lib/posts";
 import { site } from "@/lib/site";
-import { ArticleJsonLd, AuthorJsonLd, BreadcrumbJsonLd, ServiceAreaJsonLd } from "@/components/JsonLd";
+import { ArticleJsonLd, AuthorJsonLd, BreadcrumbJsonLd, FaqJsonLd, ServiceAreaJsonLd } from "@/components/JsonLd";
 
 export function generateStaticParams() {
   return getPosts().map((p) => ({ slug: p.slug }));
@@ -13,7 +13,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps<"/guides/[slug]">): Promise<Metadata> {
   const p = getPost((await params).slug);
   if (!p) return {};
-  return { title: p.title, description: p.excerpt };
+  return { title: p.seoTitle ?? p.title, description: p.excerpt, alternates: { canonical: `/guides/${p.slug}` } };
 }
 
 // tiny safe markdown subset: headings, lists, bold, links, paragraphs
@@ -102,8 +102,9 @@ export default async function GuidePage({ params }: PageProps<"/guides/[slug]">)
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
-      <ArticleJsonLd title={p.title} description={p.excerpt} url={postUrl} date={p.date} author={p.author} />
-      <AuthorJsonLd name={p.author} />
+      <ArticleJsonLd title={p.title} description={p.excerpt} url={postUrl} date={p.date} updated={p.updated} />
+      <AuthorJsonLd />
+      {p.faq.length > 0 && <FaqJsonLd faq={p.faq} />}
       <ServiceAreaJsonLd />
       <BreadcrumbJsonLd items={[
         { name: "Home", url: site.url },
@@ -115,7 +116,8 @@ export default async function GuidePage({ params }: PageProps<"/guides/[slug]">)
         <Link href="/guides" className="text-teal hover:underline">Guides</Link> › {p.title}
       </nav>
       <p className="text-sm font-bold text-teal uppercase tracking-wide mb-1">
-        {p.category} · {new Date(p.date).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
+        {p.category} · {new Date(p.date).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" })}
+        {p.updated && <> · Updated {new Date(p.updated).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" })}</>}
       </p>
       <h1 className="text-4xl font-semibold text-navy mb-3 leading-tight">{p.title}</h1>
       <p className="text-sm text-mist mb-6">
@@ -123,6 +125,18 @@ export default async function GuidePage({ params }: PageProps<"/guides/[slug]">)
         {site.parentBrand}
       </p>
       <div className="prose-mc text-lg">{renderMarkdown(p.content)}</div>
+
+      {p.faq.length > 0 && (
+        <section className="prose-mc text-lg mt-10">
+          <h2>Common questions</h2>
+          {p.faq.map((f) => (
+            <div key={f.q}>
+              <h3>{f.q}</h3>
+              <p>{f.a}</p>
+            </div>
+          ))}
+        </section>
+      )}
 
       <div className="bg-ice border-2 border-teal rounded-2xl p-7 my-10 text-center">
         <p className="font-bold text-navy text-xl mb-3">Want this done for you?</p>

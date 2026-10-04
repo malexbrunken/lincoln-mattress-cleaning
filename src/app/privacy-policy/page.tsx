@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
+import { updatedFor } from "@/lib/dates";
 import Link from "next/link";
 import { site } from "@/lib/site";
-import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, WebPageJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Sleep Sanitation Messaging",
+  title: "Privacy Policy and SMS Terms",
   description:
-    "Sleep Sanitation LLC messaging privacy policy: what data we collect when you opt in to SMS, how we use it, our no-third-party-sharing commitment, and the full SMS program terms and conditions.",
+    "Sleep Sanitation LLC messaging privacy policy: what we collect when you opt in to SMS, how we use it, no third-party sharing, and the SMS program terms.",
 };
 
 const dataCollected = [
@@ -32,6 +33,7 @@ const terms = [
 export default function PrivacyPolicyPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
+      <WebPageJsonLd name="Privacy policy and SMS terms" path="/privacy-policy" dateModified={updatedFor("/privacy-policy")} type="WebPage" />
       <BreadcrumbJsonLd items={[
         { name: "Home", url: site.url },
         { name: "Privacy Policy", url: `${site.url}/privacy-policy` },

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "./" },
   title: {
     default: "Mattress Cleaning & Sanitation in Lincoln, NE",
-    template: "%s | Lincoln Mattress Cleaning",
+    template: "%s | Lincoln Mattress",
   },
   description: site.description,
   keywords: [

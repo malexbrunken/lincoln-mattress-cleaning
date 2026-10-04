@@ -1,10 +1,18 @@
 ---
 title: "Resetting a Used Mattress Before Your First Night on It"
+seoTitle: "Resetting a Used Mattress"
 date: "2026-08-28"
-updated: "2026-10-03"
+updated: "2026-10-04"
 category: "Mattress Care"
 author: "Matthew Brunken"
-excerpt: "Inherited, handed down, bought used, or a rental — a used mattress comes with a history nobody documented. Here is what to look at, what a professional reset covers, and when replacement is the smarter call."
+excerpt: "Inherited, handed down or bought used, a mattress comes with a history. What to look at, what a professional reset covers, and when to replace it instead."
+faq:
+  - q: "Should I clean a used mattress before sleeping on it?"
+    a: "Yes. Inspect it in daylight first, then have it cleaned before the first night."
+  - q: "What if I find signs of bed bugs?"
+    a: "Don't bring it in. Bed bugs are a pest-control problem, not a cleaning one, and we will refer you rather than book you."
+  - q: "What does a used mattress reset cost?"
+    a: "{{price.first}} for the first mattress, any size, with normal stains, pet odor and ordinary urine accidents included."
 ---
 
 A used mattress shows up in a lot of different ways: Grandma's spare room, a marketplace listing, a hand-me-down after a sibling upgraded, the mattress already in the rental you just signed. In every case it has a history nobody wrote down, and you are about to spend eight hours a night on it.
@@ -24,7 +32,7 @@ If the core is visibly saturated, if the cover is torn through, or if springs ar
 
 ## What a professional reset covers
 
-Where the mattress is salvageable, our protocol runs inspect, isolate, sanitize, detail, reset — the same five phases as any mattress we treat:
+Where the mattress is salvageable, our protocol runs inspect, prepare, sanitize, detail, reset — the same five phases as any mattress we treat:
 
 - Law tag read and construction identified before any heat is applied.
 - Dry vapor steam in calibrated passes across the top surface, seams, quilting, and side edges.

@@ -1,12 +1,12 @@
 ---
-title: "Bed Mites and Lincoln Humidity: Two Local Ranges, One Bedroom"
+title: "Bed Mites and Lincoln Humidity: Two Local Ranges"
 h1: "Bed mites and Lincoln humidity: what Lincoln Airport's air does indoors"
 label: "Humidity and bed mites"
 order: 3
 description: "LLCHD's 30 to 50 percent and Extension's 30 to 45, set against Lincoln Airport's dew point by month and what that air would read at 70°F indoors."
 answer: "LLCHD recommends 30 to 50 percent indoor humidity; Nebraska Extension's G2069 says 30 to 45 percent to control house dust mites, the bed mites people ask about. Lincoln Airport's 1991 to 2020 NOAA normals show why both are hard to hold: the average dew point is 17°F in January and 65°F in July. By our calculation, that July air at 70°F indoors would sit near 84 percent and the January air near 13 percent."
 published: "2026-10-03"
-updated: "2026-10-03"
+updated: "2026-10-04"
 tiles:
   - { value: "30 to 50%", label: "LLCHD's recommended indoor relative humidity" }
   - { value: "84%", label: "Our estimate for Lincoln Airport's average July air at 70°F indoors" }
@@ -31,11 +31,11 @@ changelog:
   - { date: "2026-10-03", note: "Revised: cut the restated G2069 bedding list, added our 70°F indoor estimates from Lincoln Airport's normals." }
 ---
 
-## Two local ranges
+## What humidity range do local agencies give?
 
 LLCHD's air quality page gives 30 to 50 percent as the generally recommended relative humidity for homes and notes that house dust mites grow in damp, warm environments. Nebraska Extension's G2069, published on UNL's extension site, sets 30 to 45 percent for dust mite control. We haven't found humidity measurements from Lincoln bedrooms published by LLCHD or UNL, so a meter by the bed is the only local figure you'll have.
 
-## Lincoln Airport's air, outdoors and at 70°F
+## What does Lincoln's air read outdoors and at 70°F?
 
 The dew point columns are our monthly averages of NOAA's 1991 to 2020 hourly normals for Lincoln Airport. The 70°F column is our own estimate, using the standard Magnus approximation, of the relative humidity that month's average outdoor air would have if it were warmed or cooled to 70°F with no moisture added or removed.
 
@@ -50,10 +50,10 @@ The dew point columns are our monthly averages of NOAA's 1991 to 2020 hourly nor
 
 On this estimate, only April, May and October land inside LLCHD's 30 to 50 percent at 70°F, and only April and October inside G2069's 30 to 45 percent. These are estimates from Lincoln Airport's outdoor normals, not measurements of any house: air conditioning pulls water out in summer, and showers, cooking and humidifiers add it in winter.
 
-## Bedding and the steam studies
+## What do the steam studies show for bedding?
 
 G2069's bedding steps and the two published steam studies are covered in our [Lincoln guide to bed mites](/guides/dust-mites-in-lincoln-mattresses), so this page sticks to Lincoln Airport's air.
 
-## Our dust mite sensor
+## What does our bed mite sensor do?
 
-Our UV-C vacuum's dust mite sensor is one of the two checks in every visit, with a moisture check after the job; neither measures room humidity. 72-hour bedroom CO₂ testing is a separate optional service, booked on its own or added to a visit and priced by quote; it isn't a medical test. Sleep Sanitation's [bed mite and bed bug comparison](https://sleepsanitation.com/knowledge-center/mattress-dust-mites-allergens/dust-mites-vs-bed-bugs-vs-bed-mites) sorts out the names.
+Our UV-C vacuum's bed mite (dust mite) sensor is one of the two checks in every visit, with a moisture check after the job; neither measures room humidity. 72-hour bedroom CO₂ testing is a separate optional service, booked on its own or added to a visit and priced by quote; it isn't a medical test. Sleep Sanitation's [bed mite and bed bug comparison](https://sleepsanitation.com/knowledge-center/mattress-dust-mites-allergens/dust-mites-vs-bed-bugs-vs-bed-mites) sorts out the names.
