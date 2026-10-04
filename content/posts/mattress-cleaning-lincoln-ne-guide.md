@@ -21,8 +21,6 @@ A bedroom sealed against a Nebraska January is a warm, humid box that two adults
 
 By spring, the accumulation is real — and the symptoms get blamed on the season. Morning congestion, a musty note in the bedding, an unexplained stuffiness in one specific room. If it is worst in the bedroom and best after a night away from home, the room is a more useful suspect than the calendar.
 
-Then there is Lincoln's rental pattern. Around UNL, a mattress often has years of back-to-back occupants behind it with no service history at all. Parents furnishing an off-campus apartment are usually the ones who call us, and sanitizing the inherited mattress costs a fraction of replacing it. Our [rental and turnover service](/services/rental-property-mattress-turnover) exists for exactly that.
-
 ## What the process actually does
 
 Our protocol runs five phases in order: inspect, isolate, sanitize, detail, reset. The order matters more than the equipment list.

@@ -226,41 +226,6 @@ export const services: Service[] = [
       },
     ],
   },
-  {
-    slug: "rental-property-mattress-turnover",
-    name: "Rental & Turnover Mattress Service",
-    title: "Apartment Turnover Mattress Cleaning | Lincoln Rentals & UNL",
-    description:
-      "Mattress sanitation for Lincoln rental turnovers, UNL student housing, and property managers — scheduled between lease periods, with documentation of each mattress treated.",
-    h1: "Rental & Turnover Mattress Service",
-    intro:
-      "For Lincoln landlords, property managers, and the families furnishing a student apartment: mattress sanitation scheduled between lease periods, documented per unit.",
-    includes: [
-      "Multi-mattress pricing: $249 first, $149–$199 each additional",
-      "Per-mattress documentation of what was treated",
-      "Ordinary urine accidents included; underside treatment available where history requires it",
-      "Volume scheduling for multi-unit properties and student housing",
-    ],
-    detail: [
-      "A rental mattress has a history the current occupant did not create. Around UNL, that often means years of back-to-back tenants, and the mattress is the one surface nobody replaces between leases. Parents setting up an off-campus apartment are usually the ones who call us, and it is often the best money they spend on the unit.",
-      "For property managers, the useful part is the schedule and the paperwork. We book between lease periods, work through units in a block, price the second and subsequent mattresses lower because we are already there, and document what was treated in each unit. Turnover is a deadline-driven business, and a mattress service that cannot hit the window is not useful regardless of how good the process is.",
-      "We are also direct about the limits: a mattress with a failing cover, evidence of long-term saturation, or severe damage may be a replacement rather than a treatment. For a landlord that is genuinely useful information at turnover time, and we will tell you which units fall into that category instead of treating them all and sending an invoice.",
-    ],
-    faq: [
-      {
-        q: "Can you service multiple units in one visit?",
-        a: "Yes, and that is the most efficient way to book. The first mattress is $249 and each additional is $149–$199 depending on size, so a block of units costs meaningfully less than separate appointments.",
-      },
-      {
-        q: "Can you work between lease periods on a tight turnaround?",
-        a: "That is the normal case for us. Tell us the window and the number of units, and we will build the visit around it.",
-      },
-      {
-        q: "Do you document what was done?",
-        a: "Yes, per mattress, which most managers need for their records.",
-      },
-    ],
-  },
 ];
 
 export const serviceBySlug = (slug: string) => services.find((s) => s.slug === slug);

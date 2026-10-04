@@ -16,7 +16,7 @@ timeline:
     source: "UNL Move Out"
     url: "https://moveout.unl.edu/"
   - when: "May 9 to August 23, 2026"
-    what: "UNL summer break. Empty apartments can be cleaned between leases."
+    what: "UNL summer break."
     source: "UNL Housing"
     url: "https://housing.unl.edu/break-information/"
 faq:
