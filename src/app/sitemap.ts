@@ -5,6 +5,7 @@ import { towns } from "@/lib/towns";
 import { getPosts } from "@/lib/posts";
 import { getYearPages } from "@/lib/academicYear";
 import { getHostPages } from "@/lib/strHosts";
+import { getAllergyPages } from "@/lib/allergySeason";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Fixed dates so IndexNow's 48-hour lastmod window only picks up real changes.
@@ -39,6 +40,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${site.url}/airbnb-hosts`, lastModified: new Date("2026-10-03"), changeFrequency: "monthly" as const, priority: 0.8 },
     ...getHostPages().map((p) => ({
       url: `${site.url}/airbnb-hosts/${p.slug}`,
+      lastModified: new Date(p.updated ?? p.published),
+      changeFrequency: "monthly" as const,
+      priority: 0.75,
+    })),
+    { url: `${site.url}/allergy-season`, lastModified: new Date("2026-10-03"), changeFrequency: "monthly" as const, priority: 0.8 },
+    ...getAllergyPages().map((p) => ({
+      url: `${site.url}/allergy-season/${p.slug}`,
       lastModified: new Date(p.updated ?? p.published),
       changeFrequency: "monthly" as const,
       priority: 0.75,
