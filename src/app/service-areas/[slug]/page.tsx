@@ -1,10 +1,11 @@
 import { priceText } from "@/lib/prices";
 import type { Metadata } from "next";
+import { TOWNS_UPDATED } from "@/lib/dates";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { towns, townBySlug } from "@/lib/towns";
 import { site } from "@/lib/site";
-import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, WebPageJsonLd } from "@/components/JsonLd";
 
 export function generateStaticParams() {
   return towns.map((t) => ({ slug: t.slug }));
@@ -14,8 +15,10 @@ export async function generateMetadata({ params }: PageProps<"/service-areas/[sl
   const t = townBySlug((await params).slug);
   if (!t) return {};
   return {
-    title: `${t.headline} | Dry Vapor Steam Sanitation`,
-    description: `Mattress cleaning and sanitization in ${t.name}, Nebraska. Low-moisture dry vapor steam, UV-C light treatment and HEPA vacuuming, ${priceText.first} first mattress. In-home service.`,
+    // Keep titles at 60 characters or fewer: add the brand suffix only when it fits.
+    title: { absolute: t.headline.length + " | Lincoln Mattress".length <= 60 ? `${t.headline} | Lincoln Mattress` : t.headline },
+    description: `Mattress cleaning in ${t.name}, NE: low-moisture dry vapor steam, UV-C light treatment and HEPA vacuuming in your home. ${priceText.first} first mattress.`,
+    alternates: { canonical: `/service-areas/${t.slug}` },
   };
 }
 
@@ -29,6 +32,7 @@ export default async function TownPage({ params }: PageProps<"/service-areas/[sl
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
+      <WebPageJsonLd name={t.headline} path={`/service-areas/${t.slug}`} dateModified={TOWNS_UPDATED} />
       <BreadcrumbJsonLd items={[
         { name: "Home", url: site.url },
         { name: "Service Areas", url: `${site.url}/service-areas` },
@@ -106,7 +110,7 @@ export default async function TownPage({ params }: PageProps<"/service-areas/[sl
         </li>
         <li>
           🔆{" "}
-          <Link href="/services/uv-c-post-treatment" className="text-teal-deep underline font-semibold">
+          <Link href="/services/uv-c-light-treatment" className="text-teal-deep underline font-semibold">
             UV-C light treatment
           </Link>{" "}
           — included in every visit
@@ -116,7 +120,7 @@ export default async function TownPage({ params }: PageProps<"/service-areas/[sl
           <Link href="/services/co2-bedroom-testing" className="text-teal-deep underline font-semibold">
             72-hour bedroom CO₂ testing
           </Link>{" "}
-          — ask for current pricing
+          — optional, priced by quote
         </li>
       </ul>
 

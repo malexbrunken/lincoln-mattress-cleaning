@@ -1,9 +1,17 @@
 ---
 title: "How Often Should You Clean a Mattress?"
 date: "2026-09-05"
+updated: "2026-10-04"
 category: "Maintenance"
 author: "Matthew Brunken"
-excerpt: "A practical schedule for Nebraska households: annual maintenance, semi-annual for allergy-sensitive homes and pet owners, plus the specific moments that should trigger an appointment regardless of the calendar."
+excerpt: "A practical schedule for Nebraska households: once a year, every six months for pets and allergy-sensitive homes, and the moments that call for one sooner."
+faq:
+  - q: "How often should a mattress be cleaned?"
+    a: "Once a year for most households, and every six months for pet owners and allergy-sensitive homes."
+  - q: "When should a mattress be cleaned outside the schedule?"
+    a: "After a urine accident, before the first night on a used or handed-down mattress, and whenever a musty smell or new stain shows up."
+  - q: "What does a mattress cleaning cost in Lincoln?"
+    a: "{{price.first}} for the first mattress, any size, and {{price.additionalRange}} for each additional mattress in the same visit."
 ---
 
 There is no single correct interval, but there is a schedule that fits almost every Lincoln household, and there are a few trigger events that override the calendar entirely.
@@ -31,7 +39,7 @@ Book regardless of when you last had it done if any of these apply:
 - **A mattress that is new to you.** Inherited, handed down, bought used, or a rental. Reset it before the first night rather than after six months of sleeping on someone else's history. See [resetting a used mattress](/guides/used-mattress-first-night-reset).
 - **After an illness in the household**, particularly anything with a long recovery.
 - **After a bed bug infestation has been professionally treated.** The live insects are the pest controller's job; cleaning the mattress afterwards is ours.
-- **Persistent morning congestion** that eases when you sleep elsewhere. That pattern points at the bedroom, and the mattress is the highest-contact surface in it.
+- **A musty smell in the bedding** that comes back after the sheets are washed. The mattress is the highest-contact surface in the bedroom.
 
 ## What you can do between appointments
 

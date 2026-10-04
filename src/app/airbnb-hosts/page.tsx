@@ -1,14 +1,15 @@
 import { priceText } from "@/lib/prices";
 import type { Metadata } from "next";
+import { updatedFor } from "@/lib/dates";
 import Link from "next/link";
 import { getHostPages } from "@/lib/strHosts";
 import { site } from "@/lib/site";
-import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, WebPageJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: { absolute: "Lincoln Airbnb Hosts: Mattress Turnovers, Rules and Game Weekends" },
+  title: { absolute: "Lincoln Airbnb Hosts: Mattress Turnovers and Rules" },
   description:
-    "For Lincoln short-term rental hosts: the city license and 4% tax, Airbnb's cleaning and pest rules, Husker game weekends, turnover timing and guest accidents.",
+    "For Lincoln short-term rental hosts: the city license and 4% tax, Airbnb's cleaning rules, Husker game weekends, turnover timing and guest accidents.",
   alternates: { canonical: "/airbnb-hosts" },
 };
 
@@ -40,6 +41,7 @@ export default function AirbnbHostsHub() {
   };
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
+      <WebPageJsonLd name="Lincoln Airbnb hosts" path="/airbnb-hosts" dateModified={updatedFor("/airbnb-hosts")} type="WebPage" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(hub) }} />
       <BreadcrumbJsonLd items={[{ name: "Home", url: site.url }, { name: "Lincoln Airbnb hosts", url: `${site.url}/airbnb-hosts` }]} />
       <nav aria-label="Breadcrumb" className="text-mist mb-4 text-sm">
@@ -65,7 +67,7 @@ export default function AirbnbHostsHub() {
           </ul>
 
           <div className="prose-mc text-lg mt-10">
-            <h2>Husker home games still ahead in 2026</h2>
+            <h2>Which Husker home games are still ahead in 2026?</h2>
             <div className="overflow-x-auto mb-6">
               <table>
                 <thead><tr><th>Saturday</th><th>Opponent at Memorial Stadium</th><th>Kickoff</th></tr></thead>
@@ -81,7 +83,7 @@ export default function AirbnbHostsHub() {
               check it again before you price a weekend. Our <Link href="/airbnb-hosts/husker-game-weekends">game weekend guide</Link> shows
               how to use the three-week gaps after October 10 and October 31.
             </p>
-            <h2>What stays the same at every Lincoln listing</h2>
+            <h2>What stays the same at every Lincoln listing?</h2>
             <p>
               A game weekend, a tax question or a guest accident doesn&apos;t change the visit. A host pays {priceText.first} for the first
               mattress; each additional full, queen or king is {priceText.additionalLarge} and each additional kids bed {priceText.additionalKids},

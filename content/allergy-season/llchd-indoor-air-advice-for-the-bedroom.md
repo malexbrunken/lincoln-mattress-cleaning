@@ -6,7 +6,7 @@ order: 5
 description: "LLCHD's home air steps that reach the bedroom, what the department doesn't test for, and why pollen isn't part of Lincoln's daily air quality index."
 answer: "The Lincoln-Lancaster County Health Department's Air Quality Program, at 3131 O Street, lists home steps that reach the bedroom: vacuum with a HEPA filter, keep humidity at 30 to 50 percent, keep pets out of sleeping areas, change the furnace filter about every 3 months if the maker gives no schedule, and avoid overusing air-freshening sprays. LLCHD doesn't test homes for mold or radon, and it doesn't regulate pollen."
 published: "2026-10-03"
-updated: "2026-10-03"
+updated: "2026-10-04"
 tiles:
   - { value: "3 months", label: "LLCHD's fallback furnace filter interval" }
   - { value: "30 to 50%", label: "LLCHD's recommended indoor humidity" }
@@ -31,18 +31,18 @@ changelog:
   - { date: "2026-10-03", note: "Revised: shorter description, price line removed from the pet question." }
 ---
 
-## The list, room by room
+## What does LLCHD advise, room by room?
 
 LLCHD's "Improving Indoor Air Quality in Your Residence" list is written for the whole house. The parts of LLCHD's list that land in a bedroom are the HEPA vacuum, the 30 to 50 percent humidity range, pets out of sleeping areas, the furnace filter and fewer sprays and candles. LLCHD also suggests damp-mopping hard floors weekly and dusting hard surfaces regularly.
 
-## MERV, in LLCHD's words
+## What does LLCHD say about MERV?
 
 LLCHD suggests that people with asthma or allergies look at the MERV rating on the furnace and air conditioning filter, since a higher rating removes more small particles. LLCHD also warns that not every system suits a high-MERV filter and suggests checking with a heating and air conditioning professional first.
 
-## The daily AQI and the bedroom
+## How does the daily AQI relate to the bedroom?
 
 Lincoln's local air quality index comes from ozone, carbon monoxide and fine particle levels at monitors LLCHD operates. It says nothing about pollen, which NWU counts, or about the air in one bedroom.
 
-## Where our visit fits
+## Where does a mattress visit fit?
 
 We HEPA vacuum as part of every visit, and every visit includes two checks: a moisture check after the job and the dust mite (bed mite) sensor on our UV-C vacuum. 72-hour bedroom CO₂ testing is a separate optional service, booked on its own or added to a visit and priced by quote; it isn't a medical test. None of these is an LLCHD test. Sleep Sanitation weighs [whether professional mattress sanitation is worth it](https://sleepsanitation.com/knowledge-center/mattress-owners-decision-center/is-professional-mattress-sanitation-worth-it).

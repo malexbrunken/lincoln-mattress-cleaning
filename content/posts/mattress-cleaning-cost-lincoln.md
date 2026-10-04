@@ -1,15 +1,23 @@
 ---
 title: "What Mattress Cleaning Costs in Lincoln, NE"
+seoTitle: "Mattress Cleaning Cost in Lincoln, NE"
 date: "2026-09-08"
-updated: "2026-10-03"
+updated: "2026-10-04"
 category: "Pricing"
 author: "Matthew Brunken"
-excerpt: "Published mattress cleaning prices for Lincoln: {{price.first}} for the first mattress any size, {{price.additionalRange}} for each additional, with stains, pet odor and ordinary urine accidents included."
+excerpt: "Mattress cleaning in Lincoln costs {{price.first}} for the first mattress, any size, and {{price.additionalRange}} for each additional, with stains, pet odor and urine included."
+faq:
+  - q: "How much does mattress cleaning cost in Lincoln, NE?"
+    a: "{{price.first}} for the first mattress, any size, with normal stains, pet odor and ordinary urine accidents included."
+  - q: "What does each additional mattress cost?"
+    a: "Each additional full, queen or king mattress in the same visit is {{price.additionalLarge}}, and each additional kids bed (twin/full) is {{price.additionalKids}}."
+  - q: "Are there travel fees or deposits?"
+    a: "No. There is no travel fee inside our service area and no deposit. Underside/full-surface treatment ({{price.underside}}) and severe or biohazard contamination are the only extras, quoted before work starts."
 ---
 
-Most cleaners in this market will not publish a mattress price, and the reason is usually that the answer depends on who is asking. We publish ours, on this page and on our [pricing page](/pricing), because a fair price should not require a phone call to find out.
+Mattress cleaning in Lincoln costs {{price.first}} for the first mattress, any size, with normal stains, pet odor and ordinary urine accidents included. Each additional full, queen or king mattress in the same visit is {{price.additionalLarge}}, and each additional kids bed (twin/full) is {{price.additionalKids}}. There is no travel fee inside our service area. Every rate is also on our [pricing page](/pricing).
 
-## Base pricing
+## How much is the first mattress?
 
 **The first mattress is {{price.first}}, any size.** Twin through California king, same rate. The rate covers dry-vapor sanitation, UV-C light treatment and HEPA vacuuming, normal stain treatment, pet odor treatment and ordinary urine accident treatment.
 
@@ -17,7 +25,7 @@ Most cleaners in this market will not publish a mattress price, and the reason i
 
 We charge one rate for any size on the first mattress on purpose. Size-based pricing on a mattress service mostly penalizes people who own a king, and we would rather not structure our prices around that.
 
-## What's included
+## What's included in the price?
 
 | Service | Price |
 | --- | --- |
@@ -34,20 +42,20 @@ We charge one rate for any size on the first mattress on purpose. Size-based pri
 
 Underside/full-surface treatment is the only routine extra, and we will tell you after we see the mattress whether it applies. Severe or biohazard contamination is quoted before any work starts.
 
-## What is not on the invoice
+## Are there extra fees?
 
 - **No travel fee.** Anywhere in Lincoln and the surrounding 40 miles.
 - **No deposit.** Pricing is confirmed at the time of service.
 - **No charge for the underside inspection.** If we look and it does not need treating, we say so.
 - **UV-C light treatment, stains, pet odor and ordinary urine accidents are not line items.** They are included in the base rate for every customer.
 
-## A realistic comparison
+## Is cleaning cheaper than replacing?
 
 Replacing a queen mattress with a comparable new one is typically several hundred dollars or more, plus the logistics of getting rid of the old one, plus a new mattress that has its own off-gassing period. Sanitizing the one you own is {{price.first}}. That is the comparison most customers are actually making.
 
 The other comparison: a professional annual mattress service works out to less than a couple of dollars a day over the life of the appointment-to-appointment interval, for the surface you spend roughly a third of your life on.
 
-## When we tell you not to spend the money
+## When is cleaning not worth it?
 
 Three situations where we would rather lose the booking:
 
@@ -55,9 +63,9 @@ Three situations where we would rather lose the booking:
 - **Structural failure** — a collapsing edge, a cover that is torn through, springs you can feel. It is beyond cleaning.
 - **An active bed bug infestation.** That is a licensed pest-control problem, not a cleaning problem. We will refer you.
 
-Syringing money out of those three cases would be easy and it would be wrong, so we do not.
+Charging for those three cases would be easy and it would be wrong, so we do not.
 
-## Get an exact number
+## How do you get an exact number?
 
 Call **(402) 512-5658** with the number of mattresses and what you are seeing. Most quotes take under a minute, and the price we quote is the price you pay.
 

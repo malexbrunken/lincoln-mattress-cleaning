@@ -1,18 +1,19 @@
 /**
- * Job photos live in Cloudinary (cloud f69kw8ao) and are displayed by URL.
- * Keep alt text factual — these are real jobs, so describe what is visible.
+ * Site images live in Cloudinary (cloud f69kw8ao) and are displayed by URL.
+ * They are decorative: alt text and captions describe what is visible, with no
+ * claims about where or when a photo was taken and no before/after framing.
  */
-export type JobImage = {
+export type SiteImage = {
   id: string;
   url: string;
   alt: string;
   caption: string;
-  tag: "equipment" | "before" | "after" | "process";
+  tag: "equipment" | "mattress" | "process";
 };
 
 const C = "https://res.cloudinary.com/f69kw8ao/image/upload";
 
-export const jobImages: JobImage[] = [
+export const siteImages: SiteImage[] = [
   {
     id: "kit",
     url: `${C}/v1789519656/IMG_3135_wyon0z.jpg`,
@@ -36,18 +37,18 @@ export const jobImages: JobImage[] = [
     tag: "process",
   },
   {
-    id: "before-stains",
+    id: "stains",
     url: `${C}/v1789519656/IMG_3125_bygvjs.jpg`,
-    alt: "Dirty mattress before cleaning showing dog and child urine staining",
-    caption: "Before: a mattress with pet and child urine staining across the sleep surface.",
-    tag: "before",
+    alt: "Mattress with urine staining across the sleep surface",
+    caption: "Urine staining across a sleep surface, the kind of mark enzyme treatment is for.",
+    tag: "mattress",
   },
   {
-    id: "before-angle-2",
+    id: "stains-angle-2",
     url: `${C}/v1789519657/IMG_3126_rygemm.jpg`,
-    alt: "Second angle of the same stained mattress before cleaning",
-    caption: "Before, second angle — the staining ran through the quilting and into the seams.",
-    tag: "before",
+    alt: "Stained mattress quilting and seams, seen from the side",
+    caption: "Staining that runs through the quilting and into the seams.",
+    tag: "mattress",
   },
   {
     id: "serta-tag",
@@ -58,22 +59,22 @@ export const jobImages: JobImage[] = [
     tag: "process",
   },
   {
-    id: "after-avocado-topper",
+    id: "avocado-topper",
     url: `${C}/v1789519658/IMG_3509_mtnyw7.jpg`,
-    alt: "Cleaned Avocado mattress with its foam topper after sanitation",
-    caption: "After: an Avocado mattress with its foam topper, sanitized and reset.",
-    tag: "after",
+    alt: "Avocado mattress with its foam topper",
+    caption: "An Avocado mattress with its foam topper.",
+    tag: "mattress",
   },
   {
-    id: "after-avocado",
+    id: "avocado",
     url: `${C}/v1789519658/IMG_3139_u0p91f.jpg`,
-    alt: "Cleaned Avocado mattress after mattress sanitation",
-    caption: "After: the same Avocado mattress — no wet core, no chemical residue, no waiting 48 hours.",
-    tag: "after",
+    alt: "Avocado mattress",
+    caption: "An Avocado mattress. Dry vapor steam is a low-moisture method, and the bed stays unmade until it is dry to the touch.",
+    tag: "mattress",
   },
 ];
 
-export const heroImage = jobImages[1];
-const byId = (id: string) => jobImages.find((i) => i.id === id)!;
-export const beforeAfterPair = { before: byId("before-stains"), after: byId("after-avocado-topper") };
+export const heroImage = siteImages[1];
+const byId = (id: string) => siteImages.find((i) => i.id === id)!;
+export const featuredPair = [byId("stains"), byId("avocado-topper")];
 export { byId as imageById };

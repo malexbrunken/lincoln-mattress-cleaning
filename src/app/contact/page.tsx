@@ -1,17 +1,20 @@
 import type { Metadata } from "next";
+import { updatedFor } from "@/lib/dates";
+import { WebPageJsonLd } from "@/components/JsonLd";
 import Link from "next/link";
 import { site } from "@/lib/site";
 import { QuoteForm } from "./QuoteForm";
 
 export const metadata: Metadata = {
-  title: "Book a Mattress Cleaning Appointment | Lincoln, NE",
+  title: "Book Mattress Cleaning in Lincoln, NE",
   description:
-    "Book mattress cleaning in Lincoln, Nebraska. Call (402) 512-5658 or send the short form — tell us how many mattresses and what you are seeing, and we will confirm pricing before we schedule.",
+    "Book mattress cleaning in Lincoln, NE. Call (402) 512-5658 or send the short form with how many mattresses and what you are seeing. $249 first mattress.",
 };
 
 export default function ContactPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
+      <WebPageJsonLd name="Book mattress cleaning in Lincoln, NE" path="/contact" dateModified={updatedFor("/contact")} type="ContactPage" />
       <nav aria-label="Breadcrumb" className="text-mist mb-4 text-sm">
         <Link href="/" className="text-teal hover:underline">Home</Link> › Book
       </nav>

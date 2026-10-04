@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { SERVICES_UPDATED } from "@/lib/dates";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { services, serviceBySlug } from "@/lib/services";
 import { site } from "@/lib/site";
-import { BreadcrumbJsonLd, FaqJsonLd, ServiceJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, FaqJsonLd, ServiceJsonLd, WebPageJsonLd } from "@/components/JsonLd";
 
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
@@ -12,7 +13,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps<"/services/[slug]">): Promise<Metadata> {
   const s = serviceBySlug((await params).slug);
   if (!s) return {};
-  return { title: s.title, description: s.description };
+  return { title: s.title, description: s.description, alternates: { canonical: `/services/${s.slug}` } };
 }
 
 export default async function ServicePage({ params }: PageProps<"/services/[slug]">) {
@@ -23,6 +24,7 @@ export default async function ServicePage({ params }: PageProps<"/services/[slug
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
+      <WebPageJsonLd name={s.name} path={`/services/${s.slug}`} dateModified={SERVICES_UPDATED} />
       <BreadcrumbJsonLd items={[
         { name: "Home", url: site.url },
         { name: "Services", url: `${site.url}/services` },
@@ -52,7 +54,7 @@ export default async function ServicePage({ params }: PageProps<"/services/[slug
         </Link>
       </div>
 
-      <h2 className="text-2xl font-semibold text-navy mb-4">What&apos;s included</h2>
+      <h2 className="text-2xl font-semibold text-navy mb-4">What&apos;s included?</h2>
       <ul className="space-y-2.5 mb-10 rounded-2xl bg-ice border border-line p-6">
         {s.includes.map((i) => (
           <li key={i} className="flex gap-3 text-lg"><span className="text-teal font-bold">✓</span> {i}</li>
@@ -65,7 +67,7 @@ export default async function ServicePage({ params }: PageProps<"/services/[slug
 
       {s.faq.length > 0 && (
         <>
-          <h2 className="text-2xl font-semibold text-navy mt-10 mb-4">Questions we hear a lot</h2>
+          <h2 className="text-2xl font-semibold text-navy mt-10 mb-4">What do people ask about {s.name.toLowerCase().replace("uv-c", "UV-C").replace("co₂", "CO₂")}?</h2>
           <div className="divide-y divide-line border-y border-line mb-10">
             {s.faq.map((f) => (
               <div key={f.q} className="py-5">
@@ -77,7 +79,7 @@ export default async function ServicePage({ params }: PageProps<"/services/[slug
         </>
       )}
 
-      <h2 className="text-2xl font-semibold text-navy mt-12 mb-4">Related services</h2>
+      <h2 className="text-2xl font-semibold text-navy mt-12 mb-4">Which related services fit?</h2>
       <div className="grid gap-4 sm:grid-cols-3">
         {others.map((o) => (
           <Link key={o.slug} href={`/services/${o.slug}`} className="rounded-xl border-2 border-line p-5 hover:border-teal transition-colors">

@@ -32,7 +32,9 @@ const nextConfig: NextConfig = {
       { source: "/services/dust-mite-treatment", destination: "/services/bed-mite-treatment", permanent: true },
       { source: "/services/bed-bug-allergen-reduction", destination: "/services/bed-mite-treatment", permanent: true },
       // 2026-10-03: we do not take UV-C readings; the readings guide was removed.
-      { source: "/guides/uv-c-mattress-vacuum-readings", destination: "/services/uv-c-post-treatment", permanent: true },
+      { source: "/guides/uv-c-mattress-vacuum-readings", destination: "/services/uv-c-light-treatment", permanent: true },
+      // 2026-10-04: UV-C service slug renamed to match "UV-C light treatment".
+      { source: "/services/uv-c-post-treatment", destination: "/services/uv-c-light-treatment", permanent: true },
       // 2026-10-03: rental-turnover service removed (no landlord or tenant turnover service).
       { source: "/services/rental-property-mattress-turnover", destination: "/services", permanent: true },
       // Keep www and apex from competing as duplicate hosts.

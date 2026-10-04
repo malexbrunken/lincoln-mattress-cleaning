@@ -5,7 +5,7 @@ description: "UNL halls closed at 1 PM on May 9, 2026. Lincoln's North 48th Stre
 answer: "Decide what happens to the mattress before move-out week. Lancaster County residents can take one to the City of Lincoln's North 48th Street transfer station with a covered, secured load. If you are keeping it, have it cleaned before you move it."
 order: 4
 published: "2026-10-03"
-updated: "2026-10-03"
+updated: "2026-10-04"
 timeline:
   - when: "Week of May 4, 2026"
     what: "Centralized checkout began Monday, May 4; meters near the halls were hooded for one-hour loading."
@@ -25,7 +25,7 @@ faq:
   - q: "What does the transfer station charge?"
     a: "The City of Lincoln publishes its rates in a Solid Waste Management rate schedule. We don't repeat the figures here because they change; call 402-441-8104 before you go."
   - q: "Should I leave my old mattress by the dumpster?"
-    a: "No. UNL Student Legal Services tells students to avoid curbside beds, which means a bed left out is a problem for the next tenant, not a donation."
+    a: "No. UNL advises students to avoid curbside beds, so a bed left by the dumpster is a problem for the next student, not a donation. Take it to the North 48th Street facility or give it to someone you know."
 sources:
   - name: "UNL Move Out"
     url: "https://moveout.unl.edu/"
@@ -49,9 +49,11 @@ changelog:
     note: "Hooded-meter row now cites the UNL Parking and Transit announcement."
   - date: "2026-10-03"
     note: "Narrowed the keeping-it guidance to cleaning before move-out."
+  - date: "2026-10-04"
+    note: "Added question headings; replaced a Knowledge Center link with the dry-to-the-touch step."
 ---
 
-## Getting rid of it
+## Where can you take a mattress in Lincoln?
 
 | | North 48th Street facility | Bluff Road facility |
 | --- | --- | --- |
@@ -64,17 +66,17 @@ changelog:
 
 All from the City of Lincoln's Solid Waste Management page. Lincoln's hazardous waste center, HazToGo, shares the 5101 N 48th St address, which is handy if you are clearing paint or chemicals out of the same apartment.
 
-## Move-out week checklist
+## What should you do in move-out week?
 
 1. **Decide by May 1.** In 2026 UNL's halls closed at 1 pm on May 9, so May 1 leaves a week to book a haul or a cleaning: keep, move, give to someone you know, or get rid of it.
 2. **Strap and cover the load.** The city requires covered and secured loads.
 3. **Plan around campus.** In 2026 UNL hooded meters near the halls for one-hour loading and held commencement at Pinnacle Bank Arena on May 8 and 9.
 4. **Keep cardboard out of the landfill load,** because UNL's move-out page notes corrugated cardboard isn't allowed in city landfills.
 
-## Keeping it for next year
+## Keeping it for next year?
 
 - **Have it cleaned at the apartment before move-out.**
-- **Let it dry completely** before it is moved; Sleep Sanitation covers drying in [how quickly a treated mattress should dry](https://sleepsanitation.com/knowledge-center/mattress-moisture-heat-drying-construction/how-quickly-should-a-treated-mattress-dry).
+- **Leave the bed unmade until it is dry to the touch** before it is moved; the moisture check before we leave tells you where it stands.
 - **Check your care label and warranty terms** before any cleaning.
 
 ## What we don't know

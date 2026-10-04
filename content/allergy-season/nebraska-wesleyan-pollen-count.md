@@ -6,7 +6,7 @@ order: 1
 description: "Who counts Lincoln's pollen, how NWU's categories differ for trees, weeds and grass, and what the October 2, 2026 count showed, plant by plant."
 answer: "Lincoln's public pollen count comes from Nebraska Wesleyan University, where Dr. Kate Weskamp counts five days a week from February through mid-October on a sampler provided by Allergy, Asthma & Immunology Associates. The Lincoln-Lancaster County Health Department doesn't count pollen and links to NWU. On October 2, 2026, NWU posted weeds at 1.6 grains per cubic meter and grass at 1.0, both low, with no tree pollen."
 published: "2026-10-03"
-updated: "2026-10-03"
+updated: "2026-10-04"
 tiles:
   - { value: "1.6", label: "Weed pollen, grains per cubic meter, NWU, October 2, 2026 (low)" }
   - { value: "1.0", label: "Grass pollen, NWU, October 2, 2026 (low)" }
@@ -34,15 +34,15 @@ changelog:
   - { date: "2026-10-03", note: "Corrected Dr. Weskamp's title to assistant professor of chemistry, per NWU's page." }
 ---
 
-## Who counts Lincoln's pollen
+## Who counts Lincoln's pollen?
 
 Dr. Kate Weskamp, an assistant professor of chemistry at NWU, makes the count at NWU, 5000 Saint Paul Avenue, on a sampler provided by Allergy, Asthma & Immunology Associates, and the results are posted to the American Academy of Allergy, Asthma & Immunology. The National Allergy Bureau lists the AAIA Lincoln station as Station 166. Allergy, Asthma & Immunology Associates asks that its counts not be duplicated without written permission, so this guide quotes a handful of NWU figures and links to the rest.
 
-## The same number, three meanings
+## What does the pollen number mean?
 
 NWU sorts every count into low, moderate, high or very high, with separate cutoffs for trees, weeds and grass. On NWU's scale, weeds are low from 1 to 9 grains per cubic meter and moderate from 10 to 49, grass is low up to 4 and moderate up to 19, and trees need 90 to reach high.
 
-## October 2, 2026, plant by plant
+## What did the October 2, 2026 count show?
 
 | Pollen | NWU count | Category |
 | --- | --- | --- |
@@ -52,10 +52,10 @@ NWU sorts every count into low, moderate, high or very high, with separate cutof
 | Hemp, plantain, ragweed | 0.3 each | Part of the weed total |
 | Grass | 1.0 | Low |
 
-## A count with a long history
+## How long has Lincoln had a pollen count?
 
 Lincoln's count predates NWU's current page: in a 2001 State Museum note, Margaret Bolick wrote that the museum's Division of Botany had counted pollen since 1990, five days a week from late February to mid-October, and called late October the end of Nebraska's hay fever season.
 
-## Where we fit
+## Where does a mattress visit fit?
 
 We don't count pollen, and nothing on this page is a claim that a mattress cleaning changes NWU's number. Sleep Sanitation explains [what mattress cleaning can and can't do for allergies](https://sleepsanitation.com/knowledge-center/mattress-dust-mites-allergens/does-mattress-sanitation-cure-allergies).

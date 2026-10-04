@@ -1,18 +1,21 @@
 import { priceText } from "@/lib/prices";
 import type { Metadata } from "next";
+import { updatedFor } from "@/lib/dates";
+import { WebPageJsonLd } from "@/components/JsonLd";
 import Link from "next/link";
 import { site } from "@/lib/site";
 import { townBySlug } from "@/lib/towns";
 
 export const metadata: Metadata = {
-  title: "About Us | Lincoln Mattress Cleaning, a Sleep Sanitation Service",
+  title: { absolute: "About Lincoln Mattress Cleaning, by Sleep Sanitation" },
   description:
-    "Lincoln Mattress Cleaning is the Lincoln, Nebraska service of Sleep Sanitation — a mattress-only provider using low-moisture dry vapor steam, a mattress-specific protocol, and published pricing.",
+    "Lincoln Mattress Cleaning is operated by Sleep Sanitation: a mattress-only service in Lincoln, NE using low-moisture dry vapor steam and published pricing.",
 };
 
 export default function AboutPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
+      <WebPageJsonLd name="About Lincoln Mattress Cleaning" path="/about" dateModified={updatedFor("/about")} type="AboutPage" />
       <nav aria-label="Breadcrumb" className="text-mist mb-4 text-sm">
         <Link href="/" className="text-teal hover:underline">Home</Link> › About
       </nav>
@@ -56,8 +59,8 @@ export default function AboutPage() {
 
       <h2 className="text-2xl font-semibold text-navy mb-3">The protocol, in order</h2>
       <p className="mb-5">
-        Inspect, isolate, sanitize, detail, reset. We read the law tag before anything touches the mattress,
-        contain the bedroom, work the surface in calibrated passes, give the seams and edges their own passes, finish with UV-C light treatment, and leave the room as we found it.
+        Inspect, prepare, sanitize, detail, reset. We read the law tag before anything touches the mattress,
+        put on gloves and shoe booties with equipment disinfected between jobs, work the surface in calibrated passes, give the seams and edges their own passes, finish with UV-C light treatment, and leave the room as we found it.
       </p>
 
       <h2 className="text-2xl font-semibold text-navy mb-3">Where we work</h2>

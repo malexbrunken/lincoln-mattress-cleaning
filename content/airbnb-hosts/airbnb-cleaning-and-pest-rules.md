@@ -54,23 +54,23 @@ changelog:
     note: "First published, quoting Airbnb's help center as it read on October 3, 2026, including the U.S. and Canada wording difference."
 ---
 
-## Two rulebooks, one with cleaning rules
+## Which rulebook has the cleaning rules?
 
 A Lincoln short-term rental answers to the city and to Airbnb, and only Airbnb writes cleaning rules. The city's Building and Safety page covers the $250 license, the guest cap of two per sleeping area, signs, and an emergency contact who can reach the property within 45 minutes; we found nothing on it about cleaning or pests.
 
-## What Airbnb's texts say, quoted carefully
+## What do Airbnb's texts say?
 
 - **Ground rules for home hosts.** Its "Health and safety" bullet says listings should be free of health hazards, with mold and pests as examples, and a second cleanliness bullet asks for a high standard of cleanliness; "Guest turnover" says hosts should be sure to clean between every stay. For repeated or severe violations, Airbnb says it may suspend a listing or require proof that issues were fixed before hosting resumes.
 - **Rebooking and refund policy.** A listing that is "not reasonably clean and sanitary" or contains "safety or health hazards" at check-in is a Reservation Issue; guests must report within 72 hours after discovery, and any refund comes out of the host's payout.
 - **The unclean-at-check-in article, number 2993.** The airbnb.com version doesn't mention bed bugs, while the airbnb.ca and airbnb.co.uk versions name "bed bugs, mould or other allergens" as possible immediate health risks. We read the U.S. text as current, and pests fall under the ground rules either way.
 
-## A suspect bug: identification first
+## What if you find a suspect bug?
 
 Nebraska Extension in Lancaster County says the first step with a suspect insect is a professional identification, and gives its local reason: about half of the suspected bed bugs brought to its office end up being bat bugs. The same Extension page says a bat bug problem is solved by removing bats roosting in or around the home, and that insecticide in the bedroom is not normally needed once the bats are gone. A host who skips identification can end up treating the wrong problem.
 
 For a confirmed bed bug, the Extension page recommends a pest management professional, says the majority of treatments need at least two visits, and suggests watching for 6 to 8 months afterward; we don't treat bed bugs, and a mattress in an active case waits until that professional is done. Its mattress inspection advice covers seams, folds and zippers, looking for live bugs, shed skins and black fecal spots. Sleep Sanitation explains how [bed bugs differ from dust mites and bed mites (house dust mites)](https://sleepsanitation.com/knowledge-center/mattress-dust-mites-allergens/dust-mites-vs-bed-bugs-vs-bed-mites). Check the care label and warranty terms before booking. This page is general information, not medical advice.
 
-## What we don't know
+## What don't we know?
 
 - **Why Airbnb's U.S. and Canada texts differ**, which Airbnb doesn't explain.
 - **Whether a given Lincoln sample is a bat bug.** Only identification answers that; the Extension's figure is about half.

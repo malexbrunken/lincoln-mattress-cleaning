@@ -1,26 +1,29 @@
 import type { Metadata } from "next";
+import { updatedFor } from "@/lib/dates";
 import Link from "next/link";
 import { towns } from "@/lib/towns";
 import { site } from "@/lib/site";
-import { ServiceAreaJsonLd } from "@/components/JsonLd";
+import { priceText } from "@/lib/prices";
+import { ServiceAreaJsonLd, WebPageJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Service Areas | Mattress Cleaning Around Lincoln, NE",
+  title: "Service Areas Around Lincoln, NE",
   description:
-    "Mattress cleaning and sanitization across Lincoln and Lancaster County (Waverly, Hickman, Bennet, Firth, Malcolm, Raymond), plus Eagle, Palmyra, Seward, Crete, Wahoo and Ashland.",
+    "Mattress cleaning across Lincoln and Lancaster County, plus Eagle, Palmyra, Seward, Crete, Wahoo and Ashland. $249 first mattress, no travel fee.",
 };
 
 export default function ServiceAreasPage() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-12">
+      <WebPageJsonLd name="Service areas around Lincoln, NE" path="/service-areas" dateModified={updatedFor("/service-areas")} type="CollectionPage" />
       <ServiceAreaJsonLd />
       <nav aria-label="Breadcrumb" className="text-mist mb-4 text-sm">
         <Link href="/" className="text-teal hover:underline">Home</Link> › Service Areas
       </nav>
       <h1 className="text-4xl md:text-5xl font-semibold text-navy mb-4">Where We Work</h1>
       <p className="text-lg text-mist mb-4 max-w-3xl">
-        We are a mobile service — we bring the steam system, the HEPA and UV-C vacuum, and the containment setup to your
-        bedroom. {site.serviceRadius}
+        Where do we clean mattresses? In your bedroom, across {site.serviceRadius} We bring the steam system and
+        the HEPA and UV-C vacuum, and the first mattress is {priceText.first}, any size.
       </p>
       <p className="text-lg text-mist mb-10 max-w-3xl">
         Select your town for local details, or call and we will confirm your address is inside the radius before

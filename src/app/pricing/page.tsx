@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
+import { updatedFor } from "@/lib/dates";
 import Link from "next/link";
 import { packages, addonDetails, site } from "@/lib/site";
 import { QuoteCalc } from "@/components/QuoteCalc";
 import { PromoBanner, IncludedTable } from "@/components/Pricing";
-import { FaqJsonLd, PricingOffersJsonLd } from "@/components/JsonLd";
+import { FaqJsonLd, PricingOffersJsonLd, WebPageJsonLd } from "@/components/JsonLd";
 import { PROMO, priceText } from "@/lib/prices";
 import { IconMattress } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: `Mattress Cleaning Prices Lincoln NE | ${priceText.first} First Mattress`,
-  description: `Lincoln, NE mattress cleaning prices: ${priceText.first} first mattress${PROMO.active ? ` (${priceText.promoFirst} ${PROMO.label})` : ""}, ${priceText.additionalRange} each additional. Stains, pet odor and ordinary urine included.`,
+  title: { absolute: `Lincoln Mattress Cleaning Prices: ${priceText.first} First Mattress` },
+  description: `Mattress cleaning in Lincoln, NE is ${priceText.first} for the first mattress, any size, and ${priceText.additionalRange} each additional. Stains, pet odor and ordinary urine included.`,
+  alternates: { canonical: "/pricing" },
 };
 
 const faq = [
@@ -38,6 +40,7 @@ const faq = [
 export default function PricingPage() {
   return (
     <>
+      <WebPageJsonLd name="Mattress cleaning prices in Lincoln, NE" path="/pricing" dateModified={updatedFor("/pricing")} type="WebPage" />
       <FaqJsonLd faq={faq} />
       <PricingOffersJsonLd />
 
@@ -45,12 +48,17 @@ export default function PricingPage() {
         <div className="relative max-w-6xl mx-auto px-4 py-16 md:py-24">
           <p className="kicker text-teal-bright mb-4">Transparent pricing</p>
           <h1 className="text-5xl md:text-6xl font-semibold leading-tight max-w-4xl mb-5">
-            One published rate.
+            How much does mattress cleaning cost in Lincoln?
           </h1>
+          <p className="text-xl text-white/80 max-w-2xl mb-6">
+            {priceText.first} for the first mattress, any size, with normal stains, pet odor and ordinary urine
+            accidents included. Each additional full, queen or king mattress is {priceText.additionalLarge}, and each
+            additional kids bed (twin/full) is {priceText.additionalKids}. No travel fee and no deposit.
+          </p>
           <PromoBanner className="max-w-2xl mb-6" />
-          <p className="text-xl text-white/70 max-w-2xl">
-            No hidden fees. No size-based upsells on your first mattress. The same published numbers apply on
-            every {site.parentBrand} property, so what you read here is what you pay in Lincoln.
+          <p className="text-lg text-white/70 max-w-2xl">
+            No size-based upsells on your first mattress. The same published numbers apply on every{" "}
+            {site.parentBrand} property, so what you read here is what you pay in Lincoln.
           </p>
         </div>
       </section>
@@ -58,7 +66,7 @@ export default function PricingPage() {
       <section className="max-w-6xl mx-auto px-4 py-16 md:py-24">
         <div className="grid gap-10 lg:grid-cols-[1.35fr_.8fr] items-start">
           <div className="space-y-6">
-            <h2 className="text-3xl font-semibold">What&apos;s included</h2>
+            <h2 className="text-3xl font-semibold">What&apos;s included in the {priceText.first}?</h2>
             <IncludedTable promo />
             {packages.map((p) => (
               <article
@@ -114,7 +122,7 @@ export default function PricingPage() {
       <section className="bg-ice-2 border-y border-line py-16">
         <div className="max-w-6xl mx-auto px-4">
           <p className="kicker text-teal-deep mb-3">Beyond the base price</p>
-          <h2 className="text-3xl font-semibold mb-3">Only when the mattress needs it</h2>
+          <h2 className="text-3xl font-semibold mb-3">What costs extra?</h2>
           <p className="text-mist max-w-3xl mb-8">
             Stains, pet odor and ordinary urine accidents are included. These two are the only extras, and we
             will tell you after we see the mattress whether either applies.
@@ -135,7 +143,7 @@ export default function PricingPage() {
 
       <section className="max-w-4xl mx-auto px-4 py-16 md:py-24">
         <p className="kicker text-teal-deep mb-3">Good questions</p>
-        <h2 className="text-4xl font-semibold mb-8">Before you book</h2>
+        <h2 className="text-4xl font-semibold mb-8">What else should you know before you book?</h2>
         <div className="divide-y divide-line border-y border-line">
           {faq.map((f) => (
             <div key={f.q} className="py-6">

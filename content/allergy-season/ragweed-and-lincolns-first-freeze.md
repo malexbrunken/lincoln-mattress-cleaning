@@ -6,7 +6,7 @@ order: 4
 description: "How Lincoln's weed pollen season ends: NWU's mid-October last count, Lincoln Airport's October 13 and 22 freeze medians, and the October 2, 2026 weeds."
 answer: "Nebraska Wesleyan counts pollen until mid-October, and NOAA's 1991 to 2020 normals put Lincoln Airport's median first 32°F night on October 13 and its first 28°F night on October 22. A 2001 State Museum note called late October the end of Nebraska's hay fever season. On October 2, 2026, NWU's weed count was 1.6, low, with ragweed contributing 0.3."
 published: "2026-10-03"
-updated: "2026-10-03"
+updated: "2026-10-04"
 tiles:
   - { value: "Oct 13", label: "Median first 32°F night, Lincoln Airport" }
   - { value: "Oct 22", label: "Median first 28°F night, Lincoln Airport" }
@@ -33,7 +33,7 @@ changelog:
   - { date: "2026-10-03", note: "Revised: removed an unsourced line comparing early-October ragweed with late summer." }
 ---
 
-## Lincoln's fall calendar, from three sources
+## What does Lincoln's fall calendar look like?
 
 | Marker | Date | Source |
 | --- | --- | --- |
@@ -45,10 +45,10 @@ changelog:
 
 In spring, the same NOAA normals put Lincoln Airport's median last 32°F night on April 24 and last 28°F night on April 15, for a median growing season of 171 days.
 
-## The October 2, 2026 weed count, broken down
+## What was in the October 2, 2026 weed count?
 
 NWU's weed total of 1.6 grains per cubic meter was made up of chenopods and pigweed at 0.7 and hemp, plantain and ragweed at 0.3 each. The total sits inside NWU's low weed band of 1 to 9, and NWU's count keeps going until mid-October.
 
-## Waiting out the weeds
+## How long until the weeds are done?
 
 NWU's weed count is measured outdoors, and cleaning a mattress has no effect on it; we make no allergy claim for the visit. For households that would rather wait, Lincoln Airport's October 22 median hard freeze comes after NWU's last count, so a weekday in the last week of October works. Tell us about anyone pollen sensitive and we'll put it in the special care notes on the inspection form. Sleep Sanitation explains [killing bed mites versus removing their allergens](https://sleepsanitation.com/knowledge-center/mattress-dust-mites-allergens/killing-dust-mites-vs-removing-dust-mite-allergens), the indoor half of the fall story.

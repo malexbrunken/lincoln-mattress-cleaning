@@ -6,7 +6,7 @@ import { fmtDate } from "@/lib/academicYear";
 import { site } from "@/lib/site";
 import { Markdown } from "@/components/Markdown";
 import { HostChecklist, HostRules } from "@/components/HostRules";
-import { BreadcrumbJsonLd, FaqJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, FaqJsonLd, founder } from "@/components/JsonLd";
 
 export function generateStaticParams() {
   return getHostPages().map((p) => ({ slug: p.slug }));
@@ -33,7 +33,7 @@ export default async function HostPageRoute({ params }: PageProps<"/airbnb-hosts
     mainEntityOfPage: url,
     datePublished: p.published,
     dateModified: p.updated,
-    author: { "@type": "Organization", name: site.name, url: `${site.url}/about` },
+    author: { "@id": founder["@id"], "@type": "Person", name: founder.name, url: founder.url, sameAs: founder.sameAs },
     publisher: { "@id": `${site.url}/#business` },
     isPartOf: { "@type": "CollectionPage", "@id": `${site.url}/airbnb-hosts` },
     inLanguage: "en-US",
@@ -65,7 +65,7 @@ export default async function HostPageRoute({ params }: PageProps<"/airbnb-hosts
             <Markdown md={p.body} />
             {p.faq?.length > 0 && (
               <>
-                <h2>Host questions</h2>
+                <h2>What do hosts ask?</h2>
                 {p.faq.map((f) => (
                   <div key={f.q}>
                     <h3>{f.q}</h3>
@@ -102,7 +102,7 @@ export default async function HostPageRoute({ params }: PageProps<"/airbnb-hosts
           </div>
         </div>
       </div>
-      <h2 className="text-2xl font-semibold text-navy mb-4">More Lincoln host guides</h2>
+      <h2 className="text-2xl font-semibold text-navy mb-4">Which other host guides help?</h2>
       <ul className="grid gap-3 sm:grid-cols-2 text-lg">
         {others.map((o) => (
           <li key={o.slug}>

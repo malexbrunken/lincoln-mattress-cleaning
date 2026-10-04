@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
+import { updatedFor } from "@/lib/dates";
 import Image from "next/image";
 import Link from "next/link";
 import { site, packages, comparison, plainAnswer } from "@/lib/site";
 import { services } from "@/lib/services";
 import { towns } from "@/lib/towns";
-import { heroImage, beforeAfterPair, imageById } from "@/lib/images";
+import { heroImage, featuredPair, imageById } from "@/lib/images";
 import { QuoteCalc } from "@/components/QuoteCalc";
 import { IncludedTable } from "@/components/Pricing";
 import { priceText } from "@/lib/prices";
-import { FaqJsonLd } from "@/components/JsonLd";
+import { FaqJsonLd, WebPageJsonLd } from "@/components/JsonLd";
 import {
   IconDropletSlash,
   IconGauge,
@@ -49,7 +50,7 @@ const standards = [
 
 const process = [
   ["01", "Inspect", "We read the law tag, assess fabric condition and construction, and look at the bedroom environment before anything is applied."],
-  ["02", "Isolate", "Gloves and shoe booties on, disinfected tools staged cleanly, your floor and bedding protected. The room is contained before treatment begins."],
+  ["02", "Prepare", "Gloves and shoe booties on, with equipment disinfected between jobs."],
   ["03", "Sanitize", "Dry vapor steam in overlapping passes across the sleep surface, with calibrated temperature for your mattress type."],
   ["04", "Detail", "Seams, quilting channels, piping, and the side edges, each with its own passes."],
   ["05", "Reset", "UV-C light treatment, tools broken down in order, and the room left as we found it."],
@@ -87,6 +88,7 @@ export default function HomePage() {
 
   return (
     <>
+      <WebPageJsonLd name="Lincoln Mattress Cleaning" path="" dateModified={updatedFor("")} type="WebPage" />
       <FaqJsonLd faq={homeFaq} />
 
       {/* Cinematic hero */}
@@ -137,7 +139,7 @@ export default function HomePage() {
             <div key={title} className="flex gap-4 items-start">
               <span className="text-teal-deep mt-1"><Icon className="w-7 h-7" /></span>
               <div>
-                <h2 className="font-sans text-base font-bold tracking-wide mb-0.5">{title}</h2>
+                <h3 className="font-sans text-base font-bold tracking-wide mb-0.5">{title}</h3>
                 <p className="text-sm text-mist leading-relaxed">{text}</p>
               </div>
             </div>
@@ -150,7 +152,7 @@ export default function HomePage() {
         <div>
           <p className="kicker text-teal-deep mb-4">The upgrade</p>
           <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-6">
-            Questions worth asking any mattress cleaner.
+            What should you ask before booking a mattress cleaning?
           </h2>
           <p className="text-xl text-mist leading-relaxed mb-6">
             Ask what equipment touches the mattress, how much water goes into it, and what is left in the foam
@@ -193,7 +195,7 @@ export default function HomePage() {
           <div className="max-w-3xl mb-10">
             <p className="kicker text-teal-bright mb-4">Side by side</p>
             <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-5">
-              Wet extraction vs. dry vapor steam
+              How does dry vapor steam compare with wet extraction?
             </h2>
             <p className="text-xl text-white/70">
               We are not the cheapest mattress service in Lincoln. Here is how the two methods differ, so you can
@@ -231,30 +233,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Before / after */}
+      {/* Mattress photos (decorative) */}
       <section className="max-w-6xl mx-auto px-4 py-20 md:py-28">
         <div className="max-w-3xl mb-12">
-          <p className="kicker text-teal-deep mb-4">Real jobs, unedited</p>
+          <p className="kicker text-teal-deep mb-4">Stains, odor and foam</p>
           <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-5">
-            What the mattress looked like, before and after.
+            What does the service treat?
           </h2>
           <p className="text-xl text-mist">
-            Every one of these images is from an actual appointment.
+            Normal stains, pet odor and ordinary urine accidents are included in the {priceText.first} first-mattress
+            price, on foam, hybrid and innerspring builds.
           </p>
         </div>
 
         <div className="grid gap-7 lg:grid-cols-2 mb-10">
-          {[beforeAfterPair.before, beforeAfterPair.after].map((img) => (
+          {featuredPair.map((img) => (
             <figure key={img.id} className="rounded-2xl overflow-hidden border border-line bg-white">
               <div className="relative aspect-[4/3]">
                 <Image src={img.url} alt={img.alt} fill sizes="(max-width:1024px) 100vw, 50vw" className="object-cover" />
-                <span
-                  className={`absolute top-4 left-4 font-bold text-xs uppercase tracking-[0.18em] px-3 py-1.5 rounded-full ${
-                    img.tag === "before" ? "bg-navy text-white" : "bg-teal text-white"
-                  }`}
-                >
-                  {img.tag}
-                </span>
               </div>
               <figcaption className="p-5 text-[15px] text-mist">{img.caption}</figcaption>
             </figure>
@@ -292,7 +288,7 @@ export default function HomePage() {
           <div className="max-w-3xl mb-12">
             <p className="kicker text-teal-deep mb-4">The protocol</p>
             <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-5">
-              Five phases, in this order, every time.
+              What happens during a visit?
             </h2>
             <p className="text-xl text-mist">
               The appointment is precise, not rushed.
@@ -315,7 +311,7 @@ export default function HomePage() {
         <div className="max-w-3xl mb-12">
           <p className="kicker text-teal-deep mb-4">What we do</p>
           <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-5">
-            One surface, treated properly.
+            Why only mattresses?
           </h2>
           <p className="text-xl text-mist">
             Everything below is a mattress service. We do not clean carpets, we do not clean upholstery, and we
@@ -350,7 +346,7 @@ export default function HomePage() {
           <div className="max-w-3xl mb-12">
             <p className="kicker text-teal-deep mb-4">Published pricing</p>
             <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-5">
-              No hidden fees. No size-based upsells on your first mattress.
+              How much does it cost?
             </h2>
             <p className="text-xl text-mist">
               One published rate, because the surface you sleep on deserves better than guesswork.
@@ -408,7 +404,7 @@ export default function HomePage() {
           <IconThermometer className="w-8 h-8 text-teal-deep mb-3" />
           <p className="kicker text-teal-deep mb-4">Why Lincoln, specifically</p>
           <h2 className="text-3xl md:text-4xl font-semibold leading-tight mb-6">
-            Nebraska bedrooms are closed rooms eight months a year.
+            Why clean a mattress in Nebraska every year?
           </h2>
           <p className="text-lg text-mist leading-relaxed mb-8">
             A bedroom sealed against a Nebraska January stays warm and humid every night, and bed mites
@@ -441,7 +437,7 @@ export default function HomePage() {
           <div>
             <IconMapPin className="w-8 h-8 text-teal-deep mb-3" />
             <p className="kicker text-teal-deep mb-3">Coverage</p>
-            <h2 className="text-3xl md:text-4xl font-semibold">Lincoln and 40 miles around it.</h2>
+            <h2 className="text-3xl md:text-4xl font-semibold">Where do we work around Lincoln?</h2>
             <p className="text-mist mt-3">{site.serviceRadius}</p>
           </div>
           <div className="flex flex-wrap gap-2.5">
@@ -461,7 +457,7 @@ export default function HomePage() {
       {/* FAQ */}
       <section className="max-w-4xl mx-auto px-4 py-20 md:py-24">
         <p className="kicker text-teal-deep mb-3">Good questions</p>
-        <h2 className="text-4xl font-semibold mb-8">Before you book</h2>
+        <h2 className="text-4xl font-semibold mb-8">What do people ask before they book?</h2>
         <div className="divide-y divide-line border-y border-line">
           {homeFaq.map((f) => (
             <div key={f.q} className="py-6">
@@ -479,7 +475,7 @@ export default function HomePage() {
           <IconShield className="w-12 h-12 text-teal-bright mx-auto mb-5" />
           <p className="kicker text-teal-bright mb-4">Same-week appointments</p>
           <h2 className="text-4xl md:text-5xl font-semibold mb-5">
-            You spend a third of your life there.
+            Ready to book a mattress cleaning?
           </h2>
           <p className="text-xl text-white/75 mb-8">
             No deposit required. Your exact quote takes under a minute on the phone.
