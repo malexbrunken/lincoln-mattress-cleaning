@@ -53,4 +53,3 @@ If that is what we find, we tell you on site, and we tell you before you have pa
 - [Pet urine and odor treatment service](/services/pet-urine-odor-treatment)
 - [Mattress cleaning in Lincoln: the complete guide](/guides/mattress-cleaning-lincoln-ne-guide)
 - [What it costs in Lincoln](/guides/mattress-cleaning-cost-lincoln)
-- [Our work — real before and after jobs](/gallery)

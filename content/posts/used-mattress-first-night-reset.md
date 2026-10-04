@@ -67,4 +67,3 @@ Fit a waterproof protector immediately afterwards. On a mattress with a history,
 - [Mattress sanitization service](/services/mattress-sanitization)
 - [Mattress cleaning in Lincoln: the complete guide](/guides/mattress-cleaning-lincoln-ne-guide)
 - [How often should you clean a mattress?](/guides/how-often-should-you-clean-a-mattress)
-- [Our work: photos from real jobs](/gallery)

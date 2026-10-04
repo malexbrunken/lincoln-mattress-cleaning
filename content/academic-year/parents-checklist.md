@@ -73,7 +73,7 @@ changelog:
 1. **Before signing,** ask whether the unit is furnished and how old the bed is. The lease, not UNL, decides who replaces it.
 2. **On move-in day,** inspect and photograph the bed and send anything you find to the landlord in writing. See [our August move-in plan](/academic-year/august-move-in).
 3. **If you buy a used bed,** follow [the used mattress inspection](/academic-year/used-mattress-for-a-lincoln-apartment) first.
-4. **Book cleaning between tenants,** when the apartment is empty, rather than after furniture is in.
+4. **Book cleaning before your student's furniture arrives,** while the apartment is empty.
 5. **In May,** decide early whether the bed is staying, moving or going. [May move-out](/academic-year/may-move-out-and-disposal) lists Lincoln's drop-off for residents.
 
 ## What we don't know
