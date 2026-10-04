@@ -1,28 +1,44 @@
-import { site } from "@/lib/site";
+import { site, pricing, plainAnswer } from "@/lib/site";
 
-/** LocalBusiness JSON-LD (shared across pages) */
+const BUSINESS_ID = `${site.url}/#business`;
+const SANITATION_ID = `${site.url}/#mattress-sanitation`;
+
+/** An Offer in the catalog. Services with no separate price say so in `description`. */
+function offer(name: string, description: string, price?: { price?: string; min?: string; max?: string }, serviceId?: string) {
+  return {
+    "@type": "Offer",
+    name,
+    description,
+    ...(price?.price ? { price: price.price, priceCurrency: "USD" } : {}),
+    ...(price?.min
+      ? { priceSpecification: { "@type": "PriceSpecification", minPrice: price.min, maxPrice: price.max, priceCurrency: "USD" } }
+      : {}),
+    itemOffered: serviceId
+      ? { "@type": "Service", "@id": serviceId, name: "Mattress sanitation" }
+      : { "@type": "Service", name, provider: { "@id": BUSINESS_ID } },
+  };
+}
+
+/**
+ * The one LocalBusiness entity for this site (rendered once, from the root layout).
+ * Name, phone and URL must match the citation audit; no street address is published,
+ * and there is no review markup or aggregateRating.
+ */
 export function LocalBusinessJsonLd() {
   const data = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": `${site.url}/#business`,
+    "@type": "HomeAndConstructionBusiness",
+    "@id": BUSINESS_ID,
     name: site.name,
     alternateName: `${site.parentBrand} — Lincoln, NE`,
-    description: site.description,
+    description: plainAnswer,
     url: site.url,
-    telephone: site.phone,
+    telephone: site.phoneE164,
     email: site.email,
     priceRange: "$$",
-    makesOffer: {
-      "@type": "Offer",
-      price: "199",
-      priceCurrency: "USD",
-      description:
-        "Mattress sanitation, first mattress, any size: limited-time Fall 2026 offer (regular price $249). Normal stains, pet odor and ordinary urine accidents included. Book another cleaning within 7 days of your service and it's also $199.",
-    },
     parentOrganization: {
-      "@type": "Organization",
-      "@id": "https://sleepsanitation.com/#organization",
+      "@type": "LocalBusiness",
+      "@id": "https://sleepsanitation.com/#business",
       name: site.parentBrand,
       url: "https://sleepsanitation.com",
     },
@@ -32,11 +48,14 @@ export function LocalBusinessJsonLd() {
       addressRegion: "NE",
       addressCountry: "US",
     },
-    areaServed: site.areas.map((a) => ({
-      "@type": "City",
-      name: `${a}, NE`,
-    })),
-    openingHours: site.openingHours,
+    areaServed: [
+      { "@type": "AdministrativeArea", name: "Lancaster County, NE" },
+      ...site.lancasterCountyTowns.map((name) => ({
+        "@type": "City",
+        name: `${name}, NE`,
+        containedInPlace: { "@type": "AdministrativeArea", name: "Lancaster County, NE" },
+      })),
+    ],
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
@@ -47,11 +66,45 @@ export function LocalBusinessJsonLd() {
     ],
     knowsAbout: [
       "mattress cleaning",
-      "mattress sanitization",
+      "mattress sanitation",
       "dry vapor steam cleaning",
       "bed mite (house dust mite) treatment",
       "UV-C light treatment",
     ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Mattress sanitation services in Lincoln, NE",
+      itemListElement: [
+        {
+          ...offer(
+            "Mattress sanitation, first mattress",
+            "Any size, twin through California king. Dry vapor steam, UV-C light treatment and HEPA vacuuming, with normal stains, pet odor and ordinary urine accidents included.",
+            { price: String(pricing.first.price) },
+          ),
+          itemOffered: {
+            "@type": "Service",
+            "@id": SANITATION_ID,
+            name: "Mattress sanitation",
+            serviceType: "Mattress cleaning and sanitation",
+            provider: { "@id": BUSINESS_ID },
+            url: `${site.url}/services/mattress-sanitization`,
+          },
+        },
+        offer(
+          "Fall 2026 offer: first mattress",
+          `Limited-time Fall 2026 offer on the first mattress, any size (regular price $${pricing.first.price}). ${pricing.promo.followUp}`,
+          { price: String(pricing.promo.first) },
+          SANITATION_ID,
+        ),
+        offer("Additional full, queen or king mattress", "Same visit as the first mattress.", { price: String(pricing.additional[0].price) }, SANITATION_ID),
+        offer("Additional kids bed (twin or full)", "Same visit as the first mattress.", { price: String(pricing.additional[1].price) }, SANITATION_ID),
+        offer("Underside/full-surface treatment", "Add-on for the bottom panel and full six-surface coverage.", { min: "50", max: "75" }),
+        offer("Pet urine and odor treatment", "Enzyme treatment for urine and organic odor. Ordinary urine accidents and pet odor are included in the mattress price; severe or biohazard contamination is quoted before any work starts."),
+        offer("Bed mite (house dust mite) treatment", "Dry vapor steam heat and HEPA vacuuming over the seams, tufts, ridges and edges. Included in the mattress price."),
+        offer("UV-C light treatment", "A step in every mattress visit, after the dry vapor steam pass. Included in the mattress price."),
+        offer("72-hour bedroom CO₂ check", "A monitor runs in the bedroom for three nights. Standalone or with a mattress visit; call for current pricing."),
+      ],
+    },
   };
   return (
     <script
@@ -88,7 +141,7 @@ export function ServiceJsonLd({ name, description, url }: { name: string; descri
     name,
     description,
     url,
-    provider: { "@id": `${site.url}/#business` },
+    provider: { "@id": BUSINESS_ID },
     areaServed: site.areas.map((a) => ({ "@type": "City", name: `${a}, NE` })),
   };
   return (
@@ -106,7 +159,7 @@ export function AuthorJsonLd({ name }: { name: string }) {
     "@type": "Person",
     name,
     url: `${site.url}/about`,
-    worksFor: { "@id": `${site.url}/#business` },
+    worksFor: { "@id": BUSINESS_ID },
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
 }
@@ -118,7 +171,7 @@ export function ServiceAreaJsonLd() {
     "@type": "Service",
     name: "Mattress Sanitation in the Lincoln, Nebraska Area",
     serviceType: "Mattress cleaning and sanitization",
-    provider: { "@id": `${site.url}/#business` },
+    provider: { "@id": BUSINESS_ID },
     areaServed: site.areas.map((name) => ({ "@type": "City", name: `${name}, NE` })),
     url: `${site.url}/service-areas`,
   };
@@ -143,7 +196,7 @@ export function ArticleJsonLd({
     datePublished: date,
     dateModified: date,
     author: { "@type": "Person", name: author, url: `${site.url}/about` },
-    publisher: { "@id": `${site.url}/#business` },
+    publisher: { "@id": BUSINESS_ID },
     isPartOf: { "@type": "Blog", "@id": `${site.url}/guides` },
     inLanguage: "en-US",
   };

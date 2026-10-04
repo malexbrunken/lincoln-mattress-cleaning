@@ -7,6 +7,8 @@ export const site = {
   tagline: "Mattress sanitation for Lincoln, Nebraska, with gloves, shoe booties and disinfected equipment on every job.",
   phone: "(402) 512-5658",
   phoneHref: "tel:+14025125658",
+  /** E.164 form used in JSON-LD; matches sleepsanitation.com's schema. */
+  phoneE164: "+14025125658",
   email: "info@sleepsanitation.com",
   city: "Lincoln",
   state: "NE",
@@ -27,6 +29,8 @@ export const site = {
     "Wahoo",
     "Ashland",
   ],
+  /** Towns inside Lancaster County that we serve (used for schema areaServed). */
+  lancasterCountyTowns: ["Lincoln", "Waverly", "Hickman", "Bennet", "Firth", "Malcolm", "Raymond"],
   hours: "Monday–Friday, 9am–6pm",
   hoursNote: "Missed a call? We return calls and texts on Saturday and Sunday too.",
   /** schema.org openingHours */
@@ -80,6 +84,17 @@ export const pricing = {
     { service: "Severe or biohazard contamination", price: "Custom surcharge", bold: false },
   ],
 } as const;
+
+/**
+ * Plain-language answer used in the home page hero and the LocalBusiness
+ * description: who we are, what we do, the price, the area and how to book.
+ * Keep it at 60 words or fewer.
+ */
+export const plainAnswer =
+  `Lincoln Mattress Cleaning is a mattress sanitation service in Lincoln, NE, operated by ${site.parentBrand}. ` +
+  `We use Italian dry vapor steam, UV-C light treatment and HEPA vacuuming, with enzyme treatment for urine. ` +
+  `The first mattress is $${pricing.first.price}, or $${pricing.promo.first} with our Fall 2026 offer. ` +
+  `We serve Lincoln, Lancaster County and nearby towns. Call or text ${site.phone} to book.`;
 
 export const packages: Package[] = [
   {
