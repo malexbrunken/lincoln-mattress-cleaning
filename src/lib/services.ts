@@ -202,13 +202,13 @@ export const services: Service[] = [
       "A monitor runs in your bedroom for three days and measures what your sleep environment does overnight. Standalone or alongside a mattress appointment; ask us for current pricing.",
     includes: [
       "Monitor placed in the bedroom for 72 hours",
-      "Overnight CO₂ readings across three full nights",
+      "Overnight CO₂ checks across three full nights",
       "Report on ventilation patterns and how the room behaves while you sleep",
       "Practical recommendations on airflow and ventilation",
     ],
     detail: [
       "A bedroom is a closed box that two adults exhale into for eight hours. If fresh air is not moving through it, CO₂ climbs overnight — and elevated overnight CO₂ is associated with unrefreshing sleep and grogginess that people usually blame on everything except the room. It is also one of the most common causes of morning congestion that we see in Lincoln homes.",
-      "Testing is the only way to know. When a room is sealed, when the door is shut and nothing exchanges air, three nights of data will show it plainly. When a room ventilates well, the readings say that too, and you can stop wondering.",
+      "Testing is the only way to know. When a room is sealed, when the door is shut and nothing exchanges air, three nights of data will show it plainly. When a room ventilates well, the check shows that too, and you can stop wondering.",
       "We place the monitor, you live normally, and we collect it after 72 hours with a report on the patterns. Where the data points at something fixable — a return vent that is blocked, a door that never opens, a fan that is not running — you get the recommendation in plain language. This pairs naturally with a mattress appointment, but it stands alone fine. Ask us for current pricing.",
     ],
     faq: [
