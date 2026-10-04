@@ -57,7 +57,7 @@ export default async function AllergyGuide({ params }: PageProps<"/allergy-seaso
       <ul className="grid gap-4 sm:grid-cols-3 mb-8" aria-label="Key figures">
         {p.tiles.map((t) => (
           <li key={t.label} className="bg-white border border-line rounded-2xl p-5 shadow-sm">
-            <span className="block text-3xl font-bold text-teal-deep">{t.value}</span>
+            <span className="block text-3xl font-bold text-teal-deep">{t.value}</span>{" "}
             <span className="block text-mist text-sm mt-1">{t.label}</span>
           </li>
         ))}
@@ -77,7 +77,7 @@ export default async function AllergyGuide({ params }: PageProps<"/allergy-seaso
               <li key={s.title} className="border-2 border-teal/40 rounded-2xl p-5 flex gap-4">
                 <span className="shrink-0 w-10 h-10 rounded-full bg-navy text-white font-bold grid place-items-center">{i + 1}</span>
                 <span>
-                  <strong className="block text-navy">{s.title}</strong>
+                  <strong className="block text-navy">{s.title}</strong>{" "}
                   <span className="text-base text-mist">{s.text}</span>
                 </span>
               </li>

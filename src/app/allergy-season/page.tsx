@@ -7,21 +7,21 @@ import { BreadcrumbJsonLd } from "@/components/JsonLd";
 export const metadata: Metadata = {
   title: { absolute: "Lincoln Allergy Season: NWU Pollen Count, LLCHD Advice and the Bed" },
   description:
-    "Nebraska Wesleyan's pollen count, LLCHD's and Extension's humidity targets, Lincoln Airport's wind and freeze normals, and five guides for Lincoln bedrooms.",
+    "Nebraska Wesleyan's pollen count, LLCHD's and Extension's humidity ranges, Lincoln Airport's wind and freeze normals, and five guides for Lincoln bedrooms.",
   alternates: { canonical: "/allergy-season" },
 };
 
 const tiles = [
   { value: "0", label: "Tree pollen, NWU, October 2, 2026 (absent)" },
-  { value: "1.6", label: "Weed pollen, grains per cubic meter (low)" },
-  { value: "1.0", label: "Grass pollen, grains per cubic meter (low)" },
+  { value: "1.6", label: "Weed pollen at NWU, grains per cubic meter (low)" },
+  { value: "1.0", label: "Grass pollen at NWU, grains per cubic meter (low)" },
 ];
 
 const who = [
-  { src: "Nebraska Wesleyan University", what: "Tree, weed and grass pollen caught on the NWU campus, in grains per cubic meter", when: "Five days a week, February to mid-October", not: "Indoor air or bedding" },
+  { src: "Nebraska Wesleyan University", what: "Tree, weed and grass pollen caught on the NWU campus, in grains per cubic meter", when: "February to mid-October", not: "Indoor air or bedding" },
   { src: "LLCHD Air Quality Program", what: "Lincoln's local AQI, from ozone, carbon monoxide and fine particle monitors LLCHD operates", when: "Daily", not: "Pollen or mold, which LLCHD doesn't regulate" },
-  { src: "Nebraska Extension, G2069", what: "Indoor trigger guidance, including 30 to 45 percent humidity for dust mites", when: "Published 2011", not: "Live counts" },
-  { src: "NOAA normals, Lincoln Airport", what: "Dew point, wind and freeze dates, averaged over 1991 to 2020", when: "Thirty-year normals", not: "Pollen" },
+  { src: "Nebraska Extension, G2069", what: "Indoor trigger guidance on UNL's extension site, including 30 to 45 percent humidity for dust mites", when: "Published 2011", not: "Live counts" },
+  { src: "NOAA normals, Lincoln Airport", what: "Average dew point (17°F in January, 65°F in July), wind and freeze dates", when: "1991 to 2020 normals", not: "Pollen" },
 ];
 
 export default function AllergySeasonHub() {
@@ -49,7 +49,7 @@ export default function AllergySeasonHub() {
       <ul className="grid gap-4 sm:grid-cols-3 mb-3" aria-label="Nebraska Wesleyan's October 2, 2026 count">
         {tiles.map((t) => (
           <li key={t.label} className="bg-white border border-line rounded-2xl p-5 shadow-sm">
-            <span className="block text-3xl font-bold text-teal-deep">{t.value}</span>
+            <span className="block text-3xl font-bold text-teal-deep">{t.value}</span>{" "}
             <span className="block text-mist text-sm mt-1">{t.label}</span>
           </li>
         ))}
@@ -62,7 +62,7 @@ export default function AllergySeasonHub() {
       <p className="text-xl text-navy mb-10 max-w-3xl bg-ice rounded-2xl p-6">
         Lincoln&apos;s pollen is counted at Nebraska Wesleyan, not by the city: the Lincoln-Lancaster County Health Department says it
         doesn&apos;t run seasonal pollen counts and links to NWU instead. LLCHD and Nebraska Extension both publish indoor advice, and
-        their humidity targets differ by five points. These five guides put those Lincoln sources next to NOAA&apos;s Lincoln Airport
+        their humidity ranges differ by five points. These five guides put those Lincoln sources next to NOAA&apos;s Lincoln Airport
         normals and say where a mattress cleaning fits, and where it doesn&apos;t.
       </p>
 
@@ -80,7 +80,7 @@ export default function AllergySeasonHub() {
         </div>
       </div>
 
-      <section aria-label="Two humidity targets" className="grid gap-4 sm:grid-cols-2 mb-12 max-w-4xl">
+      <section aria-label="Two humidity ranges" className="grid gap-4 sm:grid-cols-2 mb-12 max-w-4xl">
         <div className="border-2 border-teal/40 rounded-2xl p-6">
           <p className="kicker text-teal-deep mb-1">LLCHD</p>
           <p className="text-3xl font-bold text-navy">30 to 50%</p>
@@ -89,7 +89,7 @@ export default function AllergySeasonHub() {
         <div className="border-2 border-teal/40 rounded-2xl p-6">
           <p className="kicker text-teal-deep mb-1">Nebraska Extension G2069</p>
           <p className="text-3xl font-bold text-navy">30 to 45%</p>
-          <p className="text-base text-mist mt-2">Extension&apos;s range for dust mite control, alongside mite-control covers and bedding washed weekly at 130°F.</p>
+          <p className="text-base text-mist mt-2">Extension&apos;s range for dust mite control. By our calculation, Lincoln Airport&apos;s average July air brought to 70°F indoors would sit near 84 percent before any air conditioning.</p>
         </div>
       </section>
 
@@ -99,8 +99,8 @@ export default function AllergySeasonHub() {
           <li key={p.slug} className="flex gap-4 bg-white border border-line rounded-2xl p-5 shadow-sm">
             <span className="shrink-0 w-10 h-10 rounded-full bg-navy text-white font-bold grid place-items-center">{i + 1}</span>
             <span>
-              <span className="block kicker text-teal-deep">{p.label}</span>
-              <Link href={`/allergy-season/${p.slug}`} className="text-navy font-semibold text-lg underline decoration-teal">{p.h1}</Link>
+              <span className="block kicker text-teal-deep">{p.label}</span>{" "}
+              <Link href={`/allergy-season/${p.slug}`} className="text-navy font-semibold text-lg underline decoration-teal">{p.h1}</Link>{" "}
               <span className="block text-mist mt-1 text-base">{p.description}</span>
             </span>
           </li>
@@ -134,7 +134,7 @@ export default function AllergySeasonHub() {
         <h2>What we don&apos;t know</h2>
         <ul>
           <li>The date NWU will post its first 2027 count, since its page says only that counting runs from February.</li>
-          <li>The humidity in any one Lincoln bedroom. NOAA&apos;s dew points describe Lincoln Airport&apos;s outdoor air.</li>
+          <li>The humidity in any one Lincoln bedroom, since NOAA&apos;s dew points describe Lincoln Airport&apos;s outdoor air.</li>
           <li>Whether a north or south wind brings more pollen, since NOAA tracks Lincoln Airport&apos;s wind, NWU tracks the pollen, and neither links the two.</li>
         </ul>
         <h2>Sources</h2>
