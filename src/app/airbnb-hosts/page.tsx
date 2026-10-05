@@ -1,15 +1,14 @@
-import { priceText } from "@/lib/prices";
+import { PRICES, priceText, usd } from "@/lib/prices";
 import type { Metadata } from "next";
 import { updatedFor } from "@/lib/dates";
 import Link from "next/link";
 import { getHostPages } from "@/lib/strHosts";
 import { site } from "@/lib/site";
-import { BreadcrumbJsonLd, WebPageJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, FaqJsonLd, WebPageJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: { absolute: "Lincoln Airbnb Hosts: Mattress Turnovers and Rules" },
-  description:
-    "For Lincoln short-term rental hosts: the city license and 4% tax, Airbnb's cleaning rules, Husker game weekends, turnover timing and guest accidents.",
+  title: { absolute: "Airbnb Mattress Cleaning in Lincoln, NE: Hosts" },
+  description: `Airbnb and short-term rental mattress cleaning in Lincoln: ${priceText.first} first mattress, ${priceText.additionalLarge} each additional. City license, 4% tax and Husker weekends.`,
   alternates: { canonical: "/airbnb-hosts" },
 };
 
@@ -21,6 +20,29 @@ const glance = [
   { k: "Airbnb's cleanliness rule", v: "Clean and free of health hazards (mold, pests) before check-in; clean between every stay", url: "https://www.airbnb.com/help/article/2895" },
   { k: "Guest complaint window", v: "72 hours from discovery", url: "https://www.airbnb.com/help/article/2868" },
   { k: "Host damage request", v: "Within 14 days of the guest's checkout", url: "https://www.airbnb.com/help/article/279" },
+];
+
+const hostFaq = [
+  {
+    q: "How much does Airbnb mattress cleaning cost in Lincoln?",
+    a: `${priceText.first} for the first mattress, any size, then ${priceText.additionalLarge} for each additional full, queen or king and ${priceText.additionalKids} for each additional kids bed in the same visit. A three-bedroom listing with a king and two queens is ${usd(PRICES.first + 2 * PRICES.additionalLarge)} in one visit.`,
+  },
+  {
+    q: "Are guest urine accidents and pet odor extra?",
+    a: "No. Normal stains, pet odor and ordinary urine accidents are included, with enzyme treatment for urine. Only severe or biohazard contamination carries a surcharge, quoted before we start.",
+  },
+  {
+    q: "Can you clean between guests around a Husker weekend?",
+    a: "We work Monday to Friday, 9am to 6pm, and return weekend calls and texts, so book the weekday gap before or after a game weekend. The bed stays unmade until it is dry to the touch, and we run a moisture check before we leave.",
+  },
+  {
+    q: "What checks come with a host visit?",
+    a: "Two, every visit: a moisture check after the job and the built-in bed mite sensor on our UV-C vacuum. Each mattress also gets an inspection form. 72-hour bedroom CO₂ testing is a separate optional service, priced by quote, and is not a medical test.",
+  },
+  {
+    q: "Do you clean the whole rental?",
+    a: "No. We are mattress-only. Your turnover cleaner handles the unit; we handle the beds.",
+  },
 ];
 
 const games = [
@@ -39,8 +61,26 @@ export default function AirbnbHostsHub() {
     url: `${site.url}/airbnb-hosts`,
     hasPart: pages.map((p) => ({ "@type": "Article", headline: p.h1, url: `${site.url}/airbnb-hosts/${p.slug}` })),
   };
+  const service = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${site.url}/airbnb-hosts#service`,
+    name: "Airbnb and short-term rental mattress cleaning in Lincoln, NE",
+    serviceType: "Mattress cleaning and sanitation",
+    audience: { "@type": "Audience", audienceType: "Short-term rental hosts" },
+    url: `${site.url}/airbnb-hosts`,
+    provider: { "@id": `${site.url}/#business` },
+    areaServed: site.areas.map((a) => ({ "@type": "City", name: `${a}, NE` })),
+    offers: [
+      { "@type": "Offer", name: "First mattress, any size", price: String(PRICES.first), priceCurrency: "USD" },
+      { "@type": "Offer", name: "Each additional full, queen or king, same visit", price: String(PRICES.additionalLarge), priceCurrency: "USD" },
+      { "@type": "Offer", name: "Each additional kids bed (twin or full), same visit", price: String(PRICES.additionalKids), priceCurrency: "USD" },
+    ],
+  };
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(service) }} />
+      <FaqJsonLd faq={hostFaq} />
       <WebPageJsonLd name="Lincoln Airbnb hosts" path="/airbnb-hosts" dateModified={updatedFor("/airbnb-hosts")} type="WebPage" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(hub) }} />
       <BreadcrumbJsonLd items={[{ name: "Home", url: site.url }, { name: "Knowledge Center", url: `${site.url}/knowledge-center` }, { name: "Lincoln Airbnb hosts", url: `${site.url}/airbnb-hosts` }]} />
@@ -48,8 +88,15 @@ export default function AirbnbHostsHub() {
         <Link href="/" className="text-teal hover:underline">Home</Link> › <Link href="/knowledge-center" className="text-teal hover:underline">Knowledge Center</Link> › Lincoln Airbnb hosts
       </nav>
       <p className="kicker text-teal-deep mb-2">The host desk</p>
-      <h1 className="text-4xl font-semibold text-navy mb-4 leading-tight max-w-4xl">Lincoln Airbnb and short-term rental hosts</h1>
-      <p className="text-xl text-navy mb-10 max-w-4xl">
+      <h1 className="text-4xl font-semibold text-navy mb-4 leading-tight max-w-4xl">Airbnb and short-term rental mattress cleaning in Lincoln</h1>
+      <p className="text-xl text-navy mb-4 max-w-4xl">
+        Airbnb and short-term rental mattress cleaning in Lincoln costs {priceText.first} for the first mattress, any size, and{" "}
+        {priceText.additionalLarge} for each additional full, queen or king in the same visit ({priceText.additionalKids} for each
+        additional kids bed). Guest stains, pet odor and ordinary urine accidents are included. Lincoln Mattress Cleaning, operated by{" "}
+        {site.parentBrand}, uses low-moisture dry vapor steam, HEPA vacuuming and UV-C light treatment, Monday to Friday. Call or text{" "}
+        <a href={site.phoneHref} className="underline">{site.phone}</a>.
+      </p>
+      <p className="text-lg text-mist mb-10 max-w-4xl">
         A Lincoln listing answers to two rulebooks: the city&apos;s license and tax rules, and Airbnb&apos;s ground rules for hosts.
         Add seven Husker home weekends in 2026 and a weekday-only cleaning schedule, and the mattress becomes a timing problem.
         These five guides quote the city&apos;s and Airbnb&apos;s rules, cite where each came from, and say where our cleaning fits.
@@ -96,6 +143,13 @@ export default function AirbnbHostsHub() {
               <a href="https://sleepsanitation.com/knowledge-center" rel="noopener">Sleep Sanitation Knowledge Center</a>; these Lincoln
               guides stick to the city, Airbnb and the Husker calendar.
             </p>
+            <h2>Questions Lincoln hosts ask</h2>
+            {hostFaq.map((f) => (
+              <div key={f.q}>
+                <h3>{f.q}</h3>
+                <p>{f.a}</p>
+              </div>
+            ))}
             <h2>What we don&apos;t know</h2>
             <ul>
               <li>What will replace Host Compliance. The City Treasurer says new short-term rental software is coming soon.</li>
@@ -111,7 +165,7 @@ export default function AirbnbHostsHub() {
               <li><a href="https://www.airbnb.com/help/article/279" rel="noopener">Airbnb: Host damage protection</a>, checked October 3, 2026</li>
             </ul>
             <h2>Changelog</h2>
-            <ul><li>October 3, 2026: hub and five host guides published.</li></ul>
+            <ul><li>October 3, 2026: hub and five host guides published.</li><li>October 5, 2026: answer-first price lead, host FAQ and Service schema added.</li></ul>
             <p className="text-mist text-base">Written by {site.name}, operated by {site.parentBrand}.</p>
           </div>
         </section>

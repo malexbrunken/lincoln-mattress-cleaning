@@ -1,11 +1,11 @@
 ---
-title: "Steam vs. Wet Extraction: What Actually Differs in Mattress Cleaning"
-seoTitle: "Steam vs. Wet Extraction for Mattresses"
+title: "Dry Vapor Steam vs. Wet Extraction Mattress Cleaning in Lincoln, NE"
+seoTitle: "Dry Steam vs Wet Extraction, Lincoln"
 date: "2026-09-12"
-updated: "2026-10-04"
+updated: "2026-10-05"
 category: "Method"
 author: "Matthew Brunken"
-excerpt: "Dry vapor steam and hot-water extraction are both called mattress cleaning. How they differ in moisture and what reaches the foam core."
+excerpt: "Dry vapor steam carries heat, not water, into a Lincoln mattress; wet extraction sprays solution in and vacuums it out. How they differ, and the {{price.first}} price."
 faq:
   - q: "What is the difference between dry vapor steam and wet extraction?"
     a: "Wet extraction uses water as the carrier and vacuums it back out. Dry vapor steam carries heat with very little water, so far less moisture reaches the foam core."
@@ -13,7 +13,15 @@ faq:
     a: "Low-moisture dry vapor steam, because dense foam is the build least tolerant of a soaked core. Check your care label and warranty terms first."
   - q: "How do I know the mattress is dry?"
     a: "We run a moisture check after the job, and the bed stays unmade until it is dry to the touch."
+  - q: "Is dry vapor steam the same as a carpet cleaner's steam cleaning?"
+    a: "No. Most carpet 'steam cleaning' is hot-water extraction: solution goes in and is vacuumed back out. Dry vapor steam is superheated vapor with very little liquid water. See our guide to hiring a mattress specialist or a carpet cleaner in Lincoln."
+  - q: "Can wet extraction affect my mattress warranty?"
+    a: "It can. Wet-extraction carpet cleaners can void some mattress warranties. Read your care label and warranty terms before any cleaning, ours included."
+  - q: "How much does dry vapor mattress cleaning cost in Lincoln?"
+    a: "{{price.first}} for the first mattress, any size, with normal stains, pet odor and ordinary urine accidents included. Each additional full, queen or king in the same visit is {{price.additionalLarge}}, and each additional kids bed (twin/full) is {{price.additionalKids}}. UV-C light treatment and HEPA vacuuming are included."
 ---
+
+For a mattress in a Lincoln home, dry vapor steam is the low-moisture option: it carries heat into the seams, tufts and edges with very little liquid water. Wet (hot-water) extraction, the method built for carpet, sprays a cleaning solution into the fabric and vacuums it back out. Lincoln Mattress Cleaning, operated by Sleep Sanitation, uses dry vapor steam, HEPA vacuuming and UV-C light treatment, with a moisture check and a bed mite sensor check on every visit, at {{price.first}} for the first mattress, any size. Call or text **(402) 512-5658**.
 
 Both processes get called "mattress cleaning," which is why the conversation usually goes in circles. They are different technologies with different failure modes, and the difference is measurable.
 
@@ -32,7 +40,7 @@ Dry vapor steam carries heat with very little water; our Vapor Clean machines ar
 | Moisture into the mattress | Water injected, then vacuumed back out | Very low; maker rating 5 to 6% moisture content |
 | What it reaches | Depends on the equipment and the operator | Surface plus upper layers, seams, quilting, edges |
 | Heat at the surface | Limited by water temperature | Superheated vapor, calibrated per mattress |
-| Chemistry | Detergent and fragrance left in the foam | No chemical residue |
+| Chemistry | A cleaning solution, chosen by the provider | Organic cleaning methods by default |
 | Hygiene | Varies | Gloves and shoe booties on every job; equipment disinfected between jobs |
 | Equipment designed for | Floors and upholstery | Mattresses and sleep surfaces |
 
@@ -54,10 +62,19 @@ Putting water into foam is not a cleaning preference, it is a physics problem. W
 - **Latex.** Resilient and long-lived, but also holds water in ways that are hard to reverse.
 - **Hybrid.** Mixed construction — coil support with foam comfort layers. The foam layers are the vulnerable part.
 - **Innerspring.** The most forgiving, and still not something to soak inside a closed bedroom.
-- **Organic and natural builds.** Often the most sensitive to moisture of all. Our [documented jobs](/gallery) include an Avocado mattress with its foam topper.
+- **Organic and natural builds.** Often the most sensitive to moisture of all, so check the care label before any cleaning.
+
+## Why does moisture matter in a Lincoln bedroom?
+
+Lincoln Airport's NOAA normals put the average July dew point near 65°F, and the Lincoln-Lancaster County Health Department recommends 30 to 50 percent indoor humidity. Summer air already pushes a closed bedroom toward the top of that range; our [Lincoln humidity and bed mites guide](/allergy-season/lincoln-humidity-and-bed-mites) has the month-by-month numbers. Putting less water into the mattress is the simplest way to stay out of that problem.
+
+## What does it cost in Lincoln?
+
+**{{price.first}} for the first mattress, any size.** Each additional full, queen or king in the same visit is {{price.additionalLarge}}, each additional kids bed (twin/full) is {{price.additionalKids}}, and underside treatment is {{price.underside}} per mattress. Every visit includes UV-C light treatment, HEPA vacuuming and two checks: a moisture check after the job and the built-in bed mite sensor on our UV-C vacuum. 72-hour bedroom CO₂ testing is a separate optional service, priced by quote, and not a medical test.
 
 ## Related
 
+- [Mattress specialist or carpet cleaner in Lincoln?](/guides/mattress-cleaning-vs-carpet-cleaner-lincoln)
 - [Mattress sanitization service and what is included](/services/mattress-sanitization)
 - [The full comparison service page](/services/dry-vapor-steam-vs-extraction)
 - [Mattress cleaning in Lincoln: the complete guide](/guides/mattress-cleaning-lincoln-ne-guide)

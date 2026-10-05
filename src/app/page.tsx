@@ -78,6 +78,14 @@ const homeFaq = [
     a: "No chemical residue. The mattress process is dry vapor steam, HEPA vacuuming and UV-C light treatment, so nothing is left in the foam for you to sleep against. Enzyme treatment is used only on urine spots, and we tell you before we apply it.",
   },
   {
+    q: "What checks come with every visit? Is CO₂ testing included?",
+    a: "Every visit includes two checks: a moisture check after the job and the built-in bed mite sensor on our UV-C vacuum. 72-hour bedroom CO₂ testing is not included: it is a separate optional service, booked on its own or added to a visit, priced by quote, and it is not a medical test.",
+  },
+  {
+    q: "Should I hire a carpet cleaner or a mattress specialist for my mattress?",
+    a: "A carpet cleaner for carpet and rugs, a mattress specialist for the bed. A carpet company's mattress add-on is typically done with the same hot-water extraction used on floors, and wet-extraction carpet cleaners can void some mattress warranties. Lincoln Mattress Cleaning is mattress-only; our guide to hiring a mattress specialist or a carpet cleaner in Lincoln has the side-by-side.",
+  },
+  {
     q: "Is this pest control?",
     a: "No. If you have an active bed bug infestation, you need a licensed pest-control professional and we will tell you that on the phone. What we do is treat the mattress surface and kill bed mites (house dust mites) with steam heat and lift the debris with HEPA vacuuming. Bed bugs are a separate problem for pest control.",
   },

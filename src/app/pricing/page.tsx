@@ -35,6 +35,22 @@ const faq = [
     q: "Do you charge more for a heavily stained mattress?",
     a: "No. Normal stains, pet odor and ordinary urine accidents are included in the base price. Only severe or biohazard contamination carries a custom surcharge, and we quote it after we see the mattress, before any work starts.",
   },
+  {
+    q: "What does underside treatment cost?",
+    a: `The standard visit covers the top surface, seams and side edges. Treating the underside as well adds ${priceText.underside.replace("+", "")} per mattress, and we tell you after we see the mattress whether it applies.`,
+  },
+  {
+    q: "What checks are included in every visit?",
+    a: "Two: a moisture check after the job and the built-in bed mite sensor on our UV-C vacuum. UV-C light treatment and HEPA vacuuming are included on every visit too.",
+  },
+  {
+    q: "Is 72-hour bedroom CO₂ testing included?",
+    a: "No. It is a separate optional service, booked on its own or added to a mattress visit, and priced by quote. It is not a medical test.",
+  },
+  {
+    q: "Why does a mattress specialist cost more than a carpet cleaner's mattress add-on?",
+    a: "A carpet add-on is typically hot-water extraction with the floor equipment, and wet-extraction carpet cleaners can void some mattress warranties. Our whole visit is built around the mattress: inspection, dry vapor steam on the seams and tufts, HEPA vacuuming, UV-C light treatment and two checks.",
+  },
 ];
 
 export default function PricingPage() {
@@ -152,6 +168,12 @@ export default function PricingPage() {
             </div>
           ))}
         </div>
+        <p className="text-mist mt-6">
+          Comparing options? Read{" "}
+          <Link href="/guides/mattress-cleaning-vs-carpet-cleaner-lincoln" className="text-teal-deep font-semibold underline">mattress specialist or carpet cleaner in Lincoln</Link>{" "}
+          and{" "}
+          <Link href="/guides/steam-vs-wet-extraction-mattress-cleaning" className="text-teal-deep font-semibold underline">dry vapor steam vs. wet extraction</Link>.
+        </p>
         <div className="bg-navy text-white rounded-2xl p-8 md:p-10 text-center mt-12 texture-grain">
           <p className="font-display text-3xl font-semibold mb-3">Want the exact number?</p>
           <p className="text-white/70 mb-6">
