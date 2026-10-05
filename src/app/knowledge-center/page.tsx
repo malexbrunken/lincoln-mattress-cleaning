@@ -33,7 +33,7 @@ function getHubs(): Hub[] {
       q: "What should students and parents plan for each semester?",
       path: "/academic-year",
       name: "The Lincoln academic year",
-      blurb: "Move-in, used mattresses, semester breaks and move-out, keyed to UNL's calendar.",
+      blurb: "UNL, Nebraska Wesleyan and Union Adventist move-in, Greek houses, parent booking and May graduation turnarounds.",
       pages: getYearPages().map((p) => ({ href: `/academic-year/${p.slug}`, title: p.h1 })),
     },
     {

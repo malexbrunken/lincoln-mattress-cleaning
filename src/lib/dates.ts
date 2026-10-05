@@ -16,10 +16,10 @@ export const PAGE_UPDATED: Record<string, string> = {
   "/book": "2026-10-04",
   "/contact": "2026-10-04",
   "/privacy-policy": "2026-10-04",
-  "/academic-year": "2026-10-04",
+  "/academic-year": "2026-10-05",
   "/airbnb-hosts": "2026-10-04",
   "/allergy-season": "2026-10-04",
-  "/knowledge-center": "2026-10-04",
+  "/knowledge-center": "2026-10-05",
 };
 
 /** Service pages and service-area pages are generated from src/lib; one date each set. */

@@ -8,9 +8,9 @@ import { YearTimeline } from "@/components/YearTimeline";
 import { BreadcrumbJsonLd, WebPageJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: { absolute: "UNL Academic Year Mattress Calendar | Lincoln Mattress" },
+  title: { absolute: "Lincoln Campus Mattress Calendar | Academic Year" },
   description:
-    "UNL move-in and move-out dates, from the January housing application to May, and when students and parents should plan a mattress cleaning.",
+    "UNL, Nebraska Wesleyan and Union Adventist move-in dates, Greek house turnovers and when parents should book a mattress cleaning in Lincoln.",
   alternates: { canonical: "/academic-year" },
 };
 
@@ -33,8 +33,8 @@ const year = [
 
 const faq = [
   {
-    q: "Do you clean UNL residence hall mattresses?",
-    a: "No. Hall beds belong to University Housing, which handles damage through Fix-It requests at move-out. Our work is in off-campus apartments and houses.",
+    q: "Do you clean UNL, NWU or Union Adventist residence hall mattresses?",
+    a: "No. Hall beds belong to each school. Our work is in off-campus apartments, houses and Greek chapter facilities that book us.",
   },
   {
     q: "When is UNL move-in for fall 2027?",
@@ -42,7 +42,11 @@ const faq = [
   },
   {
     q: "When should an off-campus mattress be cleaned?",
-    a: "When the room is empty, before furniture moves in. If you move in during May or August, book before your furniture arrives, and check the care label and warranty terms first. The bed stays unmade until it is dry to the touch.",
+    a: "When the room is empty, before furniture moves in. Book before your furniture arrives, check the care label and warranty terms first, and leave the bed unmade until it is dry to the touch.",
+  },
+  {
+    q: "Do you serve Nebraska Wesleyan and Union Adventist students?",
+    a: "Yes, for off-campus beds in Lincoln. See the NWU and Union Adventist move-in guides in this hub.",
   },
 ];
 
@@ -73,9 +77,10 @@ export default function AcademicYearHub() {
       <p className="kicker text-teal-deep mb-2">Lincoln, by the calendar</p>
       <h1 className="text-4xl font-semibold text-navy mb-4 leading-tight">The Lincoln academic year</h1>
       <p className="text-xl text-navy mb-8">
-        When should a student&apos;s mattress be cleaned? Before move-in, while the room is empty: in 2026 that was the
-        week before UNL&apos;s August 16 to 19 move-in. These guides follow the UNL calendar for students and parents, from
-        August move-in to May move-out. Lincoln Mattress Cleaning charges {priceText.first} for the first mattress, any size.
+        When should a Lincoln student&apos;s mattress be cleaned? Before move-in, while the room is empty: in 2026 that
+        meant the week before UNL&apos;s August 16 to 19 move-in, NWU&apos;s August 19 move-in or Union Adventist&apos;s
+        August 17 Spark Start day. Hall beds stay with each school; we book off-campus apartments, Greek houses and
+        campus-area short-term rentals. The first mattress is {priceText.first}, any size.
       </p>
 
       <YearTimeline items={year} label="The year at a glance" />
@@ -83,11 +88,12 @@ export default function AcademicYearHub() {
       <div className="prose-mc text-lg">
         <h2>Do residence hall beds need cleaning?</h2>
         <p>
-          Beds in UNL residence halls belong to University Housing. Its move-out checklist tells residents to check the
-          mattress&apos;s condition, submit a Fix-It request for any damage and leave the original mattress pad behind. So these
-          guides are for students and parents planning around an off-campus apartment or house.
+          Beds in UNL, Nebraska Wesleyan and Union Adventist residence halls belong to each school. UNL&apos;s move-out
+          checklist tells residents to check the mattress&apos;s condition, submit a Fix-It request for any damage and leave
+          the original mattress pad behind. So these guides are for students and parents planning around an off-campus
+          apartment, a Greek house or a campus-area short-term rental.
         </p>
-        <h2>Which guide fits your date?</h2>
+        <h2>Which guide fits your campus or date?</h2>
         <ol>
           {pages.map((p) => (
             <li key={p.slug}>
@@ -100,7 +106,7 @@ export default function AcademicYearHub() {
           How steam works on a mattress and the biology of bed mites read the same in any
           city. That material sits in the{" "}
           <a href="https://sleepsanitation.com/knowledge-center" rel="noopener">Sleep Sanitation Knowledge Center</a>.
-          This section sticks to the UNL calendar and Lincoln timing.
+          This section sticks to Lincoln campus calendars and move-in timing.
         </p>
         <h2>Questions about the year</h2>
         {faq.map((f) => (
@@ -119,6 +125,7 @@ export default function AcademicYearHub() {
           <li>October 3, 2026: hub and first four guides published.</li>
           <li>October 3, 2026: added hub questions.</li>
           <li>October 4, 2026: rewrote the hub and guides for students and parents around move-in and move-out timing.</li>
+          <li>October 5, 2026: added NWU, Union Adventist, Greek house, dorm-vs-apartment, August parent booking and graduation-weekend STR guides.</li>
         </ul>
       </div>
     </div>

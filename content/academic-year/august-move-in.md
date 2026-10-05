@@ -5,7 +5,7 @@ description: "UNL moves residence halls in over four days in mid August. When to
 answer: "Check the bed before the first night, and book any cleaning for the days before your furniture arrives. UNL's Move-In 2026 ran August 16 to 19 and classes started August 24, so the week before move-in is the window for an appointment. The bed stays unmade until it is dry to the touch."
 order: 1
 published: "2026-10-03"
-updated: "2026-10-04"
+updated: "2026-10-05"
 timeline:
   - when: "July 22, 2026"
     what: "UNL emailed residence hall students their move-in date and time. Off-campus move-in dates vary by building."
@@ -63,6 +63,10 @@ changelog:
 ## How does UNL move-in week affect scheduling?
 
 UNL ran Move-In 2026 check-in through Memorial Stadium, and residence hall moves filled August 16 to 19. If you are moving into an apartment near City Campus that week, plan around campus traffic, or schedule your own move and any cleaning for the days before.
+
+## Other Lincoln campuses?
+
+Nebraska Wesleyan and Union Adventist have their own move-in days. See [NWU move-in](/academic-year/nebraska-wesleyan-move-in) and [Union Adventist move-in](/academic-year/union-adventist-move-in). Hall vs apartment ownership is in [UNL halls vs off-campus](/academic-year/unl-residence-halls-vs-off-campus).
 
 ## Bringing a used bed?
 
