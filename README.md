@@ -21,7 +21,7 @@ The differentiation running through every page: **low-moisture dry vapor steam**
 | Content | `content/posts/*.md` + gray-matter (hub-and-spoke local SEO guides) |
 | Images | Cloudinary (`res.cloudinary.com/f69kw8ao`) — displayed by URL, allowlisted in `next.config.ts` |
 | Hosting | Vercel (Git integration + custom domain) |
-| Quote form | Route Handler `/api/quote` → `QUOTE_WEBHOOK_URL` when set |
+| Booking | Call, text and pre-filled email cards (`src/components/BookOptions.tsx`) on /book and /contact; no form backend |
 
 ## Structure
 
@@ -81,10 +81,9 @@ npm run build    # production build
 ## Environment
 
 ```bash
-QUOTE_WEBHOOK_URL=   # optional: Discord/Slack/Zapier endpoint for quote submissions
+CRON_SECRET=   # optional: bearer token for the IndexNow cron (/api/indexnow)
+INDEXNOW_KEY=  # optional: overrides the public IndexNow key in public/<key>.txt
 ```
-
-Without it, submissions are logged server-side only (fine for a first deploy; set it before real traffic).
 
 ## Deploy notes
 

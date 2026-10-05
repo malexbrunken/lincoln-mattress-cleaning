@@ -5,7 +5,8 @@ import { priceText } from "@/lib/prices";
 import { updatedFor } from "@/lib/dates";
 import { BOOK_PATH, emailHref, smsHref } from "@/lib/booking";
 import { BreadcrumbJsonLd, FaqJsonLd } from "@/components/JsonLd";
-import { IconChat, IconCheck, IconClipboard, IconClock, IconGauge, IconMail, IconPhone, IconShield, IconSteam } from "@/components/Icons";
+import { IconChat, IconCheck, IconClipboard, IconGauge, IconMail, IconPhone, IconShield, IconSteam } from "@/components/Icons";
+import { BookHours, BookOptions, focusRing } from "@/components/BookOptions";
 
 export const metadata: Metadata = {
   title: { absolute: "Book Mattress Sanitation in Lincoln: Call, Text or Email" },
@@ -32,12 +33,6 @@ const faq = [
   },
 ];
 
-const options = [
-  { key: "call", icon: IconPhone, title: "Call", detail: site.phone, note: "Talk to us directly", href: site.phoneHref, primary: true },
-  { key: "text", icon: IconChat, title: "Text", detail: site.phone, note: "Same number, texts welcome", href: smsHref, primary: false },
-  { key: "email", icon: IconMail, title: "Email", detail: site.email, note: "Opens a pre-filled request", href: emailHref, primary: false },
-];
-
 const steps = [
   { t: "You reach out", d: "Call, text or email with your town, how many mattresses and their sizes, and any urine or odor concerns." },
   { t: "We confirm a time", d: "We pick a weekday slot with you and confirm the price before anything starts." },
@@ -59,7 +54,6 @@ const trust = [
   { icon: IconShield, t: "Gloves, shoe booties, disinfected equipment", d: "Gloves and shoe booties on every job, and equipment disinfected between jobs." },
 ];
 
-const focus = "focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brass focus-visible:ring-offset-2 focus-visible:ring-offset-navy";
 
 export default function BookPage() {
   const url = `${site.url}${BOOK_PATH}`;
@@ -105,37 +99,8 @@ export default function BookPage() {
             We serve Lincoln and nearby towns, operated by {site.parentBrand}.
           </p>
 
-          <ul className="mt-5 md:mt-9 grid gap-3 md:grid-cols-3 md:gap-5" aria-label="Ways to book">
-            {options.map((o) => (
-              <li key={o.key}>
-                <a
-                  href={o.href}
-                  className={`group flex md:flex-col items-center md:items-start gap-4 rounded-2xl px-4 py-3.5 md:p-6 min-h-[72px] h-full transition-colors ${focus} ${
-                    o.primary
-                      ? "bg-teal-deep hover:bg-teal text-white shadow-xl shadow-black/30"
-                      : "bg-white/[0.07] hover:bg-white/[0.14] text-white ring-1 ring-inset ring-white/25"
-                  }`}
-                >
-                  <span className={`grid place-items-center shrink-0 rounded-xl w-12 h-12 ${o.primary ? "bg-white text-teal-deep" : "bg-white/10 text-teal-bright"}`}>
-                    <o.icon className="w-6 h-6" />
-                  </span>
-                  <span className="min-w-0 flex-1">
-                    <span className="block font-display text-xl md:text-2xl font-semibold leading-tight">{o.title}</span>
-                    <span className="block font-bold text-[17px] md:text-lg break-all">{o.detail}</span>
-                    <span className={`block text-[15px] ${o.primary ? "text-white/90" : "text-white/75"}`}>{o.note}</span>
-                  </span>
-                  <span aria-hidden className="md:hidden text-2xl text-white/70 group-hover:translate-x-0.5 transition-transform">›</span>
-                </a>
-              </li>
-            ))}
-          </ul>
-
-          <p className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1 text-[15px] text-white/80">
-            <span className="inline-flex items-center gap-2 font-semibold text-white">
-              <IconClock className="w-5 h-5 text-teal-bright" /> Hours: Mon–Fri 9–6
-            </span>
-            <span>{site.hoursNote}</span>
-          </p>
+          <BookOptions className="mt-5 md:mt-9" />
+          <BookHours className="mt-5" />
         </div>
       </section>
 
@@ -193,13 +158,13 @@ export default function BookPage() {
         <div className="mt-10 rounded-2xl bg-navy text-white texture-grain p-7 md:p-9">
           <p className="relative font-display text-2xl md:text-3xl font-semibold mb-5">Ready when you are.</p>
           <div className="relative flex flex-wrap gap-3">
-            <a href={site.phoneHref} className={`inline-flex items-center gap-2 bg-teal-deep hover:bg-teal text-white font-bold px-6 py-3.5 rounded-xl min-h-12 transition-colors ${focus}`}>
+            <a href={site.phoneHref} className={`inline-flex items-center gap-2 bg-teal-deep hover:bg-teal text-white font-bold px-6 py-3.5 rounded-xl min-h-12 transition-colors ${focusRing}`}>
               <IconPhone className="w-5 h-5" /> Call {site.phone}
             </a>
-            <a href={smsHref} className={`inline-flex items-center gap-2 ring-1 ring-inset ring-white/40 hover:bg-white hover:text-navy text-white font-bold px-6 py-3.5 rounded-xl min-h-12 transition-colors ${focus}`}>
+            <a href={smsHref} className={`inline-flex items-center gap-2 ring-1 ring-inset ring-white/40 hover:bg-white hover:text-navy text-white font-bold px-6 py-3.5 rounded-xl min-h-12 transition-colors ${focusRing}`}>
               <IconChat className="w-5 h-5" /> Text us
             </a>
-            <a href={emailHref} className={`inline-flex items-center gap-2 ring-1 ring-inset ring-white/40 hover:bg-white hover:text-navy text-white font-bold px-6 py-3.5 rounded-xl min-h-12 transition-colors ${focus}`}>
+            <a href={emailHref} className={`inline-flex items-center gap-2 ring-1 ring-inset ring-white/40 hover:bg-white hover:text-navy text-white font-bold px-6 py-3.5 rounded-xl min-h-12 transition-colors ${focusRing}`}>
               <IconMail className="w-5 h-5" /> Email us
             </a>
           </div>
