@@ -34,7 +34,7 @@ export const services: Service[] = [
     detail: [
       "Ask any mattress cleaner what goes into the mattress and what stays behind. Hot-water extraction injects water and vacuums it back out; how much stays in a foam core depends on the equipment and the operator.",
       "Our protocol runs the other direction. Dry vapor steam carries heat with very little water. At the nozzle the vapor is superheated, so it lifts and neutralizes what has accumulated in the quilting and seam channels without soaking the core.",
-      "We start by reading the law tag. Memory foam, latex, hybrid, innerspring, and organic builds all react differently to heat and pass speed, and a technician who does not check is guessing. Then we contain the room, treat the surface in overlapping passes, detail the seams and edges, finish with UV-C light treatment, and reset the bedroom so the last impression matches the first.",
+      "We start by reading the law tag. Memory foam, latex, hybrid, innerspring, and organic builds all react differently to heat and pass speed, and a technician who does not check is guessing. Then we treat the surface in overlapping passes, detail the seams and edges, finish with UV-C light treatment, and reset the bedroom so the last impression matches the first.",
       "What we do not claim: this is a mattress sanitation protocol, not a medical treatment. It is not allergy or asthma therapy, and it is not pest control. If you have an active bed bug infestation, that is a licensed pest-control problem, and we will tell you so on the phone rather than sell you an appointment that cannot solve it.",
     ],
     faq: [

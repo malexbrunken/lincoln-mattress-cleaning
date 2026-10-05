@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, FaqJsonLd } from "@/components/JsonLd";
 import { kcUpdated } from "@/lib/kc";
 import { getPosts } from "@/lib/posts";
 import { getYearPages } from "@/lib/academicYear";
@@ -17,6 +17,14 @@ export const metadata: Metadata = {
     "Every Lincoln mattress guide in one place: care, the academic year, Airbnb hosting, allergy season and how our service works. Operated by Sleep Sanitation.",
 };
 
+const kcFaq = [
+  { q: "How much does mattress cleaning cost in Lincoln?", a: `${priceText.first} for the first mattress, any size. Each additional full, queen or king in the same visit is ${priceText.additionalLarge}, and each additional kids bed (twin/full) is ${priceText.additionalKids}.` },
+  { q: "Is dry vapor steam better than wet extraction for a mattress?", a: "For routine mattress care, yes: dry vapor steam carries heat with very little water, while wet extraction sprays solution in and vacuums it back out. See the steam vs. wet extraction guide." },
+  { q: "Should I hire a carpet cleaner or a mattress specialist?", a: "A carpet cleaner for carpet and rugs; a mattress specialist for the bed. See the guide to hiring a mattress specialist or a carpet cleaner in Lincoln." },
+  { q: "Do you clean mattresses for Lincoln Airbnb hosts?", a: `Yes. Same ${priceText.first} first-mattress price, with additional beds at ${priceText.additionalLarge} (full/queen/king) or ${priceText.additionalKids} (kids twin/full) in the same visit. The Airbnb hosts hub covers city rules and Husker weekends.` },
+  { q: "What checks come with every visit?", a: "Two: a moisture check after the job and the built-in bed mite sensor on our UV-C vacuum. 72-hour bedroom CO₂ testing is optional, priced by quote, and not a medical test." },
+];
+
 type Hub = { q: string; path: string; name: string; blurb: string; pages: { href: string; title: string }[] };
 
 /** Built from the content loaders, so a new guide or service page shows up automatically. */
@@ -26,7 +34,7 @@ function getHubs(): Hub[] {
       q: "Which mattress care guides should Lincoln households read?",
       path: "/guides",
       name: "Mattress care guides",
-      blurb: "How often to clean, bed mites, pet urine odor, steam versus extraction, used beds and what it costs in Lincoln.",
+      blurb: "What it costs in Lincoln, steam versus extraction, specialist versus carpet cleaner, how often to clean, bed mites, pet urine odor and used beds.",
       pages: getPosts().map((p) => ({ href: `/guides/${p.slug}`, title: p.title })),
     },
     {
@@ -84,6 +92,7 @@ export default function KnowledgeCenterPage() {
     <div className="max-w-4xl mx-auto px-4 py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collection) }} />
       <BreadcrumbJsonLd items={[{ name: "Home", url: site.url }, { name: "Knowledge Center", url }]} />
+      <FaqJsonLd faq={kcFaq} />
       <nav aria-label="Breadcrumb" className="text-mist mb-4 text-sm">
         <Link href="/" className="text-teal hover:underline">Home</Link> › Knowledge Center
       </nav>
@@ -109,6 +118,17 @@ export default function KnowledgeCenterPage() {
             </ul>
           </section>
         ))}
+        <section className="border-t-2 border-line pt-6">
+          <h2 className="text-3xl font-semibold text-navy mb-4">Quick answers</h2>
+          <div className="space-y-5 text-lg">
+            {kcFaq.map((f) => (
+              <div key={f.q}>
+                <h3 className="font-semibold text-navy">{f.q}</h3>
+                <p className="text-mist">{f.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
         <section className="border-t-2 border-line pt-6">
           <h2 className="text-3xl font-semibold text-navy mb-2">Where are the general mattress guides?</h2>
           <p className="text-lg text-mist">
