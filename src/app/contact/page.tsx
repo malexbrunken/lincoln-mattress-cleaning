@@ -3,12 +3,12 @@ import { updatedFor } from "@/lib/dates";
 import { WebPageJsonLd } from "@/components/JsonLd";
 import Link from "next/link";
 import { site } from "@/lib/site";
-import { QuoteForm } from "./QuoteForm";
+import { BookOptions, BookHours } from "@/components/BookOptions";
 
 export const metadata: Metadata = {
   title: "Book Mattress Cleaning in Lincoln, NE",
   description:
-    "Book mattress cleaning in Lincoln, NE. Call (402) 512-5658 or send the short form with how many mattresses and what you are seeing. $249 first mattress.",
+    "Book mattress cleaning in Lincoln, NE: call or text (402) 512-5658 or email info@sleepsanitation.com. $249 first mattress, any size. No deposit required.",
 };
 
 export default function ContactPage() {
@@ -20,30 +20,20 @@ export default function ContactPage() {
       </nav>
       <h1 className="text-4xl md:text-5xl font-semibold text-navy mb-5">Book an Appointment</h1>
       <p className="text-xl mb-8">
-        The fastest way is the phone — we can quote it in under a minute and confirm your address is inside the
-        service radius. Prefer to write it down? The form below is short on purpose.
+        Call, text or email us below. Tell us your town and how many mattresses, and we&apos;ll
+        confirm your address is inside the service radius and give you the price. No deposit required.
       </p>
 
-      <div className="bg-navy text-white rounded-2xl p-8 mb-10 text-center texture-grain">
-        <p className="text-lg mb-3">Call or text:</p>
-        <a href={site.phoneHref} className="inline-flex bg-teal hover:bg-teal-bright text-white font-bold text-2xl px-8 py-4 rounded-lg items-center transition-colors">
-          {site.phone}
-        </a>
-        <p className="text-white/70 mt-3">{site.hours}</p>
-        <p className="text-white/60 text-sm mt-1">{site.hoursNote}</p>
-        <a href={`mailto:${site.email}`} className="inline-block text-teal-bright hover:text-white mt-2 transition-colors">
-          {site.email}
-        </a>
+      <div className="bg-navy text-white rounded-2xl p-5 sm:p-7 mb-10 texture-grain">
+        <div className="relative">
+          <h2 className="font-display text-2xl font-semibold mb-4">How can you reach us?</h2>
+          <BookOptions layout="stack" />
+          <BookHours className="mt-5" />
+        </div>
       </div>
 
-      <h2 className="text-2xl font-semibold text-navy mb-4">Or send us the details</h2>
-      <QuoteForm />
-      <p className="text-mist mt-4">
-        We reply during business hours, {site.hours}, and return weekend messages on Saturday and Sunday too. No deposit required.
-      </p>
-
       <div className="mt-10 bg-ice border border-line rounded-2xl p-6">
-        <h2 className="font-sans font-bold text-lg text-navy mb-2">Before you call, it helps to know</h2>
+        <h2 className="font-sans font-bold text-lg text-navy mb-2">Before you call, text or email, it helps to know</h2>
         <ul className="space-y-2 text-mist text-[15px]">
           <li>• How many mattresses, and the size of each one.</li>
           <li>• Whether there is pet, urine, or blood history — ordinary accidents are included; severe contamination is quoted separately.</li>

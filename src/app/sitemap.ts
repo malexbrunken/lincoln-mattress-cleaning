@@ -12,7 +12,7 @@ import { kcUpdated } from "@/lib/kc";
 export default function sitemap(): MetadataRoute.Sitemap {
   // Real edit dates (src/lib/dates.ts and each markdown file's `updated`), so IndexNow's
   // 48-hour lastmod window only picks up real changes.
-  const statics = ["", "/services", "/pricing", "/service-areas", "/gallery", "/about", "/faq", "/guides", "/contact", "/privacy-policy"];
+  const statics = ["", "/services", "/pricing", "/service-areas", "/gallery", "/about", "/faq", "/guides", "/book", "/contact", "/privacy-policy"];
   return [
     ...statics.map((p) => ({
       url: `${site.url}${p}`,

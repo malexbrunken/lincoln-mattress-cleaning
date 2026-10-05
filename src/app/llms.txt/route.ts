@@ -36,6 +36,7 @@ ${services.map((s) => `  - [${s.name}](${u(`/services/${s.slug}`)})`).join("\n")
 ${towns.map((t) => `  - [${t.name}](${u(`/service-areas/${t.slug}`)})`).join("\n")}
 - [FAQ](${u("/faq")})
 - [About](${u("/about")})
+- [Book: call, text or email](${u("/book")})
 - [Contact](${u("/contact")})
 
 ## Guides

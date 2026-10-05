@@ -3,6 +3,7 @@ import { site } from "@/lib/site";
 import { towns } from "@/lib/towns";
 import { services } from "@/lib/services";
 import { IconMattress } from "./Icons";
+import { BOOK_PATH } from "@/lib/booking";
 
 export function Footer() {
   return (
@@ -44,7 +45,7 @@ export function Footer() {
             <li><Link href="/gallery" className="hover:text-teal-bright transition-colors">Equipment</Link></li>
             <li><Link href="/guides" className="hover:text-teal-bright transition-colors">Mattress Care Guides</Link></li>
             <li><Link href="/faq" className="hover:text-teal-bright transition-colors">FAQ</Link></li>
-            <li><Link href="/contact" className="hover:text-teal-bright transition-colors">Book an Appointment</Link></li>
+            <li><Link href={BOOK_PATH} className="hover:text-teal-bright transition-colors">Book an Appointment</Link></li>
             <li><Link href="/privacy-policy" className="hover:text-teal-bright transition-colors">Privacy Policy</Link></li>
           </ul>
         </div>

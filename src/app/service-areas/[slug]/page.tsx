@@ -148,8 +148,8 @@ export default async function TownPage({ params }: PageProps<"/service-areas/[sl
           <a href={site.phoneHref} className="inline-flex bg-teal hover:bg-teal-bright text-white font-bold px-7 py-4 rounded-xl min-h-12 items-center">
             Call {site.phone}
           </a>
-          <Link href="/contact" className="inline-flex border border-white/50 hover:bg-white hover:text-navy text-white font-bold px-7 py-4 rounded-xl min-h-12 items-center transition-colors">
-            Book online
+          <Link href="/book" className="inline-flex border border-white/50 hover:bg-white hover:text-navy text-white font-bold px-7 py-4 rounded-xl min-h-12 items-center transition-colors">
+            Book now
           </Link>
         </div>
       </div>

@@ -486,6 +486,12 @@ export default function HomePage() {
           >
             Call {site.phone}
           </a>
+          <Link
+            href="/book"
+            className="inline-flex ml-0 sm:ml-3 mt-3 sm:mt-0 border border-white/60 hover:bg-white hover:text-navy text-white font-bold text-lg px-8 py-4 rounded-xl min-h-12 items-center transition-colors"
+          >
+            Book Now
+          </Link>
         </div>
       </section>
     </>

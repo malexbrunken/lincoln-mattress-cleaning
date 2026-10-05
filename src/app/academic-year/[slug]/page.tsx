@@ -89,8 +89,8 @@ export default async function YearPageRoute({ params }: PageProps<"/academic-yea
         </ul>
         <p className="text-mist text-base">
           Published {fmtDate(p.published)}
-          {p.updated !== p.published ? `, updated ${fmtDate(p.updated)}` : ""}. Written by {site.name}, a locally owned and
-          operated division of {site.parentBrand}.
+          {p.updated !== p.published ? `, updated ${fmtDate(p.updated)}` : ""}. Written by {site.name}, locally owned and
+          operated by {site.parentBrand}.
         </p>
       </div>
 
@@ -100,6 +100,7 @@ export default async function YearPageRoute({ params }: PageProps<"/academic-yea
           Call {site.phone}
         </a>
         <p className="text-mist mt-3">{site.hours.replace(/–/g, " to ")}</p>
+        <p className="mt-1"><Link href="/book" className="text-teal-deep font-semibold underline">Text or email instead</Link></p>
       </div>
 
       <h2 className="text-2xl font-semibold text-navy mb-4">Elsewhere in the academic year</h2>
