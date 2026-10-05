@@ -5,7 +5,7 @@ description: "Month by month from UNL's January housing application to May move-
 answer: "If your student lives in a UNL residence hall, the mattress is the university's and your list is short: a pad, washable bedding and a check at move-out. If they live off campus, the mattress is the big item, and the dates to plan around are their move-in day, UNL's mid-August move-in week and the May move-out."
 order: 3
 published: "2026-10-03"
-updated: "2026-10-04"
+updated: "2026-10-05"
 timeline:
   - when: "January 13, 2027"
     what: "Housing application opens for incoming first-year students in MyRED."
@@ -74,6 +74,10 @@ changelog:
 3. **If you buy a used bed,** follow [the used mattress inspection](/academic-year/used-mattress-for-a-lincoln-apartment) first.
 4. **Book cleaning before your student's furniture arrives,** while the apartment is empty.
 5. **In May,** decide early whether the bed is staying, moving or going. [May move-out](/academic-year/may-move-out-and-disposal) lists Lincoln's drop-off for residents.
+
+## Looking for the August booking call?
+
+Use [Parents: booking mattress cleaning for August](/academic-year/parents-august-booking) for the phone checklist. This page stays the year-long calendar.
 
 ## What we don't know
 
