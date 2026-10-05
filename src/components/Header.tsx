@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
 import { IconMattress } from "./Icons";
+import { BOOK_PATH } from "@/lib/booking";
 
 export function Header() {
   return (
@@ -30,12 +31,20 @@ export function Header() {
           <Link href="/knowledge-center" className="text-white/85 hover:text-teal-bright transition-colors">Knowledge Center</Link>
           <Link href="/faq" className="text-white/85 hover:text-teal-bright transition-colors">FAQ</Link>
         </nav>
-        <a
-          href={site.phoneHref}
-          className="bg-teal hover:bg-teal-bright text-white font-bold px-5 py-3 rounded-xl text-[15px] whitespace-nowrap min-h-12 flex items-center shadow-md shadow-black/30 transition-colors"
-        >
-          Call {site.phone}
-        </a>
+        <div className="flex items-center gap-2 shrink-0">
+          <a
+            href={site.phoneHref}
+            className="hidden lg:flex text-white/90 hover:text-teal-bright font-semibold px-2 py-3 text-[15px] whitespace-nowrap min-h-12 items-center transition-colors"
+          >
+            {site.phone}
+          </a>
+          <Link
+            href={BOOK_PATH}
+            className="bg-teal-deep hover:bg-teal text-white font-bold px-5 py-3 rounded-xl text-[15px] whitespace-nowrap min-h-12 flex items-center shadow-md shadow-black/30 transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brass"
+          >
+            Book Now
+          </Link>
+        </div>
       </div>
       {/* mobile nav */}
       <nav aria-label="Mobile navigation" className="md:hidden bg-navy-2 flex overflow-x-auto gap-5 px-4 py-3 text-[15px] font-medium border-t border-white/10">

@@ -83,8 +83,8 @@ export default function FaqPage() {
         <a href={site.phoneHref} className="inline-flex bg-teal text-white font-bold px-7 py-3.5 rounded-lg min-h-12 items-center">
           Call {site.phone}
         </a>{" "}
-        <Link href="/contact" className="inline-flex border-2 border-navy text-navy font-bold px-7 py-3.5 rounded-lg min-h-12 items-center">
-          Send a message
+        <Link href="/book" className="inline-flex border-2 border-navy text-navy font-bold px-7 py-3.5 rounded-lg min-h-12 items-center">
+          Book by text or email
         </Link>
       </div>
     </div>

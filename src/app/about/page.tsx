@@ -21,7 +21,7 @@ export default function AboutPage() {
       </nav>
       <h1 className="text-4xl md:text-5xl font-semibold text-navy mb-5">About Lincoln Mattress Cleaning</h1>
       <p className="text-xl mb-6">
-        Lincoln Mattress Cleaning is a locally owned and operated division of {site.parentBrand}, a mattress-only provider built around one
+        Lincoln Mattress Cleaning is locally owned and operated by {site.parentBrand}, a mattress-only provider built around one
         idea: the surface you sleep on deserves a standard that was designed for it.
       </p>
 

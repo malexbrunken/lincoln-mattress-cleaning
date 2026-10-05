@@ -105,3 +105,29 @@ export const IconSnow = ({ className = "w-6 h-6" }: { className?: string }) => (
     <path d="M12 2.8v18.4M4 7.4l16 9.2M20 7.4L4 16.6" />
   </svg>
 );
+export const IconPhone = ({ className = "w-6 h-6" }: { className?: string }) => (
+  <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.5" stroke="currentColor" className={className} {...S} aria-hidden>
+    <path d="M5.2 3.5h3l1.5 4.1-2 1.3a11.5 11.5 0 0 0 7.4 7.4l1.3-2 4.1 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 3.2 5.7a2 2 0 0 1 2-2.2z" />
+  </svg>
+);
+
+export const IconChat = ({ className = "w-6 h-6" }: { className?: string }) => (
+  <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.5" stroke="currentColor" className={className} {...S} aria-hidden>
+    <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 4v-4h0A2.5 2.5 0 0 1 4 13.5z" />
+    <path d="M8.5 9.5h.01M12 9.5h.01M15.5 9.5h.01" />
+  </svg>
+);
+
+export const IconMail = ({ className = "w-6 h-6" }: { className?: string }) => (
+  <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.5" stroke="currentColor" className={className} {...S} aria-hidden>
+    <rect x="3" y="5" width="18" height="14" rx="2.2" />
+    <path d="m3.8 6.5 8.2 6.3 8.2-6.3" />
+  </svg>
+);
+
+export const IconClock = ({ className = "w-6 h-6" }: { className?: string }) => (
+  <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.5" stroke="currentColor" className={className} {...S} aria-hidden>
+    <circle cx="12" cy="12" r="8.5" />
+    <path d="M12 7.5V12l3 2" />
+  </svg>
+);

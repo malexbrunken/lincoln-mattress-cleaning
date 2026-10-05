@@ -105,8 +105,8 @@ export default function PricingPage() {
               <a href={site.phoneHref} className="inline-flex bg-teal text-white font-bold px-7 py-4 rounded-xl min-h-12 items-center hover:bg-teal-bright transition-colors">
                 Call {site.phone} to book
               </a>
-              <Link href="/contact" className="inline-flex border-2 border-navy text-navy font-bold px-7 py-4 rounded-xl min-h-12 items-center hover:bg-ice transition-colors">
-                Book online
+              <Link href="/book" className="inline-flex border-2 border-navy text-navy font-bold px-7 py-4 rounded-xl min-h-12 items-center hover:bg-ice transition-colors">
+                Book now
               </Link>
             </div>
           </div>

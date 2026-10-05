@@ -99,6 +99,7 @@ export default async function HostPageRoute({ params }: PageProps<"/airbnb-hosts
               Call {site.phone}
             </a>
             <p className="text-mist mt-3">{site.hours.replace(/–/g, " to ")}</p>
+            <p className="mt-1"><Link href="/book" className="text-teal-deep font-semibold underline">Text or email instead</Link></p>
           </div>
         </div>
       </div>
