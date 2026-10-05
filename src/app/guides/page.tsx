@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { updatedFor } from "@/lib/dates";
-import { WebPageJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, WebPageJsonLd } from "@/components/JsonLd";
+import { site } from "@/lib/site";
 import Link from "next/link";
 import { getPosts } from "@/lib/posts";
 import { priceText } from "@/lib/prices";
@@ -17,8 +18,9 @@ export default function GuidesPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
       <WebPageJsonLd name="Mattress care guides" path="/guides" dateModified={updatedFor("/guides")} type="CollectionPage" />
+      <BreadcrumbJsonLd items={[{ name: "Home", url: site.url }, { name: "Knowledge Center", url: `${site.url}/knowledge-center` }, { name: "Guides", url: `${site.url}/guides` }]} />
       <nav aria-label="Breadcrumb" className="text-mist mb-4 text-sm">
-        <Link href="/" className="text-teal hover:underline">Home</Link> › Guides
+        <Link href="/" className="text-teal hover:underline">Home</Link> › <Link href="/knowledge-center" className="text-teal hover:underline">Knowledge Center</Link> › Guides
       </nav>
       <h1 className="text-4xl md:text-5xl font-semibold text-navy mb-4">Mattress Care Guides</h1>
       <p className="text-lg text-mist mb-10">

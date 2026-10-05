@@ -43,9 +43,9 @@ export default function AirbnbHostsHub() {
     <div className="max-w-6xl mx-auto px-4 py-12">
       <WebPageJsonLd name="Lincoln Airbnb hosts" path="/airbnb-hosts" dateModified={updatedFor("/airbnb-hosts")} type="WebPage" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(hub) }} />
-      <BreadcrumbJsonLd items={[{ name: "Home", url: site.url }, { name: "Lincoln Airbnb hosts", url: `${site.url}/airbnb-hosts` }]} />
+      <BreadcrumbJsonLd items={[{ name: "Home", url: site.url }, { name: "Knowledge Center", url: `${site.url}/knowledge-center` }, { name: "Lincoln Airbnb hosts", url: `${site.url}/airbnb-hosts` }]} />
       <nav aria-label="Breadcrumb" className="text-mist mb-4 text-sm">
-        <Link href="/" className="text-teal hover:underline">Home</Link> › Lincoln Airbnb hosts
+        <Link href="/" className="text-teal hover:underline">Home</Link> › <Link href="/knowledge-center" className="text-teal hover:underline">Knowledge Center</Link> › Lincoln Airbnb hosts
       </nav>
       <p className="kicker text-teal-deep mb-2">The host desk</p>
       <h1 className="text-4xl font-semibold text-navy mb-4 leading-tight max-w-4xl">Lincoln Airbnb and short-term rental hosts</h1>

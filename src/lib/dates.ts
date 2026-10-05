@@ -18,6 +18,7 @@ export const PAGE_UPDATED: Record<string, string> = {
   "/academic-year": "2026-10-04",
   "/airbnb-hosts": "2026-10-04",
   "/allergy-season": "2026-10-04",
+  "/knowledge-center": "2026-10-04",
 };
 
 /** Service pages and service-area pages are generated from src/lib; one date each set. */
@@ -25,3 +26,4 @@ export const SERVICES_UPDATED = "2026-10-04";
 export const TOWNS_UPDATED = "2026-10-04";
 
 export const updatedFor = (path: string) => PAGE_UPDATED[path] ?? "2026-10-04";
+

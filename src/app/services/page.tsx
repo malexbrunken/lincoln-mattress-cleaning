@@ -18,7 +18,7 @@ export default function ServicesPage() {
     <div className="max-w-6xl mx-auto px-4 py-12">
       <WebPageJsonLd name="Mattress services in Lincoln" path="/services" dateModified={updatedFor("/services")} type="CollectionPage" />
       <nav aria-label="Breadcrumb" className="text-mist mb-4 text-sm">
-        <Link href="/" className="text-teal hover:underline">Home</Link> › Services
+        <Link href="/" className="text-teal hover:underline">Home</Link> › <Link href="/knowledge-center" className="text-teal hover:underline">Knowledge Center</Link> › Services
       </nav>
       <h1 className="text-4xl md:text-5xl font-semibold text-navy mb-4">What mattress services do we offer in Lincoln?</h1>
       <p className="text-lg text-mist max-w-3xl mb-10">
