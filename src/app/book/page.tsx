@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const faq = [
   {
     q: "When are you open for bookings?",
-    a: `Our hours are ${site.hours}. Call, text or email, and we'll confirm your time and your price before the visit.`,
+    a: `Our hours are ${site.hours}. ${site.hoursNote} Call, text or email, and we'll confirm your time and your price before the visit.`,
   },
   {
     q: "What will my visit cost?",
@@ -130,8 +130,11 @@ export default function BookPage() {
             ))}
           </ul>
 
-          <p className="mt-5 inline-flex items-center gap-2 text-[15px] font-semibold text-white">
-            <IconClock className="w-5 h-5 text-teal-bright" /> Hours: Mon–Fri 9–6
+          <p className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1 text-[15px] text-white/80">
+            <span className="inline-flex items-center gap-2 font-semibold text-white">
+              <IconClock className="w-5 h-5 text-teal-bright" /> Hours: Mon–Fri 9–6
+            </span>
+            <span>{site.hoursNote}</span>
           </p>
         </div>
       </section>
