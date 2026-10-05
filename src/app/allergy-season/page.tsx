@@ -40,9 +40,9 @@ export default function AllergySeasonHub() {
     <div className="max-w-5xl mx-auto px-4 py-12">
       <WebPageJsonLd name="Lincoln allergy season" path="/allergy-season" dateModified={updatedFor("/allergy-season")} type="WebPage" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(hub) }} />
-      <BreadcrumbJsonLd items={[{ name: "Home", url: site.url }, { name: "Lincoln allergy season", url: `${site.url}/allergy-season` }]} />
+      <BreadcrumbJsonLd items={[{ name: "Home", url: site.url }, { name: "Knowledge Center", url: `${site.url}/knowledge-center` }, { name: "Lincoln allergy season", url: `${site.url}/allergy-season` }]} />
       <nav aria-label="Breadcrumb" className="text-mist mb-4 text-sm">
-        <Link href="/" className="text-teal hover:underline">Home</Link> › Lincoln allergy season
+        <Link href="/" className="text-teal hover:underline">Home</Link> › <Link href="/knowledge-center" className="text-teal hover:underline">Knowledge Center</Link> › Lincoln allergy season
       </nav>
       <p className="kicker text-teal-deep mb-2">NWU pollen, LLCHD air, Lincoln Airport normals</p>
       <h1 className="text-4xl font-semibold text-navy mb-6 leading-tight max-w-4xl">

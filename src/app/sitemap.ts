@@ -7,6 +7,7 @@ import { getYearPages } from "@/lib/academicYear";
 import { getHostPages } from "@/lib/strHosts";
 import { getAllergyPages } from "@/lib/allergySeason";
 import { SERVICES_UPDATED, TOWNS_UPDATED, updatedFor } from "@/lib/dates";
+import { kcUpdated } from "@/lib/kc";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Real edit dates (src/lib/dates.ts and each markdown file's `updated`), so IndexNow's
@@ -19,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: p === "" ? 1 : 0.8,
     })),
+    { url: `${site.url}/knowledge-center`, lastModified: new Date(kcUpdated()), changeFrequency: "weekly" as const, priority: 0.8 },
     ...services.map((s) => ({
       url: `${site.url}/services/${s.slug}`,
       lastModified: new Date(SERVICES_UPDATED),

@@ -66,9 +66,9 @@ export default function AcademicYearHub() {
       <WebPageJsonLd name="The Lincoln academic year" path="/academic-year" dateModified={updatedFor("/academic-year")} type="WebPage" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(hub) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
-      <BreadcrumbJsonLd items={[{ name: "Home", url: site.url }, { name: "The Lincoln academic year", url: `${site.url}/academic-year` }]} />
+      <BreadcrumbJsonLd items={[{ name: "Home", url: site.url }, { name: "Knowledge Center", url: `${site.url}/knowledge-center` }, { name: "The Lincoln academic year", url: `${site.url}/academic-year` }]} />
       <nav aria-label="Breadcrumb" className="text-mist mb-4 text-sm">
-        <Link href="/" className="text-teal hover:underline">Home</Link> › The Lincoln academic year
+        <Link href="/" className="text-teal hover:underline">Home</Link> › <Link href="/knowledge-center" className="text-teal hover:underline">Knowledge Center</Link> › The Lincoln academic year
       </nav>
       <p className="kicker text-teal-deep mb-2">Lincoln, by the calendar</p>
       <h1 className="text-4xl font-semibold text-navy mb-4 leading-tight">The Lincoln academic year</h1>
