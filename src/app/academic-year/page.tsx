@@ -45,8 +45,8 @@ const faq = [
     a: "When the room is empty, before furniture moves in. Book before your furniture arrives, check the care label and warranty terms first, and leave the bed unmade until it is dry to the touch.",
   },
   {
-    q: "Do you serve Nebraska Wesleyan and Union Adventist students?",
-    a: "Yes, for off-campus beds in Lincoln. See the NWU and Union Adventist move-in guides in this hub.",
+    q: "Do you serve Nebraska Wesleyan, Union Adventist and SCC students?",
+    a: "Yes, for off-campus and at-home beds in Lincoln. See the NWU and Union Adventist move-in guides and the SCC Lincoln Woodhaven Hall guide in this hub.",
   },
 ];
 

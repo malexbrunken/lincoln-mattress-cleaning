@@ -6,6 +6,7 @@ import { getPosts } from "@/lib/posts";
 import { getYearPages } from "@/lib/academicYear";
 import { getHostPages } from "@/lib/strHosts";
 import { getAllergyPages } from "@/lib/allergySeason";
+import { getNeighborhoodPages } from "@/lib/neighborhoods";
 import { services } from "@/lib/services";
 import { priceText } from "@/lib/prices";
 import { site } from "@/lib/site";
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
   title: { absolute: "Lincoln Mattress Knowledge Center | Guides and Hubs" },
   alternates: { canonical: "/knowledge-center" },
   description:
-    "Every Lincoln mattress guide in one place: care, the academic year, Airbnb hosting, allergy season and how our service works. Operated by Sleep Sanitation.",
+    "Every Lincoln mattress guide in one place: care, the academic year, Airbnb hosts, allergy season, neighborhoods and our service. By Sleep Sanitation.",
 };
 
 const kcFaq = [
@@ -41,7 +42,7 @@ function getHubs(): Hub[] {
       q: "What should students and parents plan for each semester?",
       path: "/academic-year",
       name: "The Lincoln academic year",
-      blurb: "UNL, Nebraska Wesleyan and Union Adventist move-in, Greek houses, parent booking and May graduation turnarounds.",
+      blurb: "UNL, Nebraska Wesleyan, Union Adventist and SCC move-in, Greek houses, parent booking and May graduation weekends.",
       pages: getYearPages().map((p) => ({ href: `/academic-year/${p.slug}`, title: p.h1 })),
     },
     {
@@ -57,6 +58,13 @@ function getHubs(): Hub[] {
       name: "Lincoln allergy season",
       blurb: "Lincoln's pollen calendar, indoor air advice for the bedroom and how bed mites differ from outdoor pollen.",
       pages: getAllergyPages().map((p) => ({ href: `/allergy-season/${p.slug}`, title: p.h1 })),
+    },
+    {
+      q: "What changes from one Lincoln neighborhood to the next?",
+      path: "/neighborhoods",
+      name: "Lincoln neighborhoods",
+      blurb: "Near South, Everett, Havelock, Haymarket and downtown, Country Club and the Highlands: Census housing facts, local history and what changes for a mattress visit.",
+      pages: getNeighborhoodPages().map((p) => ({ href: `/neighborhoods/${p.slug}`, title: p.h1 })),
     },
     {
       q: "How does our service work?",
@@ -99,7 +107,7 @@ export default function KnowledgeCenterPage() {
       <h1 className="text-4xl md:text-5xl font-semibold text-navy mb-4">Lincoln Mattress Knowledge Center</h1>
       <p className="text-lg text-mist mb-10">
         This Knowledge Center gathers every Lincoln guide we publish: mattress care, the academic year, Airbnb hosting,
-        allergy season and how our service works. Lincoln Mattress Cleaning is operated by Sleep Sanitation. The first
+        allergy season, Lincoln neighborhoods and how our service works. Lincoln Mattress Cleaning is operated by Sleep Sanitation. The first
         mattress is {priceText.first}, any size; see{" "}
         <Link href="/pricing" className="text-teal-deep font-semibold underline">our pricing page</Link> for every rate. Call or
         text <a href={site.phoneHref} className="text-teal-deep font-semibold underline">{site.phone}</a>.

@@ -6,6 +6,7 @@ import { getPosts } from "@/lib/posts";
 import { getYearPages } from "@/lib/academicYear";
 import { getHostPages } from "@/lib/strHosts";
 import { getAllergyPages } from "@/lib/allergySeason";
+import { getNeighborhoodPages } from "@/lib/neighborhoods";
 
 export const dynamic = "force-static";
 
@@ -53,6 +54,10 @@ ${getHostPages().map((p) => `  - [${p.h1}](${u(`/airbnb-hosts/${p.slug}`)})`).jo
 ## Allergy season in Lincoln
 - [Hub](${u("/allergy-season")})
 ${getAllergyPages().map((p) => `  - [${p.h1}](${u(`/allergy-season/${p.slug}`)})`).join("\n")}
+
+## Lincoln neighborhoods
+- [Hub](${u("/neighborhoods")})
+${getNeighborhoodPages().map((p) => `  - [${p.h1}](${u(`/neighborhoods/${p.slug}`)})`).join("\n")}
 
 ## What we don't claim
 Mattress sanitation is about the mattress, not your health: no medical claims, no sterilization, no pest control and no drying-time promises.

@@ -6,6 +6,7 @@ import { getPosts } from "@/lib/posts";
 import { getYearPages } from "@/lib/academicYear";
 import { getHostPages } from "@/lib/strHosts";
 import { getAllergyPages } from "@/lib/allergySeason";
+import { getNeighborhoodPages } from "@/lib/neighborhoods";
 import { SERVICES_UPDATED, TOWNS_UPDATED, updatedFor } from "@/lib/dates";
 import { kcUpdated } from "@/lib/kc";
 
@@ -50,6 +51,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${site.url}/allergy-season`, lastModified: new Date(updatedFor("/allergy-season")), changeFrequency: "monthly" as const, priority: 0.8 },
     ...getAllergyPages().map((p) => ({
       url: `${site.url}/allergy-season/${p.slug}`,
+      lastModified: new Date(p.updated ?? p.published),
+      changeFrequency: "monthly" as const,
+      priority: 0.75,
+    })),
+    { url: `${site.url}/neighborhoods`, lastModified: new Date(updatedFor("/neighborhoods")), changeFrequency: "monthly" as const, priority: 0.8 },
+    ...getNeighborhoodPages().map((p) => ({
+      url: `${site.url}/neighborhoods/${p.slug}`,
       lastModified: new Date(p.updated ?? p.published),
       changeFrequency: "monthly" as const,
       priority: 0.75,
