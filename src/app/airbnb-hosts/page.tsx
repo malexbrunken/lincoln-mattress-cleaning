@@ -135,7 +135,7 @@ export default function AirbnbHostsHub() {
               A game weekend, a tax question or a guest accident doesn&apos;t change the visit. A host pays {priceText.first} for the first
               mattress; each additional full, queen or king is {priceText.additionalLarge} and each additional kids bed {priceText.additionalKids},
               with a surcharge only for a severe or biohazard case, and we work Monday to Friday, 9am to 6pm, answering calls and texts on weekends. We record every mattress on an inspection form (material, special care
-              notes, urine or odor observations) and run the two checks in every visit: moisture after the job and the dust mite (bed mite)
+              notes, urine or odor observations) and run the two checks in every visit: moisture after the job and the built-in bed mite
               sensor on our UV-C vacuum. 72-hour bedroom CO₂ testing is a separate optional service, priced by quote; it isn&apos;t a medical test. Crews wear gloves and shoe booties and disinfect equipment between jobs. Check each mattress&apos;s care label and warranty terms before booking. This page is general information, not medical advice.
             </p>
             <p>

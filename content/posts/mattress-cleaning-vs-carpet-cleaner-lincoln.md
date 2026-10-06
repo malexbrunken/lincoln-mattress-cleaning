@@ -21,7 +21,7 @@ faq:
     a: "Two checks, every visit: a moisture check after the job and the built-in bed mite sensor on our UV-C vacuum. 72-hour bedroom CO₂ testing is a separate optional service, priced by quote, and it is not a medical test."
 ---
 
-If the job is a mattress, hire a mattress specialist; if it is wall-to-wall carpet or rugs, hire a carpet cleaner. In Lincoln, a mattress add-on on a carpet job is typically done with the same hot-water extraction equipment used on the floors. Lincoln Mattress Cleaning, operated by Sleep Sanitation, is mattress-only: low-moisture dry vapor steam, HEPA vacuuming and UV-C light treatment, with a moisture check and a bed mite sensor check on every visit. The first mattress is {{price.first}}, any size. Call or text **(402) 512-5658**.
+If the job is a mattress, hire a mattress specialist; if it is wall-to-wall carpet or rugs, hire a carpet cleaner. In Lincoln, a mattress add-on on a carpet job is typically done with the same hot-water extraction equipment used on the floors. Lincoln Mattress Cleaning, operated by Sleep Sanitation, is mattress-only: low-moisture dry vapor steam, HEPA vacuuming and UV-C light treatment, with a moisture check and a check with the built-in bed mite sensor on every visit. The first mattress is {{price.first}}, any size. Call or text **(402) 512-5658**.
 
 ## What does each trade actually do?
 
@@ -31,7 +31,7 @@ If the job is a mattress, hire a mattress specialist; if it is wall-to-wall carp
 | Usual method on the bed | Hot-water extraction, the carpet method | Low-moisture dry vapor steam |
 | Time on the mattress | One item on a larger floor job | The whole appointment is about the bed |
 | Seams, tufts and edges | Varies by provider | Worked on every mattress |
-| Included checks | Varies by provider | Moisture check after the job; bed mite sensor on the UV-C vacuum |
+| Included checks | Varies by provider | Moisture check after the job; built-in bed mite sensor on the UV-C vacuum |
 | Urine and pet odor | Varies by provider | Enzyme treatment; ordinary accidents included in {{price.first}} |
 | Warranty note | Wet extraction can void some mattress warranties | We read the law tag and care label first |
 

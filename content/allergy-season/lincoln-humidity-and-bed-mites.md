@@ -6,7 +6,7 @@ order: 3
 description: "LLCHD's 30 to 50 percent and Extension's 30 to 45, set against Lincoln Airport's dew point by month and what that air would read at 70°F indoors."
 answer: "LLCHD recommends 30 to 50 percent indoor humidity; Nebraska Extension's G2069 says 30 to 45 percent to control house dust mites, the bed mites people ask about. Lincoln Airport's 1991 to 2020 NOAA normals show why both are hard to hold: the average dew point is 17°F in January and 65°F in July. By our calculation, that July air at 70°F indoors would sit near 84 percent and the January air near 13 percent."
 published: "2026-10-03"
-updated: "2026-10-04"
+updated: "2026-10-05"
 tiles:
   - { value: "30 to 50%", label: "LLCHD's recommended indoor relative humidity" }
   - { value: "84%", label: "Our estimate for Lincoln Airport's average July air at 70°F indoors" }
@@ -29,6 +29,7 @@ sources:
 changelog:
   - { date: "2026-10-03", note: "First published with LLCHD's and Extension's ranges and Lincoln Airport's dew point normals." }
   - { date: "2026-10-03", note: "Revised: cut the restated G2069 bedding list, added our 70°F indoor estimates from Lincoln Airport's normals." }
+  - { date: "2026-10-05", note: "Wording: the included check is now called the built-in bed mite sensor." }
 ---
 
 ## What humidity range do local agencies give?
@@ -56,4 +57,4 @@ G2069's bedding steps and the two published steam studies are covered in our [Li
 
 ## What does our bed mite sensor do?
 
-Our UV-C vacuum's bed mite (dust mite) sensor is one of the two checks in every visit, with a moisture check after the job; neither measures room humidity. 72-hour bedroom CO₂ testing is a separate optional service, booked on its own or added to a visit and priced by quote; it isn't a medical test. Sleep Sanitation's [bed mite and bed bug comparison](https://sleepsanitation.com/knowledge-center/mattress-dust-mites-allergens/dust-mites-vs-bed-bugs-vs-bed-mites) sorts out the names.
+Our UV-C vacuum's built-in bed mite sensor is one of the two checks in every visit, with a moisture check after the job; neither measures room humidity. 72-hour bedroom CO₂ testing is a separate optional service, booked on its own or added to a visit and priced by quote; it isn't a medical test. Sleep Sanitation's [bed mite and bed bug comparison](https://sleepsanitation.com/knowledge-center/mattress-dust-mites-allergens/dust-mites-vs-bed-bugs-vs-bed-mites) sorts out the names.

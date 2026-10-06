@@ -24,7 +24,7 @@ export default function ServicesPage() {
       <p className="text-lg text-mist max-w-3xl mb-10">
         One mattress visit, {priceText.first} for the first mattress, any size: dry vapor steam, HEPA vacuuming, UV-C
         light treatment, bed mite treatment, and urine and odor treatment for ordinary accidents. Every visit includes
-        two checks, the bed mite sensor on our UV-C vacuum and a moisture check after the job. 72-hour bedroom CO₂
+        two checks, the built-in bed mite sensor on our UV-C vacuum and a moisture check after the job. 72-hour bedroom CO₂
         testing is optional, priced by quote.
       </p>
       <h2 className="text-3xl font-semibold text-navy mb-6">What does each service cover?</h2>

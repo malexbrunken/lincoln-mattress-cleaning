@@ -120,7 +120,7 @@ export default function AllergySeasonHub() {
         <p className="text-lg mb-4">
           Appointments are weekdays from 9am to 6pm. Gloves, shoe booties and equipment disinfected between jobs are standard, and so is
           a written inspection form for every mattress covering its material, special care notes and any urine or odor observations.
-          Every visit includes two checks, and only two: a moisture check after the job and the dust mite (bed mite) sensor
+          Every visit includes two checks, and only two: a moisture check after the job and the built-in bed mite sensor
           on our UV-C vacuum. 72-hour bedroom CO₂ testing is a separate optional service, booked on its own or added to a visit and priced by quote; it isn&apos;t a medical test. Read the care label and warranty terms first, or call {site.phone}.
         </p>
         <p className="text-base text-mist">

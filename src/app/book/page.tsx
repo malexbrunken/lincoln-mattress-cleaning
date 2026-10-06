@@ -49,7 +49,7 @@ const prep = [
 
 const trust = [
   { icon: IconSteam, t: "Vapor Clean dry vapor steam", d: "Low-moisture steam instead of wet extraction." },
-  { icon: IconGauge, t: "Two checks included", d: "A moisture check after the job and the bed mite sensor on our UV-C vacuum." },
+  { icon: IconGauge, t: "Two checks included", d: "A moisture check after the job and the built-in bed mite sensor on our UV-C vacuum." },
   { icon: IconClipboard, t: "Inspection form", d: "Material, special care notes and any urine or odor observations, for every mattress." },
   { icon: IconShield, t: "Gloves, shoe booties, disinfected equipment", d: "Gloves and shoe booties on every job, and equipment disinfected between jobs." },
 ];

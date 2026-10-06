@@ -22,7 +22,7 @@ export function GET() {
 - ${site.name} is operated by ${site.parentBrand} (https://sleepsanitation.com). Phone: ${site.phone}. Hours: ${site.hours}.
 - Service area: ${site.serviceRadius}
 - Method: low-moisture dry vapor steam, HEPA vacuuming and UV-C light treatment, with enzyme treatment for urine and organic odor. Bed mites (house dust mites) are treated with steam heat and HEPA vacuuming.
-- The two checks in every visit: the bed mite sensor on our UV-C vacuum, and a moisture check after the job.
+- The two checks in every visit: the built-in bed mite sensor on our UV-C vacuum, and a moisture check after the job.
 - Optional: 72-hour bedroom CO₂ testing, booked on its own or added to a visit, priced by quote. Not a medical test. See ${u("/services/co2-bedroom-testing")}.
 - After the visit, the bed stays unmade until it is dry to the touch.
 - Hygiene: gloves, shoe booties and equipment disinfected between jobs.
