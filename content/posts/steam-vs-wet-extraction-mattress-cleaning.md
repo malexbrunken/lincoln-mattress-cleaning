@@ -21,7 +21,7 @@ faq:
     a: "{{price.first}} for the first mattress, any size, with normal stains, pet odor and ordinary urine accidents included. Each additional full, queen or king in the same visit is {{price.additionalLarge}}, and each additional kids bed (twin/full) is {{price.additionalKids}}. UV-C light treatment and HEPA vacuuming are included."
 ---
 
-For a mattress in a Lincoln home, dry vapor steam is the low-moisture option: it carries heat into the seams, tufts and edges with very little liquid water. Wet (hot-water) extraction, the method built for carpet, sprays a cleaning solution into the fabric and vacuums it back out. Lincoln Mattress Cleaning, operated by Sleep Sanitation, uses dry vapor steam, HEPA vacuuming and UV-C light treatment, with a moisture check and a bed mite sensor check on every visit, at {{price.first}} for the first mattress, any size. Call or text **(402) 512-5658**.
+For a mattress in a Lincoln home, dry vapor steam is the low-moisture option: it carries heat into the seams, tufts and edges with very little liquid water. Wet (hot-water) extraction, the method built for carpet, sprays a cleaning solution into the fabric and vacuums it back out. Lincoln Mattress Cleaning, operated by Sleep Sanitation, uses dry vapor steam, HEPA vacuuming and UV-C light treatment, with a moisture check and a check with the built-in bed mite sensor on every visit, at {{price.first}} for the first mattress, any size. Call or text **(402) 512-5658**.
 
 Both processes get called "mattress cleaning," which is why the conversation usually goes in circles. They are different technologies with different failure modes, and the difference is measurable.
 

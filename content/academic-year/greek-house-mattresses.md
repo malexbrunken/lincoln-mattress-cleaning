@@ -39,6 +39,8 @@ sources:
 changelog:
   - date: "2026-10-05"
     note: "First published from the 2026–27 UAH list and campus timing."
+  - date: "2026-10-05"
+    note: "Wording: the included check is now called the built-in bed mite sensor."
 ---
 
 ## Who books a Greek house cleaning?
@@ -51,7 +53,7 @@ December and May, while members are gone and bedding is stripped. August works i
 
 ## What about bed mites and odor?
 
-Bed mites (house dust mites) favor closed bedrooms. Steam heat and HEPA vacuuming are part of every visit, followed by UV-C light treatment. Every visit includes two checks: the bed mite sensor on our UV-C vacuum and a moisture check after the job. 72-hour bedroom CO₂ testing is optional and priced by quote. Science and limits live in Sleep Sanitation's [dust mites and allergens hub](https://sleepsanitation.com/knowledge-center/mattress-dust-mites-allergens).
+Bed mites (house dust mites) favor closed bedrooms. Steam heat and HEPA vacuuming are part of every visit, followed by UV-C light treatment. Every visit includes two checks: the built-in bed mite sensor on our UV-C vacuum and a moisture check after the job. 72-hour bedroom CO₂ testing is optional and priced by quote. Science and limits live in Sleep Sanitation's [dust mites and allergens hub](https://sleepsanitation.com/knowledge-center/mattress-dust-mites-allergens).
 
 ## What we don't know
 

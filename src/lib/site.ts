@@ -78,7 +78,7 @@ export const pricing = {
     { service: "Dry-vapor sanitation", price: "Included", bold: false },
     { service: "Dry-vapor steaming of seams, tufts, ridges and edges, where dust and shed skin flakes collect", price: "Included", bold: false },
     { service: "UV-C light treatment and HEPA vacuuming", price: "Included", bold: false },
-    { service: "Two checks: bed mite sensor on the UV-C vacuum, and a moisture check after the job", price: "Included", bold: false },
+    { service: "Two checks: built-in bed mite sensor on the UV-C vacuum, and a moisture check after the job", price: "Included", bold: false },
     { service: "What we found, reported to you after the visit", price: "Included", bold: false },
     { service: "Normal stain treatment", price: "Included", bold: false },
     { service: "Pet odor treatment", price: "Included", bold: false },

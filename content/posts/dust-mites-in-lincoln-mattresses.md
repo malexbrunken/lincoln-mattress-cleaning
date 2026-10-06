@@ -2,7 +2,7 @@
 title: "Bed Mites in Lincoln Mattresses: What Actually Helps"
 seoTitle: "Bed Mites in Lincoln Mattresses"
 date: "2026-09-10"
-updated: "2026-10-04"
+updated: "2026-10-05"
 category: "Bed Mites"
 author: "Matthew Brunken"
 excerpt: "Bed mites (house dust mites) are a fact of indoor life in Nebraska, not a mattress defect. What they are, what steam heat does, and what keeps them down."
@@ -10,7 +10,7 @@ faq:
   - q: "What are bed mites?"
     a: "Bed mites are house dust mites: microscopic animals that live in household dust and bedding everywhere, not a sign of a dirty house."
   - q: "Does steam kill bed mites?"
-    a: "Our dry vapor steam uses heat to kill bed mites in the surface layers of the mattress, and HEPA vacuuming lifts the debris. Every visit includes the bed mite sensor on our UV-C vacuum."
+    a: "Our dry vapor steam uses heat to kill bed mites in the surface layers of the mattress, and HEPA vacuuming lifts the debris. Every visit includes the built-in bed mite sensor on our UV-C vacuum."
   - q: "How much does bed mite treatment cost in Lincoln?"
     a: "It is included in the mattress visit: {{price.first}} for the first mattress, any size, and {{price.additionalRange}} for each additional mattress in the same visit."
 ---

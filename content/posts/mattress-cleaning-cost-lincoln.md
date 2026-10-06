@@ -38,7 +38,7 @@ We charge one rate for any size on the first mattress on purpose. Size-based pri
 | **Mattress Sanitation** | **{{price.first}} first mattress** |
 | Dry-vapor sanitation | Included |
 | UV-C light treatment and HEPA vacuuming | Included |
-| Two checks: moisture check after the job, bed mite sensor on the UV-C vacuum | Included |
+| Two checks: moisture check after the job, built-in bed mite sensor on the UV-C vacuum | Included |
 | Normal stain treatment | Included |
 | Pet odor treatment | Included |
 | **Ordinary urine accident treatment** | **Included** |
