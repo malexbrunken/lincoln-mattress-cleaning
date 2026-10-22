@@ -3,10 +3,10 @@ title: "Husker Game Weekends: Mattress Turnovers for Hosts"
 h1: "Husker game weekends: planning mattress care around home games"
 label: "Husker game weekends"
 description: "Three Nebraska home games remain in 2026 after Homecoming. How Lincoln hosts can fit mattress cleaning around Memorial Stadium weekends and the guest cap."
-answer: "After the October 3, 2026 Homecoming game against Maryland, Nebraska has three home games left at Memorial Stadium in 2026: Indiana on October 10 at 11:00 AM CDT, then Washington on October 31 and Ohio State on November 21, kickoff times still TBA. We work Monday to Friday, 9am to 6pm, so a Husker weekend's cleaning slot is the weekday before check-in or the Monday after checkout."
+answer: "Nebraska has two home games left at Memorial Stadium in 2026: Washington on October 31 at 7:00 PM CDT and Ohio State on November 21, kickoff time still TBA. We work Monday to Friday, 9am to 6pm, so a Husker weekend's cleaning slot is the weekday before check-in or the Monday after checkout."
 order: 1
 published: "2026-10-03"
-updated: "2026-10-04"
+updated: "2026-10-22"
 checklist:
   - "Hold a weekday before each Lincoln home weekend for a mattress check, instead of Saturday morning."
   - "Use the three-week gaps after October 10 and after October 31 for a full mattress cleaning."
@@ -46,6 +46,7 @@ sources:
 changelog:
   - date: "2026-10-03"
     note: "First published from the 2026 schedule on huskers.com as of Homecoming day."
+  - { date: "2026-10-22", note: "Added the Washington kickoff time from huskers.com and linked the bowl-season guide." }
 ---
 
 ## What is the 2026 home schedule?
@@ -57,7 +58,7 @@ changelog:
 | Saturday, September 19 | North Dakota (Ag Day) | Played |
 | Saturday, October 3 | Maryland (Homecoming) | 3:00 PM CDT |
 | Saturday, October 10 | Indiana | 11:00 AM CDT |
-| Saturday, October 31 | Washington | TBA |
+| Saturday, October 31 | Washington | 7:00 PM CDT |
 | Saturday, November 21 | Ohio State | TBA |
 
 Between those dates Nebraska plays at Oregon on October 17, at Illinois on Friday, November 6, at Rutgers on November 14 and at Iowa on Friday, November 27. So after October 10, Lincoln goes two weekends without a home game, three weeks between home games, until October 31, and the same thing happens again before November 21.
@@ -78,6 +79,6 @@ Check each mattress's care label and warranty terms before you book. This page i
 
 ## What don't we know?
 
-- **Kickoff times for October 31 and November 21.** Nebraska lists them as TBA.
-- **Postseason dates.** Nebraska's schedule ends at Iowa on November 27 for now.
+- **Kickoff time for November 21.** Nebraska lists Ohio State as TBA; Washington on October 31 kicks off at 7:00pm CT.
+- **Postseason dates.** Nebraska's schedule ends at Iowa on November 27 for now; see our [bowl-season and holiday turnover guide](/airbnb-hosts/husker-bowl-season-and-holiday-turnovers).
 - **Other Lincoln event weekends.** This page covers football only; we haven't verified 2027 dates for other Lincoln events.
