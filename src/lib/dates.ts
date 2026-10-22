@@ -19,8 +19,8 @@ export const PAGE_UPDATED: Record<string, string> = {
   "/academic-year": "2026-10-05",
   "/airbnb-hosts": "2026-10-05",
   "/allergy-season": "2026-10-05",
-  "/neighborhoods": "2026-10-05",
-  "/knowledge-center": "2026-10-05",
+  "/neighborhoods": "2026-10-22",
+  "/knowledge-center": "2026-10-22",
 };
 
 /** Service pages and service-area pages are generated from src/lib; one date each set. */
