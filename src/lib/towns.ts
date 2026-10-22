@@ -40,7 +40,7 @@ export const towns: Town[] = [
     slug: "lancaster-county",
     name: "Lancaster County",
     county: "Lancaster County, plus Eagle (Cass) and Palmyra (Otoe)",
-    headline: "Mattress Cleaning Across Lancaster County, NE",
+    headline: "Lancaster County Mattress Cleaning: Hickman, Malcolm, Waverly",
     intro:
       "Outside the city limits we cover the Lancaster County towns on regular Lincoln routes, plus Eagle and Palmyra just over the county line.",
     local: [

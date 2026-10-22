@@ -1,12 +1,12 @@
 ---
-title: "Lincoln Pollen Count: Reading Nebraska Wesleyan's Numbers"
+title: "Nebraska Wesleyan Pollen Count: Lincoln's Daily Numbers Explained"
 h1: "Lincoln's pollen count: how to read Nebraska Wesleyan's numbers"
 label: "Reading NWU's count"
 order: 1
 description: "Who counts Lincoln's pollen, how NWU's categories differ for trees, weeds and grass, and what the October 2, 2026 count showed, plant by plant."
 answer: "Lincoln's public pollen count comes from Nebraska Wesleyan University, where Dr. Kate Weskamp counts five days a week from February through mid-October on a sampler provided by Allergy, Asthma & Immunology Associates. The Lincoln-Lancaster County Health Department doesn't count pollen and links to NWU. On October 2, 2026, NWU posted weeds at 1.6 grains per cubic meter and grass at 1.0, both low, with no tree pollen."
 published: "2026-10-03"
-updated: "2026-10-04"
+updated: "2026-10-22"
 tiles:
   - { value: "1.6", label: "Weed pollen, grains per cubic meter, NWU, October 2, 2026 (low)" }
   - { value: "1.0", label: "Grass pollen, NWU, October 2, 2026 (low)" }
