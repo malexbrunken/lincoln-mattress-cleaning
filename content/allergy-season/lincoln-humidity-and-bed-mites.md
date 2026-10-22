@@ -1,12 +1,12 @@
 ---
-title: "Bed Mites and Lincoln Humidity: Two Local Ranges"
-h1: "Bed mites and Lincoln humidity: what Lincoln Airport's air does indoors"
-label: "Humidity and bed mites"
+title: "Lincoln Winter Dry Air, Humidifiers and Bed Mites: Humidity Ranges"
+h1: "Lincoln winter dry air, humidifiers and bed mites: what Lincoln Airport's air does indoors"
+label: "Winter dry air, humidifiers and bed mites"
 order: 3
-description: "LLCHD's 30 to 50 percent and Extension's 30 to 45, set against Lincoln Airport's dew point by month and what that air would read at 70°F indoors."
+description: "Lincoln's January air reads about 13% humidity at 70°F. Where to set a humidifier against LLCHD's 30 to 50 percent and Extension's 30 to 45 for bed mites, with EPA humidifier care."
 answer: "LLCHD recommends 30 to 50 percent indoor humidity; Nebraska Extension's G2069 says 30 to 45 percent to control house dust mites, the bed mites people ask about. Lincoln Airport's 1991 to 2020 NOAA normals show why both are hard to hold: the average dew point is 17°F in January and 65°F in July. By our calculation, that July air at 70°F indoors would sit near 84 percent and the January air near 13 percent."
 published: "2026-10-03"
-updated: "2026-10-05"
+updated: "2026-10-22"
 tiles:
   - { value: "30 to 50%", label: "LLCHD's recommended indoor relative humidity" }
   - { value: "84%", label: "Our estimate for Lincoln Airport's average July air at 70°F indoors" }
@@ -25,11 +25,13 @@ faq:
 sources:
   - { name: "Lincoln-Lancaster County Health Department: Air Quality (biological pollutants and allergens)", url: "https://www.lincoln.ne.gov/City/Departments/Health-Department/Environmental/Air", checked: "2026-10-03" }
   - { name: "Nebraska Extension G2069 (2011): Indoor Air Quality, Know the Asthma Triggers in the Home", url: "https://extensionpubs.unl.edu/publication/g2069/2011/html/view", checked: "2026-10-03" }
+  - { name: "U.S. EPA: Use and Care of Home Humidifiers", url: "https://www.epa.gov/indoor-air-quality-iaq/use-and-care-home-humidifiers", checked: "2026-10-22" }
   - { name: "NOAA NCEI: U.S. Hourly Climate Normals 1991 to 2020, Lincoln Airport (USW00014939)", url: "https://www.ncei.noaa.gov/data/normals-hourly/1991-2020/access/USW00014939.csv", checked: "2026-10-03" }
 changelog:
   - { date: "2026-10-03", note: "First published with LLCHD's and Extension's ranges and Lincoln Airport's dew point normals." }
   - { date: "2026-10-03", note: "Revised: cut the restated G2069 bedding list, added our 70°F indoor estimates from Lincoln Airport's normals." }
   - { date: "2026-10-05", note: "Wording: the included check is now called the built-in bed mite sensor." }
+  - { date: "2026-10-22", note: "Retitled for winter dry air and humidifiers; added the EPA's humidifier guidance." }
 ---
 
 ## What humidity range do local agencies give?
@@ -50,6 +52,17 @@ The dew point columns are our monthly averages of NOAA's 1991 to 2020 hourly nor
 | June | 60°F | 71% | December | 20°F | 15% |
 
 On this estimate, only April, May and October land inside LLCHD's 30 to 50 percent at 70°F, and only April and October inside G2069's 30 to 45 percent. These are estimates from Lincoln Airport's outdoor normals, not measurements of any house: air conditioning pulls water out in summer, and showers, cooking and humidifiers add it in winter.
+
+## How should a Lincoln humidifier be set in winter?
+
+From December to March, Lincoln Airport's average air works out to 15 to 21 percent at 70°F on our estimate, under the 30 percent floor both LLCHD and G2069 use. A humidifier closes that gap, and the U.S. EPA's guidance on home humidifiers sets the guardrails:
+
+- **Stay at or under 50 percent.** The EPA says "do not humidify to indoor relative humidity levels exceeding 50 percent" and notes that excess moisture can encourage dust mites and mold. For a bedroom, G2069's 30 to 45 percent is the tighter target.
+- **Watch for condensation.** The EPA says to lower the setting or run the humidifier less if water condenses on windows, walls or pictures.
+- **Keep the bed dry.** The EPA says not to let absorbent materials such as carpet, drapes or bedding near the humidifier get damp; set it across the room.
+- **Clean the tank.** For portable units, the EPA says to empty, dry and refill the tank daily, clean it every third day and use low-mineral water such as distilled.
+
+Dry winter air is also a great time to book a mattress cleaning: $249 for the first mattress, any size. [Book a visit](/book) or call or text (402) 512-5658.
 
 ## What do the steam studies show for bedding?
 

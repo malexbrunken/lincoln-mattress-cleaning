@@ -46,8 +46,7 @@ const hostFaq = [
 ];
 
 const games = [
-  { date: "October 10", opp: "Indiana", time: "11:00 AM CDT" },
-  { date: "October 31", opp: "Washington", time: "TBA" },
+  { date: "October 31", opp: "Washington", time: "7:00 PM CDT" },
   { date: "November 21", opp: "Ohio State", time: "TBA" },
 ];
 
@@ -126,9 +125,10 @@ export default function AirbnbHostsHub() {
               </table>
             </div>
             <p>
-              Homecoming against Maryland was October 3, 2026, at 3:00 PM CDT. The schedule is from huskers.com as checked October 3, 2026;
-              check it again before you price a weekend. Our <Link href="/airbnb-hosts/husker-game-weekends">game weekend guide</Link> shows
-              how to use the three-week gaps after October 10 and October 31.
+              The schedule is from huskers.com as checked October 22, 2026; check it again before you price a weekend. Our{" "}
+              <Link href="/airbnb-hosts/husker-game-weekends">game weekend guide</Link> covers home weekends, and the{" "}
+              <Link href="/airbnb-hosts/husker-bowl-season-and-holiday-turnovers">bowl season and holiday guide</Link> covers Thanksgiving
+              through New Year&apos;s.
             </p>
             <h2>What stays the same at every Lincoln listing?</h2>
             <p>
