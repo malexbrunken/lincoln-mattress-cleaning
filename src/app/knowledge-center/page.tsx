@@ -63,7 +63,7 @@ function getHubs(): Hub[] {
       q: "What changes from one Lincoln neighborhood to the next?",
       path: "/neighborhoods",
       name: "Lincoln neighborhoods",
-      blurb: "Near South, Everett, Havelock, Haymarket and downtown, Country Club and the Highlands: Census housing facts, local history and what changes for a mattress visit.",
+      blurb: "Near South, Everett, Havelock, Haymarket, Country Club, the Highlands, South Pointe, Fallbrook and Wilderness Hills: Census housing facts, local history and what changes for a mattress visit.",
       pages: getNeighborhoodPages().map((p) => ({ href: `/neighborhoods/${p.slug}`, title: p.h1 })),
     },
     {

@@ -9,13 +9,13 @@ import { BreadcrumbJsonLd, FaqJsonLd, WebPageJsonLd } from "@/components/JsonLd"
 export const metadata: Metadata = {
   title: { absolute: "Lincoln Neighborhoods: Housing and Mattress Care" },
   description:
-    "Near South, Everett, Havelock, Haymarket and downtown, Country Club and the Highlands: Census housing data, history and what changes for your mattress.",
+    "Near South, Everett, Havelock, Haymarket, Country Club, the Highlands, South Pointe, Fallbrook and Wilderness Hills: Census housing data and history.",
   alternates: { canonical: "/neighborhoods" },
 };
 
 const faq = [
   { q: "Does the price change by Lincoln neighborhood?", a: `No. The first mattress is ${priceText.first}, any size, anywhere in Lincoln. Each additional full, queen or king in the same visit is ${priceText.additionalLarge} and each additional kids bed (twin or full) is ${priceText.additionalKids}.` },
-  { q: "Which Lincoln neighborhood has the oldest homes?", a: "Of the six here, Country Club: 91% of homes in its census tract were built before 1960. Everett and Near South each have a tract where 57 to 58% of homes predate 1940, against 12% citywide." },
+  { q: "Which Lincoln neighborhood has the oldest homes?", a: "Of the nine here, Country Club: 91% of homes in its census tract were built before 1960. Everett and Near South each have a tract where 57 to 58% of homes predate 1940, against 12% citywide." },
   { q: "Which neighborhoods are mostly apartments?", a: "Downtown, where 90% of homes are in buildings of ten or more units, and the parts of Near South and Everett nearest downtown, where most homes are studios or one-bedrooms." },
   { q: "Do you clean mattresses in apartment and condo buildings?", a: "Yes. We bring the equipment to the unit and clean the mattress where it is. Tell us about entrances, elevators and parking when you book." },
   { q: "Why isn't my neighborhood listed?", a: "We only publish a neighborhood page when its housing and history give it something genuinely different to say. We serve all of Lincoln and Lancaster County either way; call or text (402) 512-5658." },
@@ -49,7 +49,7 @@ export default function NeighborhoodsHub() {
         visit. Call or text <a href={site.phoneHref} className="underline">{site.phone}</a>.
       </p>
 
-      <h2 className="text-2xl font-semibold text-navy mb-3">How do the six neighborhoods compare?</h2>
+      <h2 className="text-2xl font-semibold text-navy mb-3">How do the nine neighborhoods compare?</h2>
       <p className="text-mist text-base mb-4">U.S. Census Bureau, ACS 2020–2024 5-year estimates for the census tracts that cover each neighborhood (two tracts where a neighborhood splits). Tract lines don&apos;t match neighborhood lines exactly.</p>
       <div className="overflow-x-auto mb-12">
         <table className="w-full text-left border border-line bg-white text-base">
@@ -116,7 +116,7 @@ export default function NeighborhoodsHub() {
           <li><a href="https://npgallery.nps.gov/" rel="noopener">National Park Service: National Register nominations (NPGallery)</a>, checked October 5, 2026</li>
         </ul>
         <h2>Changelog</h2>
-        <ul><li>October 5, 2026: hub and six neighborhood guides published.</li></ul>
+        <ul><li>October 5, 2026: hub and six neighborhood guides published.</li><li>October 22, 2026: South Pointe and Pine Lake, Fallbrook and north Lincoln, and Wilderness Hills added.</li></ul>
         <p className="text-mist text-base">Written by {site.name}, operated by {site.parentBrand}.</p>
       </div>
 
