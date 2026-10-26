@@ -38,11 +38,11 @@ faq:
   - q: "Is there anything special about cleaning a mattress in a 100-year-old house?"
     a: "The house doesn't change the method; the room's air does. Upstairs rooms in older houses can run warm and humid in July, so keep the air conditioning or a fan running, keep the bed unmade until it is dry to the touch, and we run a moisture check after the job."
   - q: "Most Near South units are studios or one-bedrooms. Is one mattress worth a visit?"
-    a: "That is what the first-mattress price is for: {{price.first}}, any size. If a roommate or a neighbor in the same building wants theirs done during the same visit, each additional full, queen or king is {{price.additionalLarge}}."
+    a: "That is what the first-mattress price is for: {{price.first}}, any size. If a roommate or a neighbor in the same building wants theirs done during the same visit, each additional king is {{price.additionalKing}} and each additional full or queen is {{price.additionalFullQueen}}."
   - q: "Where do I get rid of an old mattress from Near South?"
     a: "Lancaster County residents can take a mattress to the City of Lincoln's North 48th Street transfer station, 5101 N 48th St, with a covered, secured load. Our move-out and disposal guide in the academic year hub has the details."
   - q: "Do you serve the southern, single-family side of Near South too?"
-    a: "Yes, the whole neighborhood. In tract 23 more than half of homes have three or more bedrooms, so a visit there often covers two or three beds; each additional kids bed (twin or full) in the same visit is {{price.additionalKids}}."
+    a: "Yes, the whole neighborhood. In tract 23 more than half of homes have three or more bedrooms, so a visit there often covers two or three beds; each additional twin or kids bed in the same visit is {{price.additionalKids}}."
 sources:
   - { name: "National Park Service: Mount Emerald and Capitol Additions Historic District, NRIS 80002453", url: "https://npgallery.nps.gov/AssetDetail/NRIS/80002453", checked: "2026-10-05" }
   - { name: "NRHP nomination form, Mount Emerald and Capitol Additions (PDF)", url: "https://npgallery.nps.gov/GetAsset/c66c3243-61aa-4100-8c62-2b5d20c947cd/", checked: "2026-10-05" }

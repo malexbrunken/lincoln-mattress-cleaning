@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const faq = [
   {
     q: "How much does mattress cleaning cost in Lincoln?",
-    a: `The first mattress is ${priceText.first}, any size from twin through California king, including dry-vapor sanitation, UV-C light treatment and HEPA vacuuming, normal stain treatment, pet odor treatment and ordinary urine accident treatment. Each additional full, queen or king mattress is ${priceText.additionalLarge}, and each additional kids bed (twin/full) is ${priceText.additionalKids}.${PROMO.active ? ` During our ${PROMO.label} the first mattress is ${priceText.promoFirst}, and any additional cleaning scheduled within ${PROMO.rebookDays} days of the first service is also $${PROMO.rebookPrice}.` : ""}`,
+    a: `The first mattress is ${priceText.first}, any size from twin through California king, including dry-vapor sanitation, UV-C light treatment and HEPA vacuuming, normal stain treatment, pet odor treatment and ordinary urine accident treatment. Each additional king mattress is ${priceText.additionalKing} and each additional full or queen is ${priceText.additionalFullQueen}, and each additional twin or kids bed is ${priceText.additionalKids}.${PROMO.active ? ` During our ${PROMO.label} the first mattress is ${priceText.promoFirst}, and any additional cleaning scheduled within ${PROMO.rebookDays} days of the first service is also $${PROMO.rebookPrice}.` : ""}`,
   },
   {
     q: `Why is the first mattress ${priceText.first} regardless of size?`,
@@ -68,8 +68,8 @@ export default function PricingPage() {
           </h1>
           <p className="text-xl text-white/80 max-w-2xl mb-6">
             {priceText.first} for the first mattress, any size, with normal stains, pet odor and ordinary urine
-            accidents included. Each additional full, queen or king mattress is {priceText.additionalLarge}, and each
-            additional kids bed (twin/full) is {priceText.additionalKids}. No travel fee and no deposit.
+            accidents included. Each additional king mattress is {priceText.additionalKing} and each additional full or queen is {priceText.additionalFullQueen}, and each
+            additional twin or kids bed is {priceText.additionalKids}. No travel fee and no deposit.
           </p>
           <PromoBanner className="max-w-2xl mb-6" />
           <p className="text-lg text-white/70 max-w-2xl">

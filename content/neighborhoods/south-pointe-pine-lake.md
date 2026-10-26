@@ -37,7 +37,7 @@ faq:
   - q: "Can you clean a mattress in an apartment near SouthPointe?"
     a: "Yes. Tell us the building, unit and where to park when you book, and we clean the mattress where it sits."
   - q: "We have three bedrooms. What would that cost?"
-    a: "{{price.first}} for the first mattress, any size, then {{price.additionalLarge}} for each additional full, queen or king and {{price.additionalKids}} for each additional kids bed (twin or full) in the same visit."
+    a: "{{price.first}} for the first mattress, any size, then {{price.additionalKing}} for each additional king, {{price.additionalFullQueen}} for each additional full or queen and {{price.additionalKids}} for each additional twin or kids bed in the same visit."
   - q: "Where does an old mattress go from south Lincoln?"
     a: "Lancaster County residents can take one to the City of Lincoln's North 48th Street transfer station at 5101 N 48th St with a covered, secured load."
 sources:

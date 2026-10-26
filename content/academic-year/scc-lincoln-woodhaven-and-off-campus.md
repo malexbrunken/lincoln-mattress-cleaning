@@ -39,7 +39,7 @@ faq:
   - q: "I live off campus near SCC's Lincoln campus. When should I book?"
     a: "The week before August 17, 2026, while the room is still empty, or over the December break. Our hours are Monday to Friday, 9am to 6pm, and we return weekend calls and texts."
   - q: "I commute from my parents' house. Is my bed at home worth cleaning?"
-    a: "If it is sound, yes. The first mattress is {{price.first}}, any size, with normal stains, pet odor and ordinary urine accidents included, and each additional full, queen or king in the same visit is {{price.additionalLarge}}. See the pricing page for every rate."
+    a: "If it is sound, yes. The first mattress is {{price.first}}, any size, with normal stains, pet odor and ordinary urine accidents included, and each additional king in the same visit is {{price.additionalKing}} and each additional full or queen is {{price.additionalFullQueen}}. See the pricing page for every rate."
   - q: "I'm buying a used bed for my first apartment. What should I check?"
     a: "Inspect it before it goes in the car, and have it cleaned before the first night. Our guide to buying a used mattress for a Lincoln apartment walks through it."
 sources:

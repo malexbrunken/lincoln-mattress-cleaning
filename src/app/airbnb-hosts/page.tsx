@@ -8,7 +8,7 @@ import { BreadcrumbJsonLd, FaqJsonLd, WebPageJsonLd } from "@/components/JsonLd"
 
 export const metadata: Metadata = {
   title: { absolute: "Airbnb Mattress Cleaning in Lincoln, NE: Hosts" },
-  description: `Airbnb and short-term rental mattress cleaning in Lincoln: ${priceText.first} first mattress, ${priceText.additionalLarge} each additional. City license, 4% tax and Husker weekends.`,
+  description: `Airbnb and short-term rental mattress cleaning in Lincoln: ${priceText.first} first mattress, ${priceText.additionalKids}–${priceText.additionalKing} each additional. City license, 4% tax and Husker weekends.`,
   alternates: { canonical: "/airbnb-hosts" },
 };
 
@@ -25,7 +25,7 @@ const glance = [
 const hostFaq = [
   {
     q: "How much does Airbnb mattress cleaning cost in Lincoln?",
-    a: `${priceText.first} for the first mattress, any size, then ${priceText.additionalLarge} for each additional full, queen or king and ${priceText.additionalKids} for each additional kids bed in the same visit. A three-bedroom listing with a king and two queens is ${usd(PRICES.first + 2 * PRICES.additionalLarge)} in one visit.`,
+    a: `${priceText.first} for the first mattress, any size, then ${priceText.additionalKing} for each additional king, ${priceText.additionalFullQueen} for each additional full or queen and ${priceText.additionalKids} for each additional kids bed in the same visit. A three-bedroom listing with a king and two queens is ${usd(PRICES.first + 2 * PRICES.additionalFullQueen)} in one visit.`,
   },
   {
     q: "Are guest urine accidents and pet odor extra?",
@@ -72,8 +72,9 @@ export default function AirbnbHostsHub() {
     areaServed: site.areas.map((a) => ({ "@type": "City", name: `${a}, NE` })),
     offers: [
       { "@type": "Offer", name: "First mattress, any size", price: String(PRICES.first), priceCurrency: "USD" },
-      { "@type": "Offer", name: "Each additional full, queen or king, same visit", price: String(PRICES.additionalLarge), priceCurrency: "USD" },
-      { "@type": "Offer", name: "Each additional kids bed (twin or full), same visit", price: String(PRICES.additionalKids), priceCurrency: "USD" },
+      { "@type": "Offer", name: "Each additional king, same visit", price: String(PRICES.additionalKing), priceCurrency: "USD" },
+      { "@type": "Offer", name: "Each additional full or queen, same visit", price: String(PRICES.additionalFullQueen), priceCurrency: "USD" },
+      { "@type": "Offer", name: "Each additional twin or kids bed, same visit", price: String(PRICES.additionalKids), priceCurrency: "USD" },
     ],
   };
   return (
@@ -90,7 +91,7 @@ export default function AirbnbHostsHub() {
       <h1 className="text-4xl font-semibold text-navy mb-4 leading-tight max-w-4xl">Airbnb and short-term rental mattress cleaning in Lincoln</h1>
       <p className="text-xl text-navy mb-4 max-w-4xl">
         Airbnb and short-term rental mattress cleaning in Lincoln costs {priceText.first} for the first mattress, any size, and{" "}
-        {priceText.additionalLarge} for each additional full, queen or king in the same visit ({priceText.additionalKids} for each
+        {priceText.additionalKing} for each additional king, {priceText.additionalFullQueen} for each additional full or queen in the same visit ({priceText.additionalKids} for each
         additional kids bed). Guest stains, pet odor and ordinary urine accidents are included. Lincoln Mattress Cleaning, operated by{" "}
         {site.parentBrand}, uses low-moisture dry vapor steam, HEPA vacuuming and UV-C light treatment, Monday to Friday. Call or text{" "}
         <a href={site.phoneHref} className="underline">{site.phone}</a>.
@@ -133,7 +134,7 @@ export default function AirbnbHostsHub() {
             <h2>What stays the same at every Lincoln listing?</h2>
             <p>
               A game weekend, a tax question or a guest accident doesn&apos;t change the visit. A host pays {priceText.first} for the first
-              mattress; each additional full, queen or king is {priceText.additionalLarge} and each additional kids bed {priceText.additionalKids},
+              mattress; each additional king is {priceText.additionalKing} and each additional full or queen is {priceText.additionalFullQueen} and each additional kids bed {priceText.additionalKids},
               with a surcharge only for a severe or biohazard case, and we work Monday to Friday, 9am to 6pm, answering calls and texts on weekends. We record every mattress on an inspection form (material, special care
               notes, urine or odor observations) and run the two checks in every visit: moisture after the job and the built-in bed mite
               sensor on our UV-C vacuum. 72-hour bedroom CO₂ testing is a separate optional service, priced by quote; it isn&apos;t a medical test. Crews wear gloves and shoe booties and disinfect equipment between jobs. Check each mattress&apos;s care label and warranty terms before booking. This page is general information, not medical advice.

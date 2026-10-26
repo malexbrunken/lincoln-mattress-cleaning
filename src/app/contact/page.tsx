@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { priceText } from "@/lib/prices";
 import { updatedFor } from "@/lib/dates";
 import { WebPageJsonLd } from "@/components/JsonLd";
 import Link from "next/link";
@@ -8,7 +9,7 @@ import { BookOptions, BookHours } from "@/components/BookOptions";
 export const metadata: Metadata = {
   title: "Book Mattress Cleaning in Lincoln, NE",
   description:
-    "Book mattress cleaning in Lincoln, NE: call or text (402) 512-5658 or email info@sleepsanitation.com. $249 first mattress, any size. No deposit required.",
+    `Book mattress cleaning in Lincoln, NE: call or text (402) 512-5658 or email info@sleepsanitation.com. ${priceText.first} first mattress, any size. No deposit required.`,
 };
 
 export default function ContactPage() {

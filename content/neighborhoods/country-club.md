@@ -4,7 +4,7 @@ h1: "Country Club and the Boulevards: mattress care in Lincoln's big older homes
 name: "Country Club"
 label: "Sheridan Boulevard, 1920s–40s houses, four-bedroom homes"
 description: "Country Club is nearly all detached houses from before 1960, and 42% have four bedrooms. National Register and Census facts, and multi-bed visits."
-answer: "Country Club is Lincoln's big-house neighborhood. In its census tract, 96% of homes are detached houses, 91% were built before 1960, and 47% have four or more bedrooms, against 22% citywide. That usually means several mattresses in one house, so a single visit covers them: {{price.first}} for the first mattress, then {{price.additionalLarge}} for each additional full, queen or king and {{price.additionalKids}} for each additional kids bed. Call or text (402) 512-5658."
+answer: "Country Club is Lincoln's big-house neighborhood. In its census tract, 96% of homes are detached houses, 91% were built before 1960, and 47% have four or more bedrooms, against 22% citywide. That usually means several mattresses in one house, so a single visit covers them: {{price.first}} for the first mattress, then {{price.additionalKing}} for each additional king, {{price.additionalFullQueen}} for each additional full or queen and {{price.additionalKids}} for each additional kids bed. Call or text (402) 512-5658."
 order: 5
 published: "2026-10-05"
 updated: "2026-10-05"
@@ -34,7 +34,7 @@ facts:
     url: "https://npgallery.nps.gov/pdfhost/docs/NRHP/Text/08001180.pdf"
 faq:
   - q: "We have four beds in a Country Club house. Can you do them all in one visit?"
-    a: "Yes, and that is the cheapest way. The first mattress is {{price.first}}, each additional full, queen or king is {{price.additionalLarge}} and each additional kids bed (twin or full) is {{price.additionalKids}}, all in the same visit."
+    a: "Yes, and that is the cheapest way. The first mattress is {{price.first}}, each additional king is {{price.additionalKing}} and each additional full or queen is {{price.additionalFullQueen}} and each additional twin or kids bed is {{price.additionalKids}}, all in the same visit."
   - q: "Our guest room is on the third floor. Is that a problem?"
     a: "No. We bring the equipment to the room and clean the mattress where it is. Upper floors in older houses can run warm in July, so keep the air conditioning on; the bed stays unmade until it is dry to the touch, and we run a moisture check after the job."
   - q: "Is a 1920s house more prone to bed mites?"

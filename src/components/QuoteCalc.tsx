@@ -15,10 +15,11 @@ export function QuoteCalc({ promo = false }: { promo?: boolean }) {
   const showPromo = promo && PROMO.active;
   const firstPrice = showPromo ? PROMO.first : FIRST;
   const [mattresses, setMattresses] = useState(2);
-  const [kidsAdditional, setKidsAdditional] = useState(false);
+  const [extraSize, setExtraSize] = useState<"king" | "fullQueen" | "kids">("fullQueen");
   const [underside, setUnderside] = useState(false);
 
-  const perAdditional = kidsAdditional ? PRICES.additionalKids : PRICES.additionalLarge;
+  const perAdditional =
+    extraSize === "king" ? PRICES.additionalKing : extraSize === "fullQueen" ? PRICES.additionalFullQueen : PRICES.additionalKids;
   const additionalCount = Math.max(0, mattresses - 1);
   const regularBase = FIRST + additionalCount * perAdditional;
   const base = firstPrice + additionalCount * perAdditional;
@@ -58,30 +59,25 @@ export function QuoteCalc({ promo = false }: { promo?: boolean }) {
         <div className="mb-5">
           <p className="block text-sm font-semibold mb-2">Size of the additional mattresses</p>
           <div className="space-y-2" role="radiogroup" aria-label="Additional mattress size">
-            <button
-              type="button"
-              role="radio"
-              aria-checked={!kidsAdditional}
-              onClick={() => setKidsAdditional(false)}
-              className={`w-full flex justify-between items-center rounded-xl border-2 px-4 py-3 text-left font-semibold min-h-11 transition-colors ${
-                !kidsAdditional ? "border-teal bg-white shadow-sm" : "border-line bg-white/50 hover:border-teal/60"
-              }`}
-            >
-              <span>Full, Queen or King</span>
-              <span className="text-sm text-mist font-normal">{priceText.additionalLarge} each additional</span>
-            </button>
-            <button
-              type="button"
-              role="radio"
-              aria-checked={kidsAdditional}
-              onClick={() => setKidsAdditional(true)}
-              className={`w-full flex justify-between items-center rounded-xl border-2 px-4 py-3 text-left font-semibold min-h-11 transition-colors ${
-                kidsAdditional ? "border-teal bg-white shadow-sm" : "border-line bg-white/50 hover:border-teal/60"
-              }`}
-            >
-              <span>Kids bed (twin or full)</span>
-              <span className="text-sm text-mist font-normal">{priceText.additionalKids} each additional</span>
-            </button>
+            {([
+              ["king", "King or California king", priceText.additionalKing],
+              ["fullQueen", "Full or Queen", priceText.additionalFullQueen],
+              ["kids", "Twin or kids bed", priceText.additionalKids],
+            ] as const).map(([key, label, price]) => (
+              <button
+                key={key}
+                type="button"
+                role="radio"
+                aria-checked={extraSize === key}
+                onClick={() => setExtraSize(key)}
+                className={`w-full flex justify-between items-center rounded-xl border-2 px-4 py-3 text-left font-semibold min-h-11 transition-colors ${
+                  extraSize === key ? "border-teal bg-white shadow-sm" : "border-line bg-white/50 hover:border-teal/60"
+                }`}
+              >
+                <span>{label}</span>
+                <span className="text-sm text-mist font-normal">{price} each additional</span>
+              </button>
+            ))}
           </div>
         </div>
       )}

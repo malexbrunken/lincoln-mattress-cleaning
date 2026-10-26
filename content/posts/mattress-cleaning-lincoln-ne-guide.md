@@ -51,8 +51,9 @@ The [full service page](/services/mattress-sanitization) covers what is included
 | Normal stain treatment | Included |
 | Pet odor treatment | Included |
 | **Ordinary urine accident treatment** | **Included** |
-| Additional full/queen/king mattress | {{price.additionalLarge}} |
-| Additional kids bed (twin/full) | {{price.additionalKids}} |
+| Additional king/California king mattress | {{price.additionalKing}} |
+| Additional full/queen mattress | {{price.additionalFullQueen}} |
+| Additional twin or kids bed | {{price.additionalKids}} |
 | Underside/full-surface treatment | {{price.underside}} |
 | Severe or biohazard contamination | Custom surcharge |
 

@@ -25,7 +25,7 @@ faq:
   - q: "Who books an off-campus cleaning?"
     a: "Usually a parent or the student who controls the apartment. Call or text (402) 512-5658 with the address, how many beds and the move-in date."
   - q: "What does the first mattress cost?"
-    a: "{{price.first}}, any size, with normal stains, pet odor and ordinary urine accidents included. Each additional full, queen or king mattress in the same visit is {{price.additionalLarge}}; each additional kids bed (twin/full) is {{price.additionalKids}}."
+    a: "{{price.first}}, any size, with normal stains, pet odor and ordinary urine accidents included. Each additional king mattress in the same visit is {{price.additionalKing}} and each additional full or queen is {{price.additionalFullQueen}}; each additional twin or kids bed is {{price.additionalKids}}."
 sources:
   - name: "UNL University Housing: Move-In 2026"
     url: "https://housing.unl.edu/move-in/"

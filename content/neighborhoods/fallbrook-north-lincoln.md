@@ -37,7 +37,7 @@ faq:
   - q: "Our house has four bedrooms and a guest room. Can you do them all in one visit?"
     a: "Yes. Multi-mattress visits are routine, and additional mattresses in the same visit are priced lower than the first."
   - q: "We have three bedrooms. What would that cost?"
-    a: "{{price.first}} for the first mattress, any size, then {{price.additionalLarge}} for each additional full, queen or king and {{price.additionalKids}} for each additional kids bed (twin or full) in the same visit."
+    a: "{{price.first}} for the first mattress, any size, then {{price.additionalKing}} for each additional king, {{price.additionalFullQueen}} for each additional full or queen and {{price.additionalKids}} for each additional twin or kids bed in the same visit."
   - q: "Where does an old mattress go from north Lincoln?"
     a: "Lancaster County residents can take one to the City of Lincoln's North 48th Street transfer station at 5101 N 48th St with a covered, secured load."
 sources:

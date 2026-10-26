@@ -114,7 +114,7 @@ export default function AllergySeasonHub() {
         <h2 className="text-2xl font-semibold text-navy mb-4">When should you book a visit in allergy season?</h2>
         <p className="text-lg mb-4">
           Pollen season doesn&apos;t change the bill: the first mattress is {priceText.first},
-          each additional full, queen or king is {priceText.additionalLarge} and each additional kids bed {priceText.additionalKids}, with normal stains, pet odor and ordinary urine
+          each additional king is {priceText.additionalKing} and each additional full or queen is {priceText.additionalFullQueen} and each additional kids bed {priceText.additionalKids}, with normal stains, pet odor and ordinary urine
           accidents included and a surcharge only for a severe or biohazard case, which you&apos;ll hear before any work starts.
         </p>
         <p className="text-lg mb-4">

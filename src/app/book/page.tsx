@@ -21,7 +21,7 @@ const faq = [
   },
   {
     q: "What will my visit cost?",
-    a: `The first mattress is ${priceText.first}, any size. Each additional full, queen or king mattress in the same visit is ${priceText.additionalLarge}, and each additional kids bed is ${priceText.additionalKids}. Underside treatment is ${priceText.underside} per mattress. Normal stains, pet odor and ordinary urine accidents are included; severe or biohazard cases carry a surcharge, quoted before we start.`,
+    a: `The first mattress is ${priceText.first}, any size. Each additional king mattress in the same visit is ${priceText.additionalKing} and each additional full or queen is ${priceText.additionalFullQueen}, and each additional kids bed is ${priceText.additionalKids}. Underside treatment is ${priceText.underside} per mattress. Normal stains, pet odor and ordinary urine accidents are included; severe or biohazard cases carry a surcharge, quoted before we start.`,
   },
   {
     q: "Which towns do you serve?",
@@ -94,7 +94,7 @@ export default function BookPage() {
             Book your mattress sanitation
           </h1>
           <p className="text-[17px] md:text-xl text-white/85 max-w-3xl leading-relaxed">
-            The first mattress is {priceText.first}, any size; each additional full, queen or king is {priceText.additionalLarge} and each
+            The first mattress is {priceText.first}, any size; each additional king is {priceText.additionalKing} and each additional full or queen is {priceText.additionalFullQueen} and each
             additional kids bed is {priceText.additionalKids} (<Link href="/pricing" className="text-teal-bright font-semibold underline underline-offset-2 hover:text-white">see pricing</Link>).
             We serve Lincoln and nearby towns, operated by {site.parentBrand}.
           </p>

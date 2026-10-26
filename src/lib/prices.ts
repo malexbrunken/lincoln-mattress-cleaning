@@ -12,8 +12,9 @@
  */
 export const PRICES = {
   first: 249,
-  additionalLarge: 199, // each additional full, queen or king, same visit
-  additionalKids: 149, // each additional kids bed (twin/full), same visit
+  additionalKing: 199, // each additional king or California king, same visit
+  additionalFullQueen: 179, // each additional full or queen, same visit
+  additionalKids: 149, // each additional twin or kids bed, same visit
   underside: { min: 50, max: 75 }, // underside/full-surface treatment, per mattress
 } as const;
 
@@ -31,29 +32,39 @@ export const usd = (n: number) => `$${n}`;
 /** Ready-made strings. */
 export const priceText = {
   first: usd(PRICES.first),
-  additionalLarge: usd(PRICES.additionalLarge),
+  additionalKing: usd(PRICES.additionalKing),
+  additionalFullQueen: usd(PRICES.additionalFullQueen),
   additionalKids: usd(PRICES.additionalKids),
-  additionalRange: `${usd(PRICES.additionalKids)}–${usd(PRICES.additionalLarge)}`,
+  additionalRange: `${usd(PRICES.additionalKids)}–${usd(PRICES.additionalFullQueen)}`,
   underside: `+${usd(PRICES.underside.min)}–${usd(PRICES.underside.max)}`,
   promoFirst: usd(PROMO.first),
   promoFollowUp: `Book another cleaning within ${PROMO.rebookDays} days of your service and it's also ${usd(PROMO.rebookPrice)}.`,
 } as const;
 
 /**
- * Markdown/front-matter tokens: {{price.first}}, {{price.additionalLarge}},
+ * Markdown/front-matter tokens: {{price.first}}, {{price.additionalKing}}, {{price.additionalFullQueen}},
  * {{price.additionalKids}}, {{price.additionalRange}}, {{price.underside}}.
  * Promo tokens are deliberately not offered, so content pages can't show the promo.
  */
 const contentTokens: Record<string, string> = {
   first: priceText.first,
-  additionalLarge: priceText.additionalLarge,
+  additionalKing: priceText.additionalKing,
+  additionalFullQueen: priceText.additionalFullQueen,
   additionalKids: priceText.additionalKids,
   additionalRange: priceText.additionalRange,
   underside: priceText.underside,
 };
 
 export function fillPrices(raw: string): string {
-  return raw.replace(/\{\{price\.([a-zA-Z]+)\}\}/g, (m, key: string) => {
+  return raw.replace(/\{\{price\.([a-zA-Z]+)(?::([a-zA-Z+]+))?\}\}/g, (m, key: string, expr?: string) => {
+    if (key === "sum" && expr) {
+      // {{price.sum:first+additionalKids}} adds base PRICES numbers, so totals never go stale.
+      return usd(expr.split("+").reduce((t, k) => {
+        const v = (PRICES as Record<string, unknown>)[k];
+        if (typeof v !== "number") throw new Error(`Unknown price in token ${m}`);
+        return t + v;
+      }, 0));
+    }
     const v = contentTokens[key];
     if (!v) throw new Error(`Unknown price token ${m}`);
     return v;

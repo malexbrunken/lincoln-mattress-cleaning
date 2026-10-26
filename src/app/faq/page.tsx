@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "How much does mattress cleaning cost in Lincoln?",
-    a: `The first mattress is ${priceText.first} (any size), with normal stains, pet odor and ordinary urine accidents included. Each additional full, queen or king mattress is ${priceText.additionalLarge}, and each additional kids bed (twin/full) is ${priceText.additionalKids}. Underside/full-surface treatment is ${priceText.underside}; severe or biohazard contamination carries a custom surcharge.`,
+    a: `The first mattress is ${priceText.first} (any size), with normal stains, pet odor and ordinary urine accidents included. Each additional king mattress is ${priceText.additionalKing} and each additional full or queen is ${priceText.additionalFullQueen}, and each additional twin or kids bed is ${priceText.additionalKids}. Underside/full-surface treatment is ${priceText.underside}; severe or biohazard contamination carries a custom surcharge.`,
   },
   {
     q: "What is dry vapor steam, exactly?",

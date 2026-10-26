@@ -1,7 +1,7 @@
 ---
 title: "Nebraska Wesleyan Move-In Mattress Reset"
 h1: "Nebraska Wesleyan move-in: a mattress plan for Prairie Wolves"
-description: "NWU new-student move-in is August 19, 2026. Hall mattresses are NWU's. Off-campus beds near Saint Paul Avenue are where we book, at $249 first mattress."
+description: "NWU new-student move-in is August 19, 2026. Hall mattresses are NWU's. Off-campus beds near Saint Paul Avenue are where we book, at {{price.first}} first mattress."
 answer: "Nebraska Wesleyan's new-student move-in for fall 2026 is Wednesday, August 19, 8:30 a.m. to noon, with early check-in on August 18 for students traveling more than 300 miles. Hall mattresses belong to NWU Residential Education, so we do not clean them. Off-campus apartments near campus are bookable at {{price.first}} for the first mattress, any size."
 order: 6
 published: "2026-10-05"

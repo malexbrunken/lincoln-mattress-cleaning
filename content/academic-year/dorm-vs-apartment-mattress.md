@@ -1,7 +1,7 @@
 ---
 title: "Dorm Mattress vs Apartment Mattress in Lincoln"
 h1: "Dorm mattress vs apartment mattress: when to sanitize in Lincoln"
-description: "Lincoln dorm mattresses belong to each campus. Sanitize off-campus, Greek and used beds. Timing, $249 and Sleep Sanitation method links."
+description: "Lincoln dorm mattresses belong to each campus. Sanitize off-campus, Greek and used beds. Timing, {{price.first}} and Sleep Sanitation method links."
 answer: "A Lincoln dorm mattress (UNL, Nebraska Wesleyan or Union Adventist) belongs to the school, so we do not sanitize it. An off-campus apartment mattress, a Greek house bed or a used mattress you bring in is different: sanitize before the first night, or at semester turnover, for {{price.first}} on the first mattress, any size."
 order: 10
 published: "2026-10-05"

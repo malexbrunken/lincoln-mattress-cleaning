@@ -19,10 +19,10 @@ export const metadata: Metadata = {
 };
 
 const kcFaq = [
-  { q: "How much does mattress cleaning cost in Lincoln?", a: `${priceText.first} for the first mattress, any size. Each additional full, queen or king in the same visit is ${priceText.additionalLarge}, and each additional kids bed (twin/full) is ${priceText.additionalKids}.` },
+  { q: "How much does mattress cleaning cost in Lincoln?", a: `${priceText.first} for the first mattress, any size. Each additional king in the same visit is ${priceText.additionalKing} and each additional full or queen is ${priceText.additionalFullQueen}, and each additional twin or kids bed is ${priceText.additionalKids}.` },
   { q: "Is dry vapor steam better than wet extraction for a mattress?", a: "For routine mattress care, yes: dry vapor steam carries heat with very little water, while wet extraction sprays solution in and vacuums it back out. See the steam vs. wet extraction guide." },
   { q: "Should I hire a carpet cleaner or a mattress specialist?", a: "A carpet cleaner for carpet and rugs; a mattress specialist for the bed. See the guide to hiring a mattress specialist or a carpet cleaner in Lincoln." },
-  { q: "Do you clean mattresses for Lincoln Airbnb hosts?", a: `Yes. Same ${priceText.first} first-mattress price, with additional beds at ${priceText.additionalLarge} (full/queen/king) or ${priceText.additionalKids} (kids twin/full) in the same visit. The Airbnb hosts hub covers city rules and Husker weekends.` },
+  { q: "Do you clean mattresses for Lincoln Airbnb hosts?", a: `Yes. Same ${priceText.first} first-mattress price, with additional beds at ${priceText.additionalKing} (king), ${priceText.additionalFullQueen} (full/queen) or ${priceText.additionalKids} (twin/kids) in the same visit. The Airbnb hosts hub covers city rules and Husker weekends.` },
   { q: "What checks come with every visit?", a: "Two: a moisture check after the job and the built-in bed mite sensor on our UV-C vacuum. 72-hour bedroom CO₂ testing is optional, priced by quote, and not a medical test." },
 ];
 

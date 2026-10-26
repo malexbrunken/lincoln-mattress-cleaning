@@ -9,7 +9,7 @@ import { ServiceAreaJsonLd, WebPageJsonLd } from "@/components/JsonLd";
 export const metadata: Metadata = {
   title: "Service Areas Around Lincoln, NE",
   description:
-    "Mattress cleaning across Lincoln and Lancaster County, plus Eagle, Palmyra, Seward, Crete, Wahoo and Ashland. $249 first mattress, no travel fee.",
+    `Mattress cleaning across Lincoln and Lancaster County, plus Eagle, Palmyra, Seward, Crete, Wahoo and Ashland. ${priceText.first} first mattress, no travel fee.`,
 };
 
 export default function ServiceAreasPage() {
