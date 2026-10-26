@@ -6,6 +6,7 @@ import Link from "next/link";
 import { siteImages, featuredPair } from "@/lib/images";
 import { priceText } from "@/lib/prices";
 import { site } from "@/lib/site";
+import { FirstPrice } from "@/components/FirstPrice";
 
 export const metadata: Metadata = {
   title: "Mattress Cleaning Equipment and Method",
@@ -24,7 +25,7 @@ export default function GalleryPage() {
       <h1 className="text-4xl md:text-5xl font-semibold text-navy mb-4">Equipment and Method</h1>
       <p className="text-lg text-mist mb-10 max-w-3xl">
         What equipment do we use? A dry vapor steam cleaner and a HEPA mattress vacuum with UV-C light treatment, after
-        we read the mattress law tag. The first mattress is {priceText.first}, any size.
+        we read the mattress law tag. The first mattress is <FirstPrice />, any size.
       </p>
 
       <div className="grid gap-7 lg:grid-cols-2 mb-14">

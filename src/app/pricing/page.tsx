@@ -7,6 +7,7 @@ import { PromoBanner, IncludedTable } from "@/components/Pricing";
 import { FaqJsonLd, PricingOffersJsonLd, WebPageJsonLd } from "@/components/JsonLd";
 import { PROMO, priceText } from "@/lib/prices";
 import { IconMattress } from "@/components/Icons";
+import { FirstPrice } from "@/components/FirstPrice";
 
 export const metadata: Metadata = {
   title: { absolute: `Lincoln Mattress Cleaning Prices: ${priceText.first} First Mattress` },
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 const faq = [
   {
     q: "How much does mattress cleaning cost in Lincoln?",
-    a: `The first mattress is ${priceText.first}, any size from twin through California king, including dry-vapor sanitation, UV-C light treatment and HEPA vacuuming, normal stain treatment, pet odor treatment and ordinary urine accident treatment. Each additional king mattress is ${priceText.additionalKing} and each additional full or queen is ${priceText.additionalFullQueen}, and each additional twin or kids bed is ${priceText.additionalKids}.${PROMO.active ? ` During our ${PROMO.label} the first mattress is ${priceText.promoFirst}, and any additional cleaning scheduled within ${PROMO.rebookDays} days of the first service is also $${PROMO.rebookPrice}.` : ""}`,
+    a: `The first mattress is ${priceText.firstRegular}, any size from twin through California king, including dry-vapor sanitation, UV-C light treatment and HEPA vacuuming, normal stain treatment, pet odor treatment and ordinary urine accident treatment. Each additional king mattress is ${priceText.additionalKing} and each additional full or queen is ${priceText.additionalFullQueen}, and each additional twin or kids bed is ${priceText.additionalKids}.${PROMO.active ? ` During our ${PROMO.label} the first mattress is ${priceText.promoFirst}, and any additional cleaning scheduled within ${PROMO.rebookDays} days of the first service is also $${PROMO.rebookPrice}.` : ""}`,
   },
   {
     q: `Why is the first mattress ${priceText.first} regardless of size?`,
@@ -67,7 +68,7 @@ export default function PricingPage() {
             How much does mattress cleaning cost in Lincoln?
           </h1>
           <p className="text-xl text-white/80 max-w-2xl mb-6">
-            {priceText.first} for the first mattress, any size, with normal stains, pet odor and ordinary urine
+            <FirstPrice /> for the first mattress, any size, with normal stains, pet odor and ordinary urine
             accidents included. Each additional king mattress is {priceText.additionalKing} and each additional full or queen is {priceText.additionalFullQueen}, and each
             additional twin or kids bed is {priceText.additionalKids}. No travel fee and no deposit.
           </p>
@@ -82,7 +83,7 @@ export default function PricingPage() {
       <section className="max-w-6xl mx-auto px-4 py-16 md:py-24">
         <div className="grid gap-10 lg:grid-cols-[1.35fr_.8fr] items-start">
           <div className="space-y-6">
-            <h2 className="text-3xl font-semibold">What&apos;s included in the {priceText.first}?</h2>
+            <h2 className="text-3xl font-semibold">What&apos;s included in the <FirstPrice />?</h2>
             <IncludedTable promo />
             {packages.map((p) => (
               <article
@@ -106,7 +107,7 @@ export default function PricingPage() {
                   </div>
                   <div className="text-right">
                     {p.priceLabel && <p className="text-xs font-bold uppercase tracking-[0.12em] text-mist">{p.priceLabel}</p>}
-                    <p className="font-display text-5xl font-semibold text-teal-deep">{p.price}</p>
+                    <p className="font-display text-5xl font-semibold text-teal-deep">{p.name === "First Mattress" ? <FirstPrice /> : p.price}</p>
                     <p className="text-xs text-mist mt-1 max-w-[200px]">{p.priceNote}</p>
                   </div>
                 </div>

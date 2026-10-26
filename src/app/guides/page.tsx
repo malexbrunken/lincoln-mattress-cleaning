@@ -5,6 +5,7 @@ import { site } from "@/lib/site";
 import Link from "next/link";
 import { getPosts } from "@/lib/posts";
 import { priceText } from "@/lib/prices";
+import { FirstPrice } from "@/components/FirstPrice";
 
 export const metadata: Metadata = {
   title: "Mattress Care Guides | Lincoln, NE",
@@ -26,7 +27,7 @@ export default function GuidesPage() {
       <p className="text-lg text-mist mb-10">
         How often should a mattress be cleaned? Once a year for most Lincoln households, and every six months with pets
         or allergy-sensitive sleepers. These guides cover that schedule, bed mites, urine odor, steam versus extraction,
-        used mattresses, student apartments and cost: {priceText.first} for the first mattress, any size.
+        used mattresses, student apartments and cost: <FirstPrice /> for the first mattress, any size.
       </p>
       <h2 className="text-3xl font-semibold text-navy mb-6">Which guide answers your question?</h2>
       <div className="space-y-6">

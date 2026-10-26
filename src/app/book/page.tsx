@@ -7,6 +7,7 @@ import { BOOK_PATH, emailHref, smsHref } from "@/lib/booking";
 import { BreadcrumbJsonLd, FaqJsonLd } from "@/components/JsonLd";
 import { IconChat, IconCheck, IconClipboard, IconGauge, IconMail, IconPhone, IconShield, IconSteam } from "@/components/Icons";
 import { BookHours, BookOptions, focusRing } from "@/components/BookOptions";
+import { FirstPrice } from "@/components/FirstPrice";
 
 export const metadata: Metadata = {
   title: { absolute: "Book Mattress Sanitation in Lincoln: Call, Text or Email" },
@@ -94,7 +95,7 @@ export default function BookPage() {
             Book your mattress sanitation
           </h1>
           <p className="text-[17px] md:text-xl text-white/85 max-w-3xl leading-relaxed">
-            The first mattress is {priceText.first}, any size; each additional king is {priceText.additionalKing} and each additional full or queen is {priceText.additionalFullQueen} and each
+            The first mattress is <FirstPrice />, any size; each additional king is {priceText.additionalKing} and each additional full or queen is {priceText.additionalFullQueen} and each
             additional kids bed is {priceText.additionalKids} (<Link href="/pricing" className="text-teal-bright font-semibold underline underline-offset-2 hover:text-white">see pricing</Link>).
             We serve Lincoln and nearby towns, operated by {site.parentBrand}.
           </p>

@@ -5,6 +5,7 @@ import { WebPageJsonLd } from "@/components/JsonLd";
 import Link from "next/link";
 import { services } from "@/lib/services";
 import { site } from "@/lib/site";
+import { FirstPrice } from "@/components/FirstPrice";
 
 export const metadata: Metadata = {
   title: "Mattress Cleaning Services in Lincoln, NE",
@@ -22,7 +23,7 @@ export default function ServicesPage() {
       </nav>
       <h1 className="text-4xl md:text-5xl font-semibold text-navy mb-4">What mattress services do we offer in Lincoln?</h1>
       <p className="text-lg text-mist max-w-3xl mb-10">
-        One mattress visit, {priceText.first} for the first mattress, any size: dry vapor steam, HEPA vacuuming, UV-C
+        One mattress visit, <FirstPrice /> for the first mattress, any size: dry vapor steam, HEPA vacuuming, UV-C
         light treatment, bed mite treatment, and urine and odor treatment for ordinary accidents. Every visit includes
         two checks, the built-in bed mite sensor on our UV-C vacuum and a moisture check after the job. 72-hour bedroom CO₂
         testing is optional, priced by quote.

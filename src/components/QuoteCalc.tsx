@@ -7,11 +7,11 @@ import { PRICES, PROMO, priceText } from "@/lib/prices";
  * Estimate calculator wired to the canonical price list in lib/prices.ts.
  * Dry-vapor sanitation, UV-C light treatment and HEPA vacuuming, normal stains, pet odor and ordinary urine
  * accidents are included. Severe or biohazard contamination is a custom surcharge.
- * `promo` applies the first-mattress promotion and is for /pricing only (pricing rule 2026-10-04).
+ * `promo` (default on) applies the first-mattress promotion while PROMO.active is true.
  */
 const FIRST = PRICES.first;
 
-export function QuoteCalc({ promo = false }: { promo?: boolean }) {
+export function QuoteCalc({ promo = true }: { promo?: boolean }) {
   const showPromo = promo && PROMO.active;
   const firstPrice = showPromo ? PROMO.first : FIRST;
   const [mattresses, setMattresses] = useState(2);

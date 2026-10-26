@@ -2,7 +2,7 @@ import { pricing } from "@/lib/site";
 import { priceText } from "@/lib/prices";
 
 /**
- * Fall 2026 promotion callout. Pricing rule (2026-10-04): render this on /pricing only.
+ * Fall 2026 promotion callout (used on /pricing). Driven by PROMO in lib/prices.ts.
  * Copy is fixed: no end date or extra terms.
  */
 export function PromoBanner({ className = "" }: { className?: string }) {
@@ -34,10 +34,10 @@ function PromoPrice() {
 }
 
 /**
- * The "What's included" price table. `promo` is for /pricing only; everywhere else
- * the first mattress shows its regular price.
+ * The "What's included" price table. While PROMO.active is true the first mattress
+ * shows its regular price struck through beside the promo price.
  */
-export function IncludedTable({ promo = false }: { promo?: boolean }) {
+export function IncludedTable({ promo = true }: { promo?: boolean }) {
   const showPromo = promo && pricing.promo.active;
   return (
     <div className="overflow-x-auto rounded-2xl ring-1 ring-line bg-white">

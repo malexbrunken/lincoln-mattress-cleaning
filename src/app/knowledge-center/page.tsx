@@ -10,6 +10,7 @@ import { getNeighborhoodPages } from "@/lib/neighborhoods";
 import { services } from "@/lib/services";
 import { priceText } from "@/lib/prices";
 import { site } from "@/lib/site";
+import { FirstPrice } from "@/components/FirstPrice";
 
 export const metadata: Metadata = {
   title: { absolute: "Lincoln Mattress Knowledge Center | Guides and Hubs" },
@@ -108,7 +109,7 @@ export default function KnowledgeCenterPage() {
       <p className="text-lg text-mist mb-10">
         This Knowledge Center gathers every Lincoln guide we publish: mattress care, the academic year, Airbnb hosting,
         allergy season, Lincoln neighborhoods and how our service works. Lincoln Mattress Cleaning is operated by Sleep Sanitation. The first
-        mattress is {priceText.first}, any size; see{" "}
+        mattress is <FirstPrice />, any size; see{" "}
         <Link href="/pricing" className="text-teal-deep font-semibold underline">our pricing page</Link> for every rate. Call or
         text <a href={site.phoneHref} className="text-teal-deep font-semibold underline">{site.phone}</a>.
       </p>

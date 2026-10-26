@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getAllergyPages } from "@/lib/allergySeason";
 import { site } from "@/lib/site";
 import { BreadcrumbJsonLd, WebPageJsonLd } from "@/components/JsonLd";
+import { FirstPrice } from "@/components/FirstPrice";
 
 export const metadata: Metadata = {
   title: { absolute: "Lincoln Allergy Season: Pollen, Humidity and the Bed" },
@@ -113,7 +114,7 @@ export default function AllergySeasonHub() {
       <section id="visit" aria-label="Booking a Lincoln visit" className="border-l-8 border-teal bg-white rounded-r-2xl p-7 mb-12 max-w-4xl">
         <h2 className="text-2xl font-semibold text-navy mb-4">When should you book a visit in allergy season?</h2>
         <p className="text-lg mb-4">
-          Pollen season doesn&apos;t change the bill: the first mattress is {priceText.first},
+          Pollen season doesn&apos;t change the bill: the first mattress is <FirstPrice />,
           each additional king is {priceText.additionalKing} and each additional full or queen is {priceText.additionalFullQueen} and each additional kids bed {priceText.additionalKids}, with normal stains, pet odor and ordinary urine
           accidents included and a surcharge only for a severe or biohazard case, which you&apos;ll hear before any work starts.
         </p>

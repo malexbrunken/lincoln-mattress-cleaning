@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getHostPages } from "@/lib/strHosts";
 import { site } from "@/lib/site";
 import { BreadcrumbJsonLd, FaqJsonLd, WebPageJsonLd } from "@/components/JsonLd";
+import { FirstPrice } from "@/components/FirstPrice";
 
 export const metadata: Metadata = {
   title: { absolute: "Airbnb Mattress Cleaning in Lincoln, NE: Hosts" },
@@ -90,7 +91,7 @@ export default function AirbnbHostsHub() {
       <p className="kicker text-teal-deep mb-2">The host desk</p>
       <h1 className="text-4xl font-semibold text-navy mb-4 leading-tight max-w-4xl">Airbnb and short-term rental mattress cleaning in Lincoln</h1>
       <p className="text-xl text-navy mb-4 max-w-4xl">
-        Airbnb and short-term rental mattress cleaning in Lincoln costs {priceText.first} for the first mattress, any size, and{" "}
+        Airbnb and short-term rental mattress cleaning in Lincoln costs <FirstPrice /> for the first mattress, any size, and{" "}
         {priceText.additionalKing} for each additional king, {priceText.additionalFullQueen} for each additional full or queen in the same visit ({priceText.additionalKids} for each
         additional kids bed). Guest stains, pet odor and ordinary urine accidents are included. Lincoln Mattress Cleaning, operated by{" "}
         {site.parentBrand}, uses low-moisture dry vapor steam, HEPA vacuuming and UV-C light treatment, Monday to Friday. Call or text{" "}
@@ -133,7 +134,7 @@ export default function AirbnbHostsHub() {
             </p>
             <h2>What stays the same at every Lincoln listing?</h2>
             <p>
-              A game weekend, a tax question or a guest accident doesn&apos;t change the visit. A host pays {priceText.first} for the first
+              A game weekend, a tax question or a guest accident doesn&apos;t change the visit. A host pays <FirstPrice /> for the first
               mattress; each additional king is {priceText.additionalKing} and each additional full or queen is {priceText.additionalFullQueen} and each additional kids bed {priceText.additionalKids},
               with a surcharge only for a severe or biohazard case, and we work Monday to Friday, 9am to 6pm, answering calls and texts on weekends. We record every mattress on an inspection form (material, special care
               notes, urine or odor observations) and run the two checks in every visit: moisture after the job and the built-in bed mite

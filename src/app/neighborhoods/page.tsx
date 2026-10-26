@@ -5,6 +5,7 @@ import { updatedFor } from "@/lib/dates";
 import { getNeighborhoodPages, LINCOLN_ACS } from "@/lib/neighborhoods";
 import { site } from "@/lib/site";
 import { BreadcrumbJsonLd, FaqJsonLd, WebPageJsonLd } from "@/components/JsonLd";
+import { FirstPrice } from "@/components/FirstPrice";
 
 export const metadata: Metadata = {
   title: { absolute: "Lincoln Neighborhoods: Housing and Mattress Care" },
@@ -45,7 +46,7 @@ export default function NeighborhoodsHub() {
       <p className="text-xl text-navy mb-10 max-w-3xl bg-ice rounded-2xl p-6">
         Lincoln&apos;s neighborhoods hold very different bedrooms. Country Club is 96% detached houses, mostly built before 1960; downtown is 90%
         apartment and condo buildings; the Highlands was mostly built in the 1990s. The method and the price stay the same everywhere,{" "}
-        {priceText.first} for the first mattress, any size, but the number of beds, the building and the room&apos;s summer humidity change the
+        <FirstPrice /> for the first mattress, any size, but the number of beds, the building and the room&apos;s summer humidity change the
         visit. Call or text <a href={site.phoneHref} className="underline">{site.phone}</a>.
       </p>
 

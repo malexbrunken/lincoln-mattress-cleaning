@@ -9,6 +9,8 @@ export const site = {
   tagline: "Mattress sanitation for Lincoln, Nebraska: dry vapor steam, HEPA vacuuming and UV-C light treatment, with gloves, shoe booties and equipment disinfected between jobs.",
   phone: "(402) 512-5658",
   phoneHref: "tel:+14025125658",
+  /** Google Business Profile share link (provided by Matthew 2026-10-25). */
+  googleProfile: "https://share.google/SIaLbtBIaHAtMZWtR",
   /** E.164 form used in JSON-LD; matches sleepsanitation.com's schema. */
   phoneE164: "+14025125658",
   email: "info@sleepsanitation.com",
@@ -64,7 +66,7 @@ export const pricing = {
     { label: "Additional twin or kids bed", price: PRICES.additionalKids },
   ],
   underside: priceText.underside,
-  /** Shown on /pricing only. */
+  /** Fall 2026 promo; drives the struck-through first price site-wide. */
   promo: {
     active: PROMO.active,
     label: PROMO.label,

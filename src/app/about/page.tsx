@@ -5,6 +5,7 @@ import { WebPageJsonLd } from "@/components/JsonLd";
 import Link from "next/link";
 import { site } from "@/lib/site";
 import { townBySlug } from "@/lib/towns";
+import { FirstPrice } from "@/components/FirstPrice";
 
 export const metadata: Metadata = {
   title: { absolute: "About Lincoln Mattress Cleaning, by Sleep Sanitation" },
@@ -48,7 +49,7 @@ export default function AboutPage() {
           disinfected between jobs. UV-C light treatment is part of every visit.
         </li>
         <li>
-          <strong>Published pricing.</strong> {priceText.first} for the first mattress, any size, with every extra listed openly
+          <strong>Published pricing.</strong> <FirstPrice /> for the first mattress, any size, with every extra listed openly
           on our <Link href="/pricing" className="text-teal-deep underline font-semibold">pricing page</Link>.
         </li>
         <li>
