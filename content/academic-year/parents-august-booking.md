@@ -1,7 +1,7 @@
 ---
 title: "Parents: Booking Mattress Cleaning for August"
 h1: "Parents: how to book a mattress cleaning for August move-in"
-description: "A booking checklist for parents of Lincoln students: empty-room timing, $249, phone, and what to tell us before UNL, NWU or Union Adventist move-in week."
+description: "A booking checklist for parents of Lincoln students: empty-room timing, {{price.first}}, phone, and what to tell us before UNL, NWU or Union Adventist move-in week."
 answer: "For an off-campus Lincoln apartment, book the mattress cleaning for a weekday before furniture arrives. In 2026 that meant the week before UNL's August 16 to 19 move-in, NWU's August 19 move-in or Union Adventist's August 17 Spark Start day. The first mattress is {{price.first}}, any size. Call or text (402) 512-5658. This page is the booking checklist; the year-long calendar is the [parent's checklist](/academic-year/parents-checklist)."
 order: 9
 published: "2026-10-05"
@@ -62,7 +62,7 @@ The [parent's mattress checklist for the UNL year](/academic-year/parents-checkl
 
 ## What does a multi-bed apartment cost?
 
-{{price.first}} for the first mattress, then {{price.additionalLarge}} for each additional full, queen or king and {{price.additionalKids}} for each additional kids bed (twin/full) in the same visit. See [/pricing](/pricing) for current offers. Underside/full-surface treatment is {{price.underside}} per mattress when needed.
+{{price.first}} for the first mattress, then {{price.additionalKing}} for each additional king, {{price.additionalFullQueen}} for each additional full or queen and {{price.additionalKids}} for each additional twin or kids bed in the same visit. See [/pricing](/pricing) for current offers. Underside/full-surface treatment is {{price.underside}} per mattress when needed.
 
 ## What we don't know
 

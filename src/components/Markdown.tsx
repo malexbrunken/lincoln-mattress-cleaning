@@ -6,12 +6,13 @@ function inline(t: string): ReactNode[] {
   const parts: ReactNode[] = [];
   let rest = t;
   let k = 0;
-  const rx = /(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/;
+  const rx = /(~~[^~]+~~|\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/;
   while (rx.test(rest)) {
     const m = rest.match(rx)!;
     const before = rest.slice(0, m.index);
     if (before) parts.push(before);
-    if (m[0].startsWith("**")) parts.push(<strong key={k++}>{m[0].slice(2, -2)}</strong>);
+    if (m[0].startsWith("~~")) parts.push(<s key={k++} className="opacity-70">{m[0].slice(2, -2)}</s>);
+    else if (m[0].startsWith("**")) parts.push(<strong key={k++}>{inline(m[0].slice(2, -2))}</strong>);
     else {
       const lm = m[0].match(/\[([^\]]+)\]\(([^)]+)\)/)!;
       const ext = /^https?:/.test(lm[2]);

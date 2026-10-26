@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { towns, townBySlug } from "@/lib/towns";
 import { site } from "@/lib/site";
 import { BreadcrumbJsonLd, WebPageJsonLd } from "@/components/JsonLd";
+import { FirstPrice } from "@/components/FirstPrice";
 
 export function generateStaticParams() {
   return towns.map((t) => ({ slug: t.slug }));
@@ -86,7 +87,7 @@ export default async function TownPage({ params }: PageProps<"/service-areas/[sl
           <Link href="/services/mattress-sanitization" className="text-teal-deep underline font-semibold">
             Mattress sanitization
           </Link>{" "}
-          — {priceText.first} first mattress, any size
+          — <FirstPrice /> first mattress, any size
         </li>
         <li>
           💧{" "}

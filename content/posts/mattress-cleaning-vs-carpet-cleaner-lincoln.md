@@ -12,7 +12,7 @@ faq:
   - q: "Why does a mattress specialist cost more than a carpet add-on?"
     a: "The whole visit is built around the mattress: a material inspection, low-moisture dry vapor steam worked into the seams and tufts, HEPA vacuuming, UV-C light treatment and two checks. That takes more time and more equipment per bed than one add-on item on a floor job."
   - q: "How much does a mattress specialist cost in Lincoln?"
-    a: "{{price.first}} for the first mattress, any size, with normal stains, pet odor and ordinary urine accidents included. Each additional full, queen or king in the same visit is {{price.additionalLarge}}, each additional kids bed (twin/full) is {{price.additionalKids}}, and underside treatment is {{price.underside}} per mattress."
+    a: "{{price.first}} for the first mattress, any size, with normal stains, pet odor and ordinary urine accidents included. Each additional king in the same visit is {{price.additionalKing}} and each additional full or queen is {{price.additionalFullQueen}}, each additional twin or kids bed is {{price.additionalKids}}, and underside treatment is {{price.underside}} per mattress."
   - q: "Do you clean carpets, rugs or couches too?"
     a: "No. Lincoln Mattress Cleaning is mattress-only. For carpet, rugs or upholstery, hire a carpet or upholstery cleaner."
   - q: "I'm having my carpets cleaned too. Which should come first?"
@@ -55,7 +55,7 @@ When the job is floors. If you need wall-to-wall carpet, area rugs or a sofa cle
 
 ## What does it cost in Lincoln?
 
-**{{price.first}} for the first mattress, any size.** Each additional full, queen or king in the same visit is {{price.additionalLarge}}, and each additional kids bed (twin/full) is {{price.additionalKids}}. Underside treatment is {{price.underside}} per mattress, and severe or biohazard contamination carries a surcharge we quote before starting. UV-C light treatment and HEPA vacuuming are included every visit. For national context, [Angi's mattress cleaning cost guide](https://www.angi.com/articles/mattress-cleaning-cost.htm) (updated August 3, 2026) gives a $130 average, with deep cleaning at $130 to $200; those are national figures, not Lincoln quotes.
+**{{price.first}} for the first mattress, any size.** Each additional king in the same visit is {{price.additionalKing}} and each additional full or queen is {{price.additionalFullQueen}}, and each additional twin or kids bed is {{price.additionalKids}}. Underside treatment is {{price.underside}} per mattress, and severe or biohazard contamination carries a surcharge we quote before starting. UV-C light treatment and HEPA vacuuming are included every visit. For national context, [Angi's mattress cleaning cost guide](https://www.angi.com/articles/mattress-cleaning-cost.htm) (updated August 3, 2026) gives a $130 average, with deep cleaning at $130 to $200; those are national figures, not Lincoln quotes.
 
 ## Which Lincoln households book a specialist?
 

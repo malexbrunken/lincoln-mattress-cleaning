@@ -62,7 +62,7 @@ From December to March, Lincoln Airport's average air works out to 15 to 21 perc
 - **Keep the bed dry.** The EPA says not to let absorbent materials such as carpet, drapes or bedding near the humidifier get damp; set it across the room.
 - **Clean the tank.** For portable units, the EPA says to empty, dry and refill the tank daily, clean it every third day and use low-mineral water such as distilled.
 
-Dry winter air is also a great time to book a mattress cleaning: $249 for the first mattress, any size. [Book a visit](/book) or call or text (402) 512-5658.
+Dry winter air is also a great time to book a mattress cleaning: {{price.first}} for the first mattress, any size. [Book a visit](/book) or call or text (402) 512-5658.
 
 ## What do the steam studies show for bedding?
 

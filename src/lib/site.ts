@@ -9,6 +9,8 @@ export const site = {
   tagline: "Mattress sanitation for Lincoln, Nebraska: dry vapor steam, HEPA vacuuming and UV-C light treatment, with gloves, shoe booties and equipment disinfected between jobs.",
   phone: "(402) 512-5658",
   phoneHref: "tel:+14025125658",
+  /** Google Business Profile share link (provided by Matthew 2026-10-25). */
+  googleProfile: "https://share.google/SIaLbtBIaHAtMZWtR",
   /** E.164 form used in JSON-LD; matches sleepsanitation.com's schema. */
   phoneE164: "+14025125658",
   email: "info@sleepsanitation.com",
@@ -59,11 +61,12 @@ type Package = {
 export const pricing = {
   first: { label: "Mattress Sanitation, first mattress", price: PRICES.first, note: "Any size, twin through California king" },
   additional: [
-    { label: "Additional full/queen/king mattress", price: PRICES.additionalLarge },
-    { label: "Additional kids bed (twin/full)", price: PRICES.additionalKids },
+    { label: "Additional king/California king mattress", price: PRICES.additionalKing },
+    { label: "Additional full/queen mattress", price: PRICES.additionalFullQueen },
+    { label: "Additional twin or kids bed", price: PRICES.additionalKids },
   ],
   underside: priceText.underside,
-  /** Shown on /pricing only. */
+  /** Fall 2026 promo; drives the struck-through first price site-wide. */
   promo: {
     active: PROMO.active,
     label: PROMO.label,
@@ -85,8 +88,9 @@ export const pricing = {
     { service: "Ordinary urine accident treatment", price: "Included", bold: true },
     { service: "Enzyme treatment for urine and organic odor", price: "Included", bold: false },
     { service: "Organic cleaning methods by default", price: "Included", bold: false },
-    { service: "Additional full/queen/king mattress", price: priceText.additionalLarge, bold: false },
-    { service: "Additional kids bed (twin/full)", price: priceText.additionalKids, bold: false },
+    { service: "Additional king/California king mattress", price: priceText.additionalKing, bold: false },
+    { service: "Additional full/queen mattress", price: priceText.additionalFullQueen, bold: false },
+    { service: "Additional twin or kids bed", price: priceText.additionalKids, bold: false },
     { service: "Underside/full-surface treatment", price: priceText.underside, bold: false },
     { service: "Severe or biohazard contamination", price: "Custom surcharge", bold: false },
   ],
@@ -125,7 +129,7 @@ export const packages: Package[] = [
     name: "Each Additional Mattress",
     priceLabel: "Each additional mattress",
     price: priceText.additionalRange,
-    priceNote: `Each additional kids bed (twin/full) ${priceText.additionalKids} · Each additional full, queen or king ${priceText.additionalLarge}`,
+    priceNote: `Each additional twin or kids bed ${priceText.additionalKids} · Each additional king ${priceText.additionalKing} · Each additional full or queen ${priceText.additionalFullQueen}`,
     blurb:
       "Booked in the same visit as your first mattress. Same protocol, same inclusions — priced by size so a whole house costs less than separate appointments.",
     features: [

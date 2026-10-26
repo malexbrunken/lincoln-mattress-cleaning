@@ -5,11 +5,12 @@ import { towns } from "@/lib/towns";
 import { site } from "@/lib/site";
 import { priceText } from "@/lib/prices";
 import { ServiceAreaJsonLd, WebPageJsonLd } from "@/components/JsonLd";
+import { FirstPrice } from "@/components/FirstPrice";
 
 export const metadata: Metadata = {
   title: "Service Areas Around Lincoln, NE",
   description:
-    "Mattress cleaning across Lincoln and Lancaster County, plus Eagle, Palmyra, Seward, Crete, Wahoo and Ashland. $249 first mattress, no travel fee.",
+    `Mattress cleaning across Lincoln and Lancaster County, plus Eagle, Palmyra, Seward, Crete, Wahoo and Ashland. ${priceText.first} first mattress, no travel fee.`,
 };
 
 export default function ServiceAreasPage() {
@@ -23,7 +24,7 @@ export default function ServiceAreasPage() {
       <h1 className="text-4xl md:text-5xl font-semibold text-navy mb-4">Where We Work</h1>
       <p className="text-lg text-mist mb-4 max-w-3xl">
         Where do we clean mattresses? In your bedroom, across {site.serviceRadius} We bring the steam system and
-        the HEPA and UV-C vacuum, and the first mattress is {priceText.first}, any size.
+        the HEPA and UV-C vacuum, and the first mattress is <FirstPrice />, any size.
       </p>
       <p className="text-lg text-mist mb-10 max-w-3xl">
         Select your town for local details, or call and we will confirm your address is inside the radius before

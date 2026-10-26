@@ -18,7 +18,7 @@ faq:
   - q: "Can wet extraction affect my mattress warranty?"
     a: "It can. Wet-extraction carpet cleaners can void some mattress warranties. Read your care label and warranty terms before any cleaning, ours included."
   - q: "How much does dry vapor mattress cleaning cost in Lincoln?"
-    a: "{{price.first}} for the first mattress, any size, with normal stains, pet odor and ordinary urine accidents included. Each additional full, queen or king in the same visit is {{price.additionalLarge}}, and each additional kids bed (twin/full) is {{price.additionalKids}}. UV-C light treatment and HEPA vacuuming are included."
+    a: "{{price.first}} for the first mattress, any size, with normal stains, pet odor and ordinary urine accidents included. Each additional king in the same visit is {{price.additionalKing}} and each additional full or queen is {{price.additionalFullQueen}}, and each additional twin or kids bed is {{price.additionalKids}}. UV-C light treatment and HEPA vacuuming are included."
 ---
 
 For a mattress in a Lincoln home, dry vapor steam is the low-moisture option: it carries heat into the seams, tufts and edges with very little liquid water. Wet (hot-water) extraction, the method built for carpet, sprays a cleaning solution into the fabric and vacuums it back out. Lincoln Mattress Cleaning, operated by Sleep Sanitation, uses dry vapor steam, HEPA vacuuming and UV-C light treatment, with a moisture check and a check with the built-in bed mite sensor on every visit, at {{price.first}} for the first mattress, any size. Call or text **(402) 512-5658**.
@@ -70,7 +70,7 @@ Lincoln Airport's NOAA normals put the average July dew point near 65°F, and th
 
 ## What does it cost in Lincoln?
 
-**{{price.first}} for the first mattress, any size.** Each additional full, queen or king in the same visit is {{price.additionalLarge}}, each additional kids bed (twin/full) is {{price.additionalKids}}, and underside treatment is {{price.underside}} per mattress. Every visit includes UV-C light treatment, HEPA vacuuming and two checks: a moisture check after the job and the built-in bed mite sensor on our UV-C vacuum. 72-hour bedroom CO₂ testing is a separate optional service, priced by quote, and not a medical test.
+**{{price.first}} for the first mattress, any size.** Each additional king in the same visit is {{price.additionalKing}} and each additional full or queen is {{price.additionalFullQueen}}, each additional twin or kids bed is {{price.additionalKids}}, and underside treatment is {{price.underside}} per mattress. Every visit includes UV-C light treatment, HEPA vacuuming and two checks: a moisture check after the job and the built-in bed mite sensor on our UV-C vacuum. 72-hour bedroom CO₂ testing is a separate optional service, priced by quote, and not a medical test.
 
 ## Related
 

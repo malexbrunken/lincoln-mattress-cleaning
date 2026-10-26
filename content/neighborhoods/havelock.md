@@ -38,7 +38,7 @@ faq:
   - q: "My Havelock house has a finished basement bedroom. Anything to know?"
     a: "Basements stay cool, and in a Lincoln July, when the average dew point at the airport is about 65°F, a cool room can collect moisture. Run a dehumidifier, tell us if the bed smells musty, and we inspect before we treat. The bed stays unmade until it is dry to the touch, and we run a moisture check after the job."
   - q: "We have a two-bedroom house with a kids' room. What would that cost?"
-    a: "{{price.first}} for the first mattress, any size, then {{price.additionalKids}} for each additional kids bed (twin or full) and {{price.additionalLarge}} for each additional full, queen or king in the same visit."
+    a: "{{price.first}} for the first mattress, any size, then {{price.additionalKids}} for each additional twin or kids bed and {{price.additionalKing}} for each additional king, {{price.additionalFullQueen}} for each additional full or queen in the same visit."
   - q: "Is a mattress from an older family home worth cleaning?"
     a: "Often, if it is structurally sound and dry. We inspect the material first and will tell you if a mattress should be replaced instead."
   - q: "Where does an old mattress go from northeast Lincoln?"

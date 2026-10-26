@@ -3,7 +3,7 @@ title: "Husker Bowl Season and Holiday Turnovers for Lincoln Airbnb Hosts"
 h1: "Husker bowl season and holiday turnovers: a Lincoln host's calendar"
 label: "Bowl season and holidays"
 description: "Nebraska's last 2026 home game, Thanksgiving, bowl season and the College Football Playoff dates, with weekday mattress-cleaning slots for Lincoln short-term rental hosts."
-answer: "Ohio State on November 21 is Nebraska's last home game of 2026, and Thanksgiving falls five days later on November 26. Bowl season runs December 12, 2026 to the national championship on January 25, 2027, and a bowl is played away from Lincoln, so December demand is holiday family travel more than football. Book a mattress cleaning on the weekday after each checkout: we work Monday to Friday, 9am to 6pm, and the first mattress is $249, any size."
+answer: "Ohio State on November 21 is Nebraska's last home game of 2026, and Thanksgiving falls five days later on November 26. Bowl season runs December 12, 2026 to the national championship on January 25, 2027, and a bowl is played away from Lincoln, so December demand is holiday family travel more than football. Book a mattress cleaning on the weekday after each checkout: we work Monday to Friday, 9am to 6pm, and the first mattress is {{price.first}}, any size."
 order: 6
 published: "2026-10-22"
 updated: "2026-10-22"
@@ -25,7 +25,7 @@ faq:
   - q: "When is the best time to clean between Thanksgiving and Christmas?"
     a: "The first weekday after your Thanksgiving checkout, usually Monday, November 30, and again the week of December 14 before Christmas guests arrive. We run a moisture check after the job, and the bed stays unmade until it is dry to the touch."
   - q: "What does a turnover cleaning cost?"
-    a: "$249 for the first mattress, any size, with normal stains, pet odor and ordinary urine accidents included. See <a href=\"/pricing\">Lincoln pricing</a> for additional beds in the same visit."
+    a: "{{price.first}} for the first mattress, any size, with normal stains, pet odor and ordinary urine accidents included. See <a href=\"/pricing\">Lincoln pricing</a> for additional beds in the same visit."
   - q: "Do you work weekends during the holidays?"
     a: "Visits are Monday to Friday, 9am to 6pm. Call or text (402) 512-5658 any day and we will book the first open weekday."
 sources:

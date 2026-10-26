@@ -1,7 +1,7 @@
 ---
 title: "Union Adventist Move-In Mattress Guide"
 h1: "Union Adventist University move-in: mattress timing for Warriors"
-description: "Union Adventist University Spark Start move-in is August 17, 2026. Hall beds stay with UAU; off-campus apartments near 48th Street are bookable at $249."
+description: "Union Adventist University Spark Start move-in is August 17, 2026. Hall beds stay with UAU; off-campus apartments near 48th Street are bookable at {{price.first}}."
 answer: "Union Adventist University's Spark Start move-in for fall 2026 is Monday, August 17, from 8 a.m. to 8 p.m. Residence hall mattresses belong to UAU, so we do not clean them. Off-campus apartments near the 3800 South 48th Street campus are bookable at {{price.first}} for the first mattress, any size, operated by Sleep Sanitation."
 order: 7
 published: "2026-10-05"

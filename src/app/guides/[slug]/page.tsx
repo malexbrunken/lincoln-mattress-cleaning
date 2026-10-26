@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { getPosts, getPost } from "@/lib/posts";
 import { site } from "@/lib/site";
 import { ArticleJsonLd, AuthorJsonLd, BreadcrumbJsonLd, FaqJsonLd, ServiceAreaJsonLd } from "@/components/JsonLd";
+import { FirstPrice } from "@/components/FirstPrice";
 
 export function generateStaticParams() {
   return getPosts().map((p) => ({ slug: p.slug }));
@@ -26,14 +27,16 @@ function renderMarkdown(md: string) {
     const parts: React.ReactNode[] = [];
     let rest = t;
     let k = 0;
-    const rx = /(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/;
+    const rx = /(~~[^~]+~~|\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/;
     while (rx.test(rest)) {
       const m = rest.match(rx)!;
       const [full] = m;
       const before = rest.slice(0, m.index);
       if (before) parts.push(before);
-      if (full.startsWith("**")) {
-        parts.push(<strong key={k++}>{full.slice(2, -2)}</strong>);
+      if (full.startsWith("~~")) {
+        parts.push(<s key={k++} className="opacity-70">{full.slice(2, -2)}</s>);
+      } else if (full.startsWith("**")) {
+        parts.push(<strong key={k++}>{inline(full.slice(2, -2))}</strong>);
       } else {
         const lm = full.match(/\[([^\]]+)\]\(([^)]+)\)/)!;
         parts.push(<Link key={k++} href={lm[2]} className="text-teal-deep underline font-semibold">{lm[1]}</Link>);
@@ -144,7 +147,7 @@ export default async function GuidePage({ params }: PageProps<"/guides/[slug]">)
           Call {site.phone}
         </a>
         <p className="text-mist mt-3">
-          {site.hours} · {priceText.first} first mattress, any size ·{" "}
+          {site.hours} · <FirstPrice /> first mattress, any size ·{" "}
           <Link href="/pricing" className="text-teal-deep underline font-semibold">all pricing</Link>
         </p>
         <p className="text-mist text-sm mt-1">{site.hoursNote}</p>

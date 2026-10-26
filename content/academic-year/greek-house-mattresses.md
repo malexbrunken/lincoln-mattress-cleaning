@@ -45,7 +45,7 @@ changelog:
 
 ## Who books a Greek house cleaning?
 
-Usually a house manager, alumni board contact or parent who can meet us at the address. We need a clear path to each mattress and an empty room when possible. Multi-mattress visits use the labeled additional rates: {{price.additionalLarge}} for each additional full, queen or king and {{price.additionalKids}} for each additional kids bed (twin/full) in the same visit.
+Usually a house manager, alumni board contact or parent who can meet us at the address. We need a clear path to each mattress and an empty room when possible. Multi-mattress visits use the labeled additional rates: {{price.additionalKing}} for each additional king, {{price.additionalFullQueen}} for each additional full or queen and {{price.additionalKids}} for each additional twin or kids bed in the same visit.
 
 ## When do semester turnovers make sense?
 

@@ -10,7 +10,7 @@ faq:
   - q: "How much does mattress cleaning cost in Lincoln, NE?"
     a: "{{price.first}} for the first mattress, any size, with normal stains, pet odor and ordinary urine accidents included."
   - q: "What does each additional mattress cost?"
-    a: "Each additional full, queen or king mattress in the same visit is {{price.additionalLarge}}, and each additional kids bed (twin/full) is {{price.additionalKids}}."
+    a: "Each additional king mattress in the same visit is {{price.additionalKing}} and each additional full or queen is {{price.additionalFullQueen}}, and each additional twin or kids bed is {{price.additionalKids}}."
   - q: "Are there travel fees or deposits?"
     a: "No. There is no travel fee inside our service area and no deposit. Underside/full-surface treatment ({{price.underside}}) and severe or biohazard contamination are the only extras, quoted before work starts."
   - q: "What is included in every visit?"
@@ -21,13 +21,13 @@ faq:
     a: "A carpet add-on is typically hot-water extraction with the floor equipment. Our visit is built around the mattress: inspection, dry vapor steam on the seams and tufts, HEPA vacuuming, UV-C light treatment and two checks."
 ---
 
-Mattress cleaning in Lincoln costs {{price.first}} for the first mattress, any size, with normal stains, pet odor and ordinary urine accidents included. Each additional full, queen or king mattress in the same visit is {{price.additionalLarge}}, and each additional kids bed (twin/full) is {{price.additionalKids}}. There is no travel fee inside our service area. Lincoln Mattress Cleaning is operated by Sleep Sanitation; call or text **(402) 512-5658**. Every rate is also on our [pricing page](/pricing).
+Mattress cleaning in Lincoln costs {{price.first}} for the first mattress, any size, with normal stains, pet odor and ordinary urine accidents included. Each additional king mattress in the same visit is {{price.additionalKing}} and each additional full or queen is {{price.additionalFullQueen}}, and each additional twin or kids bed is {{price.additionalKids}}. There is no travel fee inside our service area. Lincoln Mattress Cleaning is operated by Sleep Sanitation; call or text **(402) 512-5658**. Every rate is also on our [pricing page](/pricing).
 
 ## How much is the first mattress?
 
 **The first mattress is {{price.first}}, any size.** Twin through California king, same rate. The rate covers dry-vapor sanitation, UV-C light treatment and HEPA vacuuming, normal stain treatment, pet odor treatment and ordinary urine accident treatment.
 
-**Each additional mattress in the same visit is {{price.additionalLarge}} for full, queen or king, and {{price.additionalKids}} for a kids bed (twin/full).** Same inclusions. Booking two, three, or four mattresses in one appointment is meaningfully cheaper than booking them separately, because we are already in the house with the equipment set up.
+**Each additional mattress in the same visit is {{price.additionalKing}} for a king, {{price.additionalFullQueen}} for a full or queen, and {{price.additionalKids}} for a twin or kids bed.** Same inclusions. Booking two, three, or four mattresses in one appointment is meaningfully cheaper than booking them separately, because we are already in the house with the equipment set up.
 
 We charge one rate for any size on the first mattress on purpose. Size-based pricing on a mattress service mostly penalizes people who own a king, and we would rather not structure our prices around that.
 
@@ -42,8 +42,9 @@ We charge one rate for any size on the first mattress on purpose. Size-based pri
 | Normal stain treatment | Included |
 | Pet odor treatment | Included |
 | **Ordinary urine accident treatment** | **Included** |
-| Additional full/queen/king mattress | {{price.additionalLarge}} |
-| Additional kids bed (twin/full) | {{price.additionalKids}} |
+| Additional king/California king mattress | {{price.additionalKing}} |
+| Additional full/queen mattress | {{price.additionalFullQueen}} |
+| Additional twin or kids bed | {{price.additionalKids}} |
 | Underside/full-surface treatment | {{price.underside}} |
 | Severe or biohazard contamination | Custom surcharge |
 | 72-hour bedroom CO₂ testing (optional, not included) | Priced by quote |
@@ -62,9 +63,9 @@ Underside/full-surface treatment is the only routine extra, and we will tell you
 | Household | How it adds up | Total |
 | --- | --- | --- |
 | One queen | {{price.first}} | {{price.first}} |
-| A queen and a full | {{price.first}} + {{price.additionalLarge}} | $448 |
-| A king plus two kids beds | {{price.first}} + {{price.additionalKids}} + {{price.additionalKids}} | $547 |
-| A king, a queen and two kids beds | {{price.first}} + {{price.additionalLarge}} + {{price.additionalKids}} + {{price.additionalKids}} | $746 |
+| A queen and a full | {{price.first}} + {{price.additionalFullQueen}} | {{price.sum:first+additionalFullQueen}} |
+| A king plus two kids beds | {{price.first}} + {{price.additionalKids}} + {{price.additionalKids}} | {{price.sum:first+additionalKids+additionalKids}} |
+| A king, a queen and two kids beds | {{price.first}} + {{price.additionalFullQueen}} + {{price.additionalKids}} + {{price.additionalKids}} | {{price.sum:first+additionalFullQueen+additionalKids+additionalKids}} |
 
 ## Is a specialist worth more than a carpet cleaner's add-on?
 

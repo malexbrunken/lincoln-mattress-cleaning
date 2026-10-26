@@ -7,6 +7,7 @@ import { priceText } from "@/lib/prices";
 import { site } from "@/lib/site";
 import { Markdown } from "@/components/Markdown";
 import { BreadcrumbJsonLd, FaqJsonLd, founder } from "@/components/JsonLd";
+import { FirstPrice } from "@/components/FirstPrice";
 
 export function generateStaticParams() {
   return getNeighborhoodPages().map((p) => ({ slug: p.slug }));
@@ -89,8 +90,8 @@ export default async function NeighborhoodGuide({ params }: PageProps<"/neighbor
         <Markdown md={p.body} />
         <h2>What does a visit cost in {p.name}?</h2>
         <p>
-          The same as anywhere in Lincoln: the first mattress is {priceText.first}, any size, with normal stains, pet odor and ordinary urine
-          accidents included. Each additional full, queen or king in the same visit is {priceText.additionalLarge}, each additional kids bed
+          The same as anywhere in Lincoln: the first mattress is <FirstPrice />, any size, with normal stains, pet odor and ordinary urine
+          accidents included. Each additional king in the same visit is {priceText.additionalKing} and each additional full or queen is {priceText.additionalFullQueen}, each additional kids bed
           (twin or full) is {priceText.additionalKids}, and underside treatment is {priceText.underside} per mattress. A severe or biohazard
           case carries a surcharge we quote before starting. Every visit includes UV-C light treatment, HEPA vacuuming and two checks: a
           moisture check after the job and the built-in bed mite sensor on our UV-C vacuum. 72-hour bedroom CO₂ testing is a separate

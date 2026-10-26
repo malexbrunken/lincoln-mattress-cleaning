@@ -20,6 +20,7 @@ export function Footer() {
           <a href={`mailto:${site.email}`} className="block mt-1 text-white/80 hover:text-teal-bright transition-colors">{site.email}</a>
           <p className="mt-2 text-white/70">{site.hours}</p>
           <p className="mt-1 text-sm text-white/55">{site.hoursNote}</p>
+          <a href={site.googleProfile} target="_blank" rel="noopener" className="inline-block mt-3 text-white/80 underline hover:text-teal-bright transition-colors">Find us on Google ↗</a>
         </div>
         <div>
           <p className="font-display font-semibold text-white mb-3">Services</p>
@@ -49,6 +50,28 @@ export function Footer() {
             <li><Link href="/privacy-policy" className="hover:text-teal-bright transition-colors">Privacy Policy</Link></li>
           </ul>
         </div>
+      </div>
+      <div className="max-w-6xl mx-auto px-4 pb-12 grid gap-6 md:grid-cols-[1fr_1.4fr] md:items-center">
+        <div>
+          <p className="font-display font-semibold text-white mb-2">Service area</p>
+          <p className="text-white text-xl font-semibold">We come to you.</p>
+          <p className="mt-2 leading-relaxed">
+            Mobile mattress cleaning at your home in Lincoln and across Lancaster County, plus nearby towns:{" "}
+            {site.areas.slice(1, -1).join(", ")} and {site.areas[site.areas.length - 1]}. No storefront to visit.
+          </p>
+          <p className="mt-2 text-sm text-white/55">Not sure about your address? Call or text {site.phone}.</p>
+        </div>
+        {/* Static SVG (~5 KB), lazy-loaded; no business pin or address by design. */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/service-area-map.svg"
+          width={760}
+          height={440}
+          loading="lazy"
+          decoding="async"
+          alt="Map of our service area: the shaded Lincoln metro, including Lincoln, Waverly, Eagle, Palmyra, Bennet, Hickman, Firth, Raymond, Malcolm, Seward, Crete, Wahoo and Ashland"
+          className="w-full h-auto"
+        />
       </div>
       <div className="border-t border-white/10 py-5 text-center text-sm text-white/60 px-4">
         © {new Date().getFullYear()} {site.name} · <Link href="/about" className="underline hover:text-teal-bright">Operated by Sleep Sanitation LLC</Link> · Lincoln &amp; Lancaster County, NE ·{" "}

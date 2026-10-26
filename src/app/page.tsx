@@ -20,6 +20,7 @@ import {
   IconThermometer,
   IconUVC,
 } from "@/components/Icons";
+import { FirstPrice } from "@/components/FirstPrice";
 
 const homeTitle = "Mattress Cleaning & Sanitation in Lincoln, NE";
 const homeDescription = `Mattress sanitation in Lincoln, NE by Sleep Sanitation: dry vapor steam, UV-C light and HEPA vacuuming. ${priceText.first} first mattress, any size.`;
@@ -63,7 +64,7 @@ const homeFaq = [
   },
   {
     q: "How much does mattress cleaning cost in Lincoln?",
-    a: `The first mattress is ${priceText.first}, any size, with normal stains, pet odor and ordinary urine accidents included. Each additional full, queen or king mattress is ${priceText.additionalLarge}, and each additional kids bed (twin/full) is ${priceText.additionalKids}. Severe or biohazard contamination carries a custom surcharge, quoted before any work starts.`,
+    a: `The first mattress is ${priceText.first}, any size, with normal stains, pet odor and ordinary urine accidents included. Each additional king mattress is ${priceText.additionalKing} and each additional full or queen is ${priceText.additionalFullQueen}, and each additional twin or kids bed is ${priceText.additionalKids}. Severe or biohazard contamination carries a custom surcharge, quoted before any work starts.`,
   },
   {
     q: "What areas do you serve?",
@@ -134,7 +135,7 @@ export default function HomePage() {
               </Link>
             </div>
             <p className="mt-6 text-sm text-white/65 tracking-wide">
-              FIRST MATTRESS {priceText.first} · ANY SIZE · STAINS, PET ODOR &amp; ORDINARY URINE INCLUDED · MON–FRI 9AM–6PM
+              FIRST MATTRESS <FirstPrice /> · ANY SIZE · STAINS, PET ODOR &amp; ORDINARY URINE INCLUDED · MON–FRI 9AM–6PM
             </p>
           </div>
         </div>
@@ -249,7 +250,7 @@ export default function HomePage() {
             What does the service treat?
           </h2>
           <p className="text-xl text-mist">
-            Normal stains, pet odor and ordinary urine accidents are included in the {priceText.first} first-mattress
+            Normal stains, pet odor and ordinary urine accidents are included in the <FirstPrice /> first-mattress
             price, on foam, hybrid and innerspring builds.
           </p>
         </div>
@@ -386,7 +387,7 @@ export default function HomePage() {
                     </div>
                     <div className="text-right">
                       {p.priceLabel && <p className="text-xs font-bold uppercase tracking-[0.12em] text-mist">{p.priceLabel}</p>}
-                      <p className="font-display text-4xl font-semibold text-teal-deep">{p.price}</p>
+                      <p className="font-display text-4xl font-semibold text-teal-deep">{p.name === "First Mattress" ? <FirstPrice /> : p.price}</p>
                       <p className="text-xs text-mist mt-1 max-w-[190px]">{p.priceNote}</p>
                     </div>
                   </div>

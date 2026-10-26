@@ -52,6 +52,7 @@ export function LocalBusinessJsonLd() {
     description: plainAnswer,
     url: site.url,
     telephone: site.phoneE164,
+    sameAs: [site.googleProfile],
     email: site.email,
     priceRange: "$$",
     founder,
@@ -74,6 +75,9 @@ export function LocalBusinessJsonLd() {
         name: `${name}, NE`,
         containedInPlace: { "@type": "AdministrativeArea", name: "Lancaster County, NE" },
       })),
+      ...site.areas
+        .filter((name) => !(site.lancasterCountyTowns as readonly string[]).includes(name))
+        .map((name) => ({ "@type": "City", name: `${name}, NE` })),
     ],
     openingHoursSpecification: [
       {
@@ -109,8 +113,12 @@ export function LocalBusinessJsonLd() {
             url: `${site.url}/services/mattress-sanitization`,
           },
         },
-        offer("Additional full, queen or king mattress", "Same visit as the first mattress.", { price: String(pricing.additional[0].price) }, SANITATION_ID),
-        offer("Additional kids bed (twin or full)", "Same visit as the first mattress.", { price: String(pricing.additional[1].price) }, SANITATION_ID),
+        ...(PROMO.active
+          ? [offer(`${PROMO.label}: first mattress`, `Limited-time price on the first mattress, any size (regular price ${priceText.firstRegular}).`, { price: String(PROMO.first) }, SANITATION_ID)]
+          : []),
+        offer("Additional king mattress", "Same visit as the first mattress.", { price: String(PRICES.additionalKing) }, SANITATION_ID),
+        offer("Additional full or queen mattress", "Same visit as the first mattress.", { price: String(PRICES.additionalFullQueen) }, SANITATION_ID),
+        offer("Additional twin or kids bed", "Same visit as the first mattress.", { price: String(PRICES.additionalKids) }, SANITATION_ID),
         offer("Underside/full-surface treatment", "Add-on for the bottom panel and full six-surface coverage.", { min: String(PRICES.underside.min), max: String(PRICES.underside.max) }),
         offer("Pet urine and odor treatment", "Enzyme treatment for urine and organic odor. Ordinary urine accidents and pet odor are included in the mattress price; severe or biohazard contamination is quoted before any work starts."),
         offer("Bed mite (house dust mite) treatment", "Dry vapor steam heat and HEPA vacuuming over the seams, tufts, ridges and edges. Included in the mattress price."),
@@ -128,7 +136,7 @@ export function LocalBusinessJsonLd() {
 }
 
 /**
- * Offer schema for /pricing only: the regular first-mattress price plus, while it runs,
+ * Offer schema for /pricing: the regular first-mattress price plus, while it runs,
  * the first-mattress promotion (pricing rule 2026-10-04: the promo appears nowhere else).
  */
 export function PricingOffersJsonLd() {
@@ -148,7 +156,7 @@ export function PricingOffersJsonLd() {
     offers.push({
       "@type": "Offer",
       name: `${PROMO.label}: first mattress`,
-      description: `Limited-time offer on the first mattress, any size (regular price ${priceText.first}). ${priceText.promoFollowUp}`,
+      description: `Limited-time offer on the first mattress, any size (regular price ${priceText.firstRegular}). ${priceText.promoFollowUp}`,
       price: String(PROMO.first),
       priceCurrency: "USD",
       itemOffered: service,
@@ -156,8 +164,9 @@ export function PricingOffersJsonLd() {
     });
   }
   offers.push(
-    { "@type": "Offer", name: "Each additional full, queen or king mattress", description: "Same visit as the first mattress.", price: String(PRICES.additionalLarge), priceCurrency: "USD", itemOffered: service },
-    { "@type": "Offer", name: "Each additional kids bed (twin or full)", description: "Same visit as the first mattress.", price: String(PRICES.additionalKids), priceCurrency: "USD", itemOffered: service },
+    { "@type": "Offer", name: "Each additional king mattress", description: "Same visit as the first mattress.", price: String(PRICES.additionalKing), priceCurrency: "USD", itemOffered: service },
+    { "@type": "Offer", name: "Each additional full or queen mattress", description: "Same visit as the first mattress.", price: String(PRICES.additionalFullQueen), priceCurrency: "USD", itemOffered: service },
+    { "@type": "Offer", name: "Each additional twin or kids bed", description: "Same visit as the first mattress.", price: String(PRICES.additionalKids), priceCurrency: "USD", itemOffered: service },
   );
   const data = { "@context": "https://schema.org", "@graph": offers };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;

@@ -6,6 +6,7 @@ import { site } from "@/lib/site";
 import { priceText } from "@/lib/prices";
 import { YearTimeline } from "@/components/YearTimeline";
 import { BreadcrumbJsonLd, WebPageJsonLd } from "@/components/JsonLd";
+import { FirstPrice } from "@/components/FirstPrice";
 
 export const metadata: Metadata = {
   title: { absolute: "Lincoln Campus Mattress Calendar | Academic Year" },
@@ -80,7 +81,7 @@ export default function AcademicYearHub() {
         When should a Lincoln student&apos;s mattress be cleaned? Before move-in, while the room is empty: in 2026 that
         meant the week before UNL&apos;s August 16 to 19 move-in, NWU&apos;s August 19 move-in or Union Adventist&apos;s
         August 17 Spark Start day. Hall beds stay with each school; we book off-campus apartments, Greek houses and
-        campus-area short-term rentals. The first mattress is {priceText.first}, any size.
+        campus-area short-term rentals. The first mattress is <FirstPrice />, any size.
       </p>
 
       <YearTimeline items={year} label="The year at a glance" />

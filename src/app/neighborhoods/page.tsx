@@ -5,6 +5,7 @@ import { updatedFor } from "@/lib/dates";
 import { getNeighborhoodPages, LINCOLN_ACS } from "@/lib/neighborhoods";
 import { site } from "@/lib/site";
 import { BreadcrumbJsonLd, FaqJsonLd, WebPageJsonLd } from "@/components/JsonLd";
+import { FirstPrice } from "@/components/FirstPrice";
 
 export const metadata: Metadata = {
   title: { absolute: "Lincoln Neighborhoods: Housing and Mattress Care" },
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
 };
 
 const faq = [
-  { q: "Does the price change by Lincoln neighborhood?", a: `No. The first mattress is ${priceText.first}, any size, anywhere in Lincoln. Each additional full, queen or king in the same visit is ${priceText.additionalLarge} and each additional kids bed (twin or full) is ${priceText.additionalKids}.` },
+  { q: "Does the price change by Lincoln neighborhood?", a: `No. The first mattress is ${priceText.first}, any size, anywhere in Lincoln. Each additional king in the same visit is ${priceText.additionalKing} and each additional full or queen is ${priceText.additionalFullQueen} and each additional twin or kids bed is ${priceText.additionalKids}.` },
   { q: "Which Lincoln neighborhood has the oldest homes?", a: "Of the nine here, Country Club: 91% of homes in its census tract were built before 1960. Everett and Near South each have a tract where 57 to 58% of homes predate 1940, against 12% citywide." },
   { q: "Which neighborhoods are mostly apartments?", a: "Downtown, where 90% of homes are in buildings of ten or more units, and the parts of Near South and Everett nearest downtown, where most homes are studios or one-bedrooms." },
   { q: "Do you clean mattresses in apartment and condo buildings?", a: "Yes. We bring the equipment to the unit and clean the mattress where it is. Tell us about entrances, elevators and parking when you book." },
@@ -45,7 +46,7 @@ export default function NeighborhoodsHub() {
       <p className="text-xl text-navy mb-10 max-w-3xl bg-ice rounded-2xl p-6">
         Lincoln&apos;s neighborhoods hold very different bedrooms. Country Club is 96% detached houses, mostly built before 1960; downtown is 90%
         apartment and condo buildings; the Highlands was mostly built in the 1990s. The method and the price stay the same everywhere,{" "}
-        {priceText.first} for the first mattress, any size, but the number of beds, the building and the room&apos;s summer humidity change the
+        <FirstPrice /> for the first mattress, any size, but the number of beds, the building and the room&apos;s summer humidity change the
         visit. Call or text <a href={site.phoneHref} className="underline">{site.phone}</a>.
       </p>
 
