@@ -41,6 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.75,
     })),
+    { url: `${site.url}/care-providers`, lastModified: new Date(updatedFor("/care-providers")), changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${site.url}/airbnb-hosts`, lastModified: new Date(updatedFor("/airbnb-hosts")), changeFrequency: "monthly" as const, priority: 0.8 },
     ...getHostPages().map((p) => ({
       url: `${site.url}/airbnb-hosts/${p.slug}`,

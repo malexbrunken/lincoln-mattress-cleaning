@@ -46,6 +46,7 @@ export function Footer() {
             <li><Link href="/gallery" className="hover:text-teal-bright transition-colors">Equipment</Link></li>
             <li><Link href="/guides" className="hover:text-teal-bright transition-colors">Mattress Care Guides</Link></li>
             <li><Link href="/faq" className="hover:text-teal-bright transition-colors">FAQ</Link></li>
+            <li><Link href="/care-providers" className="hover:text-teal-bright transition-colors">For Care Providers</Link></li>
             <li><Link href={BOOK_PATH} className="hover:text-teal-bright transition-colors">Book an Appointment</Link></li>
             <li><Link href="/privacy-policy" className="hover:text-teal-bright transition-colors">Privacy Policy</Link></li>
           </ul>

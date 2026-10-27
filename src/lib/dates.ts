@@ -21,6 +21,7 @@ export const PAGE_UPDATED: Record<string, string> = {
   "/allergy-season": "2026-10-22",
   "/neighborhoods": "2026-10-22",
   "/knowledge-center": "2026-10-22",
+  "/care-providers": "2026-10-27",
 };
 
 /** Service pages and service-area pages are generated from src/lib; one date each set. */

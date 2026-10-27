@@ -67,6 +67,9 @@ ${getPosts().map((p) => `- [${p.title}](${u(`/guides/${p.slug}`)})`).join("\n")}
 - [Hub](${u("/academic-year")})
 ${getYearPages().map((p) => `  - [${p.h1}](${u(`/academic-year/${p.slug}`)})`).join("\n")}
 
+## Care providers (home health, hospice, home care, assisted living)
+- [Care providers](${u("/care-providers")})
+
 ## Airbnb and short-term rental hosts
 - [Hub](${u("/airbnb-hosts")})
 ${getHostPages().map((p) => `  - [${p.h1}](${u(`/airbnb-hosts/${p.slug}`)})`).join("\n")}
