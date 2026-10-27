@@ -6,7 +6,7 @@ description: "Airbnb's cleaning and pest rules word for word, plus Lancaster Cou
 answer: "Airbnb's ground rules for home hosts say every listing should be clean and free of health hazards before check-in, name mold and pests as examples, and say hosts should clean between every stay; Lincoln's license pages add no cleaning rule of their own. If a guest reports a bug, get it identified first: Nebraska Extension in Lancaster County says that in Lincoln, about half of the suspected bed bugs brought to it turn out to be bat bugs."
 order: 3
 published: "2026-10-03"
-updated: "2026-10-03"
+updated: "2026-10-27"
 checklist:
   - "At each turnover, check mattress seams, folds and zippers, the spots the Extension page names."
   - "Get a suspect bug professionally identified, for example by Nebraska Extension in Lancaster County, before you cancel anything."
@@ -68,7 +68,7 @@ A Lincoln short-term rental answers to the city and to Airbnb, and only Airbnb w
 
 Nebraska Extension in Lancaster County says the first step with a suspect insect is a professional identification, and gives its local reason: about half of the suspected bed bugs brought to its office end up being bat bugs. The same Extension page says a bat bug problem is solved by removing bats roosting in or around the home, and that insecticide in the bedroom is not normally needed once the bats are gone. A host who skips identification can end up treating the wrong problem.
 
-For a confirmed bed bug, the Extension page recommends a pest management professional, says the majority of treatments need at least two visits, and suggests watching for 6 to 8 months afterward; we don't treat bed bugs, and a mattress in an active case waits until that professional is done. Its mattress inspection advice covers seams, folds and zippers, looking for live bugs, shed skins and black fecal spots. Sleep Sanitation explains how [bed bugs differ from dust mites and bed mites (house dust mites)](https://sleepsanitation.com/knowledge-center/mattress-dust-mites-allergens/dust-mites-vs-bed-bugs-vs-bed-mites). Check the care label and warranty terms before booking. This page is general information, not medical advice.
+For a confirmed bed bug, the Extension page recommends a pest management professional, says the majority of treatments need at least two visits, and suggests watching for 6 to 8 months afterward; we don't treat bed bugs, and a mattress in an active case waits until that professional is done. Its mattress inspection advice covers seams, folds and zippers, looking for live bugs, shed skins and black fecal spots. Sleep Sanitation explains how [bed bugs differ from dust mites and bed mites (house dust mites)](https://sleepsanitation.com/knowledge-center/mattress-dust-mites-allergens/dust-mites-vs-bed-bugs-vs-bed-mites). Check the care label and warranty terms before booking.
 
 ## What don't we know?
 

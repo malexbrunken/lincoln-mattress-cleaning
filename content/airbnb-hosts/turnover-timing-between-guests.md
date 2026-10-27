@@ -6,7 +6,7 @@ description: "A weekday cleaning after a Sunday checkout, Airbnb preparation tim
 answer: "Book the cleaning for the first weekday after checkout and leave the bed unmade until it's dry to the touch; we run a moisture check after the job. NOAA's normals for Lincoln put July's average dew point near 65°F and October's near 40°F, so summer turnovers need more margin."
 order: 4
 published: "2026-10-03"
-updated: "2026-10-04"
+updated: "2026-10-27"
 checklist:
   - "Have your emergency contact, who must be able to reach the property within 45 minutes, strip the bed at checkout."
   - "From June through August, when Lincoln's average dew point sits in the 60s, leave more room between checkout and the next guest; the bed stays unmade until it is dry to the touch."
@@ -69,7 +69,7 @@ NOAA's 1991 to 2020 hourly normals for Lincoln Municipal Airport put the average
 
 The city caps a short-term rental at two guests per sleeping area, up to 12, and counts only rooms with an egress window as sleeping areas. A listing at the cap has six sleeping areas to turn over. Lincoln's tax FAQ says the 4% occupation tax covers the rental rate plus any charges subject to Nebraska's lodging tax, and Airbnb's Nebraska tax page says it figures lodging tax on the listing price including cleaning fees; the City Treasurer, (402) 441-7457, can confirm how that applies to your listing, and our [pricing page](/pricing) lists what several beds cost in one visit.
 
-On a Memorial Stadium weekend, the cleaning goes on the Thursday before or the Monday after; our [game weekend guide](/airbnb-hosts/husker-game-weekends) has the October 10, October 31 and November 21 dates. Check each mattress's care label and warranty terms before booking. This page is general information, not medical advice.
+On a Memorial Stadium weekend, the cleaning goes on the Thursday before or the Monday after; our [game weekend guide](/airbnb-hosts/husker-game-weekends) has the October 10, October 31 and November 21 dates. Check each mattress's care label and warranty terms before booking.
 
 ## What don't we know?
 

@@ -138,7 +138,7 @@ export default function AirbnbHostsHub() {
               mattress; each additional king is {priceText.additionalKing} and each additional full or queen is {priceText.additionalFullQueen} and each additional kids bed {priceText.additionalKids},
               with a surcharge only for a severe or biohazard case, and we work Monday to Friday, 9am to 6pm, answering calls and texts on weekends. We record every mattress on an inspection form (material, special care
               notes, urine or odor observations) and run the two checks in every visit: moisture after the job and the built-in bed mite
-              sensor on our UV-C vacuum. 72-hour bedroom CO₂ testing is a separate optional service, priced by quote; it isn&apos;t a medical test. Crews wear gloves and shoe booties and disinfect equipment between jobs. Check each mattress&apos;s care label and warranty terms before booking. This page is general information, not medical advice.
+              sensor on our UV-C vacuum. 72-hour bedroom CO₂ testing is a separate optional service, priced by quote; it isn&apos;t a medical test. Crews wear gloves and shoe booties on every job. Check each mattress&apos;s care label and warranty terms before booking.
             </p>
             <p>
               Hosts who want the science behind a turnover, from steam temperature to bed mites (house dust mites), can read the{" "}
@@ -167,7 +167,7 @@ export default function AirbnbHostsHub() {
               <li><a href="https://www.airbnb.com/help/article/279" rel="noopener">Airbnb: Host damage protection</a>, checked October 3, 2026</li>
             </ul>
             <h2>Changelog</h2>
-            <ul><li>October 3, 2026: hub and five host guides published.</li><li>October 5, 2026: answer-first price lead, host FAQ and Service schema added.</li></ul>
+            <ul><li>October 3, 2026: hub and five host guides published.</li><li>October 5, 2026: answer-first price lead, host FAQ and Service schema added.</li><li>October 27, 2026: wording updated.</li></ul>
             <p className="text-mist text-base">Written by {site.name}, operated by {site.parentBrand}.</p>
           </div>
         </section>
