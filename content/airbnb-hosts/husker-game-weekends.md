@@ -6,7 +6,7 @@ description: "Three Nebraska home games remain in 2026 after Homecoming. How Lin
 answer: "Nebraska has two home games left at Memorial Stadium in 2026: Washington on October 31 at 7:00 PM CDT and Ohio State on November 21, kickoff time still TBA. We work Monday to Friday, 9am to 6pm, so a Husker weekend's cleaning slot is the weekday before check-in or the Monday after checkout."
 order: 1
 published: "2026-10-03"
-updated: "2026-10-22"
+updated: "2026-10-27"
 checklist:
   - "Hold a weekday before each Lincoln home weekend for a mattress check, instead of Saturday morning."
   - "Use the three-week gaps after October 10 and after October 31 for a full mattress cleaning."
@@ -75,7 +75,7 @@ On a home weekend itself, the realistic job is a check at sheet change, not a cl
 - **After the weekend.** After Indiana on October 10, that's Monday, October 12; we run a moisture check after the job, and the bed stays unmade until it's dry to the touch. Sleep Sanitation explains [how quickly a treated mattress should dry](https://sleepsanitation.com/knowledge-center/mattress-moisture-heat-drying-construction/how-quickly-should-a-treated-mattress-dry).
 - **Never on game day.** Calls and texts get returned on weekends, so you can book the Monday slot from the stadium.
 
-Check each mattress's care label and warranty terms before you book. This page is general information, not medical advice.
+Check each mattress's care label and warranty terms before you book.
 
 ## What don't we know?
 

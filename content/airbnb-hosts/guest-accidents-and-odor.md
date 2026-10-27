@@ -6,7 +6,7 @@ description: "After a guest accident in Lincoln: who strips the bed, a dated Hus
 answer: "Have your emergency contact strip the bed and blot without soaking, then book the next weekday cleaning before the next guest. Airbnb's host damage protection lists extra cleaning for guest stains, pet accidents and smoke odor, filed within 14 days of checkout, and pays only costs above the cleaning fee you charged."
 order: 5
 published: "2026-10-03"
-updated: "2026-10-04"
+updated: "2026-10-27"
 checklist:
   - "Note the checkout date; Airbnb's 14-day clock starts there."
   - "Ask your emergency contact, who the city requires to be within 45 minutes, to strip and bag the bedding that day."
@@ -61,7 +61,7 @@ Lincoln's license application already asks for an emergency contact who can reac
 
 ## What does Airbnb say it covers?
 
-Airbnb's host damage protection page, which sets the 14-day filing window, lists extra cleaning to remove stains left by guests or pet accidents, and smoke odor removal, as covered; normal checkout cleaning, such as laundry, dishes or trash removal, is not. After you file, the guest has 24 hours to respond. The 2026 terms pay only cleaning costs above the cleaning fees you charged and list receipts, bills or invoices among the documents Airbnb wants, so keep our invoice and inspection form with the request. Check the care label and warranty terms before booking. This page is general information, not medical advice.
+Airbnb's host damage protection page, which sets the 14-day filing window, lists extra cleaning to remove stains left by guests or pet accidents, and smoke odor removal, as covered; normal checkout cleaning, such as laundry, dishes or trash removal, is not. After you file, the guest has 24 hours to respond. The 2026 terms pay only cleaning costs above the cleaning fees you charged and list receipts, bills or invoices among the documents Airbnb wants, so keep our invoice and inspection form with the request. Check the care label and warranty terms before booking.
 
 ## What if the mattress can't be saved?
 

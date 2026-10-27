@@ -17,7 +17,7 @@ export const PAGE_UPDATED: Record<string, string> = {
   "/contact": "2026-10-04",
   "/privacy-policy": "2026-10-04",
   "/academic-year": "2026-10-05",
-  "/airbnb-hosts": "2026-10-22",
+  "/airbnb-hosts": "2026-10-27",
   "/allergy-season": "2026-10-22",
   "/neighborhoods": "2026-10-22",
   "/knowledge-center": "2026-10-22",
