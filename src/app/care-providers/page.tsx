@@ -149,9 +149,12 @@ export default function CareProviders() {
             <li><a href={`${SS}/agency-partners`} rel="noopener">Sleep Sanitation agency partner program</a></li>
             <li><a href={`${SS}/knowledge-center/mattress-sanitation-home-care-hospice`} rel="noopener">Mattress sanitation in home health and hospice care</a></li>
             <li><a href={`${SS}/knowledge-center/mattress-care-aging-in-place`} rel="noopener">Mattress care for aging in place</a></li>
+            <li><a href={`${SS}/knowledge-center/mattress-sanitation-vendor-guide-agencies`} rel="noopener">Mattress sanitation vendor guide for home health, hospice and home care agencies</a></li>
+            <li><a href={`${SS}/knowledge-center/mattress-sanitation-assisted-living-residential-care`} rel="noopener">Mattress sanitation for assisted living, group homes and residential care</a></li>
+            <li><a href={`${SS}/knowledge-center/mattress-sanitation-care-transitions`} rel="noopener">Getting the bed ready: mattress sanitation for care transitions</a></li>
           </ul>
           <h2>Changelog</h2>
-          <ul><li>October 27, 2026: page published.</li></ul>
+          <ul><li>October 27, 2026: page published.</li><li>October 27, 2026: links to the vendor guide, residential care and care transitions hubs added.</li></ul>
           <p className="text-mist text-base">Written by {site.name}, operated by {site.parentBrand}.</p>
         </section>
 
