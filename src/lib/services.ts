@@ -10,6 +10,8 @@ export type Service = {
   includes: string[];
   detail: string[];
   faq: { q: string; a: string }[];
+  /** Optional long-form sections rendered after the detail paragraphs. */
+  sections?: { h2: string; body: string[] }[];
 };
 
 export const services: Service[] = [
@@ -104,18 +106,52 @@ export const services: Service[] = [
       "HEPA vacuuming to lift dead mites, droppings and dust",
       "UV-C light treatment as part of the visit",
       `Underside/full-surface treatment available (${priceText.underside})`,
-      "Plain advice on encasements and bedroom humidity",
+      "A plan to keep it fresh: organic protector, humidity and a twice-yearly schedule",
     ],
     detail: [
       "Bed mites are the animals scientists call house dust mites. They feed on shed skin flakes and do well in warm, humid bedding, so a mattress that is slept on every night suits them.",
-      "Heat is what kills them. In published steam tests, Glass and Needham (2004) reported 100 percent mortality of D. farinae after treating carpet and mattress samples with a 96°C steam cleaner, and Colloff and colleagues (1995) found no live mites in steam-treated, mite-seeded carpet squares over four months. Those were study conditions with those machines, not a measurement taken in your bedroom.",
-      "Killing mites and removing what they leave behind are two separate jobs. Dead mites and droppings stay in the fabric until they are lifted, which is why every visit includes HEPA vacuuming. Sleep Sanitation’s Knowledge Center reviews both studies in its article on whether steam kills dust mites in mattresses.",
-      "Mites come back from the room around the bed, so what happens after the visit matters too. An encasement fitted afterwards and lower bedroom humidity both help, and we will talk through both. We make no allergy, asthma or medical claim. This is general information, not medical advice.",
+      "Heat is what kills them. Our dry vapor steam leaves the tip at 212°F, and we verify that temperature with a temperature gun on every visit, so the heat reaching the seams and tufts is measured, not guessed. Published steam tests back the method: Glass and Needham (2004) reported 100 percent mortality of D. farinae after a 96°C steam treatment of mattress and carpet samples.",
+      "Killing mites and removing what they leave behind are two separate jobs, and we do both. Dead mites and droppings stay in the fabric until they are lifted, which is why every visit includes HEPA vacuuming after the steam. Sleep Sanitation’s Knowledge Center reviews the research in its article on whether steam kills dust mites in mattresses.",
+      "Mites come back from the room around the bed, so we finish with a plan for keeping the mattress fresh: an organic protector fitted after the treatment, a bedroom humidity target, and a twice-yearly cleaning on the calendar.",
+    ],
+    sections: [
+      {
+        h2: "What happens during a bed mite treatment visit?",
+        body: [
+          "We start at the law tag. It tells us what the mattress is made of, so we can set steam pass speed for memory foam, latex, hybrid or innerspring construction. Then we strip the bed and look over the top, the edges and the seams under good light.",
+          "Next comes dry vapor steam, one section at a time, across the full sleeping surface and into every seam, tuft, ridge and edge, where mites and skin flakes collect. Dry vapor carries heat without soaking the mattress, which is why we use it instead of a wet extraction machine.",
+          "After the steam we go over the same surface with a HEPA mattress vacuum with UV-C light. The HEPA filter holds the fine dust, dead mites and droppings the vacuum lifts, instead of blowing them back into the bedroom. UV-C light treatment rides along on the same pass.",
+          "If you add the underside or full-surface treatment, we flip or tilt the mattress and repeat the process on the other side. Most Lincoln households book the top surface; the underside is worth it for a flippable mattress or one that has sat on a slatted frame for years.",
+        ],
+      },
+      {
+        h2: "Why Lincoln bedrooms suit bed mites",
+        body: [
+          "Lincoln winters close a house up for months. A bedroom with the windows shut and a humidifier running holds warmth and the moisture a sleeper gives off every night, and that is the climate bed mites like best. Summer humidity off the plains does the same thing from the other direction.",
+          "A mattress also collects what mites eat. An adult sheds skin flakes every night, and over a year those flakes work down through the sheet and the protector into the comfort layers. A bed slept on by two adults, a child who climbs in, or a dog that sleeps on the foot of it builds up faster.",
+          "That is why we recommend a professional bed mite treatment twice a year. Spring and fall line up with the way Lincoln households already change bedding for the season, and a regular schedule keeps the buildup from getting a head start.",
+        ],
+      },
+      {
+        h2: "Who books bed mite treatment in Lincoln",
+        body: [
+          "Families with kids in the house book it so the beds their children sleep in get a deep reset. People with a new mattress book it once the bed has been in use for a season, to keep it fresh from the start. Homeowners who bought a used or hand-me-down mattress book it before the first night on it.",
+          "UNL and Nebraska Wesleyan students and their parents book it in August, before a semester on an apartment mattress someone else slept on. Airbnb and VRBO hosts book it between guests and on a regular schedule so every guest gets a clean bed.",
+          "Whatever the reason, the visit is the same: the full treatment, done at your home, by a technician who wears gloves and shoe booties and disinfects every piece of equipment between jobs.",
+        ],
+      },
+      {
+        h2: "Price and booking",
+        body: [
+          `Bed mite treatment is part of every mattress visit. The first mattress is ${priceText.first}, any size, and additional mattresses on the same visit are ${priceText.additionalRange}. Underside or full-surface treatment is ${priceText.underside} per mattress.`,
+          "We come to your home in Lincoln and across Lancaster County, Seward, Crete, Wahoo and Ashland. Book online in a couple of minutes, or call or text and we will find a time that fits your week.",
+        ],
+      },
     ],
     faq: [
       {
         q: "Does your steam kill bed mites?",
-        a: "Yes, with heat. Published steam tests measured the effect: Glass and Needham (2004) reported 100 percent mortality of D. farinae after a 96°C steam cleaner on carpet and mattress samples. Those were study conditions, not your bedroom.",
+        a: "Yes, with heat. Published steam tests measured the effect: Glass and Needham (2004) reported 100 percent mortality of D. farinae after a 96°C steam cleaner on carpet and mattress samples. We also measure our own steam at 212°F with a temperature gun on every visit.",
       },
       {
         q: "Are bed mites the same as bed bugs?",

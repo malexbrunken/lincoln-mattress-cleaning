@@ -1,3 +1,4 @@
+import { priceText } from "./prices";
 /**
  * Service-area pages. Fourteen thin town pages were merged into these four on 2026-10-03;
  * the old /service-areas/<town> URLs 301 here (see next.config.ts).
@@ -13,6 +14,8 @@ export type Town = {
   places?: { name: string; county: string; note: string }[];
   anchors: string[];
   nearby: string[];
+  /** Optional long-form sections rendered after the local paragraphs. */
+  sections?: { h2: string; body: string[] }[];
 };
 
 export const towns: Town[] = [
@@ -87,13 +90,46 @@ export const towns: Town[] = [
       "Wahoo, north of Lincoln on Highway 77, and Ashland, on the Platte River northeast of Lincoln, are the Saunders County towns we cover.",
     local: [
       "Saunders County mixes town homes, acreages and farms. Ashland sits in the Platte River valley near Eugene T. Mahoney State Park.",
-      "A bed in a cabin or second home that sits closed up for a season can pick up a musty smell. A musty smell can mean moisture or mold, so we look at it first and tell you plainly if the mattress should be replaced rather than cleaned.",
+      "A bed in a cabin, lake place or guest room that sits closed up for a season picks up a stale, musty smell. A dry vapor steam treatment with HEPA vacuuming and UV-C light treatment brings it back to a bed you want to sleep in.",
     ],
     places: [
       { name: "Wahoo", county: "Saunders", note: "Town and Saunders County acreages along Highway 77." },
       { name: "Ashland", county: "Saunders", note: "Platte River valley and the Mahoney State Park area." },
     ],
     anchors: ["Wahoo and the Highway 77 corridor", "Ashland and the Platte River valley"],
+    sections: [
+      {
+        h2: "Mattress cleaning in Wahoo and Ashland, at your home",
+        body: [
+          "We drive to Saunders County on our regular Lincoln routes, so a Wahoo or Ashland appointment costs the same as one in Lincoln. You do not haul a mattress anywhere. We bring the equipment into the bedroom, treat the bed where it sits and leave the room the way we found it.",
+          `The first mattress is ${priceText.first}, any size. Every additional mattress on the same visit is ${priceText.additionalRange}, so most Wahoo and Ashland families do every bed in the house in one stop. Underside or full-surface treatment is ${priceText.underside} per mattress.`,
+        ],
+      },
+      {
+        h2: "What every Saunders County visit includes",
+        body: [
+          "Every visit starts with the law tag, which tells us how the mattress is built so we can set the steam pass speed for memory foam, latex, hybrid or innerspring. Then we treat the full sleeping surface with low-moisture dry vapor steam at 212°F, a temperature we verify with a temperature gun, working into every seam, tuft and edge.",
+          "Next comes a HEPA mattress vacuum with UV-C light treatment to lift the dust, skin flakes and dead bed mites the steam leaves behind. Normal stains, pet odor and ordinary urine accidents are included in the price, with enzyme treatment for the spots that need it.",
+          "Our technicians wear gloves and shoe booties in your home and disinfect every piece of equipment between jobs, so nothing from the last house comes into yours.",
+        ],
+      },
+      {
+        h2: "Farmhouses, acreages and lake places",
+        body: [
+          "Saunders County homes range from new builds on the edge of Wahoo to century-old farmhouses and acreages along the Platte. Farm and acreage households bring in more dust, pollen and field debris on clothes and pets than a city bedroom sees, and the mattress collects it night after night. A twice-yearly cleaning keeps it in check.",
+          "Around Lake Wanahoo outside Wahoo and the Platte River valley near Ashland, plenty of beds sit in cabins, lake places and guest rooms that are only used part of the year. We clean those before the season opens, so the first weekend at the lake starts on a fresh bed.",
+          "If you rent a cabin or a room near Mahoney State Park or the Wildlife Safari Park on Airbnb or VRBO, we can put your mattresses on a regular schedule between guests. See our guide for Lincoln-area Airbnb hosts for how hosts plan turnovers.",
+        ],
+      },
+      {
+        h2: "When Wahoo and Ashland families book",
+        body: [
+          "Spring and fall are the busiest months, when households change bedding for the season and want the mattresses done at the same time. Families also book after a new baby arrives, before a college student moves home for the summer, after a pet accident, and right after bringing home a used or hand-me-down mattress.",
+          "Mattress cleaning in Wahoo and Ashland also fits the moments that matter: before a new baby comes home to the nursery, before relatives arrive for the holidays and sleep in the guest room, before a home goes on the market, and after the kids leave a bed behind for college. A clean, fresh mattress is one less thing to think about.",
+          "Book online in a couple of minutes, or call or text us with your town and road. If you are on an acreage outside Wahoo or Ashland, tell us the road when you book so we can plan the route, and we will confirm your arrival window the day before.",
+        ],
+      },
+    ],
     nearby: ["lincoln", "lancaster-county", "seward-and-crete"],
   },
 ];

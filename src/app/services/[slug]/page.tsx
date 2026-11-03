@@ -65,6 +65,15 @@ export default async function ServicePage({ params }: PageProps<"/services/[slug
         <p key={i} className="mb-5 text-lg leading-relaxed">{p}</p>
       ))}
 
+      {s.sections?.map((sec) => (
+        <section key={sec.h2} className="mt-10">
+          <h2 className="text-2xl font-semibold text-navy mb-4">{sec.h2}</h2>
+          {sec.body.map((p, i) => (
+            <p key={i} className="mb-5 text-lg leading-relaxed">{p}</p>
+          ))}
+        </section>
+      ))}
+
       {s.faq.length > 0 && (
         <>
           <h2 className="text-2xl font-semibold text-navy mt-10 mb-4">What do people ask about {s.name.toLowerCase().replace("uv-c", "UV-C").replace("co₂", "CO₂")}?</h2>

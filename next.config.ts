@@ -20,29 +20,29 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       // Legacy thin-site URL shapes, in case anything was indexed against them.
-      { source: "/index.html", destination: "/", permanent: true },
+      { source: "/index.html", destination: "/", statusCode: 301 },
       // 2026-10-03: 14 thin town pages merged into 4 area pages.
       ...Object.entries(townRedirects).map(([from, to]) => ({
         source: `/service-areas/${from}`,
         destination: `/service-areas/${to}`,
-        permanent: true,
+        statusCode: 301,
       })),
-      { source: "/service-areas/gretna", destination: "/service-areas", permanent: true },
+      { source: "/service-areas/gretna", destination: "/service-areas", statusCode: 301 },
       // 2026-10-03: services renamed for accurate bed-mite wording.
-      { source: "/services/dust-mite-treatment", destination: "/services/bed-mite-treatment", permanent: true },
-      { source: "/services/bed-bug-allergen-reduction", destination: "/services/bed-mite-treatment", permanent: true },
+      { source: "/services/dust-mite-treatment", destination: "/services/bed-mite-treatment", statusCode: 301 },
+      { source: "/services/bed-bug-allergen-reduction", destination: "/services/bed-mite-treatment", statusCode: 301 },
       // 2026-10-03: we do not take UV-C readings; the readings guide was removed.
-      { source: "/guides/uv-c-mattress-vacuum-readings", destination: "/services/uv-c-light-treatment", permanent: true },
+      { source: "/guides/uv-c-mattress-vacuum-readings", destination: "/services/uv-c-light-treatment", statusCode: 301 },
       // 2026-10-04: UV-C service slug renamed to match "UV-C light treatment".
-      { source: "/services/uv-c-post-treatment", destination: "/services/uv-c-light-treatment", permanent: true },
+      { source: "/services/uv-c-post-treatment", destination: "/services/uv-c-light-treatment", statusCode: 301 },
       // 2026-10-03: rental-turnover service removed (no landlord or tenant turnover service).
-      { source: "/services/rental-property-mattress-turnover", destination: "/services", permanent: true },
+      { source: "/services/rental-property-mattress-turnover", destination: "/services", statusCode: 301 },
       // Keep www and apex from competing as duplicate hosts.
       {
         source: "/:path*",
         has: [{ type: "host", value: "www.lincolnmattresscleaning.com" }],
         destination: "https://lincolnmattresscleaning.com/:path*",
-        permanent: true,
+        statusCode: 301,
       },
     ];
   },

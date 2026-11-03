@@ -1,5 +1,5 @@
 ---
-title: "Lincoln Wind and Pollen: NOAA's Normals by Month"
+title: "Lincoln Pollen Count and Wind: NOAA Normals by Month"
 h1: "North wind, south wind: Lincoln's wind normals and the pollen in your bedroom"
 label: "Wind and pollen"
 order: 2

@@ -5,6 +5,9 @@ import Link from "next/link";
 import { site, packages, comparison, plainAnswer } from "@/lib/site";
 import { services } from "@/lib/services";
 import { towns } from "@/lib/towns";
+import { getNeighborhoodPages } from "@/lib/neighborhoods";
+import { getAllergyPages } from "@/lib/allergySeason";
+import { getYearPages } from "@/lib/academicYear";
 import { heroImage, featuredPair, imageById } from "@/lib/images";
 import { QuoteCalc } from "@/components/QuoteCalc";
 import { IncludedTable } from "@/components/Pricing";
@@ -461,6 +464,45 @@ export default function HomePage() {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* Lincoln guides */}
+      <section className="max-w-6xl mx-auto px-4 py-20 md:py-24">
+        <p className="kicker text-teal-deep mb-3">Lincoln guides</p>
+        <h2 className="text-3xl md:text-4xl font-semibold mb-4">Mattress cleaning for how Lincoln actually lives</h2>
+        <p className="text-mist max-w-3xl mb-10">
+          Your street, the school calendar and pollen season all change when a mattress needs attention. Start with the guide that fits you, then book a visit at your home.
+        </p>
+        <div className="grid gap-8 md:grid-cols-3">
+          <div>
+            <h3 className="text-xl font-semibold mb-3"><Link href="/neighborhoods" className="hover:text-teal-deep">Lincoln neighborhoods</Link></h3>
+            <ul className="space-y-2 text-[15px]">
+              {getNeighborhoodPages().slice(0, 6).map((n) => (
+                <li key={n.slug}><Link href={`/neighborhoods/${n.slug}`} className="text-teal-deep underline">Mattress cleaning in {n.name}</Link></li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-3"><Link href="/academic-year" className="hover:text-teal-deep">The Lincoln academic year</Link></h3>
+            <ul className="space-y-2 text-[15px]">
+              {getYearPages().slice(0, 8).map((p) => (
+                <li key={p.slug}><Link href={`/academic-year/${p.slug}`} className="text-teal-deep underline">{p.title}</Link></li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-3"><Link href="/allergy-season" className="hover:text-teal-deep">Lincoln allergy season</Link></h3>
+            <ul className="space-y-2 text-[15px]">
+              {getAllergyPages().map((p) => (
+                <li key={p.slug}><Link href={`/allergy-season/${p.slug}`} className="text-teal-deep underline">{p.title}</Link></li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <p className="mt-10 text-[15px]">
+          Hosting on Airbnb or VRBO? See <Link href="/airbnb-hosts" className="text-teal-deep underline font-semibold">mattress cleaning for Lincoln Airbnb hosts</Link> and{" "}
+          <Link href="/airbnb-hosts/guest-accidents-and-odor" className="text-teal-deep underline font-semibold">what to do after a guest accident or odor</Link>.
+        </p>
       </section>
 
       {/* FAQ */}

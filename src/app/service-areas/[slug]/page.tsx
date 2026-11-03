@@ -60,6 +60,15 @@ export default async function TownPage({ params }: PageProps<"/service-areas/[sl
         <p key={i} className="mb-5 text-lg leading-relaxed">{p}</p>
       ))}
 
+      {t.sections?.map((sec) => (
+        <section key={sec.h2} className="mt-10">
+          <h2 className="text-2xl font-semibold text-navy mb-4">{sec.h2}</h2>
+          {sec.body.map((p, i) => (
+            <p key={i} className="mb-5 text-lg leading-relaxed">{p}</p>
+          ))}
+        </section>
+      ))}
+
       {t.places && (
         <>
           <h2 className="text-2xl font-semibold text-navy mb-4">Towns on this page</h2>

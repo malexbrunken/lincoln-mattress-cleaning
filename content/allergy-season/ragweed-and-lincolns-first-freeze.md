@@ -1,5 +1,5 @@
 ---
-title: "Ragweed and Lincoln's First Freeze: NWU's Mid-October Finish"
+title: "Lincoln Pollen Count in Fall: Ragweed to First Freeze"
 h1: "Ragweed to frost in Lincoln: NWU's mid-October finish and an October 13 median freeze"
 label: "Fall weeds and frost"
 order: 4
