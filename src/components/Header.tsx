@@ -20,7 +20,7 @@ export function Header() {
             </span>
           </span>
         </Link>
-        <nav aria-label="Main navigation" className="hidden md:flex items-center gap-6 text-[15px] font-medium">
+        <nav aria-label="Main navigation" className="hidden md:flex flex-wrap items-center gap-x-4 lg:gap-x-5 gap-y-1 text-[15px] font-medium">
           <Link href="/services" className="text-white/85 hover:text-teal-bright transition-colors">Services</Link>
           <Link href="/pricing" className="text-white/85 hover:text-teal-bright transition-colors">Pricing</Link>
           <Link href="/service-areas" className="text-white/85 hover:text-teal-bright transition-colors">Service Areas</Link>
@@ -30,6 +30,7 @@ export function Header() {
           <Link href="/allergy-season" className="text-white/85 hover:text-teal-bright transition-colors">Allergy Season</Link>
           <Link href="/knowledge-center" className="text-white/85 hover:text-teal-bright transition-colors">Knowledge Center</Link>
           <Link href="/faq" className="text-white/85 hover:text-teal-bright transition-colors">FAQ</Link>
+          <Link href="/contact" className="text-white/85 hover:text-teal-bright transition-colors">Contact</Link>
         </nav>
         <div className="flex items-center gap-2 shrink-0">
           <a
@@ -56,7 +57,10 @@ export function Header() {
         <Link href="/airbnb-hosts" className="whitespace-nowrap text-white/85 hover:text-teal-bright">Hosts</Link>
         <Link href="/allergy-season" className="whitespace-nowrap text-white/85 hover:text-teal-bright">Allergies</Link>
         <Link href="/knowledge-center" className="whitespace-nowrap text-white/85 hover:text-teal-bright">Knowledge Center</Link>
+        <Link href="/neighborhoods" className="whitespace-nowrap text-white/85 hover:text-teal-bright">Neighborhoods</Link>
+        <Link href="/academic-year" className="whitespace-nowrap text-white/85 hover:text-teal-bright">Academic Year</Link>
         <Link href="/faq" className="whitespace-nowrap text-white/85 hover:text-teal-bright">FAQ</Link>
+        <Link href="/contact" className="whitespace-nowrap text-white/85 hover:text-teal-bright">Contact</Link>
       </nav>
     </header>
   );

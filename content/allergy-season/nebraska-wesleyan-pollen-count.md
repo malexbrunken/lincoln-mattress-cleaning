@@ -1,6 +1,6 @@
 ---
-title: "Nebraska Wesleyan Pollen Count: Lincoln's Daily Numbers Explained"
-h1: "Lincoln's pollen count: how to read Nebraska Wesleyan's numbers"
+title: "Lincoln Pollen Count: How to Read Nebraska Wesleyan's Daily Numbers"
+h1: "Lincoln pollen count: how to read Nebraska Wesleyan's numbers"
 label: "Reading NWU's count"
 order: 1
 description: "Who counts Lincoln's pollen, how NWU's categories differ for trees, weeds and grass, and what the October 2, 2026 count showed, plant by plant."

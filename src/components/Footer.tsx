@@ -4,12 +4,13 @@ import { towns } from "@/lib/towns";
 import { services } from "@/lib/services";
 import { IconMattress } from "./Icons";
 import { BOOK_PATH } from "@/lib/booking";
+import { getNeighborhoodPages } from "@/lib/neighborhoods";
 
 export function Footer() {
   return (
     <footer className="bg-navy text-white/85 mt-20 texture-grain">
       <div className="h-1 bg-gradient-to-r from-teal-deep via-teal-bright to-teal-deep" />
-      <div className="max-w-6xl mx-auto px-4 py-14 grid gap-10 md:grid-cols-4 text-base">
+      <div className="max-w-6xl mx-auto px-4 py-14 grid gap-10 md:grid-cols-3 lg:grid-cols-5 text-base">
         <div>
           <p className="flex items-start gap-2.5 font-display font-semibold text-xl text-white mb-3">
             <span className="text-teal-bright mt-0.5"><IconMattress className="w-7 h-7" /></span>
@@ -40,12 +41,26 @@ export function Footer() {
           </ul>
         </div>
         <div>
+          <p className="font-display font-semibold text-white mb-3">Lincoln Guides</p>
+          <ul className="space-y-2">
+            <li><Link href="/neighborhoods" className="hover:text-teal-bright transition-colors">Lincoln neighborhoods</Link></li>
+            {getNeighborhoodPages().slice(0, 6).map((n) => (
+              <li key={n.slug}><Link href={`/neighborhoods/${n.slug}`} className="hover:text-teal-bright transition-colors">{n.name}</Link></li>
+            ))}
+            <li><Link href="/academic-year" className="hover:text-teal-bright transition-colors">The Lincoln academic year</Link></li>
+            <li><Link href="/allergy-season" className="hover:text-teal-bright transition-colors">Lincoln allergy season</Link></li>
+            <li><Link href="/allergy-season/nebraska-wesleyan-pollen-count" className="hover:text-teal-bright transition-colors">Lincoln pollen count</Link></li>
+            <li><Link href="/airbnb-hosts" className="hover:text-teal-bright transition-colors">Airbnb hosts</Link></li>
+          </ul>
+        </div>
+        <div>
           <p className="font-display font-semibold text-white mb-3">Company</p>
           <ul className="space-y-2">
             <li><Link href="/about" className="hover:text-teal-bright transition-colors">About Us</Link></li>
             <li><Link href="/gallery" className="hover:text-teal-bright transition-colors">Equipment</Link></li>
             <li><Link href="/guides" className="hover:text-teal-bright transition-colors">Mattress Care Guides</Link></li>
             <li><Link href="/faq" className="hover:text-teal-bright transition-colors">FAQ</Link></li>
+            <li><Link href="/contact" className="hover:text-teal-bright transition-colors">Contact Us</Link></li>
             <li><Link href="/care-providers" className="hover:text-teal-bright transition-colors">For Care Providers</Link></li>
             <li><Link href={BOOK_PATH} className="hover:text-teal-bright transition-colors">Book an Appointment</Link></li>
             <li><Link href="/privacy-policy" className="hover:text-teal-bright transition-colors">Privacy Policy</Link></li>

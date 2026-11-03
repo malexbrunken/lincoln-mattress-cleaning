@@ -1,6 +1,6 @@
 ---
 title: "Lincoln Pollen Count in Winter: When NWU's Count Stops"
-h1: "Lincoln's pollen count in winter: when Nebraska Wesleyan's count stops, when it starts again, and what to do with the bedroom in between"
+h1: "Lincoln pollen count in winter: when Nebraska Wesleyan's count stops, when it starts again, and what to do with the bedroom in between"
 label: "The off-season"
 order: 6
 description: "Nebraska Wesleyan counts Lincoln's pollen from February through mid-October. What the off-season means, when counting starts again, and why winter is a great time to refresh the bed."

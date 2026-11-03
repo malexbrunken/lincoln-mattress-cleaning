@@ -8,7 +8,7 @@ import { BreadcrumbJsonLd, WebPageJsonLd } from "@/components/JsonLd";
 import { FirstPrice } from "@/components/FirstPrice";
 
 export const metadata: Metadata = {
-  title: { absolute: "Lincoln Allergy Season: Pollen, Humidity and the Bed" },
+  title: { absolute: "Lincoln Allergy Season and Pollen Count: Bedroom Guide" },
   description:
     "Nebraska Wesleyan's pollen count, LLCHD's and Extension's humidity ranges, Lincoln Airport's wind and freeze normals, and five guides for Lincoln bedrooms.",
   alternates: { canonical: "/allergy-season" },
